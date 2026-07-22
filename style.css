@@ -86,3 +86,53 @@ footer{
     padding:25px;
     color:#999;
 }
+/* Navigation */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 25px;
+    background:#000;
+    border-bottom:1px solid #FFD700;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:#FFD700;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.menu{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#FFD700;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+}
+
+.menu{
+margin-top:15px;
+gap:15px;
+}
+
+}
