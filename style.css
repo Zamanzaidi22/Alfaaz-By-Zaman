@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:white;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(to bottom,#111,#000);
+}
+
+.hero h1{
+    color:#FFD700;
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#d6d6d6;
+    font-size:18px;
+}
+
+.search{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin:30px 15px;
+}
+
+.search input{
+    flex:1;
+    max-width:350px;
+    padding:12px;
+    border-radius:10px;
+    border:none;
+    font-size:16px;
+}
+
+.search button{
+    background:#FFD700;
+    border:none;
+    padding:12px 18px;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    padding:20px;
+}
+
+.categories div{
+    background:#1b1b1b;
+    border:1px solid #FFD700;
+    border-radius:12px;
+    padding:18px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.shayari{
+    margin:20px;
+    background:#1b1b1b;
+    border:1px solid #FFD700;
+    border-radius:12px;
+    padding:20px;
+}
+
+.shayari h2{
+    color:#FFD700;
+    margin-bottom:15px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#999;
+}
