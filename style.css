@@ -136,3 +136,17 @@ gap:15px;
 }
 
 }
+.hero-image{
+    width:100%;
+    max-width:700px;
+    display:block;
+    margin:20px auto;
+    border-radius:20px;
+    box-shadow:0 0 30px rgba(255,215,0,.35);
+}
+
+.hero-logo{
+    width:120px;
+    display:block;
+    margin:20px auto;
+}
