@@ -188,3 +188,22 @@ gap:15px;
     display:block;
     margin:20px auto;
 }
+.hero-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 28px;
+    background:#FFD700;
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:40px;
+    transition:0.3s;
+    box-shadow:0 0 20px rgba(255,215,0,.5);
+}
+
+.hero-btn:hover{
+    background:#fff;
+    color:#000;
+    transform:scale(1.08);
+    box-shadow:0 0 30px rgba(255,215,0,.9);
+}
