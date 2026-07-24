@@ -61,3 +61,12 @@ Math.floor(Math.random()*list.length);
 document.getElementById("shayari-text").innerHTML =
 list[random];
 }
+function copyShayari(){
+
+const text =
+document.getElementById("shayari-text").innerText;
+
+navigator.clipboard.writeText(text);
+
+alert("✅ Shayari Copied!");
+}
