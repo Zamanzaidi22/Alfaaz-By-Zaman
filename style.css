@@ -207,3 +207,30 @@ gap:15px;
     transform:scale(1.08);
     box-shadow:0 0 30px rgba(255,215,0,.9);
 }
+.hero{
+    position:relative;
+    text-align:center;
+    padding:40px 20px 60px;
+    overflow:hidden;
+}
+
+.hero-image{
+    width:100%;
+    max-width:900px;
+    border-radius:20px;
+    opacity:.35;
+    filter:brightness(0.8);
+}
+
+.hero h1{
+    font-size:52px;
+    color:#FFD700;
+    margin-top:-170px;
+    text-shadow:0 0 20px rgba(255,215,0,.9);
+}
+
+.hero p{
+    color:#fff;
+    font-size:20px;
+    margin-top:15px;
+}
