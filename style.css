@@ -269,3 +269,19 @@ gap:15px;
     color:#eee;
     line-height:1.7;
 }
+.copy-btn{
+    background:#FFD700;
+    color:#000;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-top:15px;
+    transition:.3s;
+}
+
+.copy-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(255,215,0,.6);
+}
