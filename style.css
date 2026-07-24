@@ -26,7 +26,45 @@ body{
     color:#d6d6d6;
     font-size:18px;
 }
+.hero{
+    position: relative;
+    background: url("assets/hero.png") center center/cover no-repeat;
+    min-height: 500px;
 
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.65);
+}
+
+.hero h1,
+.hero p,
+.hero .hero-btn{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    color:#FFD700;
+    font-size:52px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:25px;
+}
 .search{
     display:flex;
     justify-content:center;
