@@ -13,33 +13,51 @@ searchInput.addEventListener("keyup", function () {
         }
     });
 });
-function showCategory(category){
-
 const shayari = {
-love:
-`❤️ Mohabbat bhi ajeeb si cheez hai,
-Jitni sachchi ho utna dard deti hai.`,
+love: [
+"❤️ Mohabbat lafzon se nahi, ehsaason se hoti hai.",
+"❤️ Teri muskurahat meri duniya hai.",
+"❤️ Dil sirf tumhara naam leta hai."
+],
 
-sad:
-`💔 Kuch log sirf yaad bankar reh jaate hain,
-Aur zindagi bhar rulaya karte hain.`,
+sad: [
+"💔 Kuch log yaad ban kar reh jaate hain.",
+"💔 Khamoshi bhi dard bayan karti hai.",
+"💔 Har muskaan ke peeche ek kahani hoti hai."
+],
 
-bewafa:
-`🥀 Wafa ki umeed unse thi,
-Jo bewafa nikle.`,
+bewafa: [
+"🥀 Wafa humne ki, yaadein tum de gaye.",
+"🥀 Bewafai ka dard sabse gehra hota hai.",
+"🥀 Tum badal gaye, waqt nahi."
+],
 
-islamic:
-`🌙 Allah par bharosa rakho,
-Har mushkil ke baad aasani hai.`,
+islamic: [
+"🌙 Allah par bharosa rakho.",
+"🌙 Dua kabhi bekaar nahi jaati.",
+"🌙 Sabr karne walon ke saath Allah hai."
+],
 
-dosti:
-`🤝 Dost woh jo mushkil waqt me saath de.`,
+dosti: [
+"🤝 Saccha dost daulat se badhkar hota hai.",
+"🤝 Dosti dilon ko jodti hai.",
+"🤝 Mushkil waqt ka saathi hi asli dost hai."
+],
 
-"2line":
-`✨ Alfaaz kam hain,
-Ehsaas bahut gehre hain.`
+"2line":[
+"✨ Alfaaz kam, ehsaas gehre.",
+"✨ Muskaan me bhi dard hota hai.",
+"✨ Har raat ke baad subah hoti hai."
+]
 };
 
-document.querySelector(".shayari p").innerHTML =
-shayari[category];
+function showCategory(category){
+
+const list = shayari[category];
+
+const random =
+Math.floor(Math.random()*list.length);
+
+document.getElementById("shayari-text").innerHTML =
+list[random];
 }
