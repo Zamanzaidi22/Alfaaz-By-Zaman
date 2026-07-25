@@ -81,3 +81,13 @@ const url =
 window.open(url, "_blank");
 
 }
+function randomShayari(){
+
+const categories = Object.keys(shayari);
+
+const randomCategory =
+categories[Math.floor(Math.random()*categories.length)];
+
+showCategory(randomCategory);
+
+}
