@@ -331,3 +331,27 @@ gap:15px;
 .action-buttons button{
     min-width:120px;
 }
+footer{
+    margin-top:60px;
+    background:#111;
+    border-top:1px solid #FFD700;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h2{
+    color:#FFD700;
+    font-family:'Cinzel', serif;
+    margin-bottom:15px;
+}
+
+footer p{
+    color:#ddd;
+    line-height:1.8;
+}
+
+.copyright{
+    margin-top:20px;
+    color:#888;
+    font-size:14px;
+}
