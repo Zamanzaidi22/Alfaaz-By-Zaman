@@ -39,7 +39,7 @@
 
 </section>
 
-<section class="categories">
+<section class="categories" id="categories">
 
 <div onclick="showCategory('love')">❤️ Love</div>
 <div onclick="showCategory('sad')">💔 Sad</div>
@@ -51,17 +51,34 @@
 </section>
 
 <section class="shayari" id="today">
-<button class="copy-btn" onclick="copyShayari()">
+
+<h2>⭐ Aaj Ki Shayari</h2>
+
+<p id="shayari-text">
+...
+</p>
+
+<div class="action-buttons">
+
+<button class="copy-btn">
 ✨ Copy Shayari
 </button>
-  <button class="share-btn" onclick="shareWhatsApp()">
-📲 Share on WhatsApp
-  </button>
-  <button class="random-btn" onclick="randomShayari()">
-🎲 New Shayari
-  </button>
-<h2>⭐ Aaj Ki Shayari</h2>
+
+<button class="share-btn">
+📲 Share
+</button>
+
+<button class="random-btn">
+🎲 Random
+</button>
+
+</div>
+
+</section>
+
 <section class="latest">
+
+...
 
 <h2>🔥 Latest Shayari</h2>
 
@@ -84,7 +101,7 @@ Unhone yaadon me chhod diya.</p>
 </div>
 
 </section>
-<p>
+<p id="shayari-text">
 Har alfaaz me ek kahani chhupi hoti hai,<br>
 Har khamoshi me ek sada chhupi hoti hai.<br><br>
 
