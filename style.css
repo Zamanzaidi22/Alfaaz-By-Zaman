@@ -318,3 +318,14 @@ gap:15px;
 .random-btn:hover{
     transform:scale(1.05);
 }
+.action-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin:20px 0;
+}
+
+.action-buttons button{
+    min-width:120px;
+}
