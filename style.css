@@ -285,3 +285,20 @@ gap:15px;
     transform:scale(1.05);
     box-shadow:0 0 20px rgba(255,215,0,.6);
 }
+.share-btn{
+    background:#25D366;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-top:12px;
+    margin-left:10px;
+    transition:.3s;
+}
+
+.share-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(37,211,102,.5);
+}
