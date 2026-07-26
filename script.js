@@ -122,18 +122,6 @@ document.getElementById("shayari-text").innerHTML =
 "❤️ Kisi bhi category par click kijiye...";
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
-displayFavorites();
-function removeFavorite(index){
-
-    favorites.splice(index,1);
-
-    localStorage.setItem(
-        "favorites",
-        JSON.stringify(favorites)
-    );
-
-    displayFavorites();
-
 function removeFavorite(index) {
 
     favorites.splice(index, 1);
