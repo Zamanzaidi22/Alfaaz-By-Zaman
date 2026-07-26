@@ -120,7 +120,9 @@ showCategory(randomCategory);
 }
 document.getElementById("shayari-text").innerHTML =
 "❤️ Kisi bhi category par click kijiye...";
-let favorites = [];
+let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+displayFavorites();
 
 function addToFavorites() {
 
@@ -137,6 +139,9 @@ function addToFavorites() {
     }
 
     favorites.push(text);
+localStorage.setItem("favorites", JSON.stringify(favorites));
+    displayFavorites();
+function displayFavorites() {
 
     const favBox = document.getElementById("favorites");
 
