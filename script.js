@@ -141,7 +141,7 @@ function addToFavorites() {
     favorites.push(text);
 localStorage.setItem("favorites", JSON.stringify(favorites));
     displayFavorites();
-function displayFavorites() {
+function displayFavorites() {}
 
     const favBox = document.getElementById("favorites");
 
