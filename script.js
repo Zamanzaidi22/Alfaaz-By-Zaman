@@ -118,6 +118,46 @@ categories[Math.floor(Math.random()*categories.length)];
 showCategory(randomCategory);
 
 }
+function searchShayari() {
+
+    const value = searchInput.value.toLowerCase().trim();
+
+    if (value === "") {
+        return;
+    }
+
+    if (value.includes("love") || value.includes("mohabbat")) {
+        showCategory("love");
+        return;
+    }
+
+    if (value.includes("sad") || value.includes("dard")) {
+        showCategory("sad");
+        return;
+    }
+
+    if (value.includes("bewafa")) {
+        showCategory("bewafa");
+        return;
+    }
+
+    if (value.includes("islamic") || value.includes("allah") || value.includes("dua")) {
+        showCategory("islamic");
+        return;
+    }
+
+    if (value.includes("dosti") || value.includes("dost") || value.includes("friend")) {
+        showCategory("dosti");
+        return;
+    }
+
+    if (value.includes("2line") || value.includes("2 line")) {
+        showCategory("2line");
+        return;
+    }
+
+    alert("❌ Koi matching category nahi mili.");
+}
 document.getElementById("shayari-text").innerHTML =
 "❤️ Kisi bhi category par click kijiye...";
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
