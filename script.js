@@ -91,3 +91,5 @@ categories[Math.floor(Math.random()*categories.length)];
 showCategory(randomCategory);
 
 }
+document.getElementById("shayari-text").innerHTML =
+"❤️ Kisi bhi category par click kijiye...";
