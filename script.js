@@ -14,41 +14,55 @@ searchInput.addEventListener("keyup", function () {
     });
 });
 const shayari = {
+
 love: [
 "❤️ Mohabbat lafzon se nahi, ehsaason se hoti hai.",
 "❤️ Teri muskurahat meri duniya hai.",
-"❤️ Dil sirf tumhara naam leta hai."
+"❤️ Dil sirf tumhara naam leta hai.",
+"❤️ Ishq wahi jo har dua me yaad aaye.",
+"❤️ Tum meri zindagi ki sabse khoobsurat kahani ho."
 ],
 
 sad: [
 "💔 Kuch log yaad ban kar reh jaate hain.",
 "💔 Khamoshi bhi dard bayan karti hai.",
-"💔 Har muskaan ke peeche ek kahani hoti hai."
+"💔 Har muskaan ke peeche ek kahani hoti hai.",
+"💔 Dil tootne ki awaaz sirf mehsoos hoti hai.",
+"💔 Waqt sab badal deta hai."
 ],
 
 bewafa: [
 "🥀 Wafa humne ki, yaadein tum de gaye.",
 "🥀 Bewafai ka dard sabse gehra hota hai.",
-"🥀 Tum badal gaye, waqt nahi."
+"🥀 Tum badal gaye, waqt nahi.",
+"🥀 Jis par yakeen tha wahi ajnabi nikla.",
+"🥀 Yaadon ka bojh sabse bhaari hota hai."
 ],
 
 islamic: [
 "🌙 Allah par bharosa rakho.",
 "🌙 Dua kabhi bekaar nahi jaati.",
-"🌙 Sabr karne walon ke saath Allah hai."
+"🌙 Sabr karne walon ke saath Allah hai.",
+"🌙 Har mushkil ke baad aasani hai.",
+"🌙 Allah ki rehmat se kabhi mayoos mat ho."
 ],
 
 dosti: [
 "🤝 Saccha dost daulat se badhkar hota hai.",
 "🤝 Dosti dilon ko jodti hai.",
-"🤝 Mushkil waqt ka saathi hi asli dost hai."
+"🤝 Mushkil waqt ka saathi hi asli dost hai.",
+"🤝 Dost woh jo har haal me saath de.",
+"🤝 Dosti ek khoobsurat ehsaas hai."
 ],
 
 "2line":[
 "✨ Alfaaz kam, ehsaas gehre.",
 "✨ Muskaan me bhi dard hota hai.",
-"✨ Har raat ke baad subah hoti hai."
+"✨ Har raat ke baad subah hoti hai.",
+"✨ Khamoshi bhi kabhi kabhi bolti hai.",
+"✨ Har dua ka ek sahi waqt hota hai."
 ]
+
 };
 
 function showCategory(category){
