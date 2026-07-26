@@ -60,6 +60,19 @@ Math.floor(Math.random()*list.length);
 
 document.getElementById("shayari-text").innerHTML =
 list[random];
+
+const names = {
+love:"❤️ Love",
+sad:"💔 Sad",
+bewafa:"🥀 Bewafa",
+islamic:"🌙 Islamic",
+dosti:"🤝 Dosti",
+"2line":"✨ 2 Line"
+};
+
+document.getElementById("category-name").innerHTML =
+names[category];
+
 }
 function copyShayari(){
 
