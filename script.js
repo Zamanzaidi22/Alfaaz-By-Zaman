@@ -134,7 +134,18 @@ function removeFavorite(index){
 
     displayFavorites();
 
+function removeFavorite(index) {
+
+    favorites.splice(index, 1);
+
+    localStorage.setItem(
+        "favorites",
+        JSON.stringify(favorites)
+    );
+
+    displayFavorites();
 }
+
 function addToFavorites() {
 
     const text = document.getElementById("shayari-text").innerHTML;
@@ -150,25 +161,34 @@ function addToFavorites() {
     }
 
     favorites.push(text);
-localStorage.setItem("favorites", JSON.stringify(favorites));
+
+    localStorage.setItem(
+        "favorites",
+        JSON.stringify(favorites)
+    );
+
     displayFavorites();
-function displayFavorites() {}
+}
+
+function displayFavorites() {
 
     const favBox = document.getElementById("favorites");
 
+    if (!favBox) return;
+
     favBox.innerHTML = "";
 
-    favorites.forEach(item => {
+    favorites.forEach((item, index) => {
 
         favBox.innerHTML += `
-<div class="card">
-    <p>❤️ ${item}</p>
+        <div class="card">
+            <p>❤️ ${item}</p>
 
-    <button class="delete-btn" onclick="removeFavorite(${favorites.indexOf(item)})">
-        🗑 Delete
-    </button>
-</div>
-`;
+            <button class="delete-btn" onclick="removeFavorite(${index})">
+                🗑 Delete
+            </button>
+        </div>
+        `;
 
     });
 
