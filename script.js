@@ -123,7 +123,18 @@ document.getElementById("shayari-text").innerHTML =
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
 displayFavorites();
+function removeFavorite(index){
 
+    favorites.splice(index,1);
+
+    localStorage.setItem(
+        "favorites",
+        JSON.stringify(favorites)
+    );
+
+    displayFavorites();
+
+}
 function addToFavorites() {
 
     const text = document.getElementById("shayari-text").innerHTML;
@@ -150,10 +161,14 @@ function displayFavorites() {}
     favorites.forEach(item => {
 
         favBox.innerHTML += `
-        <div class="card">
-            ❤️ ${item}
-        </div>
-        `;
+<div class="card">
+    <p>❤️ ${item}</p>
+
+    <button class="delete-btn" onclick="removeFavorite(${favorites.indexOf(item)})">
+        🗑 Delete
+    </button>
+</div>
+`;
 
     });
 
