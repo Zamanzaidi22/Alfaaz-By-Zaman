@@ -106,3 +106,36 @@ showCategory(randomCategory);
 }
 document.getElementById("shayari-text").innerHTML =
 "❤️ Kisi bhi category par click kijiye...";
+let favorites = [];
+
+function addToFavorites() {
+
+    const text = document.getElementById("shayari-text").innerHTML;
+
+    if (!text || text.trim() === "") {
+        alert("Pehle koi shayari select karo.");
+        return;
+    }
+
+    if (favorites.includes(text)) {
+        alert("Ye shayari pehle se Favorite hai.");
+        return;
+    }
+
+    favorites.push(text);
+
+    const favBox = document.getElementById("favorites");
+
+    favBox.innerHTML = "";
+
+    favorites.forEach(item => {
+
+        favBox.innerHTML += `
+        <div class="card">
+            ❤️ ${item}
+        </div>
+        `;
+
+    });
+
+}
