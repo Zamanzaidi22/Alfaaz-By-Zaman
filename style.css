@@ -506,19 +506,31 @@ html{
     box-shadow:0 0 20px rgba(255,215,0,.5);
 }
 #theme-toggle{
+    position:fixed;
+    top:20px;
+    right:20px;
+
+    width:45px;
+    height:45px;
+
+    border:none;
+    border-radius:50%;
+
     background:#FFD700;
     color:#000;
-    border:none;
-    padding:10px 14px;
-    border-radius:50%;
+
+    font-size:20px;
     cursor:pointer;
-    font-size:18px;
+
+    box-shadow:0 0 15px rgba(255,215,0,.6);
+
+    z-index:9999;
+
     transition:.3s;
 }
 
 #theme-toggle:hover{
-    transform:rotate(20deg) scale(1.1);
-    box-shadow:0 0 15px rgba(255,215,0,.6);
+    transform:scale(1.1);
 }
 .light-mode{
     background:#f8f8f8;
@@ -676,4 +688,14 @@ footer{
     font-weight:500;
     min-height:35px;
     letter-spacing:1px;
+}
+.stats-card{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.shayari-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
 }
