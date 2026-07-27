@@ -43,7 +43,17 @@ love: [
 "❤️ Tere saath guzra har lamha meri zindagi ka haseen safha hai.",
 "❤️ Dil ko sukoon sirf teri yaadon ke saaye me milta hai.",
 "❤️ Mohabbat kabhi alfaaz ki mohtaaj nahi hoti.",
-"❤️ Tum meri kahani ka sabse khoobsurat ehsaas ho."
+"❤️ Tum meri kahani ka sabse khoobsurat ehsaas ho.",
+"❤️ Tere bina har khushi adhoori si lagti hai.",
+"❤️ Dil ki har dhadkan tera hi naam leti hai.",
+"❤️ Mohabbat ka sabse khoobsurat ehsaas tum ho.",
+"❤️ Teri yaadon se hi meri subah aur shaam hai.",
+"❤️ Ishq me sirf dil nahi, rooh bhi jud jaati hai.",
+"❤️ Tera zikr meri har muskurahat ki wajah hai.",
+"❤️ Tere saath har lamha ek nayi kahani lagta hai.",
+"❤️ Mohabbat me sabse khoobsurat cheez tera saath hai.",
+"❤️ Dil ko sukoon tab milta hai jab tera khayal aata hai.",
+"❤️ Teri ek muskaan meri duniya roshan kar deti hai."
 ],
 
 sad: [
