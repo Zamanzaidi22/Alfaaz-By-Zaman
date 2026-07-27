@@ -370,3 +370,26 @@ function updateDateTime() {
 updateDateTime();
 
 setInterval(updateDateTime, 1000);
+const typingText = "Har Lamha, Har Ehsaas... Alfaaz By Zaman Ke Saath.";
+
+let index = 0;
+
+function typeEffect() {
+
+    const element = document.getElementById("typing-text");
+
+    if (!element) return;
+
+    if (index < typingText.length) {
+
+        element.innerHTML += typingText.charAt(index);
+
+        index++;
+
+        setTimeout(typeEffect, 70);
+
+    }
+
+}
+
+typeEffect();
