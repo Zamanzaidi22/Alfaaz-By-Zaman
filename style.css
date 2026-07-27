@@ -9,7 +9,9 @@ body{
     background:#0d0d0d;
     color:white;
 }
-
+body{
+    position:relative;
+}
 .hero{
     text-align:center;
     padding:60px 20px;
@@ -649,4 +651,15 @@ html{
         opacity:0;
     }
 
+}
+.navbar,
+.hero,
+.search,
+.categories,
+.shayari,
+.latest,
+.stats-card,
+footer{
+    position:relative;
+    z-index:1;
 }
