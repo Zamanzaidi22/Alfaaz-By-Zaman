@@ -260,3 +260,15 @@ function loadDailyQuote() {
 }
 
 loadDailyQuote();
+function updateShayariCount() {
+
+    let total = 0;
+
+    for (let category in shayari) {
+        total += shayari[category].length;
+    }
+
+    document.getElementById("shayari-count").innerText = total;
+}
+
+updateShayariCount();
