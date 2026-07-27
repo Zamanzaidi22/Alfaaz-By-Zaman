@@ -670,3 +670,10 @@ footer{
     text-align:center;
     font-weight:bold;
 }
+#typing-text{
+    font-size:22px;
+    color:#FFD700;
+    font-weight:500;
+    min-height:35px;
+    letter-spacing:1px;
+}
