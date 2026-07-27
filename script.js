@@ -340,3 +340,33 @@ function scrollToTop() {
     });
 
 }
+function updateDateTime() {
+
+    const now = new Date();
+
+    const options = {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    };
+
+    const date = now.toLocaleDateString("en-IN", options);
+
+    const time = now.toLocaleTimeString("en-IN", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+    });
+
+    const box = document.getElementById("live-datetime");
+
+    if (box) {
+        box.innerHTML = `📅 ${date}<br>🕒 ${time}`;
+    }
+
+}
+
+updateDateTime();
+
+setInterval(updateDateTime, 1000);
