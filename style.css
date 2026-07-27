@@ -518,3 +518,23 @@ html{
     transform:rotate(20deg) scale(1.1);
     box-shadow:0 0 15px rgba(255,215,0,.6);
 }
+.light-mode{
+    background:#f8f8f8;
+    color:#111;
+}
+
+.light-mode .navbar{
+    background:#ffffff;
+}
+
+.light-mode .card,
+.light-mode .shayari,
+.light-mode .categories div{
+    background:#ffffff;
+    color:#111;
+}
+
+.light-mode footer{
+    background:#f5f5f5;
+    color:#333;
+}
