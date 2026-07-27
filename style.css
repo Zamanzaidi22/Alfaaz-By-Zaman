@@ -663,3 +663,10 @@ footer{
     position:relative;
     z-index:1;
 }
+.live-datetime{
+    margin:20px 0;
+    font-size:18px;
+    color:#FFD700;
+    text-align:center;
+    font-weight:bold;
+}
