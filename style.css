@@ -416,3 +416,64 @@ footer p{
     color:#eee;
     font-style:italic;
 }
+/* ===== Premium Animations ===== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+.hero h1{
+    animation:goldGlow 3s ease-in-out infinite;
+}
+
+@keyframes goldGlow{
+
+    0%{
+        text-shadow:0 0 10px rgba(255,215,0,.4);
+    }
+
+    50%{
+        text-shadow:0 0 30px rgba(255,215,0,1);
+    }
+
+    100%{
+        text-shadow:0 0 10px rgba(255,215,0,.4);
+    }
+
+}
+
+.hero-btn,
+.copy-btn,
+.share-btn,
+.random-btn,
+.favorite-btn,
+.delete-btn{
+
+    transition:.3s;
+
+}
+
+.hero-btn:hover,
+.copy-btn:hover,
+.share-btn:hover,
+.random-btn:hover,
+.favorite-btn:hover,
+.delete-btn:hover{
+
+    transform:translateY(-3px) scale(1.05);
+
+}
+
+.card{
+
+    transition:.3s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 25px rgba(255,215,0,.35);
+
+}
