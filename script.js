@@ -35,14 +35,23 @@ love: [
 "❤️ Ishq wahi jo har dua me yaad aaye.",
 "❤️ Tum meri zindagi ki sabse khoobsurat kahani ho."
 "❤️ Teri khamoshi bhi meri rooh tak baat kar jaati hai.",
+
 "❤️ Mohabbat wahi hai jo waqt ke saath aur gehri ho jaaye.",
+
 "❤️ Har dua me tera naam aata hai, shayad isi ko ishq kehte hain.",
+
 "❤️ Tum paas ho ya door, dil sirf tumhara hi rehta hai.",
+
 "❤️ Teri muskaan meri har udaasi ko chura leti hai.",
+
 "❤️ Ishq me jeetna zaroori nahi, nibhana zaroori hota hai.",
+
 "❤️ Tere saath guzra har lamha meri zindagi ka haseen safha hai.",
+
 "❤️ Dil ko sukoon sirf teri yaadon ke saaye me milta hai.",
+
 "❤️ Mohabbat kabhi alfaaz ki mohtaaj nahi hoti.",
+
 "❤️ Tum meri kahani ka sabse khoobsurat ehsaas ho."
 ],
 
