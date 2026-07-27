@@ -53,7 +53,26 @@ love: [
 "❤️ Tere saath har lamha ek nayi kahani lagta hai.",
 "❤️ Mohabbat me sabse khoobsurat cheez tera saath hai.",
 "❤️ Dil ko sukoon tab milta hai jab tera khayal aata hai.",
-"❤️ Teri ek muskaan meri duniya roshan kar deti hai."
+"❤️ Teri ek muskaan meri duniya roshan kar deti hai.",
+"❤️ Teri baaton me ek alag hi sukoon milta hai,\nHar lafz me jaise mera naam milta hai.\nMohabbat sirf ek ehsaas nahi,\nTujhme mujhe mera poora jahaan milta hai.",
+
+"❤️ Teri aankhon me jo chamak hai,\nWo meri har dua ka asar lagti hai.\nTu paas ho to har lamha haseen,\nWarna zindagi adhoori si lagti hai.",
+
+"❤️ Mohabbat ka rang kabhi feeka nahi padta,\nSaccha ishq waqt se nahi darta.\nHar din tera intezaar rehta hai,\nDil bas tera hi naam padhta hai.",
+
+"❤️ Tu meri khamoshi ka jawab hai,\nMeri har muskurahat ka khwaab hai.\nRab se sirf itni si dua hai,\nHar janam me tu hi mera saath hai.",
+
+"❤️ Teri yaadon ka diya har raat jalta hai,\nDil chup hokar bhi tera naam leta hai.\nIshq ka safar khoobsurat tab lagta hai,\nJab har mod par tera saaya milta hai.",
+
+"❤️ Teri ek muskaan dil jeet leti hai,\nHar udaasi ko door kar deti hai.\nTu saath ho to lagta hai,\nZindagi har pal nayi si rehti hai.",
+
+"❤️ Har dua me tera zikr rehta hai,\nHar khwaab me tera chehra rehta hai.\nMohabbat meri sirf alfaaz nahi,\nYe meri rooh ka hissa rehta hai.",
+
+"❤️ Dil ki kitaab ka har safha tera hai,\nHar ehsaas sirf tera hai.\nMohabbat ka matlab jab samjha,\nTab pata chala sab kuch tera hai.",
+
+"❤️ Teri hansi meri taqat ban jaati hai,\nHar mushkil aasaan ho jaati hai.\nTu agar saath chal de,\nHar manzil apni lag jaati hai.",
+
+"❤️ Mohabbat me sirf paana zaroori nahi,\nNibhana bhi utna hi zaroori hota hai.\nDil jis par sacche dil se aa jaaye,\nWahi insaan zindagi ka noor hota hai."
 ],
 
 sad: [
