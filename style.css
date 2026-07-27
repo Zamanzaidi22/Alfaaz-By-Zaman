@@ -578,3 +578,31 @@ html{
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
+#topBtn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    display:none;
+
+    width:55px;
+    height:55px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#FFD700;
+    color:#000;
+
+    font-size:22px;
+    cursor:pointer;
+
+    box-shadow:0 0 20px rgba(255,215,0,.5);
+
+    transition:.3s;
+
+    z-index:9999;
+}
+
+#topBtn:hover{
+    transform:scale(1.1);
+}
