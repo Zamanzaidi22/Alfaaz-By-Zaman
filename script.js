@@ -72,7 +72,51 @@ love: [
 
 "❤️ Teri hansi meri taqat ban jaati hai,\nHar mushkil aasaan ho jaati hai.\nTu agar saath chal de,\nHar manzil apni lag jaati hai.",
 
-"❤️ Mohabbat me sirf paana zaroori nahi,\nNibhana bhi utna hi zaroori hota hai.\nDil jis par sacche dil se aa jaaye,\nWahi insaan zindagi ka noor hota hai."
+"❤️ Mohabbat me sirf paana zaroori nahi,\nNibhana bhi utna hi zaroori hota hai.\nDil jis par sacche dil se aa jaaye,\nWahi insaan zindagi ka noor hota hai.",
+"❤️ Teri mohabbat ne meri duniya badal di,
+Har udaasi ko ek muskaan me badal di.
+Jab bhi tera naam labon par aata hai,
+Dil ki har dhadkan geet ban jaati hai.
+Rab se bas itni si iltija rehti hai,
+Har dua me teri khushi shamil rehti hai.
+Tu saath rahe to har safar aasaan lage,
+Tere bina har manzil bhi veeran lage.",
+
+"❤️ Ishq ki raahon me hum muskurate chale,
+Har gham ko tere naam se bhulate chale.
+Teri ek nazar ne ye asar kar diya,
+Dil ko sirf tera hi ghar kar diya.
+Na daulat chahiye na shohrat ka nasha,
+Bas tera saath hi meri sabse badi dua.
+Har subah tera khayal roshni ban jaaye,
+Har raat tera naam sukoon de jaaye.",
+
+"❤️ Tere hone se har mausam haseen lagta hai,
+Dil ka har kona roshan lagta hai.
+Mohabbat ka matlab jab samjha,
+Har lafz tera hi lagta hai.
+Tu meri dua bhi hai aur dua ka jawab bhi,
+Tu meri khushi bhi hai aur mera khwaab bhi.
+Zindagi agar ek kitaab hai,
+To uska sabse khoobsurat safha tu hai.",
+
+"❤️ Har dhadkan tera intezaar karti hai,
+Har saans tera aitbaar karti hai.
+Mohabbat me sirf milna hi zaroori nahi,
+Yaadon se bhi zindagi gulzaar rehti hai.
+Teri muskaan meri taqat ban jaati hai,
+Har mushkil ko aasaan bana jaati hai.
+Rab kare ye rishta yunhi salaamat rahe,
+Har janam me tera hi saath rahe.",
+
+"❤️ Teri aankhon me ek alag hi jahaan dikhta hai,
+Har khwaab wahan sach hota dikhta hai.
+Dil jab bhi udaas hota hai,
+Tera khayal use hasa deta hai.
+Mohabbat ka sabse haseen ehsaas tu hai,
+Meri har dua ki aas tu hai.
+Agar zindagi dobara mile kabhi,
+To har baar meri mohabbat sirf tu hi ho."
 ],
 
 sad: [
