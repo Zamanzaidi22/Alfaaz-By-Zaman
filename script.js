@@ -272,3 +272,30 @@ function updateShayariCount() {
 }
 
 updateShayariCount();
+function toggleTheme() {
+
+    document.body.classList.toggle("light-mode");
+
+    const btn = document.getElementById("theme-toggle");
+
+    if (document.body.classList.contains("light-mode")) {
+
+        btn.innerHTML = "☀️";
+        localStorage.setItem("theme", "light");
+
+    } else {
+
+        btn.innerHTML = "🌙";
+        localStorage.setItem("theme", "dark");
+
+    }
+}
+
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "light") {
+
+    document.body.classList.add("light-mode");
+    document.getElementById("theme-toggle").innerHTML = "☀️";
+
+}
