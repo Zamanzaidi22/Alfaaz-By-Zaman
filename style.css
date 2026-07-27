@@ -503,3 +503,18 @@ html{
     transform:translateY(-3px);
     box-shadow:0 0 20px rgba(255,215,0,.5);
 }
+#theme-toggle{
+    background:#FFD700;
+    color:#000;
+    border:none;
+    padding:10px 14px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+#theme-toggle:hover{
+    transform:rotate(20deg) scale(1.1);
+    box-shadow:0 0 15px rgba(255,215,0,.6);
+}
