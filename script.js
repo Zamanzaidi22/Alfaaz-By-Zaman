@@ -13,6 +13,19 @@ searchInput.addEventListener("keyup", function () {
         }
     });
 });
+const dailyQuotes = [
+
+"✨ Har din ek nayi umeed lekar aata hai.",
+
+"🌙 Allah par bharosa rakho, har mushkil aasaan hogi.",
+
+"❤️ Mohabbat sirf alfaaz nahi, ehsaas ka naam hai.",
+
+"🤝 Sacchi dosti zindagi ki sabse badi daulat hai.",
+
+"💔 Har dard ek nayi taqat dekar jaata hai."
+
+];
 const shayari = {
 
 love: [
@@ -221,3 +234,19 @@ function displayFavorites() {
     });
 
 }
+function loadDailyQuote() {
+
+    const quote =
+    dailyQuotes[Math.floor(Math.random() * dailyQuotes.length)];
+
+    const box = document.getElementById("daily-quote");
+
+    if (box) {
+
+        box.innerHTML = quote;
+
+    }
+
+}
+
+loadDailyQuote();
