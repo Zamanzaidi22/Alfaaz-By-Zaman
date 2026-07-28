@@ -804,3 +804,42 @@ footer{
     font-size:18px;
 
 }
+#toast{
+
+position:fixed;
+
+bottom:30px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+background:#111;
+
+color:gold;
+
+padding:12px 22px;
+
+border:2px solid gold;
+
+border-radius:30px;
+
+font-weight:bold;
+
+opacity:0;
+
+pointer-events:none;
+
+transition:.4s;
+
+z-index:9999;
+
+}
+
+#toast.show{
+
+opacity:1;
+
+bottom:50px;
+
+}
