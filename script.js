@@ -403,6 +403,33 @@ function saveRecentShayari(category, text){
     loadRecentHistory();
 
 }
+function loadRecentHistory(){
+
+    const box = document.getElementById("recent-history");
+
+    if(recentHistory.length === 0){
+
+        box.innerHTML =
+        "<p style='color:#aaa;'>Abhi koi Shayari nahi dekhi gayi.</p>";
+
+        return;
+
+    }
+
+    box.innerHTML = "";
+
+    recentHistory.forEach(item=>{
+
+        box.innerHTML += `
+        <div class="card">
+            <h3>${item.category}</h3>
+            <p>${item.text}</p>
+        </div>
+        `;
+
+    });
+
+}
 function showCategory(category){
 
 const list = shayari[category];
@@ -813,3 +840,4 @@ function downloadShayariImage() {
     });
 
 }
+loadRecentHistory();
