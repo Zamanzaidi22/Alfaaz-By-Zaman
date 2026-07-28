@@ -135,7 +135,45 @@ bewafa: [
 "🥀 Bewafai ka dard sabse gehra hota hai.",
 "🥀 Tum badal gaye, waqt nahi.",
 "🥀 Jis par yakeen tha wahi ajnabi nikla.",
-"🥀 Yaadon ka bojh sabse bhaari hota hai."
+"🥀 Yaadon ka bojh sabse bhaari hota hai.",
+"🥀 Wafa ki umeed usse thi, jise mohabbat ki kadar hi na thi.",
+"🥀 Dil toda usne, aur wajah bhi na batayi.",
+"🥀 Bewafai ka dard lafzon me bayan nahi hota.",
+"🥀 Jis par sabse zyada yakeen tha, wahi sabse door chala gaya.",
+"🥀 Mohabbat sach thi meri, magar uske vaade jhoothe nikle.",
+"🥀 Aaj bhi uska naam sunte hi dil khamosh ho jaata hai.",
+"🥀 Kuch log mohabbat nahi, sirf waqt guzaarne aate hain.",
+"🥀 Usne muskurakar alvida kaha, aur hum umr bhar rote rahe.",
+"🥀 Bewafai ne hume itna badal diya, ki ab kisi par aitbaar nahi hota.",
+"🥀 Dil ka zakhm dikhai nahi deta, bas mehsoos hota hai.",
+"🥀 Wafa ka har vaada adhura reh gaya,\nJo apna tha wahi paraya ho gaya.\nHum dil se rishta nibhate rahe,\nAur wo har mod par badalta gaya.",
+
+"🥀 Teri bewafai ne itna sikha diya,\nHar muskurahat ka matlab badal diya.\nAb kisi par jaldi aitbaar nahi hota,\nDil ne khud ko sambhalna sikha liya.",
+
+"🥀 Mohabbat ka anjaam bhi ajeeb hota hai,\nKoi hamesha ke liye kareeb nahi hota.\nJis par sab kuch luta diya humne,\nWahi sabse bada naseeb ka dhokha hota hai.",
+
+"🥀 Dil ne tujhe apni duniya maana,\nTune hume sirf ek afsana maana.\nHum aaj bhi wafadaar khade rahe,\nAur tune hume begaana maana.",
+
+"🥀 Aaj bhi teri yaad sataati hai,\nHar khamoshi tera naam sunaati hai.\nBewafai ka dard shayad isi ko kehte hain,\nJab har dua adhuri reh jaati hai.",
+
+"🥀 Waqt ne sachchai dikha di,\nHar jhoothi kasam yaad dila di.\nJo kehte the kabhi saath na chhodenge,\nUnhone hi sabse pehle raah badal li.",
+
+"🥀 Teri yaadon ko bhulana aasaan nahi,\nDil ko samjhana itna aasaan nahi.\nBewafai ka dard sirf wahi samjhe,\nJiska apna kabhi apna raha nahi.",
+
+"🥀 Humne har khushi tere naam likh di,\nApni har dua tere naam likh di.\nBadle me bas itna mila,\nTune meri mohabbat ko anjaam likh diya.",
+
+"🥀 Khud se zyada tujhe chaha tha,\nHar khwaab me tujhe hi paaya tha.\nPar teri ek bewafai ne,\nSab kuch pal bhar me mita diya tha.",
+
+"🥀 Dil tootne ki awaaz nahi aati,\nBas zindagi dheere dheere badal jaati hai.\nBewafa log aksar muskura dete hain,\nAur wafadaar aankhon se ro dete hain.",
+"🥀 Wafa ki raahon me hum tanha reh gaye,\nJinhe apna maana wahi badal gaye.\nDil ne har dard chupchaap seh liya,\nAansuon ne bhi ab saath chhod diya.\nMohabbat ka ye kaisa sila mila,\nApna hi ghar ajnabi sa laga.\nAb kisi se koi shikayat nahi,\nBas khud se hi kuch gila raha.",
+
+"🥀 Teri kasmon par hum aitbaar kar baithe,\nApni har khushi tere naam kar baithe.\nTune ek pal me sab kuch badal diya,\nHum zindagi bhar intezaar kar baithe.\nAaj bhi yaadon ka diya jalta hai,\nDil har raat chupke se rota hai.\nBewafai ka dard wahi samjhe,\nJisne saccha ishq khoya hai.",
+
+"🥀 Har muskaan ke peeche dard chhupa tha,\nJo apna laga wahi bewafa tha.\nHumne to sirf mohabbat maangi thi,\nNaseeb me tanha safar likha tha.\nAb khamoshi hi meri zubaan hai,\nYaadein hi meri pehchaan hain.\nDil ab bhi dhadakta to hai,\nMagar jeene ki wajah kahaan hai.",
+
+"🥀 Mohabbat ko ibadat samajh baithe,\nUski har baat ko haqeeqat samajh baithe.\nWaqt ne aaina dikhaya jab,\nHum apni hi galti samajh baithe.\nAb na koi vaada chahiye,\nNa jhooti tasalli ka sahaara.\nDil ne seekh liya hai,\nHar apna hamesha apna nahi hota.",
+
+"🥀 Teri judaai ne mujhe badal diya,\nHanste chehre ko khamosh kar diya.\nHar din ek nayi kasak de gaya,\nHar khwaab adhura sa reh gaya.\nRab se ab sirf itni dua hai,\nKisi ko aisa dard na mile.\nMohabbat sabko naseeb ho,\nPar bewafai kisi ko na mile."
 ],
 
 islamic: [
