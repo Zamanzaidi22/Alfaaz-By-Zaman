@@ -380,7 +380,29 @@ dosti: [
 ],
 
 };
+function saveRecentShayari(category, text){
 
+    recentHistory = recentHistory.filter(item => item.text !== text);
+
+    recentHistory.unshift({
+        category: category,
+        text: text
+    });
+
+    if(recentHistory.length > 20){
+
+        recentHistory.pop();
+
+    }
+
+    localStorage.setItem(
+        "recentHistory",
+        JSON.stringify(recentHistory)
+    );
+
+    loadRecentHistory();
+
+}
 function showCategory(category){
 
 const list = shayari[category];
