@@ -784,7 +784,7 @@ function showSpecificShayari(category, text) {
 
     document.getElementById("category-name").innerHTML =
     names[category];
-
+saveRecentShayari(category, text);
 }
 function downloadShayariImage() {
 
