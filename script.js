@@ -404,6 +404,19 @@ document.getElementById("category-name").innerHTML =
 names[category];
 
 }
+function showToast(){
+
+const toast=document.getElementById("toast");
+
+toast.classList.add("show");
+
+setTimeout(()=>{
+
+toast.classList.remove("show");
+
+},2000);
+
+}
 function copyShayari() {
 
     const category =
@@ -426,7 +439,7 @@ Alfaaz By Zaman Ke Saath.`;
 
     navigator.clipboard.writeText(text);
 
-    alert("✅ Shayari Copied Successfully!");
+    showToast();
 }
 function shareWhatsApp(){
 
