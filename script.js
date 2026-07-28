@@ -706,9 +706,9 @@ function searchByKeyword(keyword) {
 
             if (normalizeText(list[i]).includes(keyword)) {
 
-                showCategory(category);
+    showSpecificShayari(category, list[i]);
 
-                return true;
+    return true;
 
             }
 
