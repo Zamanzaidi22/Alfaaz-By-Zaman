@@ -737,7 +737,7 @@ function showSpecificShayari(category, text) {
 
 }
 function downloadShayariImage() {
-
+alert("Button Working!");
     const card = document.querySelector(".shayari-card");
 
     html2canvas(card, {
