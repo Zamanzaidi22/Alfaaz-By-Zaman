@@ -736,3 +736,23 @@ function showSpecificShayari(category, text) {
     names[category];
 
 }
+function downloadShayariImage() {
+
+    const card = document.querySelector(".shayari-card");
+
+    html2canvas(card, {
+        backgroundColor: "#111",
+        scale: 2
+    }).then(canvas => {
+
+        const link = document.createElement("a");
+
+        link.download = "Alfaaz-By-Zaman.png";
+
+        link.href = canvas.toDataURL("image/png");
+
+        link.click();
+
+    });
+
+}
