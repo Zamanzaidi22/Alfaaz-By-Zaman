@@ -181,7 +181,45 @@ islamic: [
 "🌙 Dua kabhi bekaar nahi jaati.",
 "🌙 Sabr karne walon ke saath Allah hai.",
 "🌙 Har mushkil ke baad aasani hai.",
-"🌙 Allah ki rehmat se kabhi mayoos mat ho."
+"🌙 Allah ki rehmat se kabhi mayoos mat ho.",
+"🌙 Allah ki rehmat har andhere ke baad roshni laati hai.",
+"🌙 Dua kabhi zaya nahi jaati, bas waqt ka intezaar karti hai.",
+"🌙 Sabr karne walon ke liye Allah ki madad qareeb hoti hai.",
+"🌙 Jo Allah par bharosa karta hai, woh kabhi tanha nahi hota.",
+"🌙 Har mushkil Allah ki hikmat ka ek hissa hoti hai.",
+"🌙 Dil ko sukoon sirf Allah ki yaad se milta hai.",
+"🌙 Rizq ka waada Allah ka hai, fikr ka nahi.",
+"🌙 Allah har tootey dil ki awaaz sunta hai.",
+"🌙 Namaz rooh ko sukoon aur dil ko taqat deti hai.",
+"🌙 Rehmat ka darwaza hamesha khula rehta hai.",
+"🌙 Har dua ka ek behtareen waqt hota hai,\nAllah ka har faisla hikmat se bhara hota hai.\nDil ko mayoos kabhi mat hone do,\nUski rehmat ka dar hamesha khula hota hai.",
+
+"🌙 Sabr karna aasaan nahi hota,\nMagar uska ajr bahut haseen hota hai.\nJo Allah par yaqeen rakhta hai,\nUska dil kabhi tanha nahi hota.",
+
+"🌙 Musibat aaye to ghabrana mat,\nHar imtihaan me Allah ko bhulana mat.\nHar andheri raat ke baad,\nUski rehmat ka ujala zaroor aata hai.",
+
+"🌙 Namaz sirf farz nahi,\nRooh ka sukoon bhi hai.\nJo sajde me jhukna seekh leta hai,\nWoh zindagi me uthna bhi seekh leta hai.",
+
+"🌙 Rizq ki fikr se zyada,\nRab par bharosa rakho.\nJisne kal sambhala tha,\nWahi aaj bhi sambhalega.",
+
+"🌙 Allah ki mohabbat sabse paak hai,\nUski rehmat be-hisaab hai.\nJo uske dar se jud jaata hai,\nUska har safar kamyaab hai.",
+
+"🌙 Dua kabhi chhoti nahi hoti,\nAur Rab kabhi door nahi hota.\nDil se maango to,\nUska karam zaroor hota hai.",
+
+"🌙 Gunahon se laut aana hi,\nSabse khoobsurat shuruaat hoti hai.\nAllah ki rehmat,\nHar tauba se bhi badi hoti hai.",
+
+"🌙 Dil me Allah ki yaad basa lo,\nHar gham ko uske hawale kar do.\nJo us par bharosa karta hai,\nUski raahen aasaan ho jaati hain.",
+
+"🌙 Zindagi ek safar hai,\nAur Allah sabse behtareen rehnuma hai.\nUski raza me raazi rehna hi,\nMomin ki asli kamyabi hai.",
+"🌙 Jab dil par ghamon ka bojh badh jaaye,\nTo Allah ka naam sukoon ban jaaye.\nHar dua bekaar kabhi nahi hoti,\nBas uske qubool hone ka waqt alag hota hai.\nUski rehmat samundar se bhi gehri hai,\nUski mohabbat har kami se badi hai.\nJo us par bharosa kar leta hai,\nUski zindagi roshni se bhar jaati hai.",
+
+"🌙 Sabr ka phal hamesha meetha hota hai,\nHar imtihaan me Rab saath hota hai.\nInsaan sirf koshish karta hai,\nKaamyabi dene wala Allah hota hai.\nDil ko mayoos kabhi mat hone do,\nUski rehmat par yaqeen rakhna.\nHar andheri raat ke baad,\nSubah ka ujala zaroor aata hai.",
+
+"🌙 Namaz me jo sukoon milta hai,\nWo duniya ki kisi daulat me nahi.\nJab banda sajde me jhukta hai,\nTo Allah uske bahut qareeb hota hai.\nHar din uska shukr ada karo,\nHar saans uski ne'mat hai.\nUski raza me raazi rehna hi,\nEk momin ki asli daulat hai.",
+
+"🌙 Gunahon se lautne wala kabhi der nahi karta,\nAllah apni rehmat ka dar kabhi band nahi karta.\nJo dil se tauba kar leta hai,\nUska Rab use mayoos nahi karta.\nHar aansu ko woh jaanta hai,\nHar dard ko woh pehchaanta hai.\nUski rehmat par yaqeen rakho,\nWahi har toote dil ko sambhalta hai.",
+
+"🌙 Zindagi ek imtihaan hai,\nAur Allah sabse behtareen madadgaar."
 ],
 
 dosti: [
