@@ -737,8 +737,13 @@ function showSpecificShayari(category, text) {
 
 }
 function downloadShayariImage() {
-alert("Button Working!");
-    const card = document.querySelector(".shayari-card");
+
+    const card = document.getElementById("download-card");
+    const text = document.getElementById("download-text");
+
+    text.innerText = document.getElementById("shayari-text").innerText;
+
+    card.style.display = "block";
 
     html2canvas(card, {
         backgroundColor: "#111",
@@ -752,6 +757,8 @@ alert("Button Working!");
         link.href = canvas.toDataURL("image/png");
 
         link.click();
+
+        card.style.display = "none";
 
     });
 
