@@ -73,50 +73,15 @@ love: [
 "❤️ Teri hansi meri taqat ban jaati hai,\nHar mushkil aasaan ho jaati hai.\nTu agar saath chal de,\nHar manzil apni lag jaati hai.",
 
 "❤️ Mohabbat me sirf paana zaroori nahi,\nNibhana bhi utna hi zaroori hota hai.\nDil jis par sacche dil se aa jaaye,\nWahi insaan zindagi ka noor hota hai.",
-"❤️ Teri mohabbat ne meri duniya badal di,
-Har udaasi ko ek muskaan me badal di.
-Jab bhi tera naam labon par aata hai,
-Dil ki har dhadkan geet ban jaati hai.
-Rab se bas itni si iltija rehti hai,
-Har dua me teri khushi shamil rehti hai.
-Tu saath rahe to har safar aasaan lage,
-Tere bina har manzil bhi veeran lage.",
+"❤️ Teri mohabbat ne meri duniya badal di,\nHar udaasi ko ek muskaan me badal di.\nJab bhi tera naam labon par aata hai,\nDil ki har dhadkan geet ban jaati hai.\nRab se bas itni si iltija rehti hai,\nHar dua me teri khushi shamil rehti hai.\nTu saath rahe to har safar aasaan lage,\nTere bina har manzil bhi veeran lage.",
 
-"❤️ Ishq ki raahon me hum muskurate chale,
-Har gham ko tere naam se bhulate chale.
-Teri ek nazar ne ye asar kar diya,
-Dil ko sirf tera hi ghar kar diya.
-Na daulat chahiye na shohrat ka nasha,
-Bas tera saath hi meri sabse badi dua.
-Har subah tera khayal roshni ban jaaye,
-Har raat tera naam sukoon de jaaye.",
+"❤️ Ishq ki raahon me hum muskurate chale,\nHar gham ko tere naam se bhulate chale.\nTeri ek nazar ne ye asar kar diya,\nDil ko sirf tera hi ghar kar diya.\nNa daulat chahiye na shohrat ka nasha,\nBas tera saath hi meri sabse badi dua.\nHar subah tera khayal roshni ban jaaye,\nHar raat tera naam sukoon de jaaye.",
 
-"❤️ Tere hone se har mausam haseen lagta hai,
-Dil ka har kona roshan lagta hai.
-Mohabbat ka matlab jab samjha,
-Har lafz tera hi lagta hai.
-Tu meri dua bhi hai aur dua ka jawab bhi,
-Tu meri khushi bhi hai aur mera khwaab bhi.
-Zindagi agar ek kitaab hai,
-To uska sabse khoobsurat safha tu hai.",
+"❤️ Tere hone se har mausam haseen lagta hai,\nDil ka har kona roshan lagta hai.\nMohabbat ka matlab jab samjha,\nHar lafz tera hi lagta hai.\nTu meri dua bhi hai aur dua ka jawab bhi,\nTu meri khushi bhi hai aur mera khwaab bhi.\nZindagi agar ek kitaab hai,\nTo uska sabse khoobsurat safha tu hai.",
 
-"❤️ Har dhadkan tera intezaar karti hai,
-Har saans tera aitbaar karti hai.
-Mohabbat me sirf milna hi zaroori nahi,
-Yaadon se bhi zindagi gulzaar rehti hai.
-Teri muskaan meri taqat ban jaati hai,
-Har mushkil ko aasaan bana jaati hai.
-Rab kare ye rishta yunhi salaamat rahe,
-Har janam me tera hi saath rahe.",
+"❤️ Har dhadkan tera intezaar karti hai,\nHar saans tera aitbaar karti hai.\nMohabbat me sirf milna hi zaroori nahi,\nYaadon se bhi zindagi gulzaar rehti hai.\nTeri muskaan meri taqat ban jaati hai,\nHar mushkil ko aasaan bana jaati hai.\nRab kare ye rishta yunhi salaamat rahe,\nHar janam me tera hi saath rahe.",
 
-"❤️ Teri aankhon me ek alag hi jahaan dikhta hai,
-Har khwaab wahan sach hota dikhta hai.
-Dil jab bhi udaas hota hai,
-Tera khayal use hasa deta hai.
-Mohabbat ka sabse haseen ehsaas tu hai,
-Meri har dua ki aas tu hai.
-Agar zindagi dobara mile kabhi,
-To har baar meri mohabbat sirf tu hi ho."
+"❤️ Teri aankhon me ek alag hi jahaan dikhta hai,\nHar khwaab wahan sach hota dikhta hai.\nDil jab bhi udaas hota hai,\nTera khayal use hasa deta hai.\nMohabbat ka sabse haseen ehsaas tu hai,\nMeri har dua ki aas tu hai.\nAgar zindagi dobara mile kabhi,\nTo har baar meri mohabbat sirf tu hi ho."
 ],
 
 sad: [
