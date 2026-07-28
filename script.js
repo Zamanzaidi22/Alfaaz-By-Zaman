@@ -471,7 +471,9 @@ function searchShayari() {
         showCategory("2line");
         return;
     }
-
+if (searchByKeyword(value)) {
+    return;
+}
     alert("❌ Koi matching category nahi mili.");
 }
 document.getElementById("shayari-text").innerHTML =
