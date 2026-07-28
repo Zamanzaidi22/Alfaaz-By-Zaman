@@ -227,7 +227,45 @@ dosti: [
 "🤝 Dosti dilon ko jodti hai.",
 "🤝 Mushkil waqt ka saathi hi asli dost hai.",
 "🤝 Dost woh jo har haal me saath de.",
-"🤝 Dosti ek khoobsurat ehsaas hai."
+"🤝 Dosti ek khoobsurat ehsaas hai.",
+"🤝 Dosti wo rishta hai jo dil se banta hai.",
+"🤝 Saccha dost har mushkil me saath khada rehta hai.",
+"🤝 Dosti me hisaab nahi, sirf ehsaas hote hain.",
+"🤝 Jo dard samajh le, wahi asli dost hota hai.",
+"🤝 Dosti zindagi ka sabse khoobsurat tohfa hai.",
+"🤝 Sacchi dosti waqt ke saath aur mazboot hoti hai.",
+"🤝 Dost wo hota hai jo khamoshi bhi samajh jaaye.",
+"🤝 Har khushi adhuri hai agar dost saath na ho.",
+"🤝 Dosti ka rishta khoon se nahi, yaqeen se banta hai.",
+"🤝 Achhe dost naseeb walon ko milte hain.",
+"🤝 Dosti sirf naam ka rishta nahi,\nDil se nibhaya jaane wala vaada hai.\nJo har haal me saath de,\nWahi zindagi ka asli sahaara hai.",
+
+"🤝 Saccha dost wo nahi,\nJo sirf khushi me yaad aaye.\nAsli dost to woh hai,\nJo gham me sabse pehle nazar aaye.",
+
+"🤝 Dosti ki koi keemat nahi hoti,\nYe har daulat se badhkar hoti hai.\nJo dil se saath nibhaye,\nWahi sabse badi khushi hoti hai.",
+
+"🤝 Kuch rishte khoon se nahi bante,\nBas ek sachche ehsaas se bante hain.\nDosti unhi rishton me se hai,\nJo umr bhar saath chalte hain.",
+
+"🤝 Dost ke saath har safar aasaan lagta hai,\nHar gham bhi halka lagta hai.\nMuskaan ki wajah mil jaati hai,\nJab saath ek saccha dost hota hai.",
+
+"🤝 Dosti ka matlab sirf milna nahi,\nEk doosre ko samajhna bhi hota hai.\nJo bina kahe dil ki baat jaan le,\nWahi sabse kareebi dost hota hai.",
+
+"🤝 Zindagi ki bheed me,\nSacche dost kam milte hain.\nJo mil jaaye unki qadr karo,\nKyuki woh baar-baar nahi milte hain.",
+
+"🤝 Har yaad aur har kahani me,\nEk dost ka zikr zaroor hota hai.\nZindagi khoobsurat tab lagti hai,\nJab saath ek wafadaar dost hota hai.",
+
+"🤝 Dosti me na faayda dekha jaata hai,\nNa nuksaan socha jaata hai.\nBas ek doosre ki khushi ke liye,\nDil se har kadam badhaya jaata hai.",
+
+"🤝 Waqt badalta rehta hai,\nZindagi naye mod laati hai.\nPar sacchi dosti hamesha,\nDil me wahi jagah banaaye rakhti hai.",
+"🤝 Sacchi dosti har imtihaan se guzar jaati hai,\nHar mushkil me muskaan ban jaati hai.\nNa daulat ka ghamand hota hai,\nNa matlab ka koi rishta hota hai.\nJo bina kahe dil samajh jaaye,\nWahi asli dost kehlata hai.\nZindagi me aise dost mil jaayein,\nTo har safar aasaan ho jaata hai.",
+
+"🤝 Dost wo nahi jo sirf khushi me saath ho,\nAsli dost to gham me haath thaam leta hai.\nHar aansu ko muskaan me badal deta hai,\nHar haar ko hausle me badal deta hai.\nDosti ka rishta anmol hota hai,\nYe dil se dil ko jod deta hai.\nRab har kisi ko aisa dost de,\nJo umr bhar saath nibha de.",
+
+"🤝 Har yaad me tera zikr rehta hai,\nHar hansi me tera asar rehta hai.\nDosti sirf mulaqat ka naam nahi,\nYe dil ke ehsaason ka paighaam hai.\nFaasle chahe kitne bhi ho jaayein,\nDil kabhi juda nahi hote.\nSacche dost hamesha,\nEk doosre ki duaon me rehte hain.",
+
+"🤝 Zindagi ke safar me bahut log milte hain,\nPar har koi dost nahi hota.\nJo har mod par saath nibhaye,\nWahi asli humsafar hota hai.\nDosti ki khushboo kabhi kam nahi hoti,\nYe waqt ke saath aur gehri hoti hai.\nSaccha dost mil jaaye agar,\nTo zindagi aur bhi khoobsurat ho jaati hai.",
+
+"🤝 Na rutba chahiye na shohrat chahiye,\nBas dost tera saath chahiye.\nHar khushi tere saath baantni hai,\nHar gham milkar sehna hai.\nYe rishta lafzon se bada hai,\nYe yaqeen aur mohabbat se juda hai.\nRab se bas itni si dua hai,\nHamari dosti hamesha salaamat rahe."
 ],
 
 "2line":[
