@@ -451,7 +451,7 @@ dosti:"🤝 Dosti",
 
 document.getElementById("category-name").innerHTML =
 names[category];
-
+saveRecentShayari(category, list[random]);
 }
 function showToast(){
 
