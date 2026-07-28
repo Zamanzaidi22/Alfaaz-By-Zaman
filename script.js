@@ -99,7 +99,35 @@ sad: [
 "💔 Mohabbat adhuri ho to yaadein aur gehri ho jaati hain.",
 "💔 Waqt bhar deta hai zakhm, nishaan nahi.",
 "💔 Kuch log milkar bhi kabhi apne nahi hote.",
-"💔 Tanha safar me yaadein hi humsafar ban jaati hain."
+"💔 Tanha safar me yaadein hi humsafar ban jaati hain.",
+"💔 Teri yaadon ka bojh dil se utarta hi nahi,\nHar guzarta lamha tujhe bhulata hi nahi.\nMuskurane ki wajah dhoondhta rehta hoon,\nPar tera gham saath chhodta hi nahi.",
+
+"💔 Kuch khwaab adhure hi acche lagte hain,\nPoore hokar aksar toot jaate hain.\nJinhe hum dil se apna samajhte hain,\nWahi ek din door ho jaate hain.",
+
+"💔 Dil ne jis par sab kuch luta diya,\nUsne hi hume tanha chhod diya.\nAb har muskaan adhuri si lagti hai,\nJaise waqt ne sab kuch tod diya.",
+
+"💔 Mohabbat ka safar kitna ajeeb hota hai,\nShuru hansi se aur anjaam aansuon se hota hai.\nDil jitna saccha hota hai,\nUtna hi zyada toot jaata hai.",
+
+"💔 Har raat teri yaadon me guzar jaati hai,\nNeend aankhon se rooth jaati hai.\nDil chahta hai sab bhool jaun,\nPar har subah teri yaad aa jaati hai.",
+
+"💔 Waqt ne bahut kuch sikha diya,\nApno aur gairon ka farq dikha diya.\nJo kabhi saath chalne ki kasam khate the,\nUnhone hi raasta badal liya.",
+
+"💔 Aaj bhi dil tujhe hi dhoondhta hai,\nHar chehre me tera aks dhoondhta hai.\nMaloom hai tu lautkar nahi aayega,\nPhir bhi ye dil umeed rakhta hai.",
+
+"💔 Khamosh rehna bhi ek aadat ban gayi,\nHar baat dil me chhupane ki fitrat ban gayi.\nJo kabhi hans kar jeete the,\nAaj tanhaai hi zindagi ban gayi.",
+
+"💔 Tere bina har khushi adhoori lagti hai,\nHar mehfil bhi suni si lagti hai.\nDil ko kitna bhi samjha loon,\nHar dhadkan bas teri hi lagti hai.",
+
+"💔 Kuch rishte naam ke reh jaate hain,\nEhsaas dheere dheere kho jaate hain.\nInsaan jeeta to rehta hai,\nPar andar se toot jaata hai.",
+"💔 Har raat teri yaadon ka pehra rehta hai,\nDil me bas tera hi chehra rehta hai.\nLog kehte hain waqt sab theek kar deta hai,\nPar ye dard har roz naya lagta hai.\nMuskurahat ab sirf ek aadat ban gayi,\nKhushi jaise mujhse rooth si gayi.\nTeri kami har pal mehsoos hoti hai,\nMeri zindagi bas yaadon me simat gayi.",
+
+"💔 Mohabbat ki kitaab adhuri reh gayi,\nHar khushi jaise mujhse door ho gayi.\nDil ne jise apna jahaan maana,\nWahi ek din anjaan ho gayi.\nAb tanha safar hi humsafar hai,\nKhamoshi hi mera ghar hai.\nRab se bas itni si dua hai,\nKisi ka dil kabhi yun na toote.",
+
+"💔 Kuch rishte waqt ke saath bikhar jaate hain,\nKuch vaade adhure hi reh jaate hain.\nDil chahe kitna bhi sambhal jaaye,\nKuch zakhm kabhi nahi bhar paate hain.\nHar aansu ek kahani kehta hai,\nHar khamoshi dard seh leti hai.\nMohabbat agar sacchi ho,\nTo judaai umr bhar yaad rehti hai.",
+
+"💔 Tere bina har subah adhuri lagti hai,\nHar shaam tanha si lagti hai.\nDil ko kitna bhi samjha loon,\nHar dhadkan tera naam leti hai.\nNa shikayat hai na koi gila,\nBas naseeb ka likha maan liya.\nMohabbat aaj bhi utni hi hai,\nBas uska izhaar chhod diya.",
+
+"💔 Waqt badla, log badal gaye,\nKhwaab the jo sab bikhar gaye.\nHum muskuraate rahe duniya ke liye,\nAndar hi andar toot gaye.\nHar yaad ek imtihaan ban gayi,\nHar khushi anjaan ban gayi.\nAb bas itni si dua hai,\nDil ko phir kisi se mohabbat na ho."
 ],
 
 bewafa: [
