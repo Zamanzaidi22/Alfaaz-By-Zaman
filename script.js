@@ -686,3 +686,9 @@ function typeEffect() {
 }
 
 typeEffect();
+function normalizeText(text) {
+    return text
+        .toLowerCase()
+        .replace(/[❤️💔🥀🌙🤝✨📿]/g, "")
+        .trim();
+}
