@@ -692,3 +692,28 @@ function normalizeText(text) {
         .replace(/[❤️💔🥀🌙🤝✨📿]/g, "")
         .trim();
 }
+function searchByKeyword(keyword) {
+
+    keyword = normalizeText(keyword);
+
+    for (const category in shayari) {
+
+        const list = shayari[category];
+
+        for (let i = 0; i < list.length; i++) {
+
+            if (normalizeText(list[i]).includes(keyword)) {
+
+                showCategory(category);
+
+                return true;
+
+            }
+
+        }
+
+    }
+
+    return false;
+
+}
