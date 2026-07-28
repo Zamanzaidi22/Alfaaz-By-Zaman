@@ -521,7 +521,7 @@ function removeFavorite(index) {
 }
 
 function addToFavorites() {
-
+let recentHistory = JSON.parse(localStorage.getItem("recentHistory")) || [];
     const text = document.getElementById("shayari-text").innerHTML;
 
     if (!text || text.trim() === "") {
