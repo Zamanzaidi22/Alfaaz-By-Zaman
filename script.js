@@ -404,14 +404,29 @@ document.getElementById("category-name").innerHTML =
 names[category];
 
 }
-function copyShayari(){
+function copyShayari() {
 
-const text =
-document.getElementById("shayari-text").innerText;
+    const category =
+        document.getElementById("category-name").innerText;
 
-navigator.clipboard.writeText(text);
+    const shayari =
+        document.getElementById("shayari-text").innerText;
 
-alert("✅ Shayari Copied!");
+    const text =
+`🌙 Alfaaz By Zaman
+
+${category}
+
+${shayari}
+
+━━━━━━━━━━━━━━━━━━
+
+Har Lamha, Har Ehsaas...
+Alfaaz By Zaman Ke Saath.`;
+
+    navigator.clipboard.writeText(text);
+
+    alert("✅ Shayari Copied Successfully!");
 }
 function shareWhatsApp(){
 
