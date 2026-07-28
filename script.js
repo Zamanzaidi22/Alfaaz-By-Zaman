@@ -719,3 +719,20 @@ function searchByKeyword(keyword) {
     return false;
 
 }
+function showSpecificShayari(category, text) {
+
+    document.getElementById("shayari-text").innerHTML = text;
+
+    const names = {
+        love: "❤️ Love",
+        sad: "💔 Sad",
+        bewafa: "🥀 Bewafa",
+        islamic: "🌙 Islamic",
+        dosti: "🤝 Dosti",
+        "2line": "✨ 2 Line"
+    };
+
+    document.getElementById("category-name").innerHTML =
+    names[category];
+
+}
