@@ -89,7 +89,17 @@ sad: [
 "💔 Khamoshi bhi dard bayan karti hai.",
 "💔 Har muskaan ke peeche ek kahani hoti hai.",
 "💔 Dil tootne ki awaaz sirf mehsoos hoti hai.",
-"💔 Waqt sab badal deta hai."
+"💔 Waqt sab badal deta hai.",
+"💔 Dil tootne ki awaaz sirf mehsoos hoti hai.",
+"💔 Kuch yaadein kabhi purani nahi hoti.",
+"💔 Jo apne hote hain wahi sabse zyada dard dete hain.",
+"💔 Muskurahat ke peeche aksar aansu chhupe hote hain.",
+"💔 Har bichhadna ek nayi tanhaai de jaata hai.",
+"💔 Dil ko samjhana sabse mushkil kaam hota hai.",
+"💔 Mohabbat adhuri ho to yaadein aur gehri ho jaati hain.",
+"💔 Waqt bhar deta hai zakhm, nishaan nahi.",
+"💔 Kuch log milkar bhi kabhi apne nahi hote.",
+"💔 Tanha safar me yaadein hi humsafar ban jaati hain."
 ],
 
 bewafa: [
