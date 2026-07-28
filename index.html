@@ -8,10 +8,12 @@
   <link rel="icon" type="image/png" href="assets/favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
+<body>
+
 <button id="topBtn" onclick="scrollToTop()">
     ⬆️
 </button>
-<body>
   <div id="loader">
 
     <div class="loader-content">
@@ -136,6 +138,10 @@
 📲 Share
 </button>
 
+<button class="download-btn" onclick="downloadShayariImage()">
+🖼️ Download Image
+</button>
+  
 <button class="random-btn" onclick="randomShayari()">
 🎲 Random
 </button>
@@ -154,7 +160,6 @@
 <section class="latest">
 
 ...
-
 <h2>🔥 Latest Shayari</h2>
 
 <div class="card">
@@ -212,7 +217,7 @@ Har Lamha, Har Ehsaas... Alfaaz By Zaman Ke Saath.
 </p>
 
 </footer>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="script.js"></script>
 
 </body>
