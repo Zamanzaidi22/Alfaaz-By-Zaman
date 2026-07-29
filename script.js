@@ -463,7 +463,14 @@ function showCategory(category){
     loadTrendingShayari();
 
     saveRecentShayari(category, currentShayari);
+let views =
+parseInt(localStorage.getItem("totalViews")) || 0;
 
+views++;
+
+localStorage.setItem("totalViews", views);
+
+updateWebsiteStats();
 }
 function showToast(){
 
@@ -581,6 +588,7 @@ function removeFavorite(index) {
     );
 
     displayFavorites();
+    updateWebsiteStats();
 }
 
 function addToFavorites() {
@@ -605,6 +613,7 @@ function addToFavorites() {
     );
 
     displayFavorites();
+    updateWebsiteStats();
 }
 
 function displayFavorites() {
