@@ -866,7 +866,7 @@ function likeCurrentShayari() {
 
     loadMostLoved();
 
-    alert("❤️ Shayari Liked!");
+    showToast();
 }
 
 function loadMostLoved() {
