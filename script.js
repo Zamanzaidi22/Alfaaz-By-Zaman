@@ -756,23 +756,50 @@ function updateDateTime() {
 updateDateTime();
 
 setInterval(updateDateTime, 1000);
-let username = localStorage.getItem("username");
+let username = localStorage.getItem("username") || "";
 
-if (!username) {
+function saveUsername() {
 
-    username = prompt("👋 Welcome!\nApna Naam Likhiye:");
+    const input = document.getElementById("name-input");
 
-    if (username && username.trim() !== "") {
+    username = input.value.trim();
 
-        localStorage.setItem("username", username);
+    if (username === "") {
 
-    } else {
+        alert("Please enter your name.");
 
-        username = "Guest";
+        return;
 
     }
 
+    localStorage.setItem("username", username);
+
+    document.getElementById("name-modal").style.display = "none";
+
+    document.getElementById("welcome-user").innerHTML =
+    `👋 Welcome, ${username}`;
+
 }
+
+window.addEventListener("load", function () {
+
+    const modal = document.getElementById("name-modal");
+
+    const welcome = document.getElementById("welcome-user");
+
+    if (username) {
+
+        modal.style.display = "none";
+
+        welcome.innerHTML = `👋 Welcome, ${username}`;
+
+    } else {
+
+        modal.style.display = "flex";
+
+    }
+
+});
 const typingText = "Har Lamha, Har Ehsaas... Alfaaz By Zaman Ke Saath.";
 
 let index = 0;
