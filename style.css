@@ -993,3 +993,22 @@ transition:.3s;
 transform:scale(1.05);
 
 }
+#progress-bar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:4px;
+
+width:0%;
+
+background:linear-gradient(90deg,#FFD700,#FFA500);
+
+z-index:999999;
+
+transition:width .15s;
+
+}
