@@ -847,3 +847,63 @@ function downloadShayariImage() {
 
 }
 loadRecentHistory();
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("input", liveSearch);
+
+function liveSearch() {
+
+    const keyword = normalizeText(searchInput.value.trim());
+
+    const box = document.getElementById("search-suggestions");
+
+    box.innerHTML = "";
+
+    if (keyword === "") {
+
+        box.style.display = "none";
+        return;
+
+    }
+
+    let total = 0;
+
+    for (const category in shayari) {
+
+        for (const text of shayari[category]) {
+
+            if (normalizeText(text).includes(keyword)) {
+
+                const div = document.createElement("div");
+
+                div.className = "suggestion-item";
+
+                div.innerHTML =
+                text.substring(0,60) + "...";
+
+                div.onclick = () => {
+
+                    showSpecificShayari(category, text);
+
+                    box.style.display = "none";
+
+                    searchInput.value = "";
+
+                };
+
+                box.appendChild(div);
+
+                total++;
+
+                if (total >= 6) break;
+
+            }
+
+        }
+
+    }
+
+    box.style.display =
+    total ? "block" : "none";
+
+}
