@@ -556,7 +556,7 @@ if (searchByKeyword(value)) {
 document.getElementById("shayari-text").innerHTML =
 "❤️ Kisi bhi category par click kijiye...";
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-
+let recentHistory = JSON.parse(localStorage.getItem("recentHistory")) || [];
 function removeFavorite(index) {
 
     favorites.splice(index, 1);
@@ -570,7 +570,7 @@ function removeFavorite(index) {
 }
 
 function addToFavorites() {
-let recentHistory = JSON.parse(localStorage.getItem("recentHistory")) || [];
+
     const text = document.getElementById("shayari-text").innerHTML;
 
     if (!text || text.trim() === "") {
