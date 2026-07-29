@@ -432,26 +432,38 @@ function loadRecentHistory(){
 }
 function showCategory(category){
 
-const list = shayari[category];
+    const list = shayari[category];
 
-const random =
-Math.floor(Math.random()*list.length);
+    const random = Math.floor(Math.random() * list.length);
 
-document.getElementById("shayari-text").innerHTML =
-list[random];
+    const currentShayari = list[random];
 
-const names = {
-love:"❤️ Love",
-sad:"💔 Sad",
-bewafa:"🥀 Bewafa",
-islamic:"🌙 Islamic",
-dosti:"🤝 Dosti",
-"2line":"✨ 2 Line"
-};
+    document.getElementById("shayari-text").innerHTML = currentShayari;
 
-document.getElementById("category-name").innerHTML =
-names[category];
-saveRecentShayari(category, list[random]);
+    const names = {
+        love:"❤️ Love",
+        sad:"💔 Sad",
+        bewafa:"🥀 Bewafa",
+        islamic:"🌙 Islamic",
+        dosti:"🤝 Dosti",
+        "2line":"✨ 2 Line"
+    };
+
+    document.getElementById("category-name").innerHTML =
+    names[category];
+
+    if (!views[currentShayari]) {
+        views[currentShayari] = 0;
+    }
+
+    views[currentShayari]++;
+
+    localStorage.setItem("views", JSON.stringify(views));
+
+    loadTrendingShayari();
+
+    saveRecentShayari(category, currentShayari);
+
 }
 function showToast(){
 
