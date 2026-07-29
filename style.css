@@ -843,3 +843,41 @@ opacity:1;
 bottom:50px;
 
 }
+#search-suggestions{
+
+    max-width:700px;
+    margin:10px auto;
+
+    background:#1b1b1b;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    display:none;
+
+    box-shadow:0 0 15px rgba(255,215,0,.15);
+
+}
+
+.suggestion-item{
+
+    padding:12px 16px;
+
+    cursor:pointer;
+
+    color:white;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+}
+
+.suggestion-item:hover{
+
+    background:#2a2a2a;
+
+    color:gold;
+
+}
