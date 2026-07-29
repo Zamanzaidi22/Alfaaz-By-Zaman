@@ -773,19 +773,25 @@ function normalizeText(text) {
 }
 function searchByKeyword(keyword) {
 
-    keyword = normalizeText(keyword);
+    keyword = normalizeText(keyword.trim());
 
+    let found = false;
+let totalMatches = 0;
     for (const category in shayari) {
 
         const list = shayari[category];
 
         for (let i = 0; i < list.length; i++) {
 
-            if (normalizeText(list[i]).includes(keyword)) {
+            const current = normalizeText(list[i]);
 
-    showSpecificShayari(category, list[i]);
+            if (current.includes(keyword)) {
+totalMatches++;
+                showSpecificShayari(category, list[i]);
+console.log("Total Matches:", totalMatches);
+                found = true;
 
-    return true;
+                return found;
 
             }
 
@@ -793,7 +799,7 @@ function searchByKeyword(keyword) {
 
     }
 
-    return false;
+    return found;
 
 }
 function showSpecificShayari(category, text) {
