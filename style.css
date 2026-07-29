@@ -881,3 +881,11 @@ bottom:50px;
     color:gold;
 
 }
+.welcome-user{
+    margin-top:15px;
+    font-size:20px;
+    color:#FFD700;
+    font-weight:bold;
+    text-align:center;
+    animation: fadeIn 1s ease;
+}
