@@ -1014,3 +1014,43 @@ function loadMostLoved() {
 
 loadMostLoved();
 loadRecentHistory();
+function loadTodaysShayari() {
+
+    const today = new Date().toDateString();
+
+    let saved = JSON.parse(localStorage.getItem("todayShayari"));
+
+    if (!saved || saved.date !== today) {
+
+        const categories = Object.keys(shayari);
+
+        const randomCategory =
+            categories[Math.floor(Math.random() * categories.length)];
+
+        const list = shayari[randomCategory];
+
+        const randomText =
+            list[Math.floor(Math.random() * list.length)];
+
+        saved = {
+
+            date: today,
+
+            category: randomCategory,
+
+            text: randomText
+
+        };
+
+        localStorage.setItem(
+            "todayShayari",
+            JSON.stringify(saved)
+        );
+
+    }
+
+    showSpecificShayari(saved.category, saved.text);
+
+}
+
+loadTodaysShayari();
