@@ -557,6 +557,7 @@ document.getElementById("shayari-text").innerHTML =
 "❤️ Kisi bhi category par click kijiye...";
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 let recentHistory = JSON.parse(localStorage.getItem("recentHistory")) || [];
+let likes = JSON.parse(localStorage.getItem("likes")) || {};
 function removeFavorite(index) {
 
     favorites.splice(index, 1);
@@ -846,4 +847,60 @@ function downloadShayariImage() {
     });
 
 }
+function likeCurrentShayari() {
+
+    const text = document.getElementById("shayari-text").innerText;
+
+    if (!text || text.includes("Kisi bhi category")) {
+        alert("Pehle koi Shayari select kijiye.");
+        return;
+    }
+
+    if (!likes[text]) {
+        likes[text] = 0;
+    }
+
+    likes[text]++;
+
+    localStorage.setItem("likes", JSON.stringify(likes));
+
+    loadMostLoved();
+
+    alert("❤️ Shayari Liked!");
+}
+
+function loadMostLoved() {
+
+    const box = document.getElementById("most-loved");
+
+    if (!box) return;
+
+    const entries = Object.entries(likes);
+
+    if (entries.length === 0) {
+
+        box.innerHTML =
+        "<p style='color:#aaa;'>Abhi tak kisi Shayari ko Like nahi mila.</p>";
+
+        return;
+    }
+
+    entries.sort((a, b) => b[1] - a[1]);
+
+    box.innerHTML = "";
+
+    entries.slice(0,5).forEach(item => {
+
+        box.innerHTML += `
+        <div class="card">
+            <p>${item[0]}</p>
+            <small>❤️ Likes: ${item[1]}</small>
+        </div>
+        `;
+
+    });
+
+}
+
+loadMostLoved();
 loadRecentHistory();
