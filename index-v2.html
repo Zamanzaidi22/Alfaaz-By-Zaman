@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Alfaaz By Zaman</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link rel="icon"
+          type="image/png"
+          href="assets/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Scroll To Top -->
+
+    <button id="topBtn"
+            onclick="scrollToTop()">
+        ⬆️
+    </button>
+
+    <!-- Loader -->
+
+    <div id="loader">
+
+        <div class="loader-content">
+
+            <h1>🌙 Alfaaz By Zaman</h1>
+
+            <p>
+                Har Lamha, Har Ehsaas...
+            </p>
+
+            <div class="spinner"></div>
+
+        </div>
+
+    </div>
+
+    <!-- Background Particles -->
+
+    <div class="particles">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img src="assets/logo.png"
+                 alt="Alfaaz By Zaman Logo">
+
+            <span>Alfaaz By Zaman</span>
+
+        </div>
+
+        <button id="theme-toggle"
+                onclick="toggleTheme()">
+            🌙
+        </button>
+
+        <ul class="menu">
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#categories">
+                Categories
+            </a></li>
+
+            <li><a href="#today">
+                Shayari
+            </a></li>
+
+            <li><a href="#contact">
+                Contact
+            </a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Hero -->
+
+    <header class="hero">
+
+        <h1>
+            🌙 Alfaaz By Zaman
+        </h1>
+
+        <p id="typing-text"></p>
+
+        <a href="#today"
+           class="hero-btn">
+
+            ✨ Explore Shayari
+
+        </a>
+
+    </header>
+
+    <!-- Quote Of The Day -->
+
+    <section class="quote-day">
+
+        <h2>
+            🌟 Quote of the Day
+        </h2>
+
+        <p id="daily-quote">
+
+            Har din ek nayi soch,
+            ek naya ehsaas...
+
+        </p>
+
+    </section>
+    <!-- Search -->
+
+<section class="search">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Shayari Search...">
+
+    <button onclick="searchShayari()">
+        🔍 Search
+    </button>
+
+</section>
+
+<!-- Categories -->
+
+<section
+    class="categories"
+    id="categories">
+
+    <div onclick="showCategory('love')">
+        ❤️ Love
+        <span class="count-badge">40</span>
+    </div>
+
+    <div onclick="showCategory('sad')">
+        💔 Sad
+        <span class="count-badge">30</span>
+    </div>
+
+    <div onclick="showCategory('bewafa')">
+        🥀 Bewafa
+        <span class="count-badge">30</span>
+    </div>
+
+    <div onclick="showCategory('islamic')">
+        🌙 Islamic
+        <span class="count-badge">30</span>
+    </div>
+
+    <div onclick="showCategory('dosti')">
+        🤝 Dosti
+        <span class="count-badge">30</span>
+    </div>
+
+    <div onclick="showCategory('2line')">
+        ✨ 2 Line
+        <span class="count-badge">40</span>
+    </div>
+
+</section>
+
+<!-- Main Shayari -->
+
+<section
+    class="shayari"
+    id="today">
+
+    <h2>⭐ Aaj Ki Shayari</h2>
+
+    <div class="shayari-card">
+
+        <h3 id="category-name">
+            ❤️ Love
+        </h3>
+
+        <p id="shayari-text">
+
+            ✨ Kisi bhi category par click
+            karke Shayari dekhiye.
+
+        </p>
+
+        <div class="shayari-buttons">
+
+            <button
+                class="copy-btn"
+                onclick="copyShayari()">
+
+                📋 Copy
+
+            </button>
+
+            <button
+                class="share-btn"
+                onclick="shareWhatsApp()">
+
+                📲 Share
+
+            </button>
+
+            <button
+                class="random-btn"
+                onclick="randomShayari()">
+
+                🎲 Random
+
+            </button>
+
+            <button
+                class="favorite-btn"
+                onclick="addToFavorites()">
+
+                ❤️ Favorite
+
+            </button>
+
+            <button
+                class="download-btn"
+                onclick="downloadShayariImage()">
+
+                🖼️ Download Image
+
+            </button>
+
+        </div>
+
+    </div>
+        <!-- Favorite Shayari -->
+
+    <section class="favorites-section">
+
+        <h2>❤️ Favorite Shayari</h2>
+
+        <div id="favorites">
+
+            <p style="color:#aaa;">
+                Abhi koi Favorite Shayari nahi hai.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Statistics -->
+
+    <section class="stats-section">
+
+        <div class="stats-card">
+
+            <h3>📚 Total Shayari</h3>
+
+            <p id="shayari-count">0</p>
+
+        </div>
+
+    </section>
+
+    <!-- Recently Viewed -->
+
+    <section class="recent-section">
+
+        <h2>🕘 Recently Viewed</h2>
+
+        <div id="recent-history">
+
+            <p style="color:#aaa;">
+                Abhi koi Shayari nahi dekhi gayi.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Latest Shayari -->
+
+    <section class="latest">
+
+        <h2>🔥 Latest Shayari</h2>
+
+        <div class="card">
+
+            <h3>❤️ Love</h3>
+
+            <p>
+                Mohabbat lafzon se nahi,<br>
+                Ehsaason se pehchani jaati hai.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>💔 Sad</h3>
+
+            <p>
+                Kuch log dil me reh jaate hain,<br>
+                Magar zindagi me nahi.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🥀 Bewafa</h3>
+
+            <p>
+                Wafa ka silsila humne nibhaya,<br>
+                Unhone yaadon me chhod diya.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Welcome Text -->
+
+    <p class="welcome-text">
+
+        Har alfaaz me ek kahani chhupi hoti hai,<br>
+        Har khamoshi me ek sada chhupi hoti hai.<br><br>
+
+        Mohabbat sirf lafzon ka naam nahi,<br>
+        Kabhi aankhon me bhi dua basi hoti hai.
+
+    </p>
+        <!-- Footer -->
+
+    <footer id="contact">
+
+        <h2>🌙 Alfaaz By Zaman</h2>
+
+        <div class="social-links">
+
+            <a href="#" target="_blank">
+                📷 Instagram
+            </a>
+
+            <a href="#" target="_blank">
+                ▶️ YouTube
+            </a>
+
+            <a href="mailto:contact@alfaazbyzaman.com">
+                📧 Email
+            </a>
+
+        </div>
+
+        <p>
+            Har Lamha, Har Ehsaas...
+            Alfaaz By Zaman Ke Saath.
+        </p>
+
+        <div id="live-datetime"
+             class="live-datetime">
+
+            📅 Loading Date & Time...
+
+        </div>
+
+        <p class="copyright">
+
+            © 2026 Alfaaz By Zaman |
+            Made with ❤️ by Zaman
+
+        </p>
+
+    </footer>
+
+    <!-- Hidden Download Card -->
+
+    <div id="download-card"
+         style="display:none;">
+
+        <h2>🌙 Alfaaz By Zaman</h2>
+
+        <p id="download-text"></p>
+
+        <hr>
+
+        <small>
+
+            Har Lamha, Har Ehsaas...
+            <br>
+
+            Alfaaz By Zaman Ke Saath.
+
+        </small>
+
+    </div>
+
+    <!-- Toast -->
+
+    <div id="toast">
+
+        ✅ Shayari Copied Successfully!
+
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
