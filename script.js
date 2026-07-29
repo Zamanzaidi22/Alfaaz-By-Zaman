@@ -756,6 +756,23 @@ function updateDateTime() {
 updateDateTime();
 
 setInterval(updateDateTime, 1000);
+let username = localStorage.getItem("username");
+
+if (!username) {
+
+    username = prompt("👋 Welcome!\nApna Naam Likhiye:");
+
+    if (username && username.trim() !== "") {
+
+        localStorage.setItem("username", username);
+
+    } else {
+
+        username = "Guest";
+
+    }
+
+}
 const typingText = "Har Lamha, Har Ehsaas... Alfaaz By Zaman Ke Saath.";
 
 let index = 0;
@@ -779,6 +796,13 @@ function typeEffect() {
 }
 
 typeEffect();
+const welcome = document.getElementById("welcome-user");
+
+if (welcome) {
+
+    welcome.innerHTML = `👋 Welcome, ${username}`;
+
+}
 function normalizeText(text) {
     return text
         .toLowerCase()
