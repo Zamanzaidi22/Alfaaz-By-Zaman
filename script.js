@@ -558,6 +558,7 @@ document.getElementById("shayari-text").innerHTML =
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 let recentHistory = JSON.parse(localStorage.getItem("recentHistory")) || [];
 let likes = JSON.parse(localStorage.getItem("likes")) || {};
+let views = JSON.parse(localStorage.getItem("views")) || {};
 function removeFavorite(index) {
 
     favorites.splice(index, 1);
@@ -818,7 +819,18 @@ function showSpecificShayari(category, text) {
 
     document.getElementById("category-name").innerHTML =
     names[category];
-saveRecentShayari(category, text);
+    const currentShayari = list[random];
+
+if (!views[currentShayari]) {
+    views[currentShayari] = 0;
+}
+
+views[currentShayari]++;
+
+localStorage.setItem("views", JSON.stringify(views));
+
+loadTrendingShayari();
+saveRecentShayari(category, currentShayari);
 }
 function downloadShayariImage() {
 
@@ -847,6 +859,41 @@ function downloadShayariImage() {
     });
 
 }
+function loadTrendingShayari() {
+
+    const box = document.getElementById("trending-shayari");
+
+    if (!box) return;
+
+    const entries = Object.entries(views);
+
+    if (entries.length === 0) {
+
+        box.innerHTML =
+        "<p style='color:#aaa;'>Abhi koi Trending Shayari nahi hai.</p>";
+
+        return;
+
+    }
+
+    entries.sort((a, b) => b[1] - a[1]);
+
+    box.innerHTML = "";
+
+    entries.slice(0, 5).forEach(item => {
+
+        box.innerHTML += `
+        <div class="card">
+            <p>${item[0]}</p>
+            <small>👁️ Viewed ${item[1]} Times</small>
+        </div>
+        `;
+
+    });
+
+}
+
+loadTrendingShayari();
 function likeCurrentShayari() {
 
     const text = document.getElementById("shayari-text").innerText;
