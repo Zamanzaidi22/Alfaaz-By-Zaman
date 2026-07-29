@@ -1072,3 +1072,20 @@ window.addEventListener("scroll", () => {
         progress + "%";
 
 });
+function updateWebsiteStats(){
+
+    document.getElementById("total-views").innerText =
+    localStorage.getItem("totalViews") || 0;
+
+    document.getElementById("total-likes").innerText =
+    localStorage.getItem("totalLikes") || 0;
+
+    document.getElementById("total-favorites").innerText =
+    favorites.length;
+
+    document.getElementById("recent-count").innerText =
+    recentHistory.length;
+
+}
+
+updateWebsiteStats();
