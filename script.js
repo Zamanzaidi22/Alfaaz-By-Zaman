@@ -381,7 +381,7 @@ dosti: [
 
 };
 function saveRecentShayari(category, text){
-console.log("Saving:", category, text);
+
     recentHistory = recentHistory.filter(item => item.text !== text);
 
     recentHistory.unshift({
@@ -399,12 +399,12 @@ console.log("Saving:", category, text);
         "recentHistory",
         JSON.stringify(recentHistory)
     );
-alert(recentHistory.length);
+
     loadRecentHistory();
 
 }
 function loadRecentHistory(){
-console.log(recentHistory);
+
     const box = document.getElementById("recent-history");
 
     if(recentHistory.length === 0){
