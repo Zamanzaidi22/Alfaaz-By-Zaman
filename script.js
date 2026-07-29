@@ -1057,11 +1057,13 @@ loadTodaysShayari();
 window.addEventListener("scroll", () => {
 
     const scrollTop =
-        document.documentElement.scrollTop;
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
 
     const scrollHeight =
         document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
+        window.innerHeight;
 
     const progress =
         (scrollTop / scrollHeight) * 100;
