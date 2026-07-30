@@ -1023,8 +1023,13 @@ z-index:99999999;
 }
 
 .action-btn{
-    min-width:130px;
-    padding:12px 25px;
+    width:130px;
+    height:48px;
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
     border:none;
     border-radius:30px;
     cursor:pointer;
@@ -1054,16 +1059,16 @@ z-index:99999999;
 }
 
 .favorite-btn{
-    background:#ff4d6d;
+    background:#e91e63;
     color:#fff;
 }
 
 .like-btn{
-    background:#ff1744;
-    color:#fff;
+    background:#FFD700;
+    color:#000;
 }
 
 .download-btn{
-    background:#2979ff;
+    background:#25D366;
     color:#fff;
 }
