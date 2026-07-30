@@ -1094,3 +1094,59 @@ function updateWebsiteStats(){
 }
 
 updateWebsiteStats();
+// ===============================
+// CATEGORY PAGE SYSTEM
+// ===============================
+
+function openCategory(category){
+
+    window.location.href =
+    "category.html?cat=" + category;
+
+}
+
+if(window.location.pathname.includes("category.html")){
+
+    const params = new URLSearchParams(window.location.search);
+
+    const cat = params.get("cat");
+
+    const names = {
+
+        love:"❤️ Love Shayari",
+
+        sad:"💔 Sad Shayari",
+
+        bewafa:"🥀 Bewafa Shayari",
+
+        islamic:"🌙 Islamic Shayari",
+
+        dosti:"🤝 Dosti Shayari",
+
+        "2line":"✨ 2 Line Shayari"
+
+    };
+
+    document.getElementById("categoryTitle").innerHTML =
+    names[cat];
+
+    let html="";
+
+    shayari[cat].forEach(item=>{
+
+        html+=`
+
+        <div class="card">
+
+        <p>${item}</p>
+
+        </div>
+
+        `;
+
+    });
+
+    document.getElementById("allShayari").innerHTML =
+    html;
+
+}
