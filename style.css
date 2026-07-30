@@ -322,6 +322,27 @@ gap:15px;
 .random-btn:hover{
     transform:scale(1.05);
 }
+.favorite-btn{
+    background:#ff4d6d;
+    color:#fff;
+}
+
+.like-btn{
+    background:#ff1744;
+    color:#fff;
+}
+
+.download-btn{
+    background:#2979ff;
+    color:#fff;
+}
+
+.favorite-btn:hover,
+.like-btn:hover,
+.download-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(255,215,0,.5);
+}
 .action-buttons{
     display:flex;
     justify-content:center;
@@ -332,6 +353,12 @@ gap:15px;
 
 .action-buttons button{
     min-width:120px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
 }
 footer{
     margin-top:60px;
