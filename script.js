@@ -452,17 +452,7 @@ function showCategory(category){
     document.getElementById("category-name").innerHTML =
     names[category];
 
-    if (!views[currentShayari]) {
-        views[currentShayari] = 0;
-    }
-
-    views[currentShayari]++;
-
-    localStorage.setItem("views", JSON.stringify(views));
-
-    loadTrendingShayari();
-
-    saveRecentShayari(category, currentShayari);
+    
 let views =
 parseInt(localStorage.getItem("totalViews")) || 0;
 
@@ -891,18 +881,17 @@ function showSpecificShayari(category, text) {
 
     document.getElementById("category-name").innerHTML =
     names[category];
-    const currentShayari = list[random];
-
-if (!views[currentShayari]) {
-    views[currentShayari] = 0;
+    if (!views[text]) {
+    views[text] = 0;
 }
 
-views[currentShayari]++;
+views[text]++;
 
 localStorage.setItem("views", JSON.stringify(views));
 
 loadTrendingShayari();
-saveRecentShayari(category, currentShayari);
+
+saveRecentShayari(category, text);
 }
 function downloadShayariImage() {
 
@@ -980,7 +969,14 @@ function likeCurrentShayari() {
     }
 
     likes[text]++;
+let totalLikes =
+parseInt(localStorage.getItem("totalLikes")) || 0;
 
+totalLikes++;
+
+localStorage.setItem("totalLikes", totalLikes);
+
+updateWebsiteStats();
     localStorage.setItem("likes", JSON.stringify(likes));
 
     loadMostLoved();
