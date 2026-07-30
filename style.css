@@ -324,24 +324,56 @@ gap:15px;
 }
 .favorite-btn{
     background:#ff4d6d;
+    color:#000;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-top:15px;
+    transition:.3s;
+}
+
+.favorite-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(255,215,0,.6);
 }
 
 .like-btn{
     background:#ff1744;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-top:12px;
+    margin-left:10px;
+    transition:.3s;
+}
+
+.like-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(37,211,102,.5);
 }
 
 .download-btn{
-    background:#2979ff;
+    background:#ff9800;
+    color:#fff;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-top:12px;
+    margin-left:10px;
+    transition:.3s;
 }
 
-.favorite-btn:hover,
-.like-btn:hover,
 .download-btn:hover{
-
     transform:scale(1.05);
-    box-shadow:0 0 20px rgba(255,215,0,.6);
-
 }
+
 
 footer{
     margin-top:60px;
