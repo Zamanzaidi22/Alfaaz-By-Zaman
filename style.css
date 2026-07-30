@@ -324,25 +324,25 @@ gap:15px;
 }
 .favorite-btn{
     background:#ff4d6d;
-    color:#fff;
 }
 
 .like-btn{
     background:#ff1744;
-    color:#fff;
 }
 
 .download-btn{
     background:#2979ff;
-    color:#fff;
 }
 
 .favorite-btn:hover,
 .like-btn:hover,
 .download-btn:hover{
+
     transform:scale(1.05);
-    box-shadow:0 0 20px rgba(255,215,0,.5);
+    box-shadow:0 0 20px rgba(255,215,0,.6);
+
 }
+
 .action-buttons{
     display:flex;
     justify-content:center;
