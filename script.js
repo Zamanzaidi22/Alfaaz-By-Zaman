@@ -1122,8 +1122,7 @@ if(window.location.pathname.includes("category.html")){
     const params = new URLSearchParams(window.location.search);
 
     const cat = params.get("cat");
-    alert(cat);
-console.log(cat);
+    alert("Category = " + cat);
 
     const names = {
 
