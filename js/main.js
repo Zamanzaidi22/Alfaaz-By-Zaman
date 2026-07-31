@@ -35,3 +35,17 @@ document.addEventListener("DOMContentLoaded", function () {
     },1500);
 
 });
+function saveUsername() {
+
+    const input = document.getElementById("name-input");
+
+    if (!input.value.trim()) {
+        alert("Please enter your name.");
+        return;
+    }
+
+    localStorage.setItem("username", input.value.trim());
+
+    document.getElementById("name-modal").style.display = "none";
+
+}
