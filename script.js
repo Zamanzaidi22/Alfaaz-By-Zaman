@@ -82,7 +82,6 @@ const dailyQuotes = [
 
 ];
 const shayari = {
-
 love: [
 "❤️ Mohabbat lafzon se nahi, ehsaason se hoti hai.",
 "❤️ Teri muskurahat meri duniya hai.",
