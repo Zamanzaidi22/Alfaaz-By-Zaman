@@ -36,6 +36,11 @@ content="width=device-width, initial-scale=1">
 <script>
 alert("Category Page Loaded");
 </script>
+  <script>
+window.onerror = function(message, source, line){
+alert("ERROR:\n" + message + "\nLine: " + line);
+};
+</script>
 </body>
 
 </html>
