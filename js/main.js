@@ -35,17 +35,19 @@ document.addEventListener("DOMContentLoaded", function () {
     },1500);
 
 });
-function saveUsername() {
+function saveUsername(){
 
     const input = document.getElementById("name-input");
 
-    if (!input.value.trim()) {
-        alert("Please enter your name.");
+    if(input.value.trim()==""){
+        alert("Please enter your name");
         return;
     }
 
     localStorage.setItem("username", input.value.trim());
 
-    document.getElementById("name-modal").style.display = "none";
+    document.getElementById("name-modal").style.display="none";
 
+    document.getElementById("welcome-user").innerHTML =
+    "👋 Welcome, " + input.value + "!";
 }
