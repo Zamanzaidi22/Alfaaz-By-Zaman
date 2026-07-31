@@ -13,7 +13,7 @@ function addToFavorites(){
     const shayari = SHAYARI_DB[currentCategory][currentIndex];
 
     if(favorites.includes(shayari)){
-        showToast("❤️ Added to Favorites");
+        showToast("❤️ Already in Favorites");
         return;
     }
 
