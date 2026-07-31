@@ -78,13 +78,13 @@ function updateFavoriteUI(){
 
 }
 
-function showToast(msg){
+function showToast(message){
 
     const toast=document.getElementById("toast");
 
     if(!toast) return;
 
-    toast.innerHTML=msg;
+    toast.innerHTML=message;
 
     toast.classList.add("show");
 
@@ -95,5 +95,4 @@ function showToast(msg){
     },2000);
 
 }
-
 document.addEventListener("DOMContentLoaded",updateFavoriteUI);
