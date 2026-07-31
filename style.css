@@ -847,43 +847,24 @@ footer{
 
 }
 #toast{
-
-position:fixed;
-
-bottom:30px;
-
-left:50%;
-
-transform:translateX(-50%);
-
-background:#111;
-
-color:gold;
-
-padding:12px 22px;
-
-border:2px solid gold;
-
-border-radius:30px;
-
-font-weight:bold;
-
-opacity:0;
-
-pointer-events:none;
-
-transition:.4s;
-
-z-index:9999;
-
+    position:fixed;
+    left:50%;
+    bottom:-80px;
+    transform:translateX(-50%);
+    background:#111;
+    color:#FFD700;
+    border:2px solid #FFD700;
+    padding:14px 28px;
+    border-radius:30px;
+    font-weight:bold;
+    z-index:999999;
+    opacity:0;
+    transition:all .4s ease;
 }
 
 #toast.show{
-
-opacity:1;
-
-bottom:50px;
-
+    opacity:1;
+    bottom:40px;
 }
 #search-suggestions{
 
