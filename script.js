@@ -52,31 +52,21 @@
 // SOCIAL
 // ===============================
 console.log("Alfaaz By Zaman Loaded");
-const searchInput = document.querySelector("input");
+const searchInput = document.querySelector("#searchInput");
 const cards = document.querySelectorAll(".categories div");
 
 if (searchInput) {
-
     searchInput.addEventListener("keyup", function () {
-
         let value = searchInput.value.toLowerCase();
 
         cards.forEach(card => {
-
             if (card.innerText.toLowerCase().includes(value)) {
-
                 card.style.display = "block";
-
             } else {
-
                 card.style.display = "none";
-
             }
-
         });
-
     });
-
 }
 const dailyQuotes = [
 
@@ -574,8 +564,12 @@ if (searchByKeyword(value)) {
 }
     alert("❌ Koi matching category nahi mili.");
 }
-document.getElementById("shayari-text").innerHTML =
-"❤️ Kisi bhi category par click kijiye...";
+const shayariBox = document.getElementById("shayari-text");
+
+if (shayariBox) {
+    shayariBox.innerHTML =
+    "❤️ Kisi bhi category par click kijiye...";
+}
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 let recentHistory = JSON.parse(localStorage.getItem("recentHistory")) || [];
 let likes = JSON.parse(localStorage.getItem("likes")) || {};
