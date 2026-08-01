@@ -51,3 +51,4 @@ function saveUsername(){
     document.getElementById("welcome-user").innerHTML =
     "👋 Welcome, " + input.value + "!";
 }
+console.log("MAIN.JS FINISHED");
