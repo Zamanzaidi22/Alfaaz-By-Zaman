@@ -84,16 +84,20 @@ function showToast(message){
 
     const toast = document.getElementById("toast");
 
-    console.log("Toast Element =", toast);
-
     if(!toast){
-        alert("Toast element NOT found");
+        console.log("Toast div not found");
         return;
     }
 
-    toast.innerHTML = message;
+    toast.textContent = message;
 
-    toast.classList.add("show");
+    toast.classList.remove("show");
+
+    setTimeout(function(){
+
+        toast.classList.add("show");
+
+    },10);
 
     setTimeout(function(){
 
