@@ -7,7 +7,7 @@ let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 let totalLikes = Number(localStorage.getItem("totalLikes")) || 0;
 
 function addToFavorites(){
-
+console.log("Favorite Button Clicked");
     if(!currentCategory) return;
 
     const shayari = SHAYARI_DB[currentCategory][currentIndex];
@@ -28,7 +28,7 @@ function addToFavorites(){
 }
 
 function likeCurrentShayari(){
-
+console.log("Like Button Clicked");
     totalLikes++;
 
     localStorage.setItem("totalLikes", totalLikes);
@@ -79,7 +79,7 @@ function updateFavoriteUI(){
 }
 
 function showToast(message){
-
+console.log("Toast Function Called");
     const toast=document.getElementById("toast");
 
     if(!toast) return;
