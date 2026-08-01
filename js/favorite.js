@@ -1,3 +1,4 @@
+console.log("FAVORITE.JS LOADED");
 // ==========================================
 // Alfaaz By Zaman
 // Favorite + Like System
