@@ -79,12 +79,17 @@ function updateFavoriteUI(){
 }
 
 function showToast(message){
-console.log("Toast Function Called");
-    const toast=document.getElementById("toast");
 
-    if(!toast) return;
+    const toast = document.getElementById("toast");
 
-    toast.innerHTML=message;
+    console.log("Toast Element =", toast);
+
+    if(!toast){
+        alert("Toast element NOT found");
+        return;
+    }
+
+    toast.innerHTML = message;
 
     toast.classList.add("show");
 
