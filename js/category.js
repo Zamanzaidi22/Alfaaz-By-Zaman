@@ -1,3 +1,4 @@
+console.log("CATEGORY.JS LOADED");
 // ==========================================
 // Alfaaz By Zaman
 // Category System
