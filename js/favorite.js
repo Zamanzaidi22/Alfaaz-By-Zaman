@@ -29,6 +29,7 @@ console.log("Favorite Button Clicked");
 
 function likeCurrentShayari(){
 console.log("Like Button Clicked");
+    showToast("Test");
     totalLikes++;
 
     localStorage.setItem("totalLikes", totalLikes);
