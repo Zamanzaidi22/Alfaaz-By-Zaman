@@ -81,7 +81,8 @@ function updateFavoriteUI(){
 }
 
 function showToast(message){
-
+console.log("Toast:", message):
+    
     const toast = document.getElementById("toast");
 
     if(!toast){
