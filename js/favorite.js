@@ -81,8 +81,8 @@ function updateFavoriteUI(){
 }
 
 function showToast(message){
-console.log("Toast:", message):
-    
+
+    console.log("Toast:", message);
     const toast = document.getElementById("toast");
 
     if(!toast){
@@ -94,11 +94,9 @@ console.log("Toast:", message):
 
     toast.classList.remove("show");
 
-    setTimeout(function(){
+    void toast.offsetWidth;
 
-        toast.classList.add("show");
-
-    },10);
+    toast.classList.add("show");
 
     setTimeout(function(){
 
