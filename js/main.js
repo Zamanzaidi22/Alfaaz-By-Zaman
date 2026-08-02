@@ -51,4 +51,39 @@ function saveUsername(){
     document.getElementById("welcome-user").innerHTML =
     "👋 Welcome, " + input.value + "!";
 }
+
+// ==========================================
+// Copy Shayari
+// ==========================================
+
+function copyShayari(){
+
+    if(!currentCategory) return;
+
+    const text = SHAYARI_DB[currentCategory][currentIndex];
+
+    navigator.clipboard.writeText(text);
+
+    showToast("📋 Shayari Copied");
+
+}
+
+// ==========================================
+// WhatsApp Share
+// ==========================================
+
+function shareWhatsApp(){
+
+    if(!currentCategory) return;
+
+    const text = SHAYARI_DB[currentCategory][currentIndex];
+
+    const url =
+    "https://wa.me/?text=" + encodeURIComponent(text);
+
+    window.open(url,"_blank");
+
+    showToast("📤 Opening WhatsApp");
+
+}
 console.log("MAIN.JS FINISHED");
