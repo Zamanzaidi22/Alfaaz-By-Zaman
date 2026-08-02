@@ -177,7 +177,7 @@ magar zindagi me nahi.`,
 `Jo apna tha,
 wo kisi aur ka ho gaya.`,
 
-`Khamoshi bhi kabhi
+`Khamoshi bhi kabhi,
 bahut kuch keh jaati hai.`,
 
 `Kuch rishton ki umr,
