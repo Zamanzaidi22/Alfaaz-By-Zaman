@@ -566,8 +566,97 @@ Allah apne bande ko behtar maqam deta hai.`,
 jo duniya ki koi cheez nahi de sakti.`,
 
 `Apni umeed sirf Allah se rakho,
-kyunki uske faisle hamesha behtareen hote hain.`
+kyunki uske faisle hamesha behtareen hote hain.`,
 
+`Jab dil Allah ki taraf laut aata hai,
+to har gham halka lagne lagta hai.`,
+
+`Allah ki rehmat se kabhi mayoos mat ho,
+uska karam tumhari soch se bhi bada hai.`,
+
+`Har raat ki dua,
+ek nayi umeed ka paighaam hoti hai.`,
+
+`Jo Allah ke faislon par raazi rahe,
+use kabhi shikayat nahi hoti.`,
+
+`Takleef sirf imtihaan hoti hai,
+aur har imtihaan ke baad rehmat hoti hai.`,
+
+`Apni zubaan ko zikr se sajao,
+aur apne dil ko sukoon se bhar lo.`,
+
+`Allah ke ghar tak pahunchne ka raasta,
+ikhlas aur sabr se guzarta hai.`,
+
+`Insaan ki izzat uske maal se nahi,
+uske akhlaaq se hoti hai.`,
+
+`Jis ghar me Qur'an ki tilawat hoti hai,
+wahan rehmat utarti hai.`,
+
+`Rabb ke saamne jhukne wala,
+duniya me kabhi haqeeqat me nahi jhukta.`,
+
+`Jis dil me Allah ka khauf ho,
+wahan gunahon ke liye jagah kam reh jaati hai.`,
+
+`Har subah Allah ka shukr ada karo,
+kyunki ek naya din bhi uski rehmat hai.`,
+
+`Jo Rabb ki raza me raazi ho,
+use duniya ki kami kabhi pareshaan nahi karti.`,
+
+`Apni niyyat ko saaf rakho,
+Allah tumhare raaste aasaan kar dega.`,
+
+`Duniya fani hai,
+magar nek amal hamesha baaqi rehte hain.`,
+
+`Jab dua aur mehnat saath chalti hain,
+to Allah behtareen nateeja ata karta hai.`,
+
+`Har imtihaan me Allah ki hikmat hoti hai,
+bas bande ko yaqeen rakhna chahiye.`,
+
+`Dil ko roshan karna ho,
+to Qur'an aur zikr se rishta mazboot karo.`,
+
+`Allah ki mohabbat se bada sukoon,
+is duniya me koi nahi.`,
+
+`Jo dusron par reham karta hai,
+Allah us par apni rehmat barsata hai.`,
+
+`Allah ki rehmat par yaqeen rakho,
+kyunki uske faisle hamesha behtareen hote hain.`,
+
+`Jab dil Allah ki yaad me lag jaaye,
+to duniya ke gham chhote lagne lagte hain.`,
+
+`Har nek niyyat ka ajr,
+Allah ke paas mehfooz rehta hai.`,
+
+`Sabr aur dua,
+momin ke do sabse bade hathiyaar hain.`,
+
+`Jo Allah ke liye jhukta hai,
+Allah use duniya aur aakhirat me buland karta hai.`,
+
+`Har saans Allah ki ne'mat hai,
+isliye har din uska shukr ada karo.`,
+
+`Allah kabhi apne bande ko uski taaqat se zyada aazmata nahi.`,
+
+`Jis dil me taqwa ho,
+wahi asli daulatmand hai.`,
+
+`Neki ka har chhota amal,
+Allah ke nazdeek bahut qeemti hota hai.`,
+
+`Allah par bharosa rakho,
+kyunki wahi behtareen kaarsaaz hai.`
+  
 ],
 
 dosti: [
@@ -741,7 +830,157 @@ jo har haal me uska sahara ban sake.`
 jeena bhi sikha deti hai.`,
 
 `Dil toot jaye,
-to awaaz nahi aati.`
+to awaaz nahi aati.`,
+
+`Muskurahat bhi kamaal ki cheez hai,
+apna dard bhi chhupa leti hai.`,
+
+`Jo naseeb me likha hai,
+wo dua se bhi mil jaata hai.`,
+
+`Dil saaf rakho,
+hisab Allah khud karega.`,
+
+`Mohabbat wahi khoobsurat hai,
+jisme izzat bhi saath ho.`,
+
+`Waqt sab kuch sikha deta hai,
+bas sunna aur samajhna aana chahiye.`,
+
+`Khamoshi aksar,
+lafzon se zyada bolti hai.`,
+
+`Har haar ke baad,
+jeet ka ek naya raasta hota hai.`,
+
+`Sacche log kam milte hain,
+magar dil me hamesha rehte hain.`,
+
+`Jo Allah par yaqeen rakhta hai,
+wo kabhi mayoos nahi hota.`,
+
+`Zindagi khoobsurat tab lagti hai,
+jab dil me sukoon hota hai.`,
+
+`Jo dil se apna ho,
+wo kabhi door nahi hota.`,
+
+`Har dua ka jawab milta hai,
+bas waqt Allah tay karta hai.`,
+
+`Mohabbat me lafz kam,
+ehsaas zyada hone chahiye.`,
+
+`Sabr ki jad kadwi hoti hai,
+magar uska phal meetha hota hai.`,
+
+`Dil toot jaaye to bhi,
+umeed tootni nahi chahiye.`,
+
+`Sacchi dosti ki pehchaan,
+bure waqt me hoti hai.`,
+
+`Khud ko pehchaan lo,
+duniya khud pehchaan legi.`,
+
+`Har musibat ek sabaq hai,
+aur har sabaq ek rehmat.`,
+
+`Waqt badalta zaroor hai,
+isliye hausla kabhi mat khona.`,
+
+`Khushi baantne se badhti hai,
+aur gham baantne se kam hota hai.`,
+
+`Khamosh rehna bhi ek hunar hai,
+har baat lafzon se nahi hoti.`,
+
+`Jo mil gaya uska shukr karo,
+jo na mila uspar sabr karo.`,
+
+`Dil jeetne ke liye,
+sachchai hi kaafi hoti hai.`,
+
+`Zindagi wahi haseen hai,
+jahan umeed zinda ho.`,
+
+`Har insaan ki kahani,
+muskurahat ke peeche chhupi hoti hai.`,
+
+`Dua kabhi chhoti nahi hoti,
+niyyat chhoti ho sakti hai.`,
+
+`Jisne khud ko jeet liya,
+usne duniya jeet li.`,
+
+`Rishta dil se banao,
+zarurat se nahi.`,
+
+`Har nayi subah,
+ek nayi umeed lekar aati hai.`,
+
+`Insaan ki asli khoobsurti,
+uske akhlaaq me hoti hai.`,
+
+`Jo waqt ki qadar karta hai,
+waqt uski qadar karta hai.`,
+
+`Mohabbat dil se karo,
+dikhawa kabhi mat karo.`,
+
+`Khud par yaqeen rakho,
+manzil khud qareeb aa jaayegi.`,
+
+`Muskurana bhi ibadat hai,
+agar kisi ka dil khush ho jaaye.`,
+
+`Jahan niyyat saaf ho,
+wahan raaste aasaan ho jaate hain.`,
+
+`Har aansu kamzori nahi hota,
+kabhi kabhi dil ka bojh hota hai.`,
+
+`Insaan apni soch se bada hota hai,
+halaat se nahi.`,
+
+`Jo dil me utar jaaye,
+wahi apna hota hai.`,
+
+`Sukoon paise se nahi,
+Allah ki rehmat se milta hai.`,
+
+`Zindagi ka asal husn,
+achhe akhlaaq me chhupa hota hai.`,
+
+`Har andheri raat ke baad,
+ek roshan subah zaroor aati hai.`,
+
+`Dil ki daulat hi asli daulat hai,
+baaki sab waqt ka khel hai.`,
+
+`Jo khud ko sudhaar leta hai,
+wo duniya badalne ki sochta nahi.`,
+
+`Har dua apne waqt par qubool hoti hai,
+bas yaqeen kabhi kam mat hone dena.`,
+
+`Mohabbat ho ya dosti,
+izzat ke bina adhuri hai.`,
+
+`Khamosh rehkar bhi,
+insaan bahut kuch keh jaata hai.`,
+
+`Jitna baantoge mohabbat,
+utni hi badhkar lautegi.`,
+
+`Allah par bharosa rakho,
+raaste khud bante chale jaayenge.`,
+
+`Achha insaan banna,
+sabse badi kamyaabi hai.`,
+
+`Har lamha ek nayi kahani hai,
+bas usse muskura kar jeena seekho.`
 
 ]
 
