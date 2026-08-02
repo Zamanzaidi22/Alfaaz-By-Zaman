@@ -401,7 +401,99 @@ bas tumhara asli chehra saamne aa gaya.`,
 dil muskurata nahi... sirf chup ho jaata hai.`,
 
 `Mohabbat meri kamzor nahi thi,
-bas insaan galat chun liya tha.`
+bas insaan galat chun liya tha.`,
+
+`Jis par sab kuch luta diya,
+usi ne hume bekaar samajh liya.`,
+
+`Bewafai ka sabse bada dard,
+khud ko hi dosh dena hota hai.`,
+
+`Mohabbat me haarna bura nahi,
+galat insaan se jeetna bekaar hai.`,
+
+`Uski har muskurahat jhooth thi,
+aur hum use sach samajhte rahe.`,
+
+`Dil ke tukde karne wale,
+aksar maafi bhi nahi maangte.`,
+
+`Jisne kasmein khaayi thi saath nibhaane ki,
+aaj wahi pehchaanne se inkaar karta hai.`,
+
+`Bewafa log sirf rishta nahi todte,
+yaqeen bhi cheen lete hain.`,
+
+`Hum uske intezaar me the,
+aur wo kisi aur ke saath khush tha.`,
+
+`Mohabbat ki kitaab me,
+bewafai sabse dardnaak safha hoti hai.`,
+
+`Usne hume khona nahi,
+bas hamari kadar karna kabhi seekha hi nahi.`,
+
+`Usne mohabbat ka matlab badal diya,
+aur hum wafa ka matlab dhoondte reh gaye.`,
+
+`Jis dil me hum rehte the,
+aaj wahan kisi aur ka naam hai.`,
+
+`Bewafai ka dard tab aur badh jaata hai,
+jab yaadein saath chhodne se inkaar kar dein.`,
+
+`Humne usse apna Rabb samjha,
+aur usne hume ek galti.`,
+
+`Jo kal tak meri duniya tha,
+aaj kisi aur ki duniya basa raha hai.`,
+
+`Uski bewafai ne hume itna badal diya,
+ab kisi par aasani se bharosa nahi hota.`,
+
+`Mohabbat me dhokha khane ke baad,
+insaan muskurana to seekh leta hai,
+magar yaqeen karna bhool jaata hai.`,
+
+`Bewafa log hamesha wajah dhoond lete hain,
+wafadaar log sirf khud ko dosh dete rehte hain.`,
+
+`Uske jaane ke baad samajh aaya,
+kuch log sirf dard dene ke liye milte hain.`,
+
+`Dil aaj bhi uska naam leta hai,
+magar dua me uska zikr nahi karta.`,
+
+`Bewafai ne hume rulaya zaroor,
+magar mazboot bhi wahi bana gayi.`,
+
+`Usne dil toda aur chala gaya,
+humne dard ko apni taqat bana liya.`,
+
+`Har jhooth ke peeche uski muskurahat thi,
+aur har sach ke saath hamare aansu.`,
+
+`Mohabbat usse thi,
+lekin wafadaari sirf humne nibhayi.`,
+
+`Dil ko sabse gehra zakhm,
+apnon ki bewafai hi deti hai.`,
+
+`Usne hume chhod diya,
+magar uski yaadein aaj bhi saath chalti hain.`,
+
+`Bewafa insaan se shikayat kya karna,
+jisne mohabbat ko kabhi samjha hi nahi.`,
+
+`Hum uski yaadon ke qaidi rahe,
+aur wo kisi aur ki duniya me azaad tha.`,
+
+`Wafa ki keemat sirf wahi jaanta hai,
+jise kabhi bewafai mili ho.`,
+
+`Aaj uska zikr bhi karta hoon,
+to sirf ek sabaq yaad aata hai —
+har muskurahat ke peeche mohabbat nahi hoti.`
 
 ],
 
@@ -414,7 +506,67 @@ ke saath hai.`,
 aasani hai.`,
 
 `Dua kabhi
-khali nahi jaati.`
+khali nahi jaati.`,
+
+`Har dua ka ek waqt hota hai,
+Rabb kabhi bhi apne bande ko bhoolta nahi.`,
+
+`Sabr karne walon ke liye,
+Allah ki rehmat hamesha qareeb hoti hai.`,
+
+`Jab duniya saath chhod de,
+tab Rabb ka dar kabhi mat chhodna.`,
+
+`Namaz sirf farz nahi,
+dil ka sukoon bhi hai.`,
+
+`Jo Allah par bharosa karta hai,
+use kabhi tanha nahi chhoda jaata.`,
+
+`Har mushkil ke baad aasani hai,
+bas yaqeen zinda rakho.`,
+
+`Dua kabhi bekaar nahi jaati,
+ya qubool hoti hai ya behtar cheez milti hai.`,
+
+`Dil ko sukoon chahiye to,
+Rabb ki yaad ko apni aadat bana lo.`,
+
+`Allah ki rehmat se kabhi mayoos mat hona,
+uska karam har cheez se bada hai.`,
+
+`Jo shukr ada karta hai,
+Allah uski ne'maton me barkat deta hai.`,
+
+`Jis dil me Allah ki mohabbat ho,
+wahan nafrat zyada der tik nahi sakti.`,
+
+`Rizq ka waada Allah ne kiya hai,
+isliye fikr se zyada tawakkul rakho.`,
+
+`Har sajda insaan ko,
+Rabb ke aur qareeb le aata hai.`,
+
+`Insaan ki sabse badi taqat,
+Allah par uska yaqeen hota hai.`,
+
+`Jo dil Qur'an se juda rahe,
+uski zindagi kabhi veeran nahi hoti.`,
+
+`Maafi maangne wala kabhi chhota nahi hota,
+Allah use aur buland karta hai.`,
+
+`Jab Rabb raazi ho,
+to duniya ki narazgi bhi chhoti lagti hai.`,
+
+`Har imtihaan ke baad,
+Allah apne bande ko behtar maqam deta hai.`,
+
+`Zikr-e-Ilahi se rooh ko woh sukoon milta hai,
+jo duniya ki koi cheez nahi de sakti.`,
+
+`Apni umeed sirf Allah se rakho,
+kyunki uske faisle hamesha behtareen hote hain.`
 
 ],
 
@@ -424,7 +576,162 @@ dosti: [
 jo har haal me saath rahe.`,
 
 `Sacchi dosti
-kabhi khatam nahi hoti.`
+kabhi khatam nahi hoti.`,
+
+`Saccha dost wahi hota hai,
+jo mushkil waqt me saath khada rahe.`,
+
+`Dosti khoon se nahi,
+dil se nibhayi jaati hai.`,
+
+`Har rishta kismat se milta hai,
+par dosti naseeb walon ko milti hai.`,
+
+`Ek saccha dost,
+hazaar jhoothe rishton se behtar hota hai.`,
+
+`Dosti ki khoobsurti,
+bina matlab ke saath nibhaane me hai.`,
+
+`Jo tumhari khamoshi samajh le,
+wahi asli dost hota hai.`,
+
+`Dost wahi hai,
+jo tumhari haar me bhi tumhara hausla ban jaye.`,
+
+`Zindagi ke safar me,
+dost hi sabse khoobsurat humsafar hote hain.`,
+
+`Sacchi dosti kabhi purani nahi hoti,
+waqt ke saath aur gehri ho jaati hai.`,
+
+`Dost kam ho to chalega,
+magar wafadaar zaroor hone chahiye.`,
+
+`Dost wo nahi jo sirf khushi me saath ho,
+dost wo hai jo gham me bhi haath na chhode.`,
+
+`Zindagi ki sabse badi daulat,
+ek saccha dost hota hai.`,
+
+`Dosti me hisaab nahi hota,
+sirf bharosa hota hai.`,
+
+`Jahan dosti sachchi ho,
+wahan lafzon ki zarurat kam padti hai.`,
+
+`Har musibat aasaan lagti hai,
+jab dost saath khade hote hain.`,
+
+`Dosti ki pehchaan waqt nahi,
+nibhaane ka andaaz hota hai.`,
+
+`Jo dost tumhari kamiyon ko jaankar bhi tumhara saath de,
+wahi sabse khaas hota hai.`,
+
+`Dosti wo rishta hai,
+jo dil se banta hai aur umr bhar chalta hai.`,
+
+`Hazaar log mil jaayenge,
+magar ek saccha dost mushkil se milta hai.`,
+
+`Dost ki muskurahat dekh kar,
+apna har dard halka lagne lagta hai.`,
+
+`Sacchi dosti ki pehchaan,
+waqt nahi, mushkil halaat karwate hain.`,
+
+`Dost wo aaina hai,
+jo hamari galti bhi pyaar se dikhata hai.`,
+
+`Dosti ka rishta jitna purana hota hai,
+utna hi mazboot hota chala jaata hai.`,
+
+`Jo dost tumhari khushi me hanse,
+aur gham me aansu baante,
+wahi asli dost hai.`,
+
+`Dosti ka sabse bada tohfa,
+ek dusre par beintehaa bharosa hai.`,
+
+`Har safar yaadgaar ban jaata hai,
+jab dost humsafar ban jaaye.`,
+
+`Dost kam milte hain,
+magar sacche dost zindagi badal dete hain.`,
+
+`Dosti me shart nahi hoti,
+sirf dil se dil ka rishta hota hai.`,
+
+`Jo tumhe girne se pehle sambhal le,
+us dost ki hamesha kadar karna.`,
+
+`Dosti ek aisi daulat hai,
+jo jitni baanto utni hi badhti hai.`,
+
+
+`Dost wo hota hai,
+jo tumhari khushi ko apni khushi samjhe.`,
+
+`Har yaad khoobsurat ban jaati hai,
+jab usme doston ka saath ho.`,
+
+`Dosti ka rishta khoon se nahi,
+bharose se chalta hai.`,
+
+`Sacche dost kabhi badalte nahi,
+sirf waqt ke saath aur mazboot hote hain.`,
+
+`Zindagi ki kitaab me,
+dosti sabse haseen chapter hoti hai.`,
+
+`Jahan sacchi dosti ho,
+wahan faasle bhi rishte kamzor nahi karte.`,
+
+`Dost ki ek muskurahat,
+poore din ki thakaan mita deti hai.`,
+
+`Dosti me maafi maangna aur maaf karna,
+rishton ko aur gehra bana deta hai.`,
+
+`Har insaan ameer nahi hota,
+magar jiske paas sacche dost ho,
+wo kabhi gareeb nahi hota.`,
+
+`Dosti ki asli pehchaan,
+bure waqt me saath nibhaana hai.`,
+
+`Saccha dost kabhi tumhe akela mehsoos nahi hone deta,
+chahe wo kitni bhi door kyon na ho.`,
+
+`Dosti me na daulat dekhi jaati hai,
+na shohrat...
+sirf dil dekha jaata hai.`,
+
+`Jo dost tumhari kamyabi par sabse zyada khush ho,
+use kabhi mat khona.`,
+
+`Dosti ka rishta jitna purana hota hai,
+utna hi anmol hota chala jaata hai.`,
+
+`Har dua me ek dost zaroor hona chahiye,
+kyunki dost hi zindagi ki muskaan hote hain.`,
+
+`Zindagi me hazaar log milenge,
+magar ek saccha dost hi kaafi hota hai.`,
+
+`Dosti ki khushboo kabhi purani nahi hoti,
+ye waqt ke saath aur mehakti hai.`,
+
+`Jo dost tumhari izzat tumhare saamne bhi kare
+aur tumhare baad bhi,
+wahi asli dost hai.`,
+
+`Dosti ek aisa rishta hai,
+jo bina kisi matlab ke dil se nibhaya jaata hai.`,
+
+`Rab har kisi ko ek aisa dost de,
+jo har haal me uska sahara ban sake.`
 
 ],
 
