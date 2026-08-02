@@ -11,22 +11,22 @@ love:[
 `Mohabbat lafzon se nahi,
 ehsaason se pehchani jaati hai.`,
 
-`Teri muskurahat meri
+`Teri muskurahat meri,
 duniya ki sabse haseen jagah hai.`,
 
-`Dil ko sukoon sirf
+`Dil ko sukoon sirf,
 tera naam lene se milta hai.`,
 
-`Tum meri duaon ka
+`Tum meri duaon ka,
 sabse khoobsurat jawab ho.`,
 
 `Mohabbat me jeetna zaroori nahi,
 saath nibhana zaroori hota hai.`,
 
-`Teri yaadon ka safar
+`Teri yaadon ka safar,
 aaj bhi meri rooh me zinda hai.`,
 
-`Har subah tera naam
+`Har subah tera naam,
 meri muskurahat ki wajah ban jata hai.`,
 
 `Dil sirf dhadakta nahi,
@@ -41,11 +41,11 @@ meri duaon me hamesha rahoge.`,
 `Mohabbat lafzon se nahi,
 ehsaason se pehchani jaati hai.`,
 
-`Teri muskurahat meri
+`Teri muskurahat meri,
 duniya ki sabse haseen jagah hai.`,
 
-`Dil ko sukoon sirf
-tera naam lene se milta hai.`
+`Dil ko sukoon sirf,
+tera naam lene se milta hai.`,
 
 `Tumhari ek muskurahat,
 mere din ko roshan kar deti hai.`,
@@ -56,22 +56,22 @@ jahan dil ko sukoon milta hai.`,
 `Tere bina bhi jee rahe hain,
 magar zindagi adhuri si lagti hai.`,
 
-`Tum meri kahani ka
+`Tum meri kahani ka,
 sabse khoobsurat hissa ho.`,
 
-`Dil ki har dhadkan
+`Dil ki har dhadkan,
 tera hi naam leti hai.`,
 
 `Ishq me faasle mayne nahi rakhte,
 ehsaas hamesha paas rehte hain.`,
 
-`Teri khushi me hi
+`Teri khushi me hi,
 meri duniya basi hui hai.`,
 
 `Mohabbat ki sabse badi khoobsurti,
 ek dusre ka saath hota hai.`,
 
-`Tum meri zindagi ka
+`Tum meri zindagi ka,
 wo khwab ho jo kabhi tootna nahi chahiye.`,
 
 `Har baar tujhe soch kar
@@ -340,7 +340,7 @@ bewafai unhone ki.`,
 `Tum badal gaye,
 hum toot gaye.`,
 
-`Bewafai ka dard
+`Bewafai ka dard,
 sirf dil samajhta hai.`,
 
 `Wafa ki umeed unse thi,
@@ -661,7 +661,7 @@ kyunki wahi behtareen kaarsaaz hai.`
 
 dosti: [
 
-`Dost wo hota hai
+`Dost wo hota hai,
 jo har haal me saath rahe.`,
 
 `Sacchi dosti
