@@ -20,7 +20,7 @@ function showCurrentShayari(){
 
     if(!SHAYARI_DB[currentCategory]) return;
 
-    document.getElementById("category-name").innerText =
+    document.getElementById("category-title").innerText =
         currentCategory.toUpperCase();
 
     document.getElementById("shayari-text").innerText =
