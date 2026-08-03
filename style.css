@@ -82,17 +82,57 @@ body{
 .categories{
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:15px;
+    gap:18px;
     padding:20px;
 }
 
 .categories div{
-    background:#1b1b1b;
-    border:1px solid #FFD700;
-    border-radius:12px;
-    padding:18px;
+    background:rgba(25,25,25,.95);
+    border:2px solid rgba(255,215,0,.35);
+    border-radius:18px;
+    padding:20px 15px;
     text-align:center;
+    font-weight:700;
+    color:#fff;
+    cursor:pointer;
+    transition:all .35s ease;
+    box-shadow:
+        0 0 10px rgba(255,215,0,.08),
+        inset 0 0 10px rgba(255,215,0,.05);
+}
+
+.categories div:hover{
+
+    transform:translateY(-5px) scale(1.03);
+
+    border-color:#FFD700;
+
+    box-shadow:
+        0 0 18px rgba(255,215,0,.45),
+        0 0 35px rgba(255,215,0,.18);
+
+    background:#242424;
+
+}
+
+.categories span{
+
+    display:inline-block;
+
+    margin-left:8px;
+
+    background:#FFD700;
+
+    color:#000;
+
+    padding:3px 10px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
     font-weight:bold;
+
 }
 
 .shayari{
