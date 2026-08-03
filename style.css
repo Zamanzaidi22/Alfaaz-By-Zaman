@@ -1085,3 +1085,50 @@ z-index:99999999;
     background:#25D366;
     color:#fff;
 }
+/* ===== Premium Hero ===== */
+
+.hero{
+    text-align:center;
+    padding:40px 20px;
+    background:linear-gradient(180deg,#111,#1a1a1a);
+    border-bottom:2px solid #FFD700;
+}
+
+.hero h1{
+    color:#FFD700;
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#ddd;
+    font-size:18px;
+    line-height:1.7;
+}
+
+.hero-stats{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.hero-stats div{
+    background:#181818;
+    border:1px solid #FFD700;
+    border-radius:15px;
+    padding:18px 25px;
+    min-width:100px;
+}
+
+.hero-stats h2{
+    color:#FFD700;
+    margin:0;
+    font-size:28px;
+}
+
+.hero-stats span{
+    color:#ccc;
+    font-size:14px;
+}
