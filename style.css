@@ -12,26 +12,11 @@ body{
 body{
     position:relative;
 }
-.hero{
-    text-align:center;
-    padding:60px 20px;
-    background:linear-gradient(to bottom,#111,#000);
-}
 
-.hero h1{
-    color:#FFD700;
-    font-size:38px;
-    margin-bottom:15px;
-}
-
-.hero p{
-    color:#d6d6d6;
-    font-size:18px;
-}
 .hero{
     position: relative;
     background: url("assets/hero.png") center center/cover no-repeat;
-    min-height: 500px;
+    min-height: 360px;
 
     display:flex;
     flex-direction:column;
@@ -59,14 +44,14 @@ body{
 
 .hero h1{
     font-family:'Cinzel', serif;
-    font-size:56px;
+    font-size:48px;
     color:#FFD700;
     letter-spacing:3px;
     text-shadow:0 0 25px rgba(255,215,0,.8);
 }
 
 .hero p{
-    font-size:22px;
+    font-size:18px;
     margin-bottom:25px;
 }
 .search{
