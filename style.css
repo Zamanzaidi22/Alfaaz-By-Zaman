@@ -1339,3 +1339,84 @@ z-index:99999999;
     font-size:14px;
 
 }
+/* ===========================
+   PREMIUM SHAYARI CARD
+=========================== */
+
+.shayari-card{
+
+    position:relative;
+
+    background:linear-gradient(145deg,#1a1a1a,#101010);
+
+    border:1px solid rgba(255,215,0,.35);
+
+    border-left:5px solid #FFD700;
+
+    border-radius:20px;
+
+    padding:28px;
+
+    box-shadow:
+    0 0 25px rgba(255,215,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.shayari-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 0 35px rgba(255,215,0,.22);
+
+}
+
+.shayari-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:18px;
+
+}
+
+.quote-icon{
+
+    font-size:34px;
+
+    color:#FFD700;
+
+    line-height:1;
+
+}
+
+.shayari-header h3{
+
+    color:#FFD700;
+
+    font-size:28px;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+#shayari-text{
+
+    color:#f3f3f3;
+
+    font-size:22px;
+
+    line-height:2;
+
+    letter-spacing:.5px;
+
+    white-space:pre-line;
+
+}
