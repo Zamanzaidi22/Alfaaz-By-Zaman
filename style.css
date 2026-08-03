@@ -79,6 +79,10 @@ body{
     cursor:pointer;
 }
 
+/* ===========================
+   Premium Category Cards
+=========================== */
+
 .categories{
     display:grid;
     grid-template-columns:repeat(2,1fr);
@@ -86,55 +90,118 @@ body{
     padding:20px;
 }
 
-.categories div{
-    background:rgba(25,25,25,.95);
-    border:2px solid rgba(255,215,0,.35);
-    border-radius:18px;
-    padding:20px 15px;
+.category-card{
+
+    position:relative;
+
+    background:linear-gradient(145deg,#1b1b1b,#101010);
+
+    border:2px solid rgba(255,215,0,.25);
+
+    border-radius:22px;
+
+    padding:22px 15px;
+
     text-align:center;
-    font-weight:700;
-    color:#fff;
+
     cursor:pointer;
-    transition:all .35s ease;
+
+    transition:.35s;
+
+    overflow:hidden;
+
     box-shadow:
-        0 0 10px rgba(255,215,0,.08),
-        inset 0 0 10px rgba(255,215,0,.05);
+        0 0 12px rgba(255,215,0,.08);
+
 }
 
-.categories div:hover{
+.category-card:hover{
 
-    transform:translateY(-5px) scale(1.03);
+    transform:translateY(-6px) scale(1.03);
 
     border-color:#FFD700;
 
     box-shadow:
-        0 0 18px rgba(255,215,0,.45),
-        0 0 35px rgba(255,215,0,.18);
-
-    background:#242424;
+        0 0 22px rgba(255,215,0,.45);
 
 }
 
-.categories span{
+.category-icon{
 
-    display:inline-block;
+    font-size:34px;
 
-    margin-left:8px;
+    margin-bottom:10px;
 
-    background:#FFD700;
+}
 
-    color:#000;
+.category-title{
 
-    padding:3px 10px;
+    color:#FFD700;
 
-    border-radius:30px;
-
-    font-size:12px;
+    font-size:22px;
 
     font-weight:bold;
 
 }
 
+.category-subtitle{
+
+    color:#bdbdbd;
+
+    font-size:13px;
+
+    margin-top:5px;
+
+}
+
+.category-count{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    background:#FFD700;
+
+    color:#000;
+
+    padding:7px 18px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+}
+@media(max-width:600px){
+
+.category-title{
+
+font-size:18px;
+
+}
+
+.category-icon{
+
+font-size:28px;
+
+}
+
+.category-subtitle{
+
+font-size:12px;
+
+}
+
+.category-count{
+
+font-size:12px;
+
+padding:6px 15px;
+
+}
+
+}
 .shayari{
     margin:20px;
     background:#1b1b1b;
