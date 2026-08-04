@@ -1519,3 +1519,44 @@ z-index:99999999;
     }
 
 }
+/* ===========================
+   Floating Moon
+=========================== */
+
+.hero-title{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.moon{
+
+    display:inline-block;
+
+    animation:moonFloat 3s ease-in-out infinite;
+
+    filter:drop-shadow(0 0 12px rgba(255,215,0,.8));
+
+}
+
+@keyframes moonFloat{
+
+    0%{
+        transform:translateY(0px) rotate(0deg);
+    }
+
+    50%{
+        transform:translateY(-8px) rotate(5deg);
+    }
+
+    100%{
+        transform:translateY(0px) rotate(0deg);
+    }
+
+}
