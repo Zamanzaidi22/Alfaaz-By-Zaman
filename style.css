@@ -1128,53 +1128,80 @@ z-index:99999999;
 }
 
 .action-btn{
-    width:130px;
-    height:48px;
-    
+
+    width:135px;
+
+    height:50px;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
-    
-    border:none;
-    border-radius:30px;
+
+    gap:8px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:50px;
+
     cursor:pointer;
+
     font-size:15px;
-    font-weight:bold;
-    transition:.3s;
+
+    font-weight:700;
+
+    letter-spacing:.4px;
+
+    transition:all .35s ease;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.25);
+
 }
 
 .action-btn:hover{
-    transform:scale(1.05);
-    box-shadow:0 0 20px rgba(255,215,0,.5);
+
+    transform:translateY(-4px) scale(1.05);
+
+    box-shadow:
+        0 0 18px rgba(255,215,0,.45);
+
+}
+
+.action-btn:active{
+
+    transform:scale(.96);
+
 }
 
 .copy-btn{
-    background:#FFD700;
+    background:linear-gradient(135deg,#FFD700,#ffbf00);
     color:#000;
 }
 
 .share-btn{
-    background:#25D366;
+    background:linear-gradient(135deg,#25D366,#128C7E);
     color:#fff;
 }
 
 .random-btn{
-    background:#ff9800;
+    background:linear-gradient(135deg,#ff9800,#ff6f00);
     color:#fff;
 }
 
 .favorite-btn{
-    background:#e91e63;
+    background:linear-gradient(135deg,#ff4081,#d81b60);
     color:#fff;
 }
 
 .like-btn{
-    background:#FFD700;
+    background:linear-gradient(135deg,#FFD700,#ffbf00);
     color:#000;
 }
 
 .download-btn{
-    background:#25D366;
+    background:linear-gradient(135deg,#00c853,#009624);
     color:#fff;
 }
 /* ===== Premium Hero ===== */
