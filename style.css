@@ -1668,3 +1668,82 @@ z-index:99999999;
     box-shadow:0 0 16px rgba(255,215,0,.45);
 
 }
+/* ===========================
+   Premium Footer
+=========================== */
+
+.footer{
+
+    margin-top:70px;
+
+    padding:50px 20px;
+
+    text-align:center;
+
+    background:linear-gradient(to top,#0a0a0a,#151515);
+
+    border-top:1px solid rgba(255,215,0,.25);
+
+}
+
+.footer-logo{
+
+    color:#FFD700;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+}
+
+.footer-tagline{
+
+    color:#cfcfcf;
+
+    margin-bottom:25px;
+
+    font-style:italic;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:25px;
+
+}
+
+.footer-links a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#FFD700;
+
+}
+
+.footer-copy{
+
+    color:#9e9e9e;
+
+    font-size:14px;
+
+    margin-top:8px;
+
+}
