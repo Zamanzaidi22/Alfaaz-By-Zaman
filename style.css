@@ -1883,3 +1883,145 @@ font-size:26px;
 }
 
 }
+/* ===========================
+   Premium Loader V3
+=========================== */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#050505;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999999;
+
+    transition:opacity .8s ease,
+               visibility .8s ease;
+
+}
+
+#loader.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+
+.loader-content{
+
+    text-align:center;
+
+}
+
+.loader-logo{
+
+    font-size:70px;
+
+    animation:moonLoader 2.5s ease-in-out infinite;
+
+    filter:drop-shadow(0 0 20px rgba(255,215,0,.8));
+
+}
+
+.loader-content h1{
+
+    color:#FFD700;
+
+    margin-top:15px;
+
+    font-size:36px;
+
+    letter-spacing:2px;
+
+    text-shadow:0 0 18px rgba(255,215,0,.45);
+
+}
+
+.loader-content p{
+
+    color:#d0d0d0;
+
+    margin-top:8px;
+
+    margin-bottom:30px;
+
+    font-style:italic;
+
+}
+
+.loader-bar{
+
+    width:240px;
+
+    height:6px;
+
+    margin:auto;
+
+    border-radius:20px;
+
+    background:#202020;
+
+    overflow:hidden;
+
+}
+
+.loader-bar span{
+
+    display:block;
+
+    width:0%;
+
+    height:100%;
+
+    background:linear-gradient(90deg,#FFD700,#fff3a0,#FFD700);
+
+    animation:loadingBar 2.4s linear forwards;
+
+}
+
+@keyframes loadingBar{
+
+    from{
+
+        width:0%;
+
+    }
+
+    to{
+
+        width:100%;
+
+    }
+
+}
+
+@keyframes moonLoader{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px) rotate(8deg);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
