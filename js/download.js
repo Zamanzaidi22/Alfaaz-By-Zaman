@@ -6,7 +6,7 @@
 function downloadShayariImage() {
 
     if (!currentCategory) {
-        alert("Pehle koi category select karein.");
+        showToast("📂 Pehle koi category select karein.");
         return;
     }
 
@@ -17,7 +17,16 @@ function downloadShayariImage() {
 
     card.style.display = "block";
 
-    html2canvas(card).then(function(canvas){
+    html2canvas(card)
+.then(function(canvas){
+    ...
+})
+.catch(function(){
+    showToast("❌ Download Failed");
+})
+.finally(function(){
+    card.style.display = "none";
+});
 
         const link = document.createElement("a");
 
