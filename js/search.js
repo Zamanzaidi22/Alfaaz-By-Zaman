@@ -12,7 +12,7 @@ function searchShayari(){
     const keyword = input.value.trim().toLowerCase();
 
     if(keyword === ""){
-        alert("Kuch search likhiye.");
+        ShowToast("🔍 Kuch search likhiye.");
         return;
     }
 
@@ -37,6 +37,6 @@ function searchShayari(){
 
     }
 
-    alert("❌ Shayari nahi mili.");
+    showToast("❌ Shayari nahi mili.");
 
 }
