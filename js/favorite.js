@@ -30,7 +30,6 @@ console.log("Favorite Button Clicked");
 
 function likeCurrentShayari(){
 console.log("Like Button Clicked");
-    showToast("Test");
     totalLikes++;
 
     localStorage.setItem("totalLikes", totalLikes);
@@ -71,7 +70,7 @@ function updateFavoriteUI(){
     favorites.forEach(function(item){
 
         favBox.innerHTML += `
-        <div class="card">
+        <div class="shayari-card">
             <p>${item}</p>
         </div>
         `;
