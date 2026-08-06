@@ -5,7 +5,7 @@ console.log("FAVORITE.JS LOADED");
 // ==========================================
 
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-let totalLikes = Number(localStorage.getItem("totalLikes")) || 0;
+let likes = JSON.parse(localStorage.getItem("likes")) || {};
 
 function addToFavorites(){
 console.log("Favorite Button Clicked");
@@ -29,17 +29,24 @@ console.log("Favorite Button Clicked");
 }
 
 function likeCurrentShayari(){
-console.log("Like Button Clicked");
-    totalLikes++;
 
-    localStorage.setItem("totalLikes", totalLikes);
+    if(!currentCategory) return;
+
+    const shayari = SHAYARI_DB[currentCategory][currentIndex];
+
+    if(!likes[shayari]){
+        likes[shayari]=0;
+    }
+
+    likes[shayari]++;
+
+    localStorage.setItem("likes",JSON.stringify(likes));
 
     updateFavoriteUI();
 
-    showToast("👍 Liked");
+    showToast("👍 Liked ❤️");
 
 }
-
 function updateFavoriteUI(){
 
     const favBox = document.getElementById("favorites");
@@ -51,8 +58,11 @@ function updateFavoriteUI(){
     if(favCount)
         favCount.innerText = favorites.length;
 
-    if(likeCount)
-        likeCount.innerText = totalLikes;
+    const totalLikes = Object.values(likes).reduce((sum, count) => sum + count, 0);
+
+if(likeCount){
+    likeCount.innerText = totalLikes;
+}
 
     if(!favBox) return;
 
@@ -78,7 +88,40 @@ function updateFavoriteUI(){
     });
 
 }
+const mostLoved =
+document.getElementById("most-loved");
 
+if(mostLoved){
+
+    const sorted =
+    Object.entries(likes)
+    .sort((a,b)=>b[1]-a[1])
+    .slice(0,5);
+
+    if(sorted.length===0){
+
+        mostLoved.innerHTML =
+        "<p style='color:#aaa;'>Abhi tak kisi Shayari ko Like nahi mila.</p>";
+
+    }else{
+
+        mostLoved.innerHTML="";
+
+        sorted.forEach(function(item){
+
+            mostLoved.innerHTML += `
+            <div class="card">
+            ❤️ ${item[1]} Likes
+            <br><br>
+            ${item[0]}
+            </div>
+            `;
+
+        });
+
+    }
+
+}
 function showToast(message){
 
     console.log("Toast:", message);
