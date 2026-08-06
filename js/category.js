@@ -18,7 +18,12 @@ function openCategory(category){
 
 function showCurrentShayari(){
 
-    if(!SHAYARI_DB[currentCategory]) return;
+    if(
+    !SHAYARI_DB[currentCategory] ||
+    !SHAYARI_DB[currentCategory][currentIndex]
+){
+    return;
+    }
 
     document.getElementById("category-title").innerText =
         currentCategory.toUpperCase();
@@ -32,7 +37,7 @@ function randomShayari(){
 
     if(!currentCategory){
 
-        alert("Pehle koi category select karein.");
+        showToast("📂 Pehle koi category select karein.");
 
         return;
 
