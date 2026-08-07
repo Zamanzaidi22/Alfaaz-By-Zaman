@@ -305,21 +305,22 @@ function displayTrendingShayari(){
     });
 
 
-    // Sort by recent likes
+    // Sort recent likes
     const sorted =
         Object.entries(trendingLikes)
-        .sort(
-            (a,b) => b[1] - a[1]
-        )
+        .sort(function(a,b){
+
+            return b[1] - a[1];
+
+        })
         .slice(0,5);
 
 
+    // No trending shayari
     if(sorted.length === 0){
 
         trendingBox.innerHTML =
-        "<p style='color:#aaa;'>
-            Abhi koi Trending Shayari nahi hai.
-        </p>";
+            "<p style='color:#aaa;'>Abhi koi Trending Shayari nahi hai.</p>";
 
         return;
 
@@ -351,20 +352,16 @@ function displayTrendingShayari(){
 
                 </div>
 
-
                 <p>
 
                     ${shayari}
 
                 </p>
 
-
                 <span class="trending-likes">
 
                     🔥 ${recentLikes} Recent Likes
-
                     &nbsp; • &nbsp;
-
                     ❤️ ${lifetimeLikes} Total Likes
 
                 </span>
