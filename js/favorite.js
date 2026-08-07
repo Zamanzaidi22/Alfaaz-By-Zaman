@@ -249,3 +249,51 @@ document.addEventListener(
     "DOMContentLoaded",
     updateFavoriteUI
 );
+
+// ==========================================
+// Trending Shayari System
+// ==========================================
+
+function displayTrendingShayari(){
+
+    const trendingBox =
+        document.getElementById("trending-shayari");
+
+    if(!trendingBox) return;
+
+    const sorted =
+        Object.entries(likes)
+        .sort((a,b) => b[1] - a[1])
+        .slice(0,5);
+
+    if(sorted.length === 0){
+
+        trendingBox.innerHTML =
+        "<p style='color:#aaa;'>Abhi koi Trending Shayari nahi hai.</p>";
+
+        return;
+    }
+
+    trendingBox.innerHTML = "";
+
+    sorted.forEach(function(item){
+
+        trendingBox.innerHTML += `
+            <div class="card trending-card">
+
+                <div class="trending-rank">
+                    🔥 #${sorted.indexOf(item) + 1}
+                </div>
+
+                <p>${item[0]}</p>
+
+                <span class="trending-likes">
+                    ❤️ ${item[1]} Likes
+                </span>
+
+            </div>
+        `;
+
+    });
+
+}
