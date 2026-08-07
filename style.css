@@ -2025,3 +2025,101 @@ font-size:26px;
     }
 
 }
+
+/* ==========================================
+   PREMIUM RECENTLY VIEWED
+========================================== */
+
+.recent-section .card{
+
+    position:relative;
+
+    background:linear-gradient(
+        145deg,
+        #1a1a1a,
+        #0f0f0f
+    );
+
+    border:1px solid rgba(255,215,0,.25);
+
+    border-left:4px solid #FFD700;
+
+    border-radius:16px;
+
+    padding:20px;
+
+    margin:15px auto;
+
+    max-width:700px;
+
+    box-shadow:
+        0 0 20px rgba(255,215,0,.06);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+.recent-section .card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#FFD700;
+
+    box-shadow:
+        0 0 25px rgba(255,215,0,.2);
+}
+
+.recent-section .card h3{
+
+    color:#FFD700;
+
+    font-size:18px;
+
+    margin-bottom:12px;
+}
+
+.recent-section .card p{
+
+    color:#eee;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    white-space:pre-line;
+
+    margin-bottom:15px;
+}
+
+.recent-section .card button{
+
+    background:linear-gradient(
+        135deg,
+        #FFD700,
+        #ffbf00
+    );
+
+    color:#111;
+
+    border:none;
+
+    border-radius:25px;
+
+    padding:9px 18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.recent-section .card button:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+        0 0 15px rgba(255,215,0,.4);
+}
