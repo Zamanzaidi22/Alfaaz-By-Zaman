@@ -7,7 +7,7 @@ console.log("FAVORITE.JS LOADED");
 
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 let likes = JSON.parse(localStorage.getItem("likes")) || {};
-
+let likeActivity = JSON.parse(localStorage.getItem("likeActivity")) || [];
 
 // ==========================================
 // Add To Favorites
