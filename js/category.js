@@ -18,19 +18,31 @@ function openCategory(category){
 
 function showCurrentShayari(){
 
-    if(
-    !SHAYARI_DB[currentCategory] ||
-    !SHAYARI_DB[currentCategory][currentIndex]
-){
-    return;
-    }
+    if(!SHAYARI_DB[currentCategory]) return;
 
     document.getElementById("category-title").innerText =
         currentCategory.toUpperCase();
 
     document.getElementById("shayari-text").innerText =
         SHAYARI_DB[currentCategory][currentIndex];
-    saveRecentlyViewed();
+
+
+    // ==========================================
+    // Total Views
+    // ==========================================
+
+    let totalViews =
+        Number(localStorage.getItem("totalViews")) || 0;
+
+    totalViews++;
+
+    localStorage.setItem(
+        "totalViews",
+        totalViews
+    );
+
+    updateStatsUI();
+
 }
 
 function randomShayari(){
