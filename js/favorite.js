@@ -1,4 +1,5 @@
 console.log("FAVORITE.JS LOADED");
+
 // ==========================================
 // Alfaaz By Zaman
 // Favorite + Like System
@@ -7,20 +8,33 @@ console.log("FAVORITE.JS LOADED");
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 let likes = JSON.parse(localStorage.getItem("likes")) || {};
 
+
+// ==========================================
+// Add To Favorites
+// ==========================================
+
 function addToFavorites(){
-console.log("Favorite Button Clicked");
+
+    console.log("Favorite Button Clicked");
+
     if(!currentCategory) return;
 
-    const shayari = SHAYARI_DB[currentCategory][currentIndex];
+    const shayari =
+        SHAYARI_DB[currentCategory][currentIndex];
 
     if(favorites.includes(shayari)){
+
         showToast("❤️ Already in Favorites");
+
         return;
     }
 
     favorites.push(shayari);
 
-    localStorage.setItem("favorites", JSON.stringify(favorites));
+    localStorage.setItem(
+        "favorites",
+        JSON.stringify(favorites)
+    );
 
     updateFavoriteUI();
 
@@ -28,107 +42,185 @@ console.log("Favorite Button Clicked");
 
 }
 
+
+// ==========================================
+// Like Current Shayari
+// ==========================================
+
 function likeCurrentShayari(){
+
+    console.log("Like Button Clicked");
 
     if(!currentCategory) return;
 
-    const shayari = SHAYARI_DB[currentCategory][currentIndex];
+    const shayari =
+        SHAYARI_DB[currentCategory][currentIndex];
 
     if(!likes[shayari]){
-        likes[shayari]=0;
+
+        likes[shayari] = 0;
+
     }
 
     likes[shayari]++;
 
-    localStorage.setItem("likes",JSON.stringify(likes));
+    localStorage.setItem(
+        "likes",
+        JSON.stringify(likes)
+    );
 
     updateFavoriteUI();
 
     showToast("👍 Liked ❤️");
 
 }
+
+
+// ==========================================
+// Update Favorite + Like UI
+// ==========================================
+
 function updateFavoriteUI(){
 
-    const favBox = document.getElementById("favorites");
+    const favBox =
+        document.getElementById("favorites");
 
-    const favCount = document.getElementById("total-favorites");
+    const favCount =
+        document.getElementById("total-favorites");
 
-    const likeCount = document.getElementById("total-likes");
+    const likeCount =
+        document.getElementById("total-likes");
 
-    if(favCount)
-        favCount.innerText = favorites.length;
+    const mostLoved =
+        document.getElementById("most-loved");
 
-    const totalLikes = Object.values(likes).reduce((sum, count) => sum + count, 0);
 
-if(likeCount){
-    likeCount.innerText = totalLikes;
-}
+    // ------------------------------------------
+    // Favorite Count
+    // ------------------------------------------
 
-    if(!favBox) return;
+    if(favCount){
 
-    if(favorites.length===0){
-
-        favBox.innerHTML =
-        "<p style='color:#aaa;'>Abhi koi Favorite Shayari nahi hai.</p>";
-
-        return;
+        favCount.innerText =
+            favorites.length;
 
     }
 
-    favBox.innerHTML="";
 
-    favorites.forEach(function(item){
+    // ------------------------------------------
+    // Total Likes
+    // ------------------------------------------
 
-        favBox.innerHTML += `
-        <div class="shayari-card">
-            <p>${item}</p>
-        </div>
-        `;
+    const totalLikes =
+        Object.values(likes)
+        .reduce(
+            (sum, count) => sum + count,
+            0
+        );
 
-    });
+    if(likeCount){
 
-}
-const mostLoved =
-document.getElementById("most-loved");
+        likeCount.innerText =
+            totalLikes;
 
-if(mostLoved){
+    }
 
-    const sorted =
-    Object.entries(likes)
-    .sort((a,b)=>b[1]-a[1])
-    .slice(0,5);
 
-    if(sorted.length===0){
+    // ------------------------------------------
+    // Favorite Shayari List
+    // ------------------------------------------
 
-        mostLoved.innerHTML =
-        "<p style='color:#aaa;'>Abhi tak kisi Shayari ko Like nahi mila.</p>";
+    if(favBox){
 
-    }else{
+        if(favorites.length === 0){
 
-        mostLoved.innerHTML="";
+            favBox.innerHTML =
+                "<p style='color:#aaa;'>Abhi koi Favorite Shayari nahi hai.</p>";
 
-        sorted.forEach(function(item){
+        }else{
 
-            mostLoved.innerHTML += `
-            <div class="card">
-            ❤️ ${item[1]} Likes
-            <br><br>
-            ${item[0]}
-            </div>
-            `;
+            favBox.innerHTML = "";
 
-        });
+            favorites.forEach(function(item){
+
+                favBox.innerHTML += `
+                    <div class="shayari-card">
+
+                        <p>${item}</p>
+
+                    </div>
+                `;
+
+            });
+
+        }
+
+    }
+
+
+    // ------------------------------------------
+    // Most Loved Shayari
+    // ------------------------------------------
+
+    if(mostLoved){
+
+        const sorted =
+            Object.entries(likes)
+            .sort(
+                (a,b) => b[1] - a[1]
+            )
+            .slice(0,5);
+
+
+        if(sorted.length === 0){
+
+            mostLoved.innerHTML =
+                "<p style='color:#aaa;'>Abhi tak kisi Shayari ko Like nahi mila.</p>";
+
+        }else{
+
+            mostLoved.innerHTML = "";
+
+            sorted.forEach(function(item){
+
+                mostLoved.innerHTML += `
+                    <div class="shayari-card">
+
+                        <p>
+                            ❤️ ${item[1]} Likes
+                        </p>
+
+                        <p>
+                            ${item[0]}
+                        </p>
+
+                    </div>
+                `;
+
+            });
+
+        }
 
     }
 
 }
+
+
+// ==========================================
+// Toast Notification
+// ==========================================
+
 function showToast(message){
 
     console.log("Toast:", message);
-    const toast = document.getElementById("toast");
+
+    const toast =
+        document.getElementById("toast");
 
     if(!toast){
+
         console.log("Toast div not found");
+
         return;
     }
 
@@ -147,4 +239,13 @@ function showToast(message){
     },2000);
 
 }
-document.addEventListener("DOMContentLoaded",updateFavoriteUI);
+
+
+// ==========================================
+// Load UI
+// ==========================================
+
+document.addEventListener(
+    "DOMContentLoaded",
+    updateFavoriteUI
+);
