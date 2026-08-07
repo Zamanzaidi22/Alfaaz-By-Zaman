@@ -70,7 +70,7 @@ function likeCurrentShayari(){
     );
 
     updateFavoriteUI();
-
+ displayTrendingShayari();
     showToast("👍 Liked ❤️");
 
 }
