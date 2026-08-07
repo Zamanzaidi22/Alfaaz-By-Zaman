@@ -2123,3 +2123,78 @@ font-size:26px;
     box-shadow:
         0 0 15px rgba(255,215,0,.4);
 }
+
+/* ==========================================
+   PREMIUM CLEAR HISTORY BUTTON
+========================================== */
+
+.recent-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+    flex-wrap:wrap;
+}
+
+.recent-header h2{
+
+    margin:0;
+}
+
+.clear-history-btn{
+
+    padding:10px 18px;
+
+    border:1px solid rgba(255,215,0,.35);
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        135deg,
+        #1f1f1f,
+        #111
+    );
+
+    color:#FFD700;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.3);
+}
+
+.clear-history-btn:hover{
+
+    transform:translateY(-3px);
+
+    background:linear-gradient(
+        135deg,
+        #FFD700,
+        #ffbf00
+    );
+
+    color:#111;
+
+    border-color:#FFD700;
+
+    box-shadow:
+        0 0 18px rgba(255,215,0,.4);
+}
+
+.clear-history-btn:active{
+
+    transform:scale(.95);
+}
