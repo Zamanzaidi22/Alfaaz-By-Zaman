@@ -49,17 +49,14 @@ function addToFavorites(){
 
 function likeCurrentShayari(){
 
-    console.log("Like Button Clicked");
-
     if(!currentCategory) return;
 
     const shayari =
         SHAYARI_DB[currentCategory][currentIndex];
 
+    // Lifetime Likes
     if(!likes[shayari]){
-
         likes[shayari] = 0;
-
     }
 
     likes[shayari]++;
@@ -69,8 +66,22 @@ function likeCurrentShayari(){
         JSON.stringify(likes)
     );
 
+    // Recent Like Activity
+    likeActivity.push({
+
+        shayari: shayari,
+
+        time: Date.now()
+
+    });
+
+    localStorage.setItem(
+        "likeActivity",
+        JSON.stringify(likeActivity)
+    );
+
     updateFavoriteUI();
- displayTrendingShayari();
+
     showToast("👍 Liked ❤️");
 
 }
