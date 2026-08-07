@@ -245,10 +245,13 @@ function showToast(message){
 // Load UI
 // ==========================================
 
-document.addEventListener(
-    "DOMContentLoaded",
-    updateFavoriteUI
-);
+document.addEventListener("DOMContentLoaded",function(){
+
+    updateFavoriteUI();
+
+    displayTrendingShayari();
+
+});
 
 // ==========================================
 // Trending Shayari System
