@@ -44,3 +44,62 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 700);
 
 });
+
+// ==========================================
+// Website Statistics
+// ==========================================
+
+function updateStatsUI(){
+
+    // ------------------------------------------
+    // Total Shayari
+    // ------------------------------------------
+
+    let totalShayari = 0;
+
+    for(const category in SHAYARI_DB){
+
+        totalShayari += SHAYARI_DB[category].length;
+
+    }
+
+    const shayariCount =
+        document.getElementById("shayari-count");
+
+    if(shayariCount){
+
+        shayariCount.innerText =
+            totalShayari;
+
+    }
+
+
+    // ------------------------------------------
+    // Total Views
+    // ------------------------------------------
+
+    const totalViews =
+        Number(localStorage.getItem("totalViews")) || 0;
+
+    const viewsElement =
+        document.getElementById("total-views");
+
+    if(viewsElement){
+
+        viewsElement.innerText =
+            totalViews;
+
+    }
+
+}
+
+
+// Load Statistics
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        updateStatsUI();
+
+    }
+);
