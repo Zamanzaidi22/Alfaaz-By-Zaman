@@ -154,3 +154,25 @@ function openRecentShayari(category, index){
     }
 
 }
+// ==========================================
+// Clear Recently Viewed
+// ==========================================
+
+function clearRecentlyViewed(){
+
+    if(recentlyViewed.length === 0){
+
+        showToast("🕘 History already empty");
+
+        return;
+    }
+
+    recentlyViewed = [];
+
+    localStorage.removeItem("recentlyViewed");
+
+    displayRecentlyViewed();
+
+    showToast("🗑️ Recently Viewed Cleared");
+
+}
