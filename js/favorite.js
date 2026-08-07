@@ -275,37 +275,102 @@ function displayTrendingShayari(){
 
     if(!trendingBox) return;
 
+    // Last 24 hours
+    const now = Date.now();
+
+    const oneDay =
+        24 * 60 * 60 * 1000;
+
+    const recentActivity =
+        likeActivity.filter(function(item){
+
+            return (now - item.time) <= oneDay;
+
+        });
+
+
+    // Count recent likes
+    const trendingLikes = {};
+
+    recentActivity.forEach(function(item){
+
+        if(!trendingLikes[item.shayari]){
+
+            trendingLikes[item.shayari] = 0;
+
+        }
+
+        trendingLikes[item.shayari]++;
+
+    });
+
+
+    // Sort by recent likes
     const sorted =
-        Object.entries(likes)
-        .sort((a,b) => b[1] - a[1])
+        Object.entries(trendingLikes)
+        .sort(
+            (a,b) => b[1] - a[1]
+        )
         .slice(0,5);
+
 
     if(sorted.length === 0){
 
         trendingBox.innerHTML =
-        "<p style='color:#aaa;'>Abhi koi Trending Shayari nahi hai.</p>";
+        "<p style='color:#aaa;'>
+            Abhi koi Trending Shayari nahi hai.
+        </p>";
 
         return;
+
     }
+
 
     trendingBox.innerHTML = "";
 
-    sorted.forEach(function(item){
+
+    sorted.forEach(function(item,index){
+
+        const shayari =
+            item[0];
+
+        const recentLikes =
+            item[1];
+
+        const lifetimeLikes =
+            likes[shayari] || 0;
+
 
         trendingBox.innerHTML += `
+
             <div class="card trending-card">
 
                 <div class="trending-rank">
-                    🔥 #${sorted.indexOf(item) + 1}
+
+                    🔥 #${index + 1}
+
                 </div>
 
-                <p>${item[0]}</p>
+
+                <p>
+
+                    ${shayari}
+
+                </p>
+
 
                 <span class="trending-likes">
-                    ❤️ ${item[1]} Likes
+
+                    🔥 ${recentLikes} Recent Likes
+
+                    &nbsp; • &nbsp;
+
+                    ❤️ ${lifetimeLikes} Total Likes
+
                 </span>
 
             </div>
+
         `;
 
     });
