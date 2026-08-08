@@ -90,7 +90,19 @@ function updateStatsUI(){
             totalViews;
 
     }
+    // ------------------------------------------
+    // Recently Viewed
+    // ------------------------------------------
 
+    const recentCount =
+        document.getElementById("recent-count");
+
+    if(recentCount){
+
+        recentCount.innerText =
+            recentlyViewed.length;
+
+    }
 }
 
 
