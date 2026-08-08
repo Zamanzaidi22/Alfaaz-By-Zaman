@@ -37,11 +37,14 @@ function showCurrentShayari(){
     totalViews++;
 
     localStorage.setItem(
-        "totalViews",
-        totalViews
-    );
+    "totalViews",
+    totalViews
+);
 
-    updateStatsUI();
+updateStatsUI();
+
+// Recently Viewed me save karo
+saveRecentlyViewed();
 
 }
 
@@ -188,3 +191,13 @@ function clearRecentlyViewed(){
     showToast("🗑️ Recently Viewed Cleared");
 
 }
+
+// ==========================================
+// Load Recently Viewed on Page Load
+// ==========================================
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    displayRecentlyViewed();
+
+});
