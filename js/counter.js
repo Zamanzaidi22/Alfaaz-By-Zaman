@@ -51,9 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function updateStatsUI(){
 
-    // ------------------------------------------
+    // ==========================================
     // Total Shayari
-    // ------------------------------------------
+    // ==========================================
 
     let totalShayari = 0;
 
@@ -74,9 +74,9 @@ function updateStatsUI(){
     }
 
 
-    // ------------------------------------------
+    // ==========================================
     // Total Views
-    // ------------------------------------------
+    // ==========================================
 
     const totalViews =
         Number(localStorage.getItem("totalViews")) || 0;
@@ -90,28 +90,72 @@ function updateStatsUI(){
             totalViews;
 
     }
-    // ------------------------------------------
-    // Recently Viewed
-    // ------------------------------------------
 
-    const recentCount =
+
+    // ==========================================
+    // Total Likes
+    // ==========================================
+
+    const likes =
+        JSON.parse(
+            localStorage.getItem("likes")
+        ) || {};
+
+    const totalLikes =
+        Object.values(likes)
+        .reduce(
+            (sum, count) => sum + count,
+            0
+        );
+
+    const likesElement =
+        document.getElementById("total-likes");
+
+    if(likesElement){
+
+        likesElement.innerText =
+            totalLikes;
+
+    }
+
+
+    // ==========================================
+    // Total Favorites
+    // ==========================================
+
+    const favorites =
+        JSON.parse(
+            localStorage.getItem("favorites")
+        ) || [];
+
+    const favoritesElement =
+        document.getElementById("total-favorites");
+
+    if(favoritesElement){
+
+        favoritesElement.innerText =
+            favorites.length;
+
+    }
+
+
+    // ==========================================
+    // Recently Viewed Count
+    // ==========================================
+
+    const recentlyViewed =
+        JSON.parse(
+            localStorage.getItem("recentlyViewed")
+        ) || [];
+
+    const recentElement =
         document.getElementById("recent-count");
 
-    if(recentCount){
+    if(recentElement){
 
-        recentCount.innerText =
+        recentElement.innerText =
             recentlyViewed.length;
 
     }
+
 }
-
-
-// Load Statistics
-document.addEventListener(
-    "DOMContentLoaded",
-    function(){
-
-        updateStatsUI();
-
-    }
-);
