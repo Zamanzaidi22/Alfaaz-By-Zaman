@@ -528,15 +528,11 @@ gap:15px;
     transform:scale(1.05);
 }
 
-/* ==========================================
-   Previous & Next Buttons
-   ========================================== */
-
-.action-btn[onclick="previousShayari()"],
-.action-btn[onclick="nextShayari()"]{
-    background:#ff9800;
-    color::#fff;
-    border:1px solid #FFD700;
+/* Previous Button */
+.action-btn[onclick="previousShayari()"]{
+    background:#6c5ce7;
+    color:#fff;
+    border:none;
     padding:12px 25px;
     border-radius:30px;
     cursor:pointer;
@@ -546,12 +542,29 @@ gap:15px;
     transition:.3s;
 }
 
-.action-btn[onclick="previousShayari()"]:hover,
+.action-btn[onclick="previousShayari()"]:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(108,92,231,.6);
+}
+
+
+/* Next Button */
+.action-btn[onclick="nextShayari()"]{
+    background:#ff9800;
+    color:#fff;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-top:12px;
+    margin-left:10px;
+    transition:.3s;
+}
+
 .action-btn[onclick="nextShayari()"]:hover{
     transform:scale(1.05);
-    box-shadow:0 0 20px rgba(255,215,0,.6);
-    background:#6c5ce7;
-    color:#fff;
+    box-shadow:0 0 20px rgba(255,152,0,.6);
 }
 
 footer{
