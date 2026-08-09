@@ -528,6 +528,31 @@ gap:15px;
     transform:scale(1.05);
 }
 
+/* ==========================================
+   Next & Previous Buttons
+   ========================================== */
+
+.previous-btn,
+.next-btn{
+    background:#222;
+    color:#FFD700;
+    border:1px solid #FFD700;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-top:12px;
+    margin-left:10px;
+    transition:.3s;
+}
+
+.previous-btn:hover,
+.next-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(255,215,0,.6);
+    background:#FFD700;
+    color:#000;
+}
 
 footer{
     margin-top:60px;
