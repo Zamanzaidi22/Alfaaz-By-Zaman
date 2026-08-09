@@ -534,8 +534,8 @@ gap:15px;
 
 .action-btn[onclick="previousShayari()"],
 .action-btn[onclick="nextShayari()"]{
-    background:#222;
-    color:#FFD700;
+    background:#ff9800;
+    color::#fff;
     border:1px solid #FFD700;
     padding:12px 25px;
     border-radius:30px;
@@ -550,8 +550,8 @@ gap:15px;
 .action-btn[onclick="nextShayari()"]:hover{
     transform:scale(1.05);
     box-shadow:0 0 20px rgba(255,215,0,.6);
-    background:#FFD700;
-    color:#000;
+    background:#6c5ce7;
+    color:#fff;
 }
 
 footer{
