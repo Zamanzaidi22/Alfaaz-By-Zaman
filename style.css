@@ -529,11 +529,11 @@ gap:15px;
 }
 
 /* ==========================================
-   Next & Previous Buttons
+   Previous & Next Buttons
    ========================================== */
 
-.previous-btn,
-.next-btn{
+.action-btn[onclick="previousShayari()"],
+.action-btn[onclick="nextShayari()"]{
     background:#222;
     color:#FFD700;
     border:1px solid #FFD700;
@@ -546,8 +546,8 @@ gap:15px;
     transition:.3s;
 }
 
-.previous-btn:hover,
-.next-btn:hover{
+.action-btn[onclick="previousShayari()"]:hover,
+.action-btn[onclick="nextShayari()"]:hover{
     transform:scale(1.05);
     box-shadow:0 0 20px rgba(255,215,0,.6);
     background:#FFD700;
