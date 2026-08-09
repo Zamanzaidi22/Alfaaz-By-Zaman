@@ -67,6 +67,62 @@ function randomShayari(){
 }
 
 // ==========================================
+// Next Shayari
+// ==========================================
+
+function nextShayari(){
+
+    if(!currentCategory){
+
+        showToast("📂 Pehle koi category select karein.");
+
+        return;
+    }
+
+    const total =
+        SHAYARI_DB[currentCategory].length;
+
+    currentIndex++;
+
+    if(currentIndex >= total){
+
+        currentIndex = 0;
+
+    }
+
+    showCurrentShayari();
+
+}
+
+// ==========================================
+// Previous Shayari
+// ==========================================
+
+function previousShayari(){
+
+    if(!currentCategory){
+
+        showToast("📂 Pehle koi category select karein.");
+
+        return;
+    }
+
+    const total =
+        SHAYARI_DB[currentCategory].length;
+
+    currentIndex--;
+
+    if(currentIndex < 0){
+
+        currentIndex = total - 1;
+
+    }
+
+    showCurrentShayari();
+
+}
+
+// ==========================================
 // Recently Viewed System
 // ==========================================
 
