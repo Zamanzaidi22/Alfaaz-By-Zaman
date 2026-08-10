@@ -257,3 +257,14 @@ document.addEventListener("DOMContentLoaded", function(){
     displayRecentlyViewed();
 
 });
+
+// ==========================================
+// Open Dedicated Category Page
+// ==========================================
+
+function openCategoryPage(category){
+
+    window.location.href =
+        "category.html?category=" + category;
+
+}
