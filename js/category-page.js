@@ -4,14 +4,14 @@ console.log("CATEGORY-PAGE.JS LOADED");
 // Alfaaz By Zaman
 // Dedicated Category Page System
 // ==========================================
-
+let category = "";
 function loadCategoryPage(){
 
     // URL se category read karo
     const params =
         new URLSearchParams(window.location.search);
 
-    const category =
+    category =
         params.get("category");
 
     console.log("Category:", category);
@@ -59,24 +59,55 @@ function loadCategoryPage(){
 
         box.innerHTML += `
 
-            <div class="shayari-card">
+    <div
+        class="shayari-card"
+        onclick="openShayari(${index})"
+        style="cursor:pointer;"
+    >
 
-                <div class="category-shayari-number">
-                    #${index + 1}
-                </div>
+        <div class="category-shayari-number">
+            #${index + 1}
+        </div>
 
-                <p class="category-shayari-text">
-                    ${shayari}
-                </p>
+        <p class="category-shayari-text">
+            ${shayari}
+        </p>
 
-            </div>
+        <div class="category-open-hint">
+            📖 Open Shayari
+        </div>
 
-        `;
+    </div>
+
+`;
 
     });
 
 }
 
+// ==========================================
+// Open Shayari Reader
+// ==========================================
+
+function openShayari(index){
+
+    if(!category){
+
+        console.log("Category not found");
+
+        return;
+
+    }
+
+    const url =
+        "shayari.html?category=" +
+        encodeURIComponent(category) +
+        "&index=" +
+        index;
+
+    window.location.href = url;
+
+}
 
 // ==========================================
 // Page Load
