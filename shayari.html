@@ -1,1 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Shayari | Alfaaz By Zaman</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header class="site-header">
+
+        <h1>📖 Alfaaz By Zaman</h1>
+
+        <a href="index.html">
+            ← Back Home
+        </a>
+
+    </header>
+
+
+    <!-- =====================================
+         SHAYARI PAGE
+    ====================================== -->
+
+    <main class="shayari-page">
+
+        <div class="shayari-category">
+
+            <h2 id="shayariCategory">
+                SHAYARI
+            </h2>
+
+        </div>
+
+
+        <!-- Shayari Card -->
+
+        <section class="single-shayari">
+
+            <div class="shayari-number"
+                 id="shayariNumber">
+
+                #1
+
+            </div>
+
+
+            <div class="shayari-text"
+                 id="shayariText">
+
+                Shayari Loading...
+
+            </div>
+
+
+            <!-- =================================
+                 ACTION BUTTONS
+            ================================== -->
+
+            <div class="shayari-actions">
+
+
+                <button
+                    id="likeButton"
+                    onclick="likeCurrentShayari()">
+
+                    ❤️ Like
+
+                </button>
+
+
+                <button
+                    id="favoriteButton"
+                    onclick="addToFavorites()">
+
+                    ⭐ Favorite
+
+                </button>
+
+
+                <button
+                    id="downloadButton"
+                    onclick="downloadCurrentShayari()">
+
+                    ⬇️ Download
+
+                </button>
+
+
+                <button
+                    id="shareButton"
+                    onclick="shareCurrentShayari()">
+
+                    ↗️ Share
+
+                </button>
+
+
+            </div>
+
+
+            <!-- =================================
+                 NAVIGATION
+            ================================== -->
+
+            <div class="shayari-navigation">
+
+
+                <button
+                    id="previousButton"
+                    onclick="previousShayari()">
+
+                    ← Previous
+
+                </button>
+
+
+                <button
+                    id="nextButton"
+                    onclick="nextShayari()">
+
+                    Next →
+
+                </button>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================
+         TOAST
+    ====================================== -->
+
+    <div id="toast"
+         class="toast">
+
+    </div>
+
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script src="js/database.js"></script>
+
+    <script src="js/favorite.js"></script>
+
+    <script src="js/download.js"></script>
+
+    <script src="js/shayari-page.js"></script>
+
+
+</body>
+
+</html>
