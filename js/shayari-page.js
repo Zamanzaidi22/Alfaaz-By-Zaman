@@ -111,7 +111,22 @@ function displayCurrentShayari(){
             shayari;
 
     }
+// ==========================================
+// Update Individual Shayari Like Count
+// ==========================================
 
+const likeCount =
+    document.getElementById("shayariLikeCount");
+
+if(likeCount){
+
+    const totalLikes =
+        likes[shayari] || 0;
+
+    likeCount.innerText =
+        totalLikes;
+
+}
 }
 
 
