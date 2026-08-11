@@ -2329,244 +2329,43 @@ font-size:26px;
 
 /* ==========================================
    ALFAAZ BY ZAMAN
-   SHAYARI VIEWER
+   PREMIUM SHAYARI VIEWER
+   Step 3.6.5 - Final Clean CSS
 ========================================== */
 
 .shayari-page{
     min-height:100vh;
-    padding:40px 20px 60px;
+    max-width:950px;
+    margin:0 auto;
+    padding:35px 20px 60px;
     text-align:center;
 }
 
 .shayari-category{
     margin-bottom:25px;
+    text-align:center;
 }
 
 .shayari-category h2{
-    color:#FFD700;
-    font-size:28px;
-    letter-spacing:1px;
     margin:0;
-}
-
-
-/* ==========================================
-   MAIN SHAYARI CARD
-========================================== */
-
-.single-shayari{
-    max-width:700px;
-    margin:30px auto;
-    padding:45px 30px;
-    background:#111;
-    border:1px solid rgba(255,215,0,.35);
-    border-radius:25px;
-    box-shadow:0 0 30px rgba(255,215,0,.12);
-}
-
-
-/* ==========================================
-   SHAYARI NUMBER
-========================================== */
-
-.shayari-number{
-    display:inline-block;
-    color:#FFD700;
-    font-size:14px;
-    font-weight:bold;
-    margin-bottom:25px;
-    padding:7px 16px;
-    border:1px solid rgba(255,215,0,.4);
-    border-radius:20px;
-}
-
-
-/* ==========================================
-   SHAYARI TEXT
-========================================== */
-
-.shayari-text{
-    color:#fff;
-    font-size:25px;
-    line-height:1.9;
-    white-space:pre-line;
-    min-height:150px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    text-align:center;
-
-    padding:20px 10px;
-}
-
-
-/* ==========================================
-   ACTION BUTTONS
-========================================== */
-
-.shayari-actions{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:10px;
-    margin-top:30px;
-}
-
-
-.shayari-actions button{
-    border:none;
-    padding:12px 20px;
-    border-radius:30px;
-    cursor:pointer;
-    font-weight:bold;
-    transition:.3s;
-}
-
-
-.shayari-actions button:hover{
-    transform:scale(1.05);
-}
-
-
-/* Like */
-
-#likeButton{
-    background:#ff1744;
-    color:#fff;
-}
-
-
-/* Favorite */
-
-#favoriteButton{
-    background:#ff4d6d;
-    color:#000;
-}
-
-
-/* Download */
-
-#downloadButton{
-    background:#ff9800;
-    color:#fff;
-}
-
-
-/* Share */
-
-#shareButton{
-    background:#25D366;
-    color:#fff;
-}
-
-
-/* ==========================================
-   PREVIOUS / NEXT
-========================================== */
-
-.shayari-navigation{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    margin-top:30px;
-}
-
-
-.shayari-navigation button{
-    min-width:130px;
-    padding:12px 22px;
-    border:none;
-    border-radius:30px;
-    background:#FFD700;
-    color:#000;
-    font-weight:bold;
-    cursor:pointer;
-    transition:.3s;
-}
-
-
-.shayari-navigation button:hover{
-    transform:scale(1.05);
-    box-shadow:0 0 20px rgba(255,215,0,.5);
-}
-
-
-/* ==========================================
-   MOBILE
-========================================== */
-
-@media(max-width:600px){
-
-    .shayari-page{
-        padding:30px 15px 50px;
-    }
-
-    .shayari-category h2{
-        font-size:23px;
-    }
-
-    .single-shayari{
-        padding:35px 18px;
-        border-radius:20px;
-    }
-
-    .shayari-text{
-        font-size:21px;
-        line-height:1.8;
-        min-height:170px;
-    }
-
-    .shayari-actions{
-        gap:8px;
-    }
-
-    .shayari-actions button{
-        padding:11px 15px;
-        font-size:13px;
-    }
-
-    .shayari-navigation{
-        gap:10px;
-    }
-
-    .shayari-navigation button{
-        min-width:115px;
-        padding:11px 15px;
-    }
-
-}
-
-/* ==========================================
-   SHAYARI PAGE - PREMIUM IMAGE STYLE
-   Step 3.6.5 Part 3B
-========================================== */
-
-.shayari-page{
-    max-width:900px;
-    margin:40px auto;
-    padding:20px;
-}
-
-.shayari-category{
-    text-align:center;
-    margin-bottom:25px;
-}
-
-.shayari-category h2{
     color:#FFD700;
     font-size:28px;
     letter-spacing:2px;
     text-transform:uppercase;
 }
 
+
+/* ==========================================
+   PREMIUM SHAYARI CARD
+========================================== */
+
 .single-shayari{
     position:relative;
+
     max-width:700px;
     min-height:430px;
-    margin:0 auto;
+
+    margin:25px auto 0;
     padding:55px 35px 35px;
 
     display:flex;
@@ -2578,81 +2377,149 @@ font-size:26px;
 
     background:
         radial-gradient(
-            circle at center,
-            rgba(255,215,0,.08),
+            circle at 50% 45%,
+            rgba(255,215,0,.10),
             transparent 65%
         ),
-        #080808;
+        linear-gradient(
+            145deg,
+            #151515,
+            #070707
+        );
 
-    border:1px solid rgba(255,215,0,.35);
-    border-radius:20px;
+    border:1px solid rgba(255,215,0,.45);
+    border-radius:24px;
 
     box-shadow:
-        0 0 30px rgba(255,215,0,.10),
-        inset 0 0 30px rgba(255,215,0,.03);
+        0 0 35px rgba(255,215,0,.12),
+        inset 0 0 35px rgba(255,215,0,.035);
+
+    overflow:hidden;
 }
 
-.shayari-number{
-    color:#FFD700;
-    font-size:18px;
-    font-weight:bold;
-    margin-bottom:25px;
+
+/* ==========================================
+   GOLDEN TOP GLOW
+========================================== */
+
+.single-shayari::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:15%;
+    right:15%;
+
+    height:2px;
+
+    background:#FFD700;
+
+    box-shadow:
+        0 0 10px #FFD700,
+        0 0 25px rgba(255,215,0,.7);
+
+    opacity:.8;
 }
+
+
+/* ==========================================
+   SHAYARI NUMBER
+========================================== */
+
+.shayari-number{
+    display:inline-block;
+
+    margin-bottom:25px;
+    padding:7px 17px;
+
+    color:#FFD700;
+
+    font-size:15px;
+    font-weight:bold;
+
+    border:1px solid rgba(255,215,0,.45);
+    border-radius:25px;
+
+    background:rgba(255,215,0,.04);
+}
+
+
+/* ==========================================
+   SHAYARI TEXT
+========================================== */
 
 .shayari-text{
     max-width:600px;
 
+    min-height:150px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:15px 10px;
+
     color:#fff;
+
     font-size:25px;
-    line-height:1.8;
+    line-height:1.85;
     font-weight:500;
+
+    text-align:center;
 
     white-space:pre-line;
 
     text-shadow:
-        0 0 8px rgba(255,215,0,.15);
+        0 0 8px rgba(255,215,0,.12);
 }
 
-.shayari-actions,
-.shayari-navigation{
+
+/* ==========================================
+   ACTION BUTTONS
+========================================== */
+
+.shayari-actions{
+    width:100%;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     flex-wrap:wrap;
+
     gap:10px;
-    width:100%;
+
+    margin-top:30px;
 }
 
-.shayari-actions{
-    margin-top:35px;
-}
 
-.shayari-navigation{
-    margin-top:25px;
-}
-
-.shayari-actions button,
-.shayari-navigation button{
+.shayari-actions button{
     border:none;
     border-radius:30px;
-    padding:12px 22px;
+
+    padding:12px 20px;
 
     cursor:pointer;
 
-    font-weight:bold;
     font-size:14px;
+    font-weight:bold;
 
     transition:
         transform .25s ease,
-        box-shadow .25s ease;
+        box-shadow .25s ease,
+        opacity .25s ease;
 }
 
-.shayari-actions button:hover,
-.shayari-navigation button:hover{
+
+.shayari-actions button:hover{
     transform:translateY(-2px) scale(1.03);
 }
 
-/* Like */
+
+/* ==========================================
+   LIKE
+========================================== */
 
 #likeButton{
     background:#ff1744;
@@ -2660,10 +2527,13 @@ font-size:26px;
 }
 
 #likeButton:hover{
-    box-shadow:0 0 18px rgba(255,23,68,.5);
+    box-shadow:0 0 18px rgba(255,23,68,.55);
 }
 
-/* Favorite */
+
+/* ==========================================
+   FAVORITE
+========================================== */
 
 #favoriteButton{
     background:#ff4d6d;
@@ -2671,10 +2541,13 @@ font-size:26px;
 }
 
 #favoriteButton:hover{
-    box-shadow:0 0 18px rgba(255,77,109,.5);
+    box-shadow:0 0 18px rgba(255,77,109,.55);
 }
 
-/* Download */
+
+/* ==========================================
+   DOWNLOAD
+========================================== */
 
 #downloadButton{
     background:#ff9800;
@@ -2682,10 +2555,13 @@ font-size:26px;
 }
 
 #downloadButton:hover{
-    box-shadow:0 0 18px rgba(255,152,0,.5);
+    box-shadow:0 0 18px rgba(255,152,0,.55);
 }
 
-/* Share */
+
+/* ==========================================
+   SHARE
+========================================== */
 
 #shareButton{
     background:#25D366;
@@ -2693,29 +2569,54 @@ font-size:26px;
 }
 
 #shareButton:hover{
-    box-shadow:0 0 18px rgba(37,211,102,.5);
+    box-shadow:0 0 18px rgba(37,211,102,.55);
 }
 
-/* Previous */
 
-#previousButton{
+/* ==========================================
+   PREVIOUS / NEXT
+========================================== */
+
+.shayari-navigation{
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:25px;
+}
+
+
+.shayari-navigation button{
+    min-width:130px;
+
+    padding:12px 22px;
+
+    border:none;
+    border-radius:30px;
+
     background:#FFD700;
     color:#000;
+
+    font-size:14px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
 }
 
-#previousButton:hover{
-    box-shadow:0 0 18px rgba(255,215,0,.5);
-}
 
-/* Next */
+.shayari-navigation button:hover{
+    transform:translateY(-2px) scale(1.03);
 
-#nextButton{
-    background:#FFD700;
-    color:#000;
-}
-
-#nextButton:hover{
-    box-shadow:0 0 18px rgba(255,215,0,.5);
+    box-shadow:
+        0 0 18px rgba(255,215,0,.55);
 }
 
 
@@ -2723,31 +2624,59 @@ font-size:26px;
    MOBILE
 ========================================== */
 
-@media (max-width:600px){
+@media(max-width:600px){
 
     .shayari-page{
-        margin:20px auto;
-        padding:12px;
-    }
-
-    .single-shayari{
-        min-height:420px;
-        padding:45px 20px 25px;
-        border-radius:16px;
+        padding:25px 12px 50px;
     }
 
     .shayari-category h2{
         font-size:22px;
+        letter-spacing:1.5px;
+    }
+
+    .single-shayari{
+        min-height:420px;
+
+        margin-top:20px;
+
+        padding:45px 18px 25px;
+
+        border-radius:20px;
+    }
+
+    .shayari-number{
+        font-size:14px;
+        margin-bottom:20px;
     }
 
     .shayari-text{
+        min-height:170px;
+
         font-size:21px;
-        line-height:1.7;
+        line-height:1.75;
+
+        padding:10px 5px;
     }
 
-    .shayari-actions button,
+    .shayari-actions{
+        gap:8px;
+        margin-top:25px;
+    }
+
+    .shayari-actions button{
+        padding:11px 15px;
+        font-size:13px;
+    }
+
+    .shayari-navigation{
+        gap:10px;
+        margin-top:20px;
+    }
+
     .shayari-navigation button{
-        padding:11px 17px;
+        min-width:115px;
+        padding:11px 15px;
         font-size:13px;
     }
 
