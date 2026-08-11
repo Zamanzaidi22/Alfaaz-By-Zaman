@@ -7,7 +7,8 @@ console.log("SHAYARI-PAGE.JS LOADED");
 
 let shayariCategory = "";
 let shayariIndex = 0;
-
+let currentCategory = "";
+let currentIndex = 0;
 
 // ==========================================
 // Load Shayari From URL
@@ -23,7 +24,8 @@ function loadShayariPage(){
 
     shayariIndex =
         Number(params.get("index")) || 0;
-
+currentCategory = shayariCategory;
+currentIndex = shayariIndex;
 
     console.log(
         "Category:",
@@ -67,7 +69,8 @@ function loadShayariPage(){
 // ==========================================
 // Display Current Shayari
 // ==========================================
-
+currentCategory = shayariCategory;
+currentIndex = shayariIndex;
 function displayCurrentShayari(){
 
     const shayari =
@@ -140,7 +143,7 @@ function nextShayari(){
     displayCurrentShayari();
 
 }
-
+currentIndex = shayariIndex;
 
 // ==========================================
 // Previous Shayari
@@ -163,7 +166,7 @@ function previousShayari(){
         shayariIndex = total - 1;
 
     }
-
+currentIndex = shayariIndex;
 
     updateURL();
 
