@@ -2538,3 +2538,217 @@ font-size:26px;
     }
 
 }
+
+/* ==========================================
+   SHAYARI PAGE - PREMIUM IMAGE STYLE
+   Step 3.6.5 Part 3B
+========================================== */
+
+.shayari-page{
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.shayari-category{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.shayari-category h2{
+    color:#FFD700;
+    font-size:28px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.single-shayari{
+    position:relative;
+    max-width:700px;
+    min-height:430px;
+    margin:0 auto;
+    padding:55px 35px 35px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255,215,0,.08),
+            transparent 65%
+        ),
+        #080808;
+
+    border:1px solid rgba(255,215,0,.35);
+    border-radius:20px;
+
+    box-shadow:
+        0 0 30px rgba(255,215,0,.10),
+        inset 0 0 30px rgba(255,215,0,.03);
+}
+
+.shayari-number{
+    color:#FFD700;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+.shayari-text{
+    max-width:600px;
+
+    color:#fff;
+    font-size:25px;
+    line-height:1.8;
+    font-weight:500;
+
+    white-space:pre-line;
+
+    text-shadow:
+        0 0 8px rgba(255,215,0,.15);
+}
+
+.shayari-actions,
+.shayari-navigation{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+    width:100%;
+}
+
+.shayari-actions{
+    margin-top:35px;
+}
+
+.shayari-navigation{
+    margin-top:25px;
+}
+
+.shayari-actions button,
+.shayari-navigation button{
+    border:none;
+    border-radius:30px;
+    padding:12px 22px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+    font-size:14px;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.shayari-actions button:hover,
+.shayari-navigation button:hover{
+    transform:translateY(-2px) scale(1.03);
+}
+
+/* Like */
+
+#likeButton{
+    background:#ff1744;
+    color:#fff;
+}
+
+#likeButton:hover{
+    box-shadow:0 0 18px rgba(255,23,68,.5);
+}
+
+/* Favorite */
+
+#favoriteButton{
+    background:#ff4d6d;
+    color:#000;
+}
+
+#favoriteButton:hover{
+    box-shadow:0 0 18px rgba(255,77,109,.5);
+}
+
+/* Download */
+
+#downloadButton{
+    background:#ff9800;
+    color:#fff;
+}
+
+#downloadButton:hover{
+    box-shadow:0 0 18px rgba(255,152,0,.5);
+}
+
+/* Share */
+
+#shareButton{
+    background:#25D366;
+    color:#fff;
+}
+
+#shareButton:hover{
+    box-shadow:0 0 18px rgba(37,211,102,.5);
+}
+
+/* Previous */
+
+#previousButton{
+    background:#FFD700;
+    color:#000;
+}
+
+#previousButton:hover{
+    box-shadow:0 0 18px rgba(255,215,0,.5);
+}
+
+/* Next */
+
+#nextButton{
+    background:#FFD700;
+    color:#000;
+}
+
+#nextButton:hover{
+    box-shadow:0 0 18px rgba(255,215,0,.5);
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:600px){
+
+    .shayari-page{
+        margin:20px auto;
+        padding:12px;
+    }
+
+    .single-shayari{
+        min-height:420px;
+        padding:45px 20px 25px;
+        border-radius:16px;
+    }
+
+    .shayari-category h2{
+        font-size:22px;
+    }
+
+    .shayari-text{
+        font-size:21px;
+        line-height:1.7;
+    }
+
+    .shayari-actions button,
+    .shayari-navigation button{
+        padding:11px 17px;
+        font-size:13px;
+    }
+
+}
