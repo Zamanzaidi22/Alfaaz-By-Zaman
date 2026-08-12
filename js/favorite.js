@@ -81,8 +81,9 @@ function likeCurrentShayari(){
     );
 
     updateFavoriteUI();
+updateShayariLikeCount();
 
-    showToast("👍 Liked ❤️");
+showToast("👍 Liked ❤️");
 
 }
 
@@ -371,5 +372,27 @@ function displayTrendingShayari(){
         `;
 
     });
+
+}
+// ==========================================
+// Update Current Shayari Like Count
+// ==========================================
+
+function updateShayariLikeCount(){
+
+    if(!currentCategory) return;
+
+    const shayari =
+        SHAYARI_DB[currentCategory][currentIndex];
+
+    const likeCount =
+        document.getElementById("shayariLikeCount");
+
+    if(likeCount){
+
+        likeCount.innerText =
+            likes[shayari] || 0;
+
+    }
 
 }
