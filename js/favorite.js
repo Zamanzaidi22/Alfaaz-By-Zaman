@@ -13,35 +13,112 @@ let likeActivity = JSON.parse(localStorage.getItem("likeActivity")) || [];
 // Add To Favorites
 // ==========================================
 
+// ==========================================
+// Add Current Shayari To Favorites
+// ==========================================
+
 function addToFavorites(){
 
     console.log("Favorite Button Clicked");
 
-    if(!currentCategory) return;
+
+    let activeCategory = "";
+    let activeIndex = 0;
+
+
+    // ------------------------------------------
+    // New Shayari Page System
+    // ------------------------------------------
+
+    if(
+        typeof shayariCategory !== "undefined" &&
+        shayariCategory &&
+        typeof shayariIndex !== "undefined"
+    ){
+
+        activeCategory =
+            shayariCategory;
+
+        activeIndex =
+            shayariIndex;
+
+    }
+
+
+    // ------------------------------------------
+    // Old Category System
+    // ------------------------------------------
+
+    else if(
+        typeof currentCategory !== "undefined" &&
+        currentCategory &&
+        typeof currentIndex !== "undefined"
+    ){
+
+        activeCategory =
+            currentCategory;
+
+        activeIndex =
+            currentIndex;
+
+    }
+
+
+    // ------------------------------------------
+    // Safety Check
+    // ------------------------------------------
+
+    if(
+        !activeCategory ||
+        !SHAYARI_DB[activeCategory] ||
+        !SHAYARI_DB[activeCategory][activeIndex]
+    ){
+
+        showToast("⚠️ Shayari not found");
+
+        return;
+
+    }
+
 
     const shayari =
-        SHAYARI_DB[currentCategory][currentIndex];
+        SHAYARI_DB[activeCategory][activeIndex];
+
+
+    // ------------------------------------------
+    // Already Favorite?
+    // ------------------------------------------
 
     if(favorites.includes(shayari)){
 
         showToast("❤️ Already in Favorites");
 
         return;
+
     }
 
+
+    // ------------------------------------------
+    // Add Favorite
+    // ------------------------------------------
+
     favorites.push(shayari);
+
 
     localStorage.setItem(
         "favorites",
         JSON.stringify(favorites)
     );
 
+
+    // Update UI
+
     updateFavoriteUI();
+
 
     showToast("❤️ Added to Favorites");
 
 }
-
 
 // ==========================================
 // Like Current Shayari
