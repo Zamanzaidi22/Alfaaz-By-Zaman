@@ -49,22 +49,74 @@ function addToFavorites(){
 
 function likeCurrentShayari(){
 
-    if(!currentCategory) return;
+    let activeCategory = "";
+    let activeIndex = 0;
+
+
+    // New Shayari Page
+    if(
+        typeof shayariCategory !== "undefined" &&
+        shayariCategory &&
+        typeof shayariIndex !== "undefined"
+    ){
+
+        activeCategory =
+            shayariCategory;
+
+        activeIndex =
+            shayariIndex;
+
+    }
+
+
+    // Old Category Page
+    else if(
+        typeof currentCategory !== "undefined" &&
+        currentCategory &&
+        typeof currentIndex !== "undefined"
+    ){
+
+        activeCategory =
+            currentCategory;
+
+        activeIndex =
+            currentIndex;
+
+    }
+
+
+    // Safety Check
+    if(
+        !activeCategory ||
+        !SHAYARI_DB[activeCategory] ||
+        !SHAYARI_DB[activeCategory][activeIndex]
+    ){
+
+        return;
+
+    }
+
 
     const shayari =
-        SHAYARI_DB[currentCategory][currentIndex];
+        SHAYARI_DB[activeCategory][activeIndex];
+
 
     // Lifetime Likes
     if(!likes[shayari]){
+
         likes[shayari] = 0;
+
     }
 
+
     likes[shayari]++;
+
 
     localStorage.setItem(
         "likes",
         JSON.stringify(likes)
     );
+
 
     // Recent Like Activity
     likeActivity.push({
@@ -75,15 +127,19 @@ function likeCurrentShayari(){
 
     });
 
+
     localStorage.setItem(
         "likeActivity",
         JSON.stringify(likeActivity)
     );
 
-    updateFavoriteUI();
-updateShayariLikeCount();
 
-showToast("👍 Liked ❤️");
+    updateFavoriteUI();
+
+    updateShayariLikeCount();
+
+
+    showToast("👍 Liked ❤️");
 
 }
 
@@ -374,19 +430,80 @@ function displayTrendingShayari(){
     });
 
 }
+
 // ==========================================
 // Update Current Shayari Like Count
+// Works With Shayari Page + Category Page
 // ==========================================
 
 function updateShayariLikeCount(){
 
-    if(!currentCategory) return;
+    let activeCategory = "";
+    let activeIndex = 0;
+
+
+    // ------------------------------------------
+    // New Shayari Page System
+    // ------------------------------------------
+
+    if(
+        typeof shayariCategory !== "undefined" &&
+        shayariCategory &&
+        typeof shayariIndex !== "undefined"
+    ){
+
+        activeCategory =
+            shayariCategory;
+
+        activeIndex =
+            shayariIndex;
+
+    }
+
+
+    // ------------------------------------------
+    // Old Category System
+    // ------------------------------------------
+
+    else if(
+        typeof currentCategory !== "undefined" &&
+        currentCategory &&
+        typeof currentIndex !== "undefined"
+    ){
+
+        activeCategory =
+            currentCategory;
+
+        activeIndex =
+            currentIndex;
+
+    }
+
+
+    // ------------------------------------------
+    // Safety Check
+    // ------------------------------------------
+
+    if(
+        !activeCategory ||
+        !SHAYARI_DB[activeCategory] ||
+        !SHAYARI_DB[activeCategory][activeIndex]
+    ){
+
+        return;
+
+    }
+
 
     const shayari =
-        SHAYARI_DB[currentCategory][currentIndex];
+        SHAYARI_DB[activeCategory][activeIndex];
+
 
     const likeCount =
-        document.getElementById("shayariLikeCount");
+        document.getElementById(
+            "shayariLikeCount"
+        );
+
 
     if(likeCount){
 
