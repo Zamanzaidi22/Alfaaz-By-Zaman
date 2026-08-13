@@ -2681,3 +2681,30 @@ font-size:26px;
     }
 
 }
+
+/* ==========================================
+   FAVORITE BUTTON - ACTIVE STATE
+   Step 2E Part 2
+========================================== */
+
+#favoriteButton.favorited{
+    background:#FFD700;
+    color:#000;
+
+    box-shadow:
+        0 0 12px rgba(255,215,0,.45),
+        0 0 25px rgba(255,215,0,.20);
+
+    transform:scale(1.03);
+
+    border:1px solid rgba(255,255,255,.25);
+}
+
+
+#favoriteButton.favorited:hover{
+    transform:scale(1.06);
+
+    box-shadow:
+        0 0 18px rgba(255,215,0,.65),
+        0 0 35px rgba(255,215,0,.30);
+}
