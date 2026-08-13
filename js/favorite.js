@@ -115,7 +115,7 @@ function addToFavorites(){
 
     updateFavoriteUI();
 
-
+updateFavoriteButton();
     showToast("❤️ Added to Favorites");
 
 }
@@ -302,7 +302,110 @@ function updateFavoriteUI(){
 
     }
 
+// ==========================================
+// Update Current Shayari Favorite Button
+// ==========================================
 
+function updateFavoriteButton(){
+
+    let activeCategory = "";
+    let activeIndex = 0;
+
+
+    // ------------------------------------------
+    // New Shayari Page System
+    // ------------------------------------------
+
+    if(
+        typeof shayariCategory !== "undefined" &&
+        shayariCategory &&
+        typeof shayariIndex !== "undefined"
+    ){
+
+        activeCategory =
+            shayariCategory;
+
+        activeIndex =
+            shayariIndex;
+
+    }
+
+
+    // ------------------------------------------
+    // Old Homepage System
+    // ------------------------------------------
+
+    else if(
+        typeof currentCategory !== "undefined" &&
+        currentCategory &&
+        typeof currentIndex !== "undefined"
+    ){
+
+        activeCategory =
+            currentCategory;
+
+        activeIndex =
+            currentIndex;
+
+    }
+
+
+    // ------------------------------------------
+    // Safety Check
+    // ------------------------------------------
+
+    if(
+        !activeCategory ||
+        !SHAYARI_DB[activeCategory] ||
+        !SHAYARI_DB[activeCategory][activeIndex]
+    ){
+
+        return;
+
+    }
+
+
+    const shayari =
+        SHAYARI_DB[activeCategory][activeIndex];
+
+
+    const button =
+        document.getElementById("favoriteButton");
+
+
+    if(!button){
+
+        return;
+
+    }
+
+
+    // ------------------------------------------
+    // Check Favorite Status
+    // ------------------------------------------
+
+    if(favorites.includes(shayari)){
+
+        button.innerText =
+            "❤️ Favorited";
+
+        button.classList.add(
+            "favorited"
+        );
+
+    }else{
+
+        button.innerText =
+            "⭐ Favorite";
+
+        button.classList.remove(
+            "favorited"
+        );
+
+    }
+
+}
+    
     // ------------------------------------------
     // Most Loved Shayari
     // ------------------------------------------
