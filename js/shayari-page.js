@@ -109,7 +109,7 @@ function displayCurrentShayari(){
 
         shayariText.innerText =
             shayari;
-
+updateFavoriteButton();
     }
 // ==========================================
 // Update Individual Shayari Like Count
