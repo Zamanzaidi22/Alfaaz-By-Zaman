@@ -693,3 +693,60 @@ function updateShayariLikeCount(){
     }
 
 }
+
+// ==========================================
+// Update Favorite Button State
+// ==========================================
+
+function updateFavoriteButton(){
+
+    if(
+        typeof shayariCategory === "undefined" ||
+        typeof shayariIndex === "undefined"
+    ){
+
+        return;
+
+    }
+
+
+    if(
+        !shayariCategory ||
+        !SHAYARI_DB[shayariCategory]
+    ){
+
+        return;
+
+    }
+
+
+    const shayari =
+        SHAYARI_DB[shayariCategory][shayariIndex];
+
+
+    const button =
+        document.getElementById("favoriteButton");
+
+
+    if(!button){
+
+        return;
+
+    }
+
+
+    if(favorites.includes(shayari)){
+
+        button.innerText = "❤️ Favorited";
+
+        button.classList.add("favorited");
+
+    }else{
+
+        button.innerText = "⭐ Favorite";
+
+        button.classList.remove("favorited");
+
+    }
+
+}
