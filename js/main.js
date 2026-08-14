@@ -87,3 +87,27 @@ function shareWhatsApp(){
 
 }
 console.log("MAIN.JS FINISHED");
+
+// ==========================================
+// HOME PAGE DEFAULT SHAYARI
+// ==========================================
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    // Agar Home page par koi category selected nahi hai
+    if(!currentCategory){
+
+        currentCategory = "love";
+        currentIndex = 0;
+
+        showCurrentShayari();
+
+        console.log(
+            "🏠 Default Shayari Loaded:",
+            currentCategory,
+            currentIndex
+        );
+
+    }
+
+});
