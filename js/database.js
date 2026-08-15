@@ -982,6 +982,39 @@ sabse badi kamyaabi hai.`,
 `Har lamha ek nayi kahani hai,
 bas usse muskura kar jeena seekho.`
 
-]
+],
 
+"zaman-writes": [
+
+`Kabhi kabhi alfaaz kam pad jaate hain,
+jab dil me koi bahut khaas hota hai.`,
+
+`Maine khamoshi ko bhi alfaaz bana diya,
+jo keh na saka, use kagaz par likh diya.`,
+
+`Mere lafzon me jo dard nazar aaye,
+samajh lena koi kahani adhuri hai.`,
+
+`Jo baat dil keh nahi paata,
+mera qalam aksar keh deta hai.`,
+
+`Har shakhs ke hisse me ek kahani hoti hai,
+bas har kisi ko use likhna nahi aata.`,
+
+`Main shayar nahi tha,
+bas dil ne likhna sikha diya.`,
+
+`Kuch ehsaas sirf mehsoos kiye jaate hain,
+unhe lafzon me bayan karna mumkin nahi.`,
+
+`Mere alfaaz meri pehchaan hain,
+aur meri khamoshi meri kahani.`,
+
+`Jo guzra hai mujh par,
+wahi to mere alfaaz ban kar nikla hai.`,
+
+`Kabhi mere lafzon ko gaur se padhna,
+shayad inme mera kuch hissa mil jaaye.`
+
+],
 };
