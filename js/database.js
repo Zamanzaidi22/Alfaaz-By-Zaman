@@ -1014,7 +1014,267 @@ aur meri khamoshi meri kahani.`,
 wahi to mere alfaaz ban kar nikla hai.`,
 
 `Kabhi mere lafzon ko gaur se padhna,
-shayad inme mera kuch hissa mil jaaye.`
+shayad inme mera kuch hissa mil jaaye.`,
+
+  `Wo Mere Ateet se Guzar Kar Kadam se Kadam Mila Rahi Hai.
+Jitna Pyaar Karti Thi Pehle Usse Zyada Pyaar Ab Jataa Rahi Hai.
+Ek Tarfa Pyaar Bhi Mukammal Ho Jaata Hai Duniya Mein.
+Shayad Meri Khamosh Mohabbat Ko Wo Ab Samajh Paa Rahi Hai.
+Jo Baat Kabhi Lafzon Mein Keh Na Saka Main Usse?
+Aaj Wohi Baat Wo Meri Aankhon se Padh Paa Rahi Hai.`,
+
+  `Haal-e-Dil Mujhe Nahi Bataogi To Phir Kisko Bataogi.
+Kab Tak Apne Andar Iss Raaz Ko Chupaogi.
+Waqt Hai Abhi Sab Aashna Kar Do.
+Bad-Dua Nahi Deta Par Sach Mein Baad Mein Bahut Pachtaogi.`,
+
+  `Chaha Kar Bhi Kisi Ka Khayaal Mann Mein Aata Hi Nahi.
+Aisa Lagta Hai Jaise Gustakhi-e-Mohabbat Na Ho Jaaye Mujhse.`,
+
+  `Sach Kahoon To Tere Ishq Ne Namaazi Bana Diya.
+Haq Ye Bhi Hai Ke Tu Hi Tu Rehta Hai Mere Zehan Mein.`,
+
+  `Subah Uthte Hi Kyun Yaad Aa Jaata Hai Wo Shakhs.
+Jisko Meri Hasrat Bhari Nigaahon se Kabhi Dekha Bhi Nahi.`,
+
+  `Ye Izhaar Nahi To Izhaar-e-Mohabbat Kya Hoga.
+Humse Poochte Ho Bhala Humara Haal Kya Hoga.
+Hum To Uss Waqt Ke Intezaar Mein Hain Jab Humare Nikah Mein Daakhil Hongi Aap.
+Hum Nahi Jaante Uss Din Mausam, Fizaa Aur Samaa Kya Hoga.`,
+
+  `Paas Aayenge Aur Gale Bhi Lag Jayenge.
+Door se Dekhne Ke Din Bhi Guzar Jayenge.
+Jawani Ke Din Kate Na Kate Ye Saal Kat Jaaye ALLAH Kare.
+Warna Hum To Yunhi Intezaar Mein Mar Jayenge.`,
+
+  `Tumhe Dekh Kar Tumhari Tareef Mein Kya Hi Kahega Ye Zamana.
+Hamari Nigaahon se Dekhein To Chand Nazar Aaye Sabko.`,
+
+  `Pyaar Ko Pyaar Hi Rehne Do Yaadein Na Banao.
+Ehsaan Karo Kabhi Kisi Par To Usko Na Jataao.
+Waqt, Ehsaas, Intezaar Sab Kiya Ishq Ke Khatir.
+Ab Kehte Ho Chhodo Miyan Ye Baatein Humein Na Samjhao.`,
+
+  `कुछ माँगूँ अगर तुमसे दे पाओगी क्या?
+चार कदम ज़िन्दगी के साथ चल पाओगी क्या?
+लोग कहते हैं ज़िन्दगी बस दो पल की कहानी है,
+उन दो पलों का हिस्सा बन पाओगी क्या?`,
+
+  `Uska Naam
+Mere Hi Naam Mein Uska Naam Hai Chhupaa.
+Sach Kahoon To Bas Noon Hai Kahin Judaa.
+Kuch Majbooriyan Hai Izhaar-e-Mohabbat Karne Mein.
+Kahin Ho Jaaye Na Wo Humse Khafaa...`,
+
+  `अपनी पसन्द पर नाज़ होने लगा है "ज़मन"
+दिन पे दिन हमारे भाव बढ़ा रही है आप।`,
+
+  `Mann Karta Hai Tumhari Zulfon Ko Hum Sawaaren.
+Kabhi Aa Kar To Baithe Aap Paas Humare.
+Khudaya Wo Din Jaldi se Naseeb Mein Likh De.
+Unko Dulhan Ki Tarah Sajaaye Hum Aur Wo Humein Nikhaare.`,
+
+  `Kuch Raazon Ko Raaz Hi Rehne Dete "Zaman".
+Tumne Aashna Karke Takleefein Badha Di Humari...`,
+
+  `Chand Ka Deedaar
+Kaisi Hai Aap, Haal To Bataye Apna.
+Taras Rahe Hain, Deedaar To Karaaye Apna.
+
+Ye Dil To Har Dhadkan Mein Pukaarta Hai Tumhe.
+Aayein Lag Jaayen Gale Seene se Aur Sunen Naam Apna.
+
+Ae Duniya Walon Zara Adab se Baat Karo Unse.
+Koi Unko Saara Jahan Maan Baitha Hai Apna.
+
+Kar Ke Tasawwur-e-Maan Likh Raha Hoon Ek Ghazal.
+Haal-e-Dil Kya Hai Mera, Har Ek Sher Sunayega Apna.
+
+Aasman Ko Dekh Kar Ye Soch Raha Hoon Main "Zaman".
+Muh se Naqaab Kab Hatayega Ye Chand Apna.`,
+
+  `Kuch Maangoon Agar Tumse De Paogi Kya?
+Chaar Kadam Zindagi Ke Saath Chal Paogi Kya.
+Log Kehte Hain Zindagi Bas Do Pal Ki Kahani Hai.
+Unn Do Palon Ka Hissa Ban Paogi Kya.
+
+Mohabbat Mein Waadein To Sab Karte Hain.
+Jo Humse Kiye Hain Unhein Nibha Paogi Kya.
+
+Dost Kehte Hain Main Baatein Bahut Karta Hoon.
+Mere Dil Ki Sadaayein Sun Paogi Kya.
+
+Tadapta Rehta Hoon Main Tumhari Mohabbat Ke Intezaar Mein.
+Kya Uss Tadap Ko Bhi Mehsoos Kar Paogi Kya.
+
+Mashook Ka Khwab Mehbooba se Nikah Karna Hota Hai.
+Humare Iss Khwaab Ko Sach Bana Paogi Kya.
+
+Mushkilein Jo Bhi Aaye Raaste Mein Manzil Tak Pahunch Jayenge.
+Bas Aap Waada Karein, Humare Saath Chal Paogi Kya.
+
+Zaigam Ka ZA Aur Aiman Ka Man Milaa Kar.
+Kya Humesha Ke Liye "Zaman" Ko Dil Mein Sajaa Paogi Kya.
+
+Kuch Maangoon Agar Tumse De Paogi Kya.
+Chaar Kadam Zindagi Ke Saath Chal Paogi Kya.`,
+
+  `Tasveer Tumhari Dekh Kar
+Kya Soch Raha Hoon Main.
+Shayad Tumse Baat Karne Ki Koi
+Nayi Wajah Dhoondh Raha Hoon.
+
+Din Aur Raat Ek Ajeeb Si Bechaini Mein
+Guzar Rahe Hain Laaddo.
+Kabhi Insta, Kabhi Whatsapp Ki Profile
+Khol Kar Dekh Raha Hoon Main.`,
+
+  `Har Msg Mein Flirting Ka Andaaz Hai Abhi.
+Intezaar Mein Hoon Uss Din Ka.
+Abhi To Sirf Baatein Aap Bolte Hain Main Reply De Deti Hoon...
+
+Abhi se Hi Ghayal Hai Hum To Aapke Ishq Mein.
+Lagta Hai Qatl Karne Ka Iraada Hai Aapka...`,
+
+  `Tum Balaa Ki Khoobsurat Ho, Hooron Ki Rani Lagti Ho.
+Tum Iss Jahan Mein Humein Sabse Pyari Lagti Ho.
+Tumhe Dekhoon Toh Sajde Mein Jhuk Jaata Hai Dil Mera.
+Tum Ibadat Ki Tarah Paak Aur Niraali Lagti Ho.
+
+Aap Par Sadqe Mein Apni Jaan Bhi Qurbaan Karoon.
+Kyunki Rishte Mein Aap Hone Wali Shareek-e-Hayaat Lagti Ho.`,
+
+  `Mai Tumhe Chahta Hoon
+
+Main Tumhe Chahta Hoon.
+Aur Itna Chahta Hoon.
+
+Lafzon Mein Bata Nahi Sakta.
+Dekhna Chaho To Dikha Nahi Sakta.
+
+Tum Meri Mohabbat Ko Mehsoos Karogi.
+Aashiq Hoon Sirf Aapka Aap Zaroor Samjhogi.
+
+Tadap Uthengi Aap Ek Din Milne Ko.
+Waqt Nikalengi Mujhe Pyaar Karne Ko.
+
+Mausam Aur Bhi Rangeen Ho Jaayega Uss Din.
+Baahon Mein Apni Le Lengi Humein Aap Jis Din.
+
+Hum Tumhari Baahon Mein Aise Kho Jayenge.
+Bichadna Chahenge To Bhi Bichad Na Paayenge.
+
+Nainon se Nain Keh Denge Dil Ki Baat Sab Kuch.
+Nikah se Pehle Hi Jo Humara Tha Wo Tumhara Ho Gaya Sab Kuch...
+
+Hum Hargiz Hum Na Rahen Tumhare Khatir.
+Tum Bhi Yakeenan Tum Na Raho Humare Khatir.
+
+Zindagi Ko Aur Bhi Haseen Bana Denge Hum InshaAllah.
+Jis Din Ek Dooje Ke Mukammal Ho Jayenge Hum InshaAllah.
+
+Tum Humesha Hi Mere Tasawwurat Mein Rehti Ho.
+Bas Tum Hi Wo Hasti Ho Jo Mere Dil-e-Nadaan Mein Rehti Ho.
+
+Ab Iss Dil Mein Koi Aur Jagah Paa Nahi Sakta.
+Sach Kahoon To Ab Main Tumhare Bin Zinda Reh Nahi Sakta.
+
+Tum Mere Toote Hue Dil Ki Dawa Ban Gaye.
+Pehle Tum Meri Zindagi Phir Meri Jaan Ban Gaye.
+
+Mohabbat Ka Ahd-e-Wafa Nibhaayenge Hum.
+Tumhare Hain, Tumhare Hi Humesha Rahenge Hum.
+
+Pyaar Ka Asl Matlab Batayenge Tumko.
+Hum Jaldi Hi Apni Dulhan Banayenge Tumko.
+
+Dulhan Ban Kar Jab Humare Ghar Mein Aa Jayegi Aap.
+Dil-o-Dimaag Mein Ab Bhi Hai Aur Bhi Chhaa Jayegi Aap.
+
+Tumhare Saath Bahut Saare Khwaabon Ko Poora Karna Hai.
+Tumhe Har Roz Naye Andaaz Mein Pyaar Karna Hai.
+
+'Zaman' Ki Har Ghazal Ka Aakhri Alfaaz Tumhi Ho.
+Mere Har Khwab Ki Shuruaat Aur Anjaam Tumhi Ho.
+
+Main Tumhe Chahta Hoon...
+Aur Itna Chahta Hoon.......`,
+
+  `Tere Khayaalon Mein Khoye Rehna Achcha Lagta Hai.
+Khwab Jhoota Bhi Ho To Sachcha Lagta Hai.
+Teri Hi Soch Mein Dooba Rehta Hoon Sajdon Mein Bhi.
+Tumko Sochna Bhi Ab To Ibadat Sa Lagta Hai.`,
+
+  `Badi Shiddat se Pyaar Jataa Raha Hoon.
+Shayad Iss Liye Tumhe Yaad Aa Raha Hoon.
+Tum Meri Wo Guftugu Ho "ZAMAN".
+Jisko Main Har Lamha Gungunaa Raha Hoon.....
+ZAIGAM ❤️ AIMAN`,
+
+  `Aadatein Badalti Jaa Rahi Hai Ladki Meri Khatir.
+Mohabbat Badhti Jaa Rahi Hai Sanam Teri Khatir.
+Jhalak Uthi Hai Pyaar Tumhari Inn Nasheeli Aankhon Se.
+Iss Nashe Ki Talab Badhti Jaa Rahi Sanam Teri Khatir.
+
+Kaise Pagal Na Ho "Zaigam" Tere Ishq Mein "Aiman".
+"Zaman" Ki Saansein Tak Ruk Jaati Hain Jaana Teri Khatir.....
+LABABA ❤️`,
+
+  `Duniya Mein Hoon. Duniya Ka Talabgaar Nahi Hoon.
+Bazaar se Guzra Hoon, Kharidaar Nahi Hoon.
+ZAMAN`,
+
+  `Mann Karta Hai
+Mann Karta Hai Aur Bahut Mann Karta Hai.
+Mann Karta Hai Teri Zulfon se Khelun.
+Zulfon se Khelun Ya Zulfein Sawaarun.
+Zulfein Sawaarun Ya Tujhe Nihaarun.
+Tujhe Nihaarun Ya Tujhe Apna Bana Loon.
+Tujhe Apna Banaane Ka Bahut Mann Karta Hai...
+Mann Karta Hai Aur Bahut Mann Karta Hai...
+
+Phir Sochta Hoon Tujhe Dil Mein Basa Loon.
+Dil Mein Basa Loon Ya Tujhe Dua Bana Loon.
+Dua Bana Loon Ya Tujhe Apni Duniya Bana Loon.
+Tujhe Apni Duniya Banaane Ka Bahut Mann Karta Hai.
+Mann Karta Hai Aur Bahut Mann Karta Hai...
+
+Kabhi Sochta Hoon Tere Naam se Saansein Sajaa Loon.
+Saansein Sajaa Loon Ya Tujhe Taqdeer Bana Loon.
+Taqdeer Bana Loon Ya Tujhe Apni Zindagi Bana Loon.
+Tujhe Apni Zindagi Banaane Ka Bahut Mann Karta Hai..
+Mann Karta Hai Aur Bahut Mann Karta Hai...
+
+YA HAYATI ❤️ AIMAN
+
+Khayaal Aata Hai Tujhe Lababa Keh Kar Pukaarun.
+Lababa Keh Kar Pukaarun Ya Aiman se Pukaarun.
+Aiman se Pukaarun Ya Zaman Keh Doon Tujhe.
+Tujhe "Zaman" Kehne Ka Bahut Mann Karta Hai.
+Mann Karta Hai Aur Bahut Mann Karta Hai..
+Ya Qalbi ❤️ Lababa`,
+
+  `Pyaar
+Tumse Pyaar Karta Hoon.
+Tumse Pyaar Milna Chahiye...
+
+Behtar Ki Talaash Ab Mann Mein Aati Hi Nahi.
+Har Jagah Humare Saath Bas Aap Honi Chahiye...
+
+Aapka Saath Ek Waqt Ek Lamha Ek Zindagi Ke Liye Nahi.
+Humein To Aapka Saath Aakhri Safar Tak Chahiye...
+
+Aazmaaishein Jo Bhi Hon Poori Kar Lenge Has Kar.
+Aazmaaishon Ke Baad Humsafar Aap Honi Chahiye...
+
+Duniya Mein Bheja Gaya Tha Adam (A.S.) Aur Hawwa (S.A.) Ko Sazaa Ke Waaste.
+Humara Aapka Saath 'KHULD' Tak Hona Chahiye...
+
+Main Pukaaroon Aapko Bas Ek Taraf.
+Har Jagah Bas Tu Hi Tu, Tu Hi Tu Hona Chahiye.
+
+Tumse Pyaar Karta Hoon.
+Tumse Pyaar Milna Chahiye...`
 
 ],
 };
