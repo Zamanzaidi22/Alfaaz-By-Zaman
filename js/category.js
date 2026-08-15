@@ -7,6 +7,65 @@ console.log("CATEGORY.JS LOADED");
 let currentCategory = "";
 let currentIndex = 0;
 
+// ==========================================
+// Aaj Ki Shayari - Daily Shayari System
+// ==========================================
+
+function loadDailyShayari(){
+
+    const today =
+        new Date().toISOString().split("T")[0];
+
+    const savedDaily =
+        JSON.parse(localStorage.getItem("dailyShayari"));
+
+    // Agar aaj ki Shayari already saved hai
+    if(savedDaily && savedDaily.date === today){
+
+        currentCategory = savedDaily.category;
+        currentIndex = savedDaily.index;
+
+        showCurrentShayari();
+
+        return;
+    }
+
+    // Saari available categories
+    const categories =
+        Object.keys(SHAYARI_DB);
+
+    if(categories.length === 0) return;
+
+    // Random category
+    const randomCategory =
+        categories[
+            Math.floor(Math.random() * categories.length)
+        ];
+
+    const total =
+        SHAYARI_DB[randomCategory].length;
+
+    // Random Shayari
+    const randomIndex =
+        Math.floor(Math.random() * total);
+
+    currentCategory = randomCategory;
+    currentIndex = randomIndex;
+
+    // Aaj ke liye save
+    localStorage.setItem(
+        "dailyShayari",
+        JSON.stringify({
+            date: today,
+            category: randomCategory,
+            index: randomIndex
+        })
+    );
+
+    showCurrentShayari();
+
+}
+
 function openCategory(category){
 
     currentCategory = category;
@@ -255,7 +314,7 @@ function clearRecentlyViewed(){
 document.addEventListener("DOMContentLoaded", function(){
 
     displayRecentlyViewed();
-
+    loadDailyShayari();
 });
 
 // ==========================================
