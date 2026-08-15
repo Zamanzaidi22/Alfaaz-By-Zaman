@@ -3034,3 +3034,316 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   ALFAAZ BY ZAMAN
+   CATEGORY PAGE - PREMIUM STYLE
+   STEP 2B
+========================================== */
+
+.container{
+    max-width:1000px;
+    margin:0 auto;
+    padding:40px 20px 70px;
+}
+
+#categoryTitle{
+    text-align:center;
+    color:#FFD700;
+    font-size:32px;
+    letter-spacing:2px;
+    margin:20px 0 40px;
+
+    text-shadow:
+        0 0 10px rgba(255,215,0,.25);
+}
+
+
+/* ==========================================
+   CATEGORY SHAYARI LIST
+========================================== */
+
+#allShayari{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+}
+
+
+/* ==========================================
+   SHAYARI CARD
+========================================== */
+
+#allShayari .shayari-card{
+
+    position:relative;
+
+    padding:30px 25px;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255,215,0,.08),
+            transparent 55%
+        ),
+        #0d0d0d;
+
+    border:1px solid rgba(255,215,0,.25);
+
+    border-radius:18px;
+
+    min-height:180px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+}
+
+
+/* Hover */
+
+#allShayari .shayari-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:rgba(255,215,0,.65);
+
+    box-shadow:
+        0 10px 35px rgba(255,215,0,.12),
+        inset 0 0 20px rgba(255,215,0,.03);
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255,215,0,.10),
+            transparent 65%
+        ),
+        #111;
+}
+
+
+/* ==========================================
+   SHAYARI NUMBER
+========================================== */
+
+.category-shayari-number{
+
+    color:#FFD700;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    margin-bottom:18px;
+
+    padding:6px 14px;
+
+    border:1px solid rgba(255,215,0,.35);
+
+    border-radius:20px;
+
+}
+
+
+/* ==========================================
+   SHAYARI TEXT
+========================================== */
+
+.category-shayari-text{
+
+    color:#fff;
+
+    font-size:19px;
+
+    line-height:1.8;
+
+    margin:0;
+
+    white-space:pre-line;
+
+    max-width:600px;
+
+    text-shadow:
+        0 0 6px rgba(255,255,255,.08);
+}
+
+
+/* ==========================================
+   OPEN HINT
+========================================== */
+
+.category-open-hint{
+
+    margin-top:20px;
+
+    color:#FFD700;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    opacity:.65;
+
+    transition:
+        opacity .25s ease,
+        transform .25s ease;
+}
+
+
+#allShayari .shayari-card:hover
+.category-open-hint{
+
+    opacity:1;
+
+    transform:translateY(-2px);
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+body > header{
+
+    padding:22px 20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:15px;
+
+    background:#080808;
+
+    border-bottom:1px solid rgba(255,215,0,.18);
+}
+
+
+body > header h1{
+
+    margin:0;
+
+    color:#FFD700;
+
+    font-size:22px;
+}
+
+
+body > header a{
+
+    color:#FFD700;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    padding:9px 16px;
+
+    border:1px solid rgba(255,215,0,.35);
+
+    border-radius:25px;
+
+    transition:.25s;
+}
+
+
+body > header a:hover{
+
+    background:#FFD700;
+
+    color:#000;
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:700px){
+
+    .container{
+
+        padding:30px 14px 50px;
+
+    }
+
+    #categoryTitle{
+
+        font-size:24px;
+
+        margin-bottom:28px;
+
+    }
+
+    #allShayari{
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+
+    }
+
+    #allShayari .shayari-card{
+
+        padding:26px 18px;
+
+        min-height:170px;
+
+        border-radius:16px;
+
+    }
+
+    .category-shayari-text{
+
+        font-size:18px;
+
+        line-height:1.75;
+
+    }
+
+    body > header{
+
+        padding:18px 14px;
+
+    }
+
+    body > header h1{
+
+        font-size:17px;
+
+    }
+
+    body > header a{
+
+        font-size:12px;
+
+        padding:8px 12px;
+
+    }
+
+}
+
+
+/* ==========================================
+   TOUCH FEEDBACK
+========================================== */
+
+#allShayari .shayari-card:active{
+
+    transform:scale(.98);
+
+}
