@@ -66,6 +66,22 @@ function loadDailyShayari(){
 
 }
 
+const dateElement =
+    document.getElementById("daily-date");
+
+if(dateElement){
+
+    const today = new Date();
+
+    dateElement.innerText =
+        today.toLocaleDateString("en-IN", {
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+        });
+
+}
+
 function openCategory(category){
 
     currentCategory = category;
