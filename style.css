@@ -3347,3 +3347,41 @@ body > header a:hover{
     transform:scale(.98);
 
 }
+
+/* ==========================================
+   Aaj Ki Shayari - Daily Pick
+========================================== */
+
+.daily-shayari-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+#daily-pick {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    color: #aaa;
+    letter-spacing: 0.5px;
+    padding: 3px 8px;
+    border: 1px solid rgba(255, 215, 0, 0.35);
+    border-radius: 20px;
+    background: rgba(255, 215, 0, 0.06);
+}
+
+/* Mobile adjustment */
+
+@media (max-width: 600px) {
+
+    .daily-shayari-heading {
+        gap: 4px;
+    }
+
+    #daily-pick {
+        font-size: 10px;
+        padding: 3px 7px;
+    }
+
+}
