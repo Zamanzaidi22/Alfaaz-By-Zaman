@@ -3385,3 +3385,10 @@ body > header a:hover{
     }
 
 }
+#daily-date {
+    display: block;
+    font-size: 10px;
+    color: #888;
+    margin-top: 2px;
+    letter-spacing: 0.4px;
+}
