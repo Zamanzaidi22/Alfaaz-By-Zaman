@@ -37,10 +37,39 @@ function loadDailyShayari(){
     if(categories.length === 0) return;
 
     // Random category
-    const randomCategory =
-        categories[
-            Math.floor(Math.random() * categories.length)
-        ];
+// ==========================================
+// Smart Daily Category Rotation
+// ==========================================
+
+let lastDailyCategory =
+    localStorage.getItem("lastDailyCategory");
+
+let availableCategories =
+    categories.filter(function(cat){
+
+        return cat !== lastDailyCategory;
+
+    });
+
+// Agar sirf ek category available ho
+if(availableCategories.length === 0){
+
+    availableCategories = categories;
+
+}
+
+const randomCategory =
+    availableCategories[
+        Math.floor(
+            Math.random() *
+            availableCategories.length
+        )
+    ];
+
+localStorage.setItem(
+    "lastDailyCategory",
+    randomCategory
+);
 
     const total =
         SHAYARI_DB[randomCategory].length;
