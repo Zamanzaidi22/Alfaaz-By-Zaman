@@ -3392,3 +3392,44 @@ body > header a:hover{
     margin-top: 2px;
     letter-spacing: 0.4px;
 }
+
+/* ==========================================
+   Zaman's Daily Pick Badge
+========================================== */
+
+#daily-pick {
+    position: relative;
+    overflow: hidden;
+}
+
+#daily-pick::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.18),
+        transparent
+    );
+    animation: dailyShine 3s infinite;
+}
+
+@keyframes dailyShine {
+
+    0% {
+        left: -100%;
+    }
+
+    45% {
+        left: 130%;
+    }
+
+    100% {
+        left: 130%;
+    }
+
+}
