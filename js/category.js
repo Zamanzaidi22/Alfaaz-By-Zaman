@@ -46,8 +46,29 @@ function loadDailyShayari(){
         SHAYARI_DB[randomCategory].length;
 
     // Random Shayari
-    const randomIndex =
-        Math.floor(Math.random() * total);
+    let randomIndex =
+    Math.floor(Math.random() * total);
+
+// ==========================================
+// Previous Daily Shayari ko repeat na karo
+// ==========================================
+
+const previousDaily =
+    JSON.parse(
+        localStorage.getItem("dailyShayari")
+    );
+
+if(
+    previousDaily &&
+    previousDaily.category === randomCategory &&
+    total > 1 &&
+    randomIndex === previousDaily.index
+){
+
+    randomIndex =
+        (randomIndex + 1) % total;
+
+}
 
     currentCategory = randomCategory;
     currentIndex = randomIndex;
