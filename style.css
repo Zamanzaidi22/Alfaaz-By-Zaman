@@ -3433,37 +3433,3 @@ body > header a:hover{
     }
 
 }
-
-/* ==========================================
-   Zaman Writes - Original Badge
-========================================== */
-
-.original-badge {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 4px 10px;
-
-    font-size: 10px;
-    font-weight: 600;
-
-    letter-spacing: 0.5px;
-
-    border: 1px solid rgba(255, 215, 0, 0.45);
-    border-radius: 20px;
-
-    background: rgba(255, 215, 0, 0.08);
-
-    color: #d4af37;
-
-    box-shadow:
-        0 0 8px rgba(255, 215, 0, 0.08);
-
-    transition: all 0.3s ease;
-}
-
-.category-card:hover .original-badge {
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 0 14px rgba(255, 215, 0, 0.18);
-}
