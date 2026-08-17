@@ -3433,3 +3433,22 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   Zaman Writes - Dedicated Page Header
+========================================== */
+
+#categoryTitle small {
+    display: block;
+
+    margin-top: 8px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    letter-spacing: 1px;
+
+    color: #aaa;
+}
