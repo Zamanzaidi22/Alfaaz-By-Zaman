@@ -40,11 +40,21 @@ function loadCategoryPage(){
 
     if(title){
 
+    if(category === "zaman-writes"){
+
+        title.innerHTML =
+            "✍️ Zaman Writes" +
+            "<small>Original Alfaaz by Zaman</small>";
+
+    } else {
+
         title.innerText =
             category.toUpperCase() + " SHAYARI";
 
     }
 
+    }
+    
     // Shayari container
     const box =
         document.getElementById("allShayari");
