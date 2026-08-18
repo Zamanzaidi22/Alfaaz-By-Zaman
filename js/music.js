@@ -1,12 +1,6 @@
 // ==========================================
 // Alfaaz By Zaman
-// Category Wise Music System + Debug Mode
-// ==========================================
-
-console.log("🎵 MUSIC.JS LOADED");
-
-// ==========================================
-// Music Database
+// Smart Category Wise Music System
 // ==========================================
 
 const CATEGORY_MUSIC = {
@@ -22,7 +16,7 @@ const CATEGORY_MUSIC = {
 };
 
 // ==========================================
-// Music Player
+// Audio Player
 // ==========================================
 
 let bgMusic = new Audio();
@@ -36,12 +30,12 @@ let musicEnabled =
 let currentMusicCategory = "";
 
 // ==========================================
-// DEBUG PANEL
+// Debug
 // ==========================================
 
 function musicDebug(message){
 
-    console.log("🎵", message);
+    console.log("🎵 " + message);
 
     let panel =
         document.getElementById("music-debug");
@@ -59,7 +53,7 @@ function musicDebug(message){
             bottom:10px;
             z-index:99999;
 
-            padding:12px;
+            padding:10px;
 
             background:#111;
             color:#fff;
@@ -70,19 +64,20 @@ function musicDebug(message){
             font-family:Arial,sans-serif;
             font-size:12px;
 
-            box-shadow:0 0 15px rgba(0,0,0,.5);
+            max-height:120px;
+            overflow:auto;
         `;
 
         document.body.appendChild(panel);
-
     }
 
     panel.innerHTML +=
-        "<div>🎵 " + message + "</div>";
+        `<div>🎵 ${message}</div>`;
 }
 
+
 // ==========================================
-// Change Category Music
+// Play Category Music
 // ==========================================
 
 function playCategoryMusic(category){
@@ -93,24 +88,24 @@ function playCategoryMusic(category){
 
     if(!musicEnabled){
 
+        musicDebug("Music is OFF");
+
+        return;
+    }
+
+    const musicPath =
+        CATEGORY_MUSIC[category];
+
+    if(!musicPath){
+
         musicDebug(
-            "Music is OFF"
+            "❌ Music path not found for " + category
         );
 
         return;
-
     }
 
-    if(!CATEGORY_MUSIC[category]){
-
-        musicDebug(
-            "❌ No music path for: " + category
-        );
-
-        return;
-
-    }
-
+    // Same music already playing
     if(
         currentMusicCategory === category &&
         !bgMusic.paused
@@ -121,11 +116,7 @@ function playCategoryMusic(category){
         );
 
         return;
-
     }
-
-    const musicPath =
-        CATEGORY_MUSIC[category];
 
     musicDebug(
         "Loading: " + musicPath
@@ -142,14 +133,14 @@ function playCategoryMusic(category){
     bgMusic.load();
 
     bgMusic.play()
-        .then(function(){
+        .then(() => {
 
             musicDebug(
                 "✅ Playing: " + category
             );
 
         })
-        .catch(function(error){
+        .catch(error => {
 
             musicDebug(
                 "❌ Play failed: " +
@@ -159,11 +150,11 @@ function playCategoryMusic(category){
             );
 
         });
-
 }
 
+
 // ==========================================
-// Audio Events
+// Audio Error Detection
 // ==========================================
 
 bgMusic.addEventListener(
@@ -171,18 +162,7 @@ bgMusic.addEventListener(
     function(){
 
         musicDebug(
-            "✅ Audio file loaded successfully"
-        );
-
-    }
-);
-
-bgMusic.addEventListener(
-    "error",
-    function(){
-
-        musicDebug(
-            "❌ Audio ERROR — File/path problem"
+            "✅ Audio loaded successfully"
         );
 
     }
@@ -193,11 +173,23 @@ bgMusic.addEventListener(
     function(){
 
         musicDebug(
-            "▶️ Audio ready to play"
+            "▶️ Audio ready"
         );
 
     }
 );
+
+bgMusic.addEventListener(
+    "error",
+    function(){
+
+        musicDebug(
+            "❌ Audio file ERROR"
+        );
+
+    }
+);
+
 
 // ==========================================
 // Music ON / OFF
@@ -214,28 +206,37 @@ function toggleMusic(){
             "true"
         );
 
-        musicDebug(
-            "🎵 Music ON"
-        );
+        let category =
+            currentMusicCategory;
 
+        // Try to get current category
         if(
             typeof currentCategory !== "undefined" &&
             currentCategory
         ){
 
-            playCategoryMusic(
-                currentCategory
-            );
-
-        }else{
-
-            playCategoryMusic("love");
+            category = currentCategory;
 
         }
 
+        // Default category
+        if(!category){
+
+            category = "love";
+
+        }
+
+        musicDebug(
+            "🎵 Music ON"
+        );
+
+        playCategoryMusic(category);
+
         showToast("🎵 Music ON");
 
-    }else{
+    }
+
+    else{
 
         musicEnabled = false;
 
@@ -256,6 +257,68 @@ function toggleMusic(){
 
 }
 
+
+// ==========================================
+// IMPORTANT:
+// Category Click → Change Music
+// ==========================================
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        /*
+        The category.js file loads before music.js.
+        So we safely wrap openCategoryPage()
+        and connect music to category clicks.
+        */
+
+        if(
+            typeof window.openCategoryPage === "function"
+        ){
+
+            const originalOpenCategoryPage =
+                window.openCategoryPage;
+
+            window.openCategoryPage =
+                function(category){
+
+                    // Open category normally
+                    originalOpenCategoryPage(category);
+
+                    // Remember category
+                    currentMusicCategory =
+                        category;
+
+                    // Change music automatically
+                    if(musicEnabled){
+
+                        playCategoryMusic(
+                            category
+                        );
+
+                    }
+
+                };
+
+            musicDebug(
+                "✅ Category music system connected"
+            );
+
+        }
+
+        else{
+
+            musicDebug(
+                "⚠️ openCategoryPage not found"
+            );
+
+        }
+
+    }
+);
+
+
 // ==========================================
 // Music Button State
 // ==========================================
@@ -271,7 +334,9 @@ function updateMusicButton(){
 
         button.innerText = "🎵";
 
-    }else{
+    }
+
+    else{
 
         button.innerText = "🔇";
 
@@ -279,8 +344,9 @@ function updateMusicButton(){
 
 }
 
+
 // ==========================================
-// Page Load
+// Initialize
 // ==========================================
 
 document.addEventListener(
