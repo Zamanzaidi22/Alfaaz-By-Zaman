@@ -1,6 +1,6 @@
 // ==========================================
 // Alfaaz By Zaman
-// Category Wise Music System
+// Category Wise Music System + Debug Mode
 // ==========================================
 
 console.log("🎵 MUSIC.JS LOADED");
@@ -12,17 +12,11 @@ console.log("🎵 MUSIC.JS LOADED");
 const CATEGORY_MUSIC = {
 
     love: "assets/music/love.mp3",
-
     sad: "assets/music/sad.mp3",
-
     bewafa: "assets/music/bewafa.mp3",
-
     islamic: "assets/music/islamic.mp3",
-
     dosti: "assets/music/dosti.mp3",
-
     "2line": "assets/music/2line.mp3",
-
     "zaman-writes": "assets/music/zaman-writes.mp3"
 
 };
@@ -42,12 +36,66 @@ let musicEnabled =
 let currentMusicCategory = "";
 
 // ==========================================
+// DEBUG PANEL
+// ==========================================
+
+function musicDebug(message){
+
+    console.log("🎵", message);
+
+    let panel =
+        document.getElementById("music-debug");
+
+    if(!panel){
+
+        panel = document.createElement("div");
+
+        panel.id = "music-debug";
+
+        panel.style.cssText = `
+            position:fixed;
+            left:10px;
+            right:10px;
+            bottom:10px;
+            z-index:99999;
+
+            padding:12px;
+
+            background:#111;
+            color:#fff;
+
+            border:1px solid #d4af37;
+            border-radius:10px;
+
+            font-family:Arial,sans-serif;
+            font-size:12px;
+
+            box-shadow:0 0 15px rgba(0,0,0,.5);
+        `;
+
+        document.body.appendChild(panel);
+
+    }
+
+    panel.innerHTML +=
+        "<div>🎵 " + message + "</div>";
+}
+
+// ==========================================
 // Change Category Music
 // ==========================================
 
 function playCategoryMusic(category){
 
+    musicDebug(
+        "Category requested: " + category
+    );
+
     if(!musicEnabled){
+
+        musicDebug(
+            "Music is OFF"
+        );
 
         return;
 
@@ -55,20 +103,22 @@ function playCategoryMusic(category){
 
     if(!CATEGORY_MUSIC[category]){
 
-        console.log(
-            "🎵 Music not found for:",
-            category
+        musicDebug(
+            "❌ No music path for: " + category
         );
 
         return;
 
     }
 
-    // Same category already playing
     if(
         currentMusicCategory === category &&
         !bgMusic.paused
     ){
+
+        musicDebug(
+            "Already playing: " + category
+        );
 
         return;
 
@@ -77,35 +127,77 @@ function playCategoryMusic(category){
     const musicPath =
         CATEGORY_MUSIC[category];
 
-    // Stop previous music
+    musicDebug(
+        "Loading: " + musicPath
+    );
+
     bgMusic.pause();
 
     bgMusic.currentTime = 0;
 
-    // New music
     bgMusic.src = musicPath;
 
     currentMusicCategory = category;
 
+    bgMusic.load();
+
     bgMusic.play()
         .then(function(){
 
-            console.log(
-                "🎵 Playing:",
-                category
+            musicDebug(
+                "✅ Playing: " + category
             );
 
         })
         .catch(function(error){
 
-            console.log(
-                "Music playback blocked:",
-                error
+            musicDebug(
+                "❌ Play failed: " +
+                error.name +
+                " — " +
+                error.message
             );
 
         });
 
 }
+
+// ==========================================
+// Audio Events
+// ==========================================
+
+bgMusic.addEventListener(
+    "loadeddata",
+    function(){
+
+        musicDebug(
+            "✅ Audio file loaded successfully"
+        );
+
+    }
+);
+
+bgMusic.addEventListener(
+    "error",
+    function(){
+
+        musicDebug(
+            "❌ Audio ERROR — File/path problem"
+        );
+
+    }
+);
+
+bgMusic.addEventListener(
+    "canplay",
+    function(){
+
+        musicDebug(
+            "▶️ Audio ready to play"
+        );
+
+    }
+);
 
 // ==========================================
 // Music ON / OFF
@@ -122,7 +214,10 @@ function toggleMusic(){
             "true"
         );
 
-        // Agar category selected hai
+        musicDebug(
+            "🎵 Music ON"
+        );
+
         if(
             typeof currentCategory !== "undefined" &&
             currentCategory
@@ -134,21 +229,7 @@ function toggleMusic(){
 
         }else{
 
-            // Default music
-            bgMusic.src =
-                "assets/music/love.mp3";
-
-            currentMusicCategory = "love";
-
-            bgMusic.play()
-                .catch(function(error){
-
-                    console.log(
-                        "Music playback blocked:",
-                        error
-                    );
-
-                });
+            playCategoryMusic("love");
 
         }
 
@@ -164,6 +245,10 @@ function toggleMusic(){
         );
 
         bgMusic.pause();
+
+        musicDebug(
+            "🔇 Music OFF"
+        );
 
         showToast("🔇 Music OFF");
 
@@ -204,8 +289,12 @@ document.addEventListener(
 
         updateMusicButton();
 
-        console.log(
-            "🎵 Music Enabled:",
+        musicDebug(
+            "Music system initialized"
+        );
+
+        musicDebug(
+            "Music enabled: " +
             musicEnabled
         );
 
