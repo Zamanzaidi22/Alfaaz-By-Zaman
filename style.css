@@ -3452,3 +3452,416 @@ body > header a:hover{
 
     color: #aaa;
 }
+
+/* ==========================================
+   Download Background Selector
+========================================== */
+
+.download-panel {
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 99999;
+
+    background: rgba(0,0,0,0.85);
+
+    backdrop-filter: blur(8px);
+
+    padding: 20px;
+
+    overflow-y: auto;
+
+}
+
+
+.download-box {
+
+    width: min(600px, 100%);
+
+    margin: 40px auto;
+
+    background: #111;
+
+    border: 1px solid #d4af37;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    box-shadow:
+        0 0 30px rgba(212,175,55,0.25);
+
+}
+
+
+.download-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.download-header h2 {
+
+    color: #d4af37;
+
+    margin: 0;
+
+}
+
+
+.download-close {
+
+    border: none;
+
+    background: transparent;
+
+    color: #fff;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+}
+
+
+.download-subtitle {
+
+    color: #aaa;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* ==========================================
+   Background Options
+========================================== */
+
+.background-options {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.background-option {
+
+    text-align: center;
+
+    cursor: pointer;
+
+    color: #ccc;
+
+    font-size: 12px;
+
+}
+
+
+.background-preview {
+
+    height: 65px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+    margin-bottom: 6px;
+
+    border: 2px solid transparent;
+
+}
+
+
+.background-option.active .background-preview {
+        border-color: #d4af37;
+}
+
+
+.background-option:hover .background-preview {
+       border-color: #d4af37;
+}
+
+
+/* ==========================================
+   Background Themes
+========================================== */
+
+.bg-night {
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            #263b70,
+            #080b18 60%,
+            #03040a
+        );
+
+}
+
+
+.bg-romantic {
+
+    background:
+        radial-gradient(
+            circle at 30% 20%,
+            #8b2148,
+            #320d22 55%,
+            #10030a
+        );
+
+}
+
+
+.bg-dark {
+
+    background:
+        linear-gradient(
+            135deg,
+            #222,
+            #050505
+        );
+
+}
+
+
+.bg-golden {
+
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            #80651b,
+            #211a06 55%,
+            #050505
+        );
+
+}
+
+
+.bg-galaxy {
+
+    background:
+        radial-gradient(
+            circle at 70% 20%,
+            #5c2d91,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 20% 70%,
+            #164b78,
+            transparent 35%
+        ),
+        #05020d;
+
+}
+
+
+.bg-islamic {
+
+    background:
+        radial-gradient(
+            circle at 50% 10%,
+            #1c705f,
+            #082d27 55%,
+            #021411
+        );
+
+}
+
+
+.bg-minimal {
+
+    background:
+        linear-gradient(
+            135deg,
+            #eeeeee,
+            #cfcfcf
+        );
+
+}
+
+
+/* ==========================================
+   Shayari Preview
+========================================== */
+
+.download-preview {
+
+    min-height: 330px;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 35px;
+
+    text-align: center;
+
+}
+
+
+.preview-overlay {
+
+    width: 100%;
+
+    min-height: 260px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+}
+
+
+.preview-logo {
+
+    color: #d4af37;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+}
+
+
+.preview-shayari {
+
+    color: #fff;
+
+    font-size: 21px;
+
+    line-height: 1.8;
+
+    white-space: pre-line;
+
+    max-width: 90%;
+
+}
+
+
+.preview-credit {
+
+    color: #ccc;
+
+    font-size: 12px;
+
+}
+
+
+.bg-minimal .preview-shayari {
+
+    color: #171717;
+
+}
+
+
+.bg-minimal .preview-credit {
+
+    color: #555;
+
+}
+
+
+/* ==========================================
+   Generate Button
+========================================== */
+
+.generate-download-btn {
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #d4af37;
+
+    color: #111;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+.generate-download-btn:hover {
+
+    transform: translateY(-1px);
+
+}
+
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 500px) {
+
+    .background-options {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+    .download-box {
+
+        margin: 20px auto;
+
+    }
+
+    .download-preview {
+
+        min-height: 300px;
+
+    }
+
+    .preview-shayari {
+
+        font-size: 18px;
+
+    }
+
+}
