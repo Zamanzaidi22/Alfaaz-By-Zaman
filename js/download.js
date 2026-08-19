@@ -127,3 +127,115 @@ function selectBackground(background) {
     }
 
 }
+
+// ==========================================
+// Step 2A
+// Generate & Download Shayari Image
+// ==========================================
+
+async function generateShayariImage() {
+
+    const preview =
+        document.getElementById("download-preview");
+
+    if (!preview) {
+
+        showToast("❌ Preview not found");
+
+        return;
+    }
+
+    // Button
+    const button =
+        document.querySelector(".generate-download-btn");
+
+    if (button) {
+
+        button.innerText = "⏳ Creating Image...";
+
+        button.disabled = true;
+
+    }
+
+    try {
+
+        // Make sure html2canvas is available
+        if (typeof html2canvas === "undefined") {
+
+            showToast(
+                "❌ Image system load nahi hua"
+            );
+
+            return;
+        }
+
+        const canvas =
+            await html2canvas(preview, {
+
+                scale: 2,
+
+                useCORS: true,
+
+                backgroundColor: null,
+
+                logging: false
+
+            });
+
+
+        // Create PNG
+        const image =
+            canvas.toDataURL(
+                "image/png"
+            );
+
+
+        // Download
+        const link =
+            document.createElement("a");
+
+        link.download =
+            "Alfaaz-By-Zaman-Shayari.png";
+
+        link.href = image;
+
+        document.body.appendChild(link);
+
+        link.click();
+
+        document.body.removeChild(link);
+
+
+        showToast(
+            "✅ Shayari Image Downloaded"
+        );
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "Download Error:",
+            error
+        );
+
+        showToast(
+            "❌ Image create nahi ho saki"
+        );
+
+    }
+
+    finally {
+
+        if (button) {
+
+            button.innerText =
+                "⬇️ Download Shayari";
+
+            button.disabled = false;
+
+        }
+
+    }
+
+}
