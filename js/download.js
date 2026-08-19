@@ -1,43 +1,129 @@
 // ==========================================
 // Alfaaz By Zaman
-// Download Shayari Image
+// Download System 2.0
+// Step 1 - Background Selector
+// ==========================================
+
+let selectedBackground = "night";
+
+
+// ==========================================
+// Open Download Panel
 // ==========================================
 
 function downloadShayariImage() {
 
-    if (!currentCategory) {
-        showToast("📂 Pehle koi category select karein.");
+    const panel =
+        document.getElementById("download-panel");
+
+    const preview =
+        document.getElementById("preview-shayari");
+
+    if (!panel || !preview) {
         return;
     }
 
-    const card = document.getElementById("download-card");
-    const text = document.getElementById("download-text");
+    // Current Shayari
+    if (
+        typeof currentCategory !== "undefined" &&
+        currentCategory &&
+        typeof SHAYARI_DB !== "undefined"
+    ) {
 
-    text.innerText = SHAYARI_DB[currentCategory][currentIndex];
+        const shayari =
+            SHAYARI_DB[currentCategory][currentIndex];
 
-    card.style.display = "block";
+        preview.innerText = shayari;
 
-    html2canvas(card)
-.then(function(canvas){
-    ...
-})
-.catch(function(){
-    showToast("❌ Download Failed");
-})
-.finally(function(){
-    card.style.display = "none";
-});
+    }
 
-        const link = document.createElement("a");
+    else {
 
-        link.download = "Alfaaz-By-Zaman.png";
+        preview.innerText =
+            "✨ Pehle koi Shayari select karein.";
 
-        link.href = canvas.toDataURL("image/png");
+    }
 
-        link.click();
+    panel.style.display = "block";
 
-        card.style.display = "none";
+}
 
-    });
+
+// ==========================================
+// Close Download Panel
+// ==========================================
+
+function closeDownloadPanel() {
+
+    const panel =
+        document.getElementById("download-panel");
+
+    if (panel) {
+
+        panel.style.display = "none";
+
+    }
+
+}
+
+
+// ==========================================
+// Select Background
+// ==========================================
+
+function selectBackground(background) {
+
+    selectedBackground = background;
+
+    const preview =
+        document.getElementById("download-preview");
+
+    if (!preview) return;
+
+
+    // Remove old backgrounds
+
+    preview.classList.remove(
+        "bg-night",
+        "bg-romantic",
+        "bg-dark",
+        "bg-golden",
+        "bg-galaxy",
+        "bg-islamic",
+        "bg-minimal"
+    );
+
+
+    // Add selected background
+
+    preview.classList.add(
+        "bg-" + background
+    );
+
+
+    // Active option
+
+    document
+        .querySelectorAll(".background-option")
+        .forEach(function(option) {
+
+            option.classList.remove("active");
+
+        });
+
+
+    const selected =
+        document.querySelector(
+            '.background-option[data-bg="' +
+            background +
+            '"]'
+        );
+
+
+    if (selected) {
+
+        selected.classList.add("active");
+
+    }
 
 }
