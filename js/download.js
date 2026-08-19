@@ -1,10 +1,94 @@
 // ==========================================
 // Alfaaz By Zaman
-// Download System 2.0
-// Step 1 - Background Selector
+// UNIFIED DOWNLOAD SYSTEM 3.0
+// Home + Category Shayari Page
 // ==========================================
 
 let selectedBackground = "night";
+
+
+// ==========================================
+// Background Classes
+// ==========================================
+
+const DOWNLOAD_BACKGROUNDS = [
+    "night",
+    "romantic",
+    "dark",
+    "golden",
+    "galaxy",
+    "islamic",
+    "minimal"
+];
+
+
+// ==========================================
+// Get Current Shayari
+// ==========================================
+
+function getCurrentDownloadShayari() {
+
+    // ------------------------------
+    // Category Page
+    // ------------------------------
+
+    if (
+        typeof currentCategory !== "undefined" &&
+        currentCategory &&
+        typeof SHAYARI_DB !== "undefined"
+    ) {
+
+        const categoryData =
+            SHAYARI_DB[currentCategory];
+
+        if (
+            categoryData &&
+            categoryData[currentIndex]
+        ) {
+
+            return categoryData[currentIndex];
+
+        }
+
+    }
+
+
+    // ------------------------------
+    // Home Page
+    // ------------------------------
+
+    const shayariText =
+        document.getElementById("shayari-text");
+
+    if (
+        shayariText &&
+        shayariText.innerText.trim()
+    ) {
+
+        return shayariText.innerText.trim();
+
+    }
+
+
+    // ------------------------------
+    // Category Page Text
+    // ------------------------------
+
+    const categoryText =
+        document.getElementById("shayariText");
+
+    if (
+        categoryText &&
+        categoryText.innerText.trim()
+    ) {
+
+        return categoryText.innerText.trim();
+
+    }
+
+
+    return "";
+}
 
 
 // ==========================================
@@ -13,38 +97,98 @@ let selectedBackground = "night";
 
 function downloadShayariImage() {
 
+    openDownloadPanel();
+
+}
+
+
+// ==========================================
+// Category Page Compatibility
+// ==========================================
+
+function downloadCurrentShayari() {
+
+    openDownloadPanel();
+
+}
+
+
+// ==========================================
+// Open Panel
+// ==========================================
+
+function openDownloadPanel() {
+
     const panel =
         document.getElementById("download-panel");
 
     const preview =
         document.getElementById("preview-shayari");
 
-    if (!panel || !preview) {
-        return;
-    }
+    const downloadPreview =
+        document.getElementById("download-preview");
 
-    // Current Shayari
-    if (
-        typeof currentCategory !== "undefined" &&
-        currentCategory &&
-        typeof SHAYARI_DB !== "undefined"
-    ) {
 
-        const shayari =
-            SHAYARI_DB[currentCategory][currentIndex];
+    // ----------------------------------
+    // Shayari Text
+    // ----------------------------------
 
-        preview.innerText = shayari;
+    const shayari =
+        getCurrentDownloadShayari();
 
-    }
 
-    else {
+    if (preview) {
 
         preview.innerText =
+            shayari ||
             "✨ Pehle koi Shayari select karein.";
 
     }
 
-    panel.style.display = "block";
+
+    if (downloadPreview) {
+
+        const previewText =
+            downloadPreview.querySelector(
+                ".download-shayari-text"
+            );
+
+        if (previewText) {
+
+            previewText.innerText =
+                shayari ||
+                "✨ Pehle koi Shayari select karein.";
+
+        }
+
+    }
+
+
+    // ----------------------------------
+    // Show Panel
+    // ----------------------------------
+
+    if (panel) {
+
+        panel.style.display = "block";
+
+        // Re-apply selected background
+        selectBackground(
+            selectedBackground
+        );
+
+        return;
+
+    }
+
+
+    // ----------------------------------
+    // If panel doesn't exist
+    // ----------------------------------
+
+    showToast(
+        "⚠️ Download panel available nahi hai."
+    );
 
 }
 
@@ -73,157 +217,285 @@ function closeDownloadPanel() {
 
 function selectBackground(background) {
 
-    selectedBackground = background;
+    if (
+        !DOWNLOAD_BACKGROUNDS.includes(
+            background
+        )
+    ) {
+
+        background = "night";
+
+    }
+
+
+    selectedBackground =
+        background;
+
 
     const preview =
-        document.getElementById("download-preview");
+        document.getElementById(
+            "download-preview"
+        );
+
 
     if (!preview) return;
 
 
     // Remove old backgrounds
 
-    preview.classList.remove(
-        "bg-night",
-        "bg-romantic",
-        "bg-dark",
-        "bg-golden",
-        "bg-galaxy",
-        "bg-islamic",
-        "bg-minimal"
+    DOWNLOAD_BACKGROUNDS.forEach(
+        function(bg) {
+
+            preview.classList.remove(
+                "bg-" + bg
+            );
+
+        }
     );
 
 
     // Add selected background
 
     preview.classList.add(
-        "bg-" + background
+        "bg-" + selectedBackground
     );
 
 
-    // Active option
+    // Active background button
 
     document
-        .querySelectorAll(".background-option")
-        .forEach(function(option) {
+        .querySelectorAll(
+            ".background-option"
+        )
+        .forEach(
+            function(option) {
 
-            option.classList.remove("active");
+                option.classList.remove(
+                    "active"
+                );
 
-        });
+            }
+        );
 
 
     const selected =
         document.querySelector(
             '.background-option[data-bg="' +
-            background +
+            selectedBackground +
             '"]'
         );
 
 
     if (selected) {
 
-        selected.classList.add("active");
+        selected.classList.add(
+            "active"
+        );
 
     }
 
 }
 
+
 // ==========================================
-// Step 2A
-// Generate & Download Shayari Image
+// Generate & Download Image
 // ==========================================
 
 async function generateShayariImage() {
 
     const preview =
-        document.getElementById("download-preview");
+        document.getElementById(
+            "download-preview"
+        );
+
 
     if (!preview) {
 
-        showToast("❌ Preview not found");
+        showToast(
+            "❌ Download preview nahi mila."
+        );
 
         return;
+
     }
 
-    // Button
+
+    // ======================================
+    // Check html2canvas
+    // ======================================
+
+    if (
+        typeof html2canvas ===
+        "undefined"
+    ) {
+
+        showToast(
+            "❌ Image system load nahi hua."
+        );
+
+        console.error(
+            "html2canvas library missing."
+        );
+
+        return;
+
+    }
+
+
+    // ======================================
+    // Shayari Text
+    // ======================================
+
+    const shayari =
+        getCurrentDownloadShayari();
+
+
+    if (!shayari) {
+
+        showToast(
+            "⚠️ Pehle Shayari select karein."
+        );
+
+        return;
+
+    }
+
+
+    // ======================================
+    // Update Preview
+    // ======================================
+
+    const previewText =
+        preview.querySelector(
+            ".download-shayari-text"
+        );
+
+
+    if (previewText) {
+
+        previewText.innerText =
+            shayari;
+
+    }
+
+
+    // ======================================
+    // Download Button
+    // ======================================
+
     const button =
-        document.querySelector(".generate-download-btn");
+        document.querySelector(
+            ".generate-download-btn"
+        );
+
 
     if (button) {
 
-        button.innerText = "⏳ Creating Image...";
+        button.innerText =
+            "⏳ Creating Image...";
 
         button.disabled = true;
 
     }
 
+
     try {
 
-        // Make sure html2canvas is available
-        if (typeof html2canvas === "undefined") {
+        // Small delay so browser renders
+        await new Promise(
+            resolve =>
+                setTimeout(
+                    resolve,
+                    150
+                )
+        );
 
-            showToast(
-                "❌ Image system load nahi hua"
-            );
 
-            return;
-        }
+        // ==================================
+        // Create Canvas
+        // ==================================
 
         const canvas =
-            await html2canvas(preview, {
+            await html2canvas(
+                preview,
+                {
 
-                scale: 2,
+                    scale: 2,
 
-                useCORS: true,
+                    useCORS: true,
 
-                backgroundColor: null,
+                    allowTaint: false,
 
-                logging: false
+                    backgroundColor: null,
 
-            });
+                    logging: false
+
+                }
+            );
 
 
-        // Create PNG
+        // ==================================
+        // Convert to PNG
+        // ==================================
+
         const image =
             canvas.toDataURL(
                 "image/png"
             );
 
 
-        // Download
+        // ==================================
+        // Create Download
+        // ==================================
+
         const link =
-            document.createElement("a");
+            document.createElement(
+                "a"
+            );
+
 
         link.download =
             "Alfaaz-By-Zaman-Shayari.png";
 
-        link.href = image;
 
-        document.body.appendChild(link);
+        link.href =
+            image;
+
+
+        document.body.appendChild(
+            link
+        );
+
 
         link.click();
 
-        document.body.removeChild(link);
+
+        document.body.removeChild(
+            link
+        );
 
 
         showToast(
-            "✅ Shayari Image Downloaded"
+            "✅ Shayari Image Downloaded!"
         );
 
     }
+
 
     catch (error) {
 
         console.error(
-            "Download Error:",
+            "❌ Download Error:",
             error
         );
 
+
         showToast(
-            "❌ Image create nahi ho saki"
+            "❌ Image create nahi ho saki."
         );
 
     }
+
 
     finally {
 
@@ -232,10 +504,31 @@ async function generateShayariImage() {
             button.innerText =
                 "⬇️ Download Shayari";
 
-            button.disabled = false;
+            button.disabled =
+                false;
 
         }
 
     }
 
 }
+
+
+// ==========================================
+// Close Panel On ESC
+// ==========================================
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (
+            event.key === "Escape"
+        ) {
+
+            closeDownloadPanel();
+
+        }
+
+    }
+);
