@@ -1274,7 +1274,208 @@ Main Pukaaroon Aapko Bas Ek Taraf.
 Har Jagah Bas Tu Hi Tu, Tu Hi Tu Hona Chahiye.
 
 Tumse Pyaar Karta Hoon.
-Tumse Pyaar Milna Chahiye...`
+Tumse Pyaar Milna Chahiye...`,
+
+`Ek Shaqs Mere Khyaalo pr Deraa Jamaye Betha Hai.
+Guzzru'n Agar Gali se Unki To Khidki Pr Nazre Jamaye Betha Hai.
+Mulaqaat E Ishq Abhi Baaki Hai Meri Unke Saath
+Isliye hi to Wo Mujhse Milne ki Ek Aas Lagaye Betha Hai.
+"Zaman" Kuch to Sabr Kar Apne Mashook Ko Paane Ke Liye.
+Tera Mashook Bhi Rabb Ki Reza Ke Liye Sar ko Sajde me Jhukaaye Betha Hai...`,
+
+`Badi shiddat se pyaar jataa raha hu tumko.
+Na jaane isliye hi yaad aa raha hu tumko.
+Aap isko hichkiyon ka hawala mat dena.
+Tumhari hichkiyon se zyada yaad kar raha hu tumko.`,
+
+`Aaj kese meri subha ho gyi bina Tere Good Morning bole.
+Logo se puch raha hu tera pata bina Apni zabaan khole.
+Kehne ko to hum door hai magar phir bhi.
+Tum dil me sabse kareeb rehte ho bina Kisi connection ko jode...`,
+
+`Ek ladki hai jo mujhe bahut yaad aati hai.
+Ek ladki hai jo...
+
+Khoya rehta hun uske hi khayaalo me.
+Roz aa kar apna haal-e-dil batati hai.
+Ek ladki hai jo...
+
+Uski Aankhen Mashaallah kitni pyaari.
+Dekhun uski aankhon me to mujhse nazrain churaati hai..
+Ek ladki hai jo...
+
+Uske maathe par wo ek kaali bindiya.
+Haaye, uski khoobsurti me chaand lagati hai...
+Ek ladki hai jo...
+
+Uske honthon ki Laali itni surkh.
+Mere labon par bhi nishaan chhod jaati hai..
+Ek ladki hai jo...
+
+Uske rukhsaar itne soft rooyi bhi hard lage.
+Aur Khuda ki kudrat unko chamkaati hai...
+Ek ladki hai jo...
+
+Wallah wo Maalika hai puri Noorani si.
+Hadd to ye hai apni baaton se Noor tapkaati hai...
+Ek ladki hai jo...
+
+Uska andaaz-e-kalaam kisi koyal jesa.
+Jab wo bole Mere Dil ke Bagiche ko Mehkati hai.
+Ek ladki hai jo...
+
+Zaigam faqr kar apni Qismat par jo tujhko 'Aiman' mili.
+Warna kahan aise kisi ki Qismat Jagmagati hai...
+Ek ladki hai jo...`,
+
+`Andaaz-e-karam dekhe to mujhe Tumse Pyaar hua.
+Tumhari baaton se Mai Har Roz Madhosh hua.
+Hole Hole Tum Mere Dil-o-Dimag par chaah gyi.
+Fir yun hua ki Mera Ishq laa-ilaaj hua...
+Kab hua, kese hua Wallah nahi maloom.
+Kasam Khuda ki Mujhe Tumse Pyaar hua.`,
+
+`Tumko le kar Bahut Saare Sapne Sajaye Betha hu.
+Khuda se Tujhko Paane ki Ummeed Lagaye Betha hu.
+Kar dega Ata Mujhe tumko ek Roz Inshallah zaroor.
+Khuda ki Bargah me Shab-e-Juma Haath Phelaaye Betha hu...`,
+
+`♡First Night Sleeping Hug♡
+"Kal Raat Ghaflat me hi sahi tumhe Aagosh me Bhar kar aaya hoon...
+Main Sharaab nahi Peeta, Poora Maikhaana Pee kar Aaya Hoon.
+Mat Poochiye Humse Unko Chipat kar Sone ka Mazaa?
+Ek Ghadi me Sadiyon ka Mazaa Jee kar Aaya Hoon...`,
+
+`Eid Guzar Gyi Meri, Teri Deed ke Bagair.
+Shukr Hai Khuda ka Tera Deedar to hua Aaj!`,
+
+`Ae Khuda, Wo Din Jaldi Laa jis Roz me Guldasta dun
+Unko Phoolo'n ka.
+Unki Muskaan se Mehka Rahe har kona Mere Gulshan ka.
+Sochta hun Milne par Unko Tohfey me Ek Nathni du Sone Ki.
+Fir Sochta hun Unko kya Sona du Jo khud Johri ho Heero'n ka.`,
+
+`Mohabbat kis Hadd Tak ho Gyi Tumse Wallah Mai nahi Jaanta.
+Mere khawaabon ki Taabeer bata Rahi Hai ye koi ittefaaq Nahi...`,
+
+`Tum jo kehti ho kese Pasand Aaye Hum Tumhe Sanam.
+Bhala kese Chand lafzo'n me Bayaan ho Wo Tumhari Adaa...`,
+
+`Ek Adhuri Hasrat Ki Haami Bhar Di Hai Unhone.
+Mohabbat ki Aakhri Nishani Bhi Puri Kr Di Hai Unhone.
+Humne to Takaza hi Kiya Ek Baar "Aagosh me Bharne" ka.
+Pehli Or Aakhri Farmaish Bhi Puri Kr Di Hai Unhone...`,
+
+`Ae Khuda Mere Khawaab ko Tabeer me Badla Jaaye.
+Unko Dulhan ki Tarah Mere Liye Sajaaya Jaaye.
+
+Moula Ye jo Aasmaan hai Ise or bhi Roshan kr de.
+Waqt-e-mulaqaat hai Teri Roshni me Deedar-e-Noor karaya Jaaye...
+
+Jab Wo Aayen Mere Paas mere Mehram Bann kar.
+Unke Istaqbaal me Surkh kaleen Bichaya Jaaye...
+
+Mai unko Dekhun or Dekhta hi Reh Jaaun Bas.
+Nazar na Lag Jaaye Logo ki Unka Sadqa Utaara Jaaye...
+
+Imam-e-Waqt (a.t.f.s) ki Sarparasti me Moula,
+Mera Unke saath "Nikah" Padhaaya Jaaye...
+
+Kuch Hasratein Meri Abhi or bhi Baaki Hai Khuda,
+Unko Duniya ka Har Ek kona Ghumaaya jaaye...
+
+Sabse Pehle Le Jaaunga Unko Makka-o-Madina.
+Fir Unko Safar-e-Ishq (Karbala) ka karaya Jaaye...
+
+Ata ho Hume Bhi Ek Phool jiska Naam Hum "Abbas" Rakhen,
+Fir humare Ghar se bhi Sarkar-e-Wafaa ka Alam Uthaaya Jaaye...
+
+Ae Khuda khwahish meri, Teri Reza, Hume Beti bhi ho Ataa.
+Ahle-e-khana me Usko "Aatiqa" Naam se Pukaara Jaaye...
+
+Dua-e-Aakhir hai Zahoor-e-Imam (a.t.f.s) ho Jaldi.
+Humara Naam Bhi Unke Ghulaamo me Shumaar kraya Jaaye...
+
+Mangi thi Jitni Maangli Mene Duaye Arafa ke Roz.
+Khuda Inn Duao ko "14 Masomeen" ke Sadqe Qabool karaya Jaaye....
+
+Achcha nahi Lagta Zaigam or Aiman Alag Alag Likhna,
+Moula inko ek Naam me "Zaman" Likhwaya Jaaye...`,
+
+`Aao Mai Tumhe Apne Sapno ki Duniya Dikhata hun,
+Ek Ek krke Apne Sabhi khwaaab Tumhe Batata Hun...
+
+Har khwaab ka Aaghaz or Anjaam Tumhi ho,
+Tum Note krte Jao me Tumhe Ginaata Hun...
+
+Aaghaz E khwaab me Tum HumSafar ho Meri,
+Fir Saath me Apne Duniya Tumhe Ghumaata Hun...
+
+Ek Chhote or khoobsurat se Ashyaaane me Hum Rehte Hai,
+Jisko Mai Rangeen Phoolo'n se Tumhare Liye Sajaata Hun..
+
+Humare Aashyaane me Ek Jhoola or khoob saare Parindey hai,
+Parindo ki kaayen kaayen me Jhoola Tumhe Jhulaata Hun..
+
+Jab Shaam Dhal jaati hai Aangan me Humare.
+Tumhare pyaare Haatho se Bani Chai Mai Apne Haato se Tumhe Pilaata Hun...
+
+Raat hote hi Humare Hujre me Ek Rangeen Samaa'n Bann jaata Hai,
+Khoob Pyaar krke Apne Seene se Laga kr Tumhe Sulaata Hun...
+
+Wo Sunheri Subha Tumhara Mujhe Pyaar se uthaana,
+Haaaye Mai fir se Tumhe Apni Aagosh me Le Leta Hun...
+
+Darmiyaani khwaab me Do Bachche Bhi Nazar Aate Hai,
+Jisme Mai Ek ko Aatiqa or Dusre ko Abbas Keh kr Pukaarta Hun...
+
+Khwaabo ka Silsila yunhi Badhta jaata Hai,
+Fir Mai Apne Aap ko Budhape ki Haalat me Paata Hun...
+
+Mohabbat ka Imtehaan yahin se Shuru hota Hai,
+Zayifi ke Aalam me Tumhara Khairkhwan Bann Jaata Hun...
+
+Dour E Aakhir me bhi Sanam Teri Khatir,
+Moat ke Farishto'n se Bhidd Jaata Hun...
+
+Apne Khwaabo se Bedaar na hone ke Liye.
+'Zaman' Ek Raat Chain se So Jaata Hun...`,
+
+`Aao Mai Aapko Ek Dastaan Mohabbat ki Sunata hun,
+Mere Zehan me Tasveer Basi hai Uss shaks ki, Wo Dikhaata hun.
+
+Wo Ladki Badi Natkhat, Usko Sab Lawyer Bulaate hai,
+Hum Unke Mureed Aise, Unko Mohabbat Bhi kam Jataate Hai.
+
+Unki Tareef Likhu Agar, fir kuch na Likh Paunga,
+Unki Aankhon me hi Mai kuch Iss Tarha Kho Jaunga.
+
+Baat Agar Unke Rukhsaaro ki kabhi Aayegi,
+Bijli Bhi Chamak kar Unki Laali ke Geet Gaayegi.
+
+Unki aawaaz ke to Hum Itne Bade Deewaane hai,
+Record kiye Huwe Unke Sabhi Gaane Saari Duniya ko Sunaane Hai.
+
+Unke Hontho se Tabassum kuch iss Tarha Tapakta hai,
+Jaise koi Pyasa Sehra me Baarish ko Tarasta Hai.
+
+Yun to Wo Upar se Niche tak Pariyo ki Rani Lagti Hai,
+Khuda ki Banayi Huyi Sabse Haseen kahaani Lagti Hai.
+
+Unki Zulfon ka Zikr karu to Shaam bhi Dhal si Jaati Hai,
+Har Ek Latt Hawa ke Saath Dil ko Ghazal Sunaati Hai.
+
+Unki Saadgi ka Aalam Lafzon me bayaan ho Nahi Sakta,
+Aisa Husn Baar-Baar Iss Jahaan me Paida ho Nahi Sakta.
+
+Yakee'n kro ye to Ek Hissa hai Dastaan Abhi Baaki Hai.
+Tasweer Dikhaayi hai Tumko Seerat Abhi Baaki Hai.
+
+Mureed ho Jaoge Unke Unse Kuch der Guftugu krke.
+Hum to Umr Bhar ke Qaidi Bann Chuke hai Unse Mohabbat Krke.
+
+'Zaman' Mohabbat ki Dastaan yahin Tamam Nahi Hoti.
+Wo Humari Subha hai Jinke Bina Humari Shaam Nahi Hoti.....`
 
 ],
 };
