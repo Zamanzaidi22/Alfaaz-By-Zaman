@@ -7,8 +7,10 @@ console.log("SHAYARI-PAGE.JS LOADED");
 
 let shayariCategory = "";
 let shayariIndex = 0;
+
 let currentCategory = "";
 let currentIndex = 0;
+
 
 // ==========================================
 // Load Shayari From URL
@@ -24,8 +26,15 @@ function loadShayariPage(){
 
     shayariIndex =
         Number(params.get("index")) || 0;
-currentCategory = shayariCategory;
-currentIndex = shayariIndex;
+
+
+    // Global current values
+    currentCategory =
+        shayariCategory;
+
+    currentIndex =
+        shayariIndex;
+
 
     console.log(
         "Category:",
@@ -35,7 +44,9 @@ currentIndex = shayariIndex;
     );
 
 
-    // Category check
+    // ======================================
+    // Category Check
+    // ======================================
 
     if(
         !shayariCategory ||
@@ -48,7 +59,9 @@ currentIndex = shayariIndex;
     }
 
 
-    // Index check
+    // ======================================
+    // Index Check
+    // ======================================
 
     if(
         shayariIndex < 0 ||
@@ -57,6 +70,8 @@ currentIndex = shayariIndex;
     ){
 
         shayariIndex = 0;
+
+        currentIndex = 0;
 
     }
 
@@ -69,12 +84,19 @@ currentIndex = shayariIndex;
 // ==========================================
 // Display Current Shayari
 // ==========================================
-currentCategory = shayariCategory;
-currentIndex = shayariIndex;
+
 function displayCurrentShayari(){
 
     const shayari =
         SHAYARI_DB[shayariCategory][shayariIndex];
+
+
+    // Keep global values synchronized
+    currentCategory =
+        shayariCategory;
+
+    currentIndex =
+        shayariIndex;
 
 
     const categoryTitle =
@@ -89,6 +111,10 @@ function displayCurrentShayari(){
         document.getElementById("shayariText");
 
 
+    // ======================================
+    // Category Title
+    // ======================================
+
     if(categoryTitle){
 
         categoryTitle.innerText =
@@ -96,6 +122,10 @@ function displayCurrentShayari(){
 
     }
 
+
+    // ======================================
+    // Shayari Number
+    // ======================================
 
     if(shayariNumber){
 
@@ -105,28 +135,65 @@ function displayCurrentShayari(){
     }
 
 
+    // ======================================
+    // Actual Shayari
+    // ======================================
+
     if(shayariText){
 
         shayariText.innerText =
             shayari;
-updateFavoriteButton();
+
     }
-// ==========================================
-// Update Individual Shayari Like Count
-// ==========================================
 
-const likeCount =
-    document.getElementById("shayariLikeCount");
 
-if(likeCount){
+    // ======================================
+    // Like Count
+    // ======================================
 
-    const totalLikes =
-        likes[shayari] || 0;
+    if(
+        typeof likes !== "undefined"
+    ){
 
-    likeCount.innerText =
-        totalLikes;
+        const likeCount =
+            document.getElementById(
+                "shayariLikeCount"
+            );
 
-}
+
+        if(likeCount){
+
+            const totalLikes =
+                likes[shayari] || 0;
+
+            likeCount.innerText =
+                totalLikes;
+
+        }
+
+    }
+
+
+    // ======================================
+    // Favorite Button
+    // ======================================
+
+    if(
+        typeof updateFavoriteButton ===
+        "function"
+    ){
+
+        updateFavoriteButton();
+
+    }
+
+
+    console.log(
+        "✅ Shayari Displayed:",
+        shayariCategory,
+        shayariIndex
+    );
+
 }
 
 
@@ -153,12 +220,19 @@ function nextShayari(){
     }
 
 
+    currentCategory =
+        shayariCategory;
+
+    currentIndex =
+        shayariIndex;
+
+
     updateURL();
 
     displayCurrentShayari();
 
 }
-currentIndex = shayariIndex;
+
 
 // ==========================================
 // Previous Shayari
@@ -178,10 +252,18 @@ function previousShayari(){
 
     if(shayariIndex < 0){
 
-        shayariIndex = total - 1;
+        shayariIndex =
+            total - 1;
 
     }
-currentIndex = shayariIndex;
+
+
+    currentCategory =
+        shayariCategory;
+
+    currentIndex =
+        shayariIndex;
+
 
     updateURL();
 
@@ -198,7 +280,9 @@ function updateURL(){
 
     const newURL =
         "shayari.html?category=" +
-        encodeURIComponent(shayariCategory) +
+        encodeURIComponent(
+            shayariCategory
+        ) +
         "&index=" +
         shayariIndex;
 
@@ -219,11 +303,15 @@ function updateURL(){
 function showPageError(message){
 
     const categoryTitle =
-        document.getElementById("shayariCategory");
+        document.getElementById(
+            "shayariCategory"
+        );
 
 
     const shayariText =
-        document.getElementById("shayariText");
+        document.getElementById(
+            "shayariText"
+        );
 
 
     if(categoryTitle){
