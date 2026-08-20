@@ -1415,150 +1415,13 @@ function changeDownloadFont(font, button){
 }
 
 // ==========================================
-// Reset Download Design
+// Reset Download Design - Final
 // ==========================================
 
 function resetDownloadDesign(){
 
-    const preview =
-        document.getElementById(
-            "final-download-preview"
-        );
-
-    const text =
-        document.getElementById(
-            "final-download-shayari-text"
-        );
-
-    if(!preview || !text) return;
-
-
     // ======================================
-    // 1. Background → Night
-    // ======================================
-
-    selectedBackground = "night";
-
-    DOWNLOAD_BACKGROUNDS.forEach(
-        function(bg){
-
-            preview.classList.remove(
-                "bg-" + bg
-            );
-
-        }
-    );
-
-    preview.classList.add(
-        "bg-night"
-    );
-
-
-    // Custom Photo Remove
-
-    preview.style.backgroundImage = "";
-    preview.style.backgroundSize = "";
-    preview.style.backgroundPosition = "";
-    preview.style.backgroundRepeat = "";
-
-
-    // ======================================
-    // 2. Darkness → 35%
-    // ======================================
-
-    preview.style.setProperty(
-        "--download-darkness",
-        0.35
-    );
-
-
-    const darknessSlider =
-        document.getElementById(
-            "darkness-slider"
-        );
-
-    const darknessValue =
-        document.getElementById(
-            "darkness-value"
-        );
-
-
-    if(darknessSlider){
-
-        darknessSlider.value = 35;
-
-    }
-
-
-    if(darknessValue){
-
-        darknessValue.innerText =
-            "35%";
-
-    }
-
-
-    // ======================================
-    // 3. Text Size → Medium
-    // ======================================
-
-    text.style.fontSize =
-        "21px";
-
-
-    // ======================================
-    // 4. Alignment → Center
-    // ======================================
-
-    text.style.textAlign =
-        "center";
-
-
-    // ======================================
-    // 5. Text Color → White
-    // ======================================
-
-    text.style.color =
-        "#FFFFFF";
-
-
-    // ======================================
-    // 6. Font → Classic
-    // ======================================
-
-    text.style.fontFamily =
-        "'Poppins', sans-serif";
-
-    text.style.fontWeight =
-        "500";
-
-    text.style.letterSpacing =
-        "0px";
-
-
-    // ======================================
-    // 7. Remove All Active States
-    // ======================================
-
-    document
-        .querySelectorAll(
-            ".background-option, " +
-            ".text-size-btn, " +
-            ".text-align-btn, " +
-            ".text-color-btn, " +
-            ".font-style-btn"
-        )
-        .forEach(function(btn){
-
-            btn.classList.remove(
-                "active"
-            );
-
-        });
-
-
-    // ======================================
-    // 8. Restore Default Active Buttons
+    // Buttons Find
     // ======================================
 
     const nightButton =
@@ -1587,24 +1450,93 @@ function resetDownloadDesign(){
         );
 
 
-    [
-        nightButton,
-        mediumButton,
-        centerButton,
-        whiteButton,
+    // ======================================
+    // 1. Background → Night
+    // ======================================
+
+    selectBackground("night");
+
+
+    // ======================================
+    // 2. Darkness → 35%
+    // ======================================
+
+    const slider =
+        document.getElementById(
+            "darkness-slider"
+        );
+
+    if(slider){
+
+        slider.value = 35;
+
+    }
+
+    changeBackgroundDarkness(35);
+
+
+    // ======================================
+    // 3. Text Size → Medium
+    // ======================================
+
+    changeDownloadTextSize(
+        "medium",
+        mediumButton
+    );
+
+
+    // ======================================
+    // 4. Alignment → Center
+    // ======================================
+
+    changeDownloadTextAlign(
+        "center",
+        centerButton
+    );
+
+
+    // ======================================
+    // 5. Text Color → White
+    // ======================================
+
+    changeDownloadTextColor(
+        "white",
+        whiteButton
+    );
+
+
+    // ======================================
+    // 6. Font → Classic
+    // ======================================
+
+    changeDownloadFont(
+        "classic",
         classicButton
-    ].forEach(function(btn){
+    );
 
-        if(btn){
 
-            btn.classList.add(
-                "active"
-            );
+    // ======================================
+    // Background Active Button
+    // ======================================
 
-        }
+    document
+        .querySelectorAll(".background-option")
+        .forEach(function(btn){
 
-    });
+            btn.classList.remove("active");
 
+        });
+
+    if(nightButton){
+
+        nightButton.classList.add("active");
+
+    }
+
+
+    // ======================================
+    // Done
+    // ======================================
 
     showToast(
         "↻ Design Reset"
