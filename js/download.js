@@ -530,6 +530,23 @@ panel.className =
 
 </div>
 
+<!-- ==========================
+     RESET DESIGN
+=========================== -->
+
+<div class="download-reset-control">
+
+    <button
+        type="button"
+        class="reset-design-btn"
+        onclick="resetDownloadDesign()">
+
+        ↻ Reset Design
+
+    </button>
+
+</div>
+
                 <!-- ==========================
                      DOWNLOAD PREVIEW
                 =========================== -->
