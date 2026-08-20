@@ -1289,7 +1289,29 @@ function changeDownloadFont(font, button){
     if(!text) return;
 
 
-    if(font === "elegant"){
+    // ==========================
+    // CLASSIC
+    // ==========================
+
+    if(font === "classic"){
+
+        text.style.fontFamily =
+            "'Poppins', sans-serif";
+
+        text.style.fontWeight =
+            "500";
+
+        text.style.letterSpacing =
+            "0px";
+
+    }
+
+
+    // ==========================
+    // ELEGANT
+    // ==========================
+
+    else if(font === "elegant"){
 
         text.style.fontFamily =
             "Georgia, 'Times New Roman', serif";
@@ -1297,17 +1319,33 @@ function changeDownloadFont(font, button){
         text.style.fontWeight =
             "500";
 
+        text.style.letterSpacing =
+            "0px";
+
     }
+
+
+    // ==========================
+    // BOLD
+    // ==========================
 
     else if(font === "bold"){
 
         text.style.fontFamily =
-            "'Poppins', sans-serif";
+            "Arial Black, 'Poppins', sans-serif";
 
         text.style.fontWeight =
-            "800";
+            "900";
+
+        text.style.letterSpacing =
+            "0.6px";
 
     }
+
+
+    // ==========================
+    // HANDWRITTEN
+    // ==========================
 
     else if(font === "handwritten"){
 
@@ -1317,7 +1355,15 @@ function changeDownloadFont(font, button){
         text.style.fontWeight =
             "400";
 
+        text.style.letterSpacing =
+            "0px";
+
     }
+
+
+    // ==========================
+    // FALLBACK
+    // ==========================
 
     else{
 
@@ -1327,9 +1373,13 @@ function changeDownloadFont(font, button){
         text.style.fontWeight =
             "500";
 
+        text.style.letterSpacing =
+            "0px";
+
     }
 
 
+    // Active Button
     document
         .querySelectorAll(".font-style-btn")
         .forEach(function(btn){
