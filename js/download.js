@@ -248,7 +248,7 @@ panel.className =
                 </p>
 
 
-                <div class="download-backgrounds">
+                <div class="background-options">
 
                     <button
                         class="background-option active"
