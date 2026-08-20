@@ -1594,3 +1594,71 @@ function resetDownloadDesign(){
     );
 
 }
+
+// ==========================================
+// Download Image Format / Aspect Ratio
+// ==========================================
+
+function changeDownloadFormat(format, button){
+
+    const preview =
+        document.getElementById(
+            "final-download-preview"
+        );
+
+    if(!preview) return;
+
+
+    // Default reset
+    preview.style.width = "100%";
+    preview.style.maxWidth = "100%";
+    preview.style.aspectRatio = "";
+    preview.style.minHeight = "";
+
+
+    if(format === "square"){
+
+        preview.style.aspectRatio = "1 / 1";
+        preview.style.minHeight = "0";
+
+    }
+
+    else if(format === "portrait"){
+
+        preview.style.aspectRatio = "4 / 5";
+        preview.style.minHeight = "0";
+
+    }
+
+    else if(format === "story"){
+
+        preview.style.aspectRatio = "9 / 16";
+        preview.style.minHeight = "0";
+
+    }
+
+    else{
+
+        // Classic
+        preview.style.aspectRatio = "";
+        preview.style.minHeight = "400px";
+
+    }
+
+
+    document
+        .querySelectorAll(".format-btn")
+        .forEach(function(btn){
+
+            btn.classList.remove("active");
+
+        });
+
+
+    if(button){
+
+        button.classList.add("active");
+
+    }
+
+}
