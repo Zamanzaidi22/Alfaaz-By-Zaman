@@ -945,3 +945,36 @@ function useCustomBackground(input){
     reader.readAsDataURL(file);
 
 }
+
+// ==========================================
+// Background Darkness Control
+// ==========================================
+
+function changeBackgroundDarkness(value){
+
+    const preview =
+        document.getElementById(
+            "final-download-preview"
+        );
+
+    const valueText =
+        document.getElementById(
+            "darkness-value"
+        );
+
+    if(valueText){
+
+        valueText.innerText =
+            value + "%";
+
+    }
+
+    if(!preview) return;
+
+
+    preview.style.setProperty(
+        "--download-darkness",
+        value / 100
+    );
+
+}
