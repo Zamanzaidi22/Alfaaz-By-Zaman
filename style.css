@@ -4500,3 +4500,43 @@ body > header a:hover{
 .text-size-btn:active{
     transform:scale(.96);
 }
+
+/* ==========================================
+   DOWNLOAD TEXT ALIGNMENT
+========================================== */
+
+.download-text-align-control{
+    margin:16px 0 20px;
+}
+
+.text-align-options{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:8px;
+}
+
+.text-align-btn{
+    padding:9px 5px;
+
+    border:1px solid rgba(255,215,0,.2);
+    border-radius:10px;
+
+    background:#191919;
+    color:#ccc;
+
+    font-size:12px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:.25s;
+}
+
+.text-align-btn.active{
+    background:rgba(255,215,0,.12);
+    color:#FFD700;
+    border-color:#FFD700;
+}
+
+.text-align-btn:active{
+    transform:scale(.96);
+}
