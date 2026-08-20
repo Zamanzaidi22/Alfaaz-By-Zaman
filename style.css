@@ -4724,3 +4724,27 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   DOWNLOAD PREVIEW FORMAT SUPPORT
+========================================== */
+
+#final-download-preview{
+    margin-left:auto;
+    margin-right:auto;
+    transition:
+        aspect-ratio .25s ease,
+        min-height .25s ease;
+}
+
+#final-download-preview[style*="1 / 1"]{
+    max-width:500px !important;
+}
+
+#final-download-preview[style*="4 / 5"]{
+    max-width:460px !important;
+}
+
+#final-download-preview[style*="9 / 16"]{
+    max-width:360px !important;
+}
