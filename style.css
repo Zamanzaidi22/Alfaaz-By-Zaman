@@ -4580,3 +4580,43 @@ body > header a:hover{
 .text-color-btn:active{
     transform:scale(.96);
 }
+
+/* ==========================================
+   DOWNLOAD FONT STYLE CONTROL
+========================================== */
+
+.download-font-control{
+    margin:16px 0 20px;
+}
+
+.font-style-options{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:8px;
+}
+
+.font-style-btn{
+    padding:9px 5px;
+
+    border:1px solid rgba(255,215,0,.2);
+    border-radius:10px;
+
+    background:#191919;
+    color:#ccc;
+
+    font-size:12px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:.25s;
+}
+
+.font-style-btn.active{
+    background:rgba(255,215,0,.12);
+    color:#FFD700;
+    border-color:#FFD700;
+}
+
+.font-style-btn:active{
+    transform:scale(.96);
+}
