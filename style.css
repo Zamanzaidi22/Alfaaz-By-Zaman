@@ -4620,3 +4620,41 @@ body > header a:hover{
 .font-style-btn:active{
     transform:scale(.96);
 }
+
+/* ==========================================
+   DOWNLOAD RESET DESIGN BUTTON
+========================================== */
+
+.download-reset-control{
+    margin:16px 0 20px;
+    text-align:right;
+}
+
+.reset-design-btn{
+    padding:9px 16px;
+
+    border:1px solid rgba(255,215,0,.35);
+    border-radius:25px;
+
+    background:#151515;
+    color:#FFD700;
+
+    font-size:12px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.reset-design-btn:hover{
+    background:#FFD700;
+    color:#111;
+
+    box-shadow:
+        0 0 15px rgba(255,215,0,.30);
+}
+
+.reset-design-btn:active{
+    transform:scale(.96);
+}
