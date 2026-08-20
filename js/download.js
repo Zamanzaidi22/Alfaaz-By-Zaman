@@ -369,6 +369,43 @@ panel.className =
 
 </div>
 
+<!-- ==========================
+     TEXT SIZE CONTROL
+=========================== -->
+
+<div class="download-text-size-control">
+
+    <span class="text-control-title">
+        🔠 Text Size
+    </span>
+
+    <div class="text-size-options">
+
+        <button
+            type="button"
+            class="text-size-btn"
+            onclick="changeDownloadTextSize('small', this)">
+            Small
+        </button>
+
+        <button
+            type="button"
+            class="text-size-btn active"
+            onclick="changeDownloadTextSize('medium', this)">
+            Medium
+        </button>
+
+        <button
+            type="button"
+            class="text-size-btn"
+            onclick="changeDownloadTextSize('large', this)">
+            Large
+        </button>
+
+    </div>
+
+</div>
+
                 <!-- ==========================
                      DOWNLOAD PREVIEW
                 =========================== -->
@@ -976,5 +1013,53 @@ function changeBackgroundDarkness(value){
         "--download-darkness",
         value / 100
     );
+
+}
+
+// ==========================================
+// Download Shayari Text Size
+// ==========================================
+
+function changeDownloadTextSize(size, button){
+
+    const text =
+        document.getElementById(
+            "final-download-shayari-text"
+        );
+
+    if(!text) return;
+
+
+    if(size === "small"){
+
+        text.style.fontSize = "17px";
+
+    }
+    else if(size === "large"){
+
+        text.style.fontSize = "26px";
+
+    }
+    else{
+
+        text.style.fontSize = "21px";
+
+    }
+
+
+    document
+        .querySelectorAll(".text-size-btn")
+        .forEach(function(btn){
+
+            btn.classList.remove("active");
+
+        });
+
+
+    if(button){
+
+        button.classList.add("active");
+
+    }
 
 }
