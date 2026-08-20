@@ -1100,3 +1100,40 @@ function changeDownloadTextSize(size, button){
     }
 
 }
+
+// ==========================================
+// Download Shayari Text Alignment
+// ==========================================
+
+function changeDownloadTextAlign(align, button){
+
+    const text =
+        document.getElementById(
+            "final-download-shayari-text"
+        );
+
+    if(!text) return;
+
+
+    // Apply Alignment
+    text.style.textAlign = align;
+
+
+    // Remove old active state
+    document
+        .querySelectorAll(".text-align-btn")
+        .forEach(function(btn){
+
+            btn.classList.remove("active");
+
+        });
+
+
+    // Current button active
+    if(button){
+
+        button.classList.add("active");
+
+    }
+
+}
