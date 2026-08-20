@@ -406,6 +406,43 @@ panel.className =
 
 </div>
 
+<!-- ==========================
+     TEXT ALIGNMENT CONTROL
+=========================== -->
+
+<div class="download-text-align-control">
+
+    <span class="text-control-title">
+        ↔️ Text Alignment
+    </span>
+
+    <div class="text-align-options">
+
+        <button
+            type="button"
+            class="text-align-btn"
+            onclick="changeDownloadTextAlign('left', this)">
+            ◀ Left
+        </button>
+
+        <button
+            type="button"
+            class="text-align-btn active"
+            onclick="changeDownloadTextAlign('center', this)">
+            Center
+        </button>
+
+        <button
+            type="button"
+            class="text-align-btn"
+            onclick="changeDownloadTextAlign('right', this)">
+            Right ▶
+        </button>
+
+    </div>
+
+</div>
+
                 <!-- ==========================
                      DOWNLOAD PREVIEW
                 =========================== -->
