@@ -4271,3 +4271,120 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   DOWNLOAD STUDIO - FINAL LAYOUT FIX
+========================================== */
+
+#final-download-preview{
+    width:100% !important;
+    min-height:400px !important;
+
+    display:flex !important;
+    flex-direction:column !important;
+
+    align-items:center !important;
+    justify-content:space-between !important;
+
+    gap:28px !important;
+
+    padding:38px 25px !important;
+
+    text-align:center !important;
+
+    border-radius:18px !important;
+    overflow:hidden !important;
+}
+
+
+#final-download-preview .download-brand{
+    width:100% !important;
+
+    display:block !important;
+
+    color:#FFD700 !important;
+
+    font-size:17px !important;
+    font-weight:700 !important;
+
+    text-align:center !important;
+
+    flex:none !important;
+}
+
+
+#final-download-shayari-text{
+    width:100% !important;
+    max-width:520px !important;
+
+    display:block !important;
+
+    margin:auto !important;
+
+    color:#fff !important;
+
+    font-size:22px !important;
+    font-weight:500 !important;
+
+    line-height:1.8 !important;
+
+    white-space:pre-line !important;
+
+    text-align:center !important;
+
+    word-break:normal !important;
+    overflow-wrap:break-word !important;
+
+    flex:none !important;
+}
+
+
+#final-download-preview .download-footer{
+    width:100% !important;
+
+    display:block !important;
+
+    color:rgba(255,255,255,.65) !important;
+
+    font-size:11px !important;
+
+    text-align:center !important;
+
+    flex:none !important;
+}
+
+
+/* Minimal Theme */
+
+#final-download-preview.bg-minimal
+#final-download-shayari-text{
+    color:#111 !important;
+}
+
+#final-download-preview.bg-minimal
+.download-brand{
+    color:#806500 !important;
+}
+
+#final-download-preview.bg-minimal
+.download-footer{
+    color:#555 !important;
+}
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    #final-download-preview{
+        min-height:360px !important;
+        padding:30px 18px !important;
+        gap:22px !important;
+    }
+
+    #final-download-shayari-text{
+        font-size:19px !important;
+        line-height:1.7 !important;
+    }
+
+}
