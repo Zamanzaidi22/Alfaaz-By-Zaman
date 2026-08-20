@@ -4388,3 +4388,68 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   DOWNLOAD BACKGROUND DARKNESS
+========================================== */
+
+#final-download-preview{
+    position:relative;
+    isolation:isolate;
+}
+
+#final-download-preview::before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+        rgba(
+            0,
+            0,
+            0,
+            var(--download-darkness, .35)
+        );
+
+    z-index:0;
+
+    pointer-events:none;
+}
+
+#final-download-preview
+.download-brand,
+
+#final-download-preview
+.download-shayari-text,
+
+#final-download-preview
+.download-footer{
+    position:relative;
+    z-index:1;
+}
+
+
+/* ==========================================
+   DARKNESS SLIDER
+========================================== */
+
+.download-darkness-control{
+    margin:16px 0 20px;
+}
+
+.darkness-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:8px;
+
+    color:#ddd;
+    font-size:12px;
+}
+
+#darkness-slider{
+    width:100%;
+    cursor:pointer;
+}
