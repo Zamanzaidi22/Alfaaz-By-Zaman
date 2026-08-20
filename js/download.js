@@ -343,6 +343,31 @@ panel.className =
     onchange="useCustomBackground(this)">
                 </div>
 
+<!-- ==========================
+     BACKGROUND DARKNESS
+=========================== -->
+
+<div class="download-darkness-control">
+
+    <div class="darkness-header">
+
+        <span>🌗 Background Darkness</span>
+
+        <span id="darkness-value">35%</span>
+
+    </div>
+
+    <input
+        type="range"
+        id="darkness-slider"
+        min="0"
+        max="80"
+        value="35"
+        step="5"
+        oninput="changeBackgroundDarkness(this.value)"
+    >
+
+</div>
 
                 <!-- ==========================
                      DOWNLOAD PREVIEW
