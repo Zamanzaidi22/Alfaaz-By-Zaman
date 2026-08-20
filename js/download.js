@@ -220,7 +220,8 @@ function createDownloadPanel(){
 
     panel.id =
         "download-panel";
-
+panel.className =
+    "download-panel";
 
     panel.innerHTML = `
 
