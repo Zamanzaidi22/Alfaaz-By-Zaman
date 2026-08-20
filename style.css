@@ -4658,3 +4658,69 @@ body > header a:hover{
 .reset-design-btn:active{
     transform:scale(.96);
 }
+
+/* ==========================================
+   DOWNLOAD IMAGE FORMAT CONTROL
+========================================== */
+
+.download-format-control{
+    margin:16px 0 20px;
+}
+
+.format-options{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:8px;
+}
+
+.format-btn{
+    min-height:48px;
+    padding:7px 4px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    gap:2px;
+
+    border:1px solid rgba(255,215,0,.2);
+    border-radius:10px;
+
+    background:#191919;
+    color:#ccc;
+
+    font-size:12px;
+    font-weight:700;
+
+    cursor:pointer;
+    transition:.25s;
+}
+
+.format-btn small{
+    font-size:8px;
+    font-weight:500;
+    color:#888;
+}
+
+.format-btn.active{
+    background:rgba(255,215,0,.12);
+    color:#FFD700;
+    border-color:#FFD700;
+}
+
+.format-btn.active small{
+    color:#d4af37;
+}
+
+.format-btn:active{
+    transform:scale(.96);
+}
+
+@media(max-width:500px){
+
+    .format-options{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
