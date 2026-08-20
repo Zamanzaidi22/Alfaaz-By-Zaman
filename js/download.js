@@ -443,6 +443,49 @@ panel.className =
 
 </div>
 
+<!-- ==========================
+     TEXT COLOR CONTROL
+=========================== -->
+
+<div class="download-text-color-control">
+
+    <span class="text-control-title">
+        🎨 Text Color
+    </span>
+
+    <div class="text-color-options">
+
+        <button
+            type="button"
+            class="text-color-btn active"
+            onclick="changeDownloadTextColor('white', this)">
+
+            ⚪ White
+
+        </button>
+
+        <button
+            type="button"
+            class="text-color-btn"
+            onclick="changeDownloadTextColor('gold', this)">
+
+            🟡 Gold
+
+        </button>
+
+        <button
+            type="button"
+            class="text-color-btn"
+            onclick="changeDownloadTextColor('black', this)">
+
+            ⚫ Black
+
+        </button>
+
+    </div>
+
+</div>
+
                 <!-- ==========================
                      DOWNLOAD PREVIEW
                 =========================== -->
@@ -1130,6 +1173,56 @@ function changeDownloadTextAlign(align, button){
 
 
     // Current button active
+    if(button){
+
+        button.classList.add("active");
+
+    }
+
+}
+
+// ==========================================
+// Download Shayari Text Color
+// ==========================================
+
+function changeDownloadTextColor(color, button){
+
+    const text =
+        document.getElementById(
+            "final-download-shayari-text"
+        );
+
+    if(!text) return;
+
+
+    if(color === "gold"){
+
+        text.style.color = "#FFD700";
+
+    }
+
+    else if(color === "black"){
+
+        text.style.color = "#111111";
+
+    }
+
+    else{
+
+        text.style.color = "#FFFFFF";
+
+    }
+
+
+    document
+        .querySelectorAll(".text-color-btn")
+        .forEach(function(btn){
+
+            btn.classList.remove("active");
+
+        });
+
+
     if(button){
 
         button.classList.add("active");
