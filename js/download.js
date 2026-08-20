@@ -1063,3 +1063,77 @@ function changeDownloadTextSize(size, button){
     }
 
 }
+
+<!-- ==========================
+     TEXT ALIGNMENT CONTROL
+=========================== -->
+
+<div class="download-text-align-control">
+
+    <span class="text-control-title">
+        ↔️ Text Alignment
+    </span>
+
+    <div class="text-align-options">
+
+        <button
+            type="button"
+            class="text-align-btn"
+            onclick="changeDownloadTextAlign('left', this)">
+            ◀ Left
+        </button>
+
+        <button
+            type="button"
+            class="text-align-btn active"
+            onclick="changeDownloadTextAlign('center', this)">
+            Center
+        </button>
+
+        <button
+            type="button"
+            class="text-align-btn"
+            onclick="changeDownloadTextAlign('right', this)">
+            Right ▶
+        </button>
+
+    </div>
+
+</div>
+
+// ==========================================
+// Download Shayari Text Alignment
+// ==========================================
+
+function changeDownloadTextAlign(align, button){
+
+    const text =
+        document.getElementById(
+            "final-download-shayari-text"
+        );
+
+    if(!text) return;
+
+    text.style.setProperty(
+        "text-align",
+        align,
+        "important"
+    );
+
+
+    document
+        .querySelectorAll(".text-align-btn")
+        .forEach(function(btn){
+
+            btn.classList.remove("active");
+
+        });
+
+
+    if(button){
+
+        button.classList.add("active");
+
+    }
+
+}
