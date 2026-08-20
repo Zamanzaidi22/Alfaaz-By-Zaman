@@ -33,7 +33,7 @@ function getCurrentDownloadShayari() {
     // --------------------------------------
 
     const categoryText =
-        document.getElementById("shayari-text")
+        document.getElementById("shayari-Text")
 
     if(categoryText){
 
@@ -411,8 +411,7 @@ function openDownloadPanel(){
 
 
     const text =
-        document.getElementById("final-download-shayari-text")
-        );
+        document.getElementById("final-download-shayari-text");
 
 
     if(text){
@@ -506,8 +505,7 @@ function selectBackground(background){
 
 
     const preview =
-        document.getElementById("final-download-preview")
-        );
+        document.getElementById("final-download-preview");
 
 
     if(!preview) return;
@@ -570,8 +568,7 @@ function selectBackground(background){
 async function generateShayariImage(){
 
     const preview =
-        document.getElementById("final-download-preview")
-        );
+        document.getElementById("final-download-preview");
 
 
     if(!preview){
@@ -605,8 +602,7 @@ async function generateShayariImage(){
 
 
     const shayariText =
-        document.getElementById("final-download-shayari-text")
-        );
+        document.getElementById("final-download-shayari-text");
 
 
     if(shayariText){
