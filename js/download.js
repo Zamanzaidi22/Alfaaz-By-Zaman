@@ -547,6 +547,57 @@ panel.className =
 
 </div>
 
+<!-- ==========================
+     IMAGE SIZE / FORMAT
+=========================== -->
+
+<div class="download-format-control">
+
+    <span class="text-control-title">
+        📐 Image Size
+    </span>
+
+    <div class="format-options">
+
+        <button
+            type="button"
+            class="format-btn active"
+            data-format="classic"
+            onclick="changeDownloadFormat('classic', this)">
+            Classic
+        </button>
+
+        <button
+            type="button"
+            class="format-btn"
+            data-format="square"
+            onclick="changeDownloadFormat('square', this)">
+            1:1
+            <small>Post</small>
+        </button>
+
+        <button
+            type="button"
+            class="format-btn"
+            data-format="portrait"
+            onclick="changeDownloadFormat('portrait', this)">
+            4:5
+            <small>Portrait</small>
+        </button>
+
+        <button
+            type="button"
+            class="format-btn"
+            data-format="story"
+            onclick="changeDownloadFormat('story', this)">
+            9:16
+            <small>Story/Reel</small>
+        </button>
+
+    </div>
+
+</div>
+
                 <!-- ==========================
                      DOWNLOAD PREVIEW
                 =========================== -->
