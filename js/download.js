@@ -325,7 +325,22 @@ panel.className =
                         <span>Minimal</span>
 
                     </button>
+                    
+                    <button
+    class="background-option"
+    onclick="openCustomBackground()">
 
+    🖼️
+    <span>My Photo</span>
+
+</button>
+
+<input
+    type="file"
+    id="custom-background-input"
+    accept="image/*"
+    style="display:none;"
+    onchange="useCustomBackground(this)">
                 </div>
 
 
@@ -510,6 +525,13 @@ function selectBackground(background){
 
     if(!preview) return;
 
+
+// Custom gallery background clear karo
+
+preview.style.backgroundImage = "";
+preview.style.backgroundSize = "";
+preview.style.backgroundPosition = "";
+preview.style.backgroundRepeat = "";
 
     DOWNLOAD_BACKGROUNDS.forEach(
         function(bg){
@@ -762,3 +784,139 @@ document.addEventListener(
 
     }
 );
+
+// ==========================================
+// CUSTOM GALLERY BACKGROUND
+// ==========================================
+
+function openCustomBackground(){
+
+    const input =
+        document.getElementById(
+            "custom-background-input"
+        );
+
+    if(input){
+
+        input.click();
+
+    }
+
+}
+
+
+// ==========================================
+// Use Selected Gallery Image
+// ==========================================
+
+function useCustomBackground(input){
+
+    if(
+        !input.files ||
+        !input.files[0]
+    ){
+
+        return;
+
+    }
+
+
+    const file =
+        input.files[0];
+
+
+    // Sirf image allow
+    if(
+        !file.type.startsWith("image/")
+    ){
+
+        showToast(
+            "❌ Please image select karein."
+        );
+
+        return;
+
+    }
+
+
+    const reader =
+        new FileReader();
+
+
+    reader.onload =
+        function(event){
+
+            const preview =
+                document.getElementById(
+                    "final-download-preview"
+                );
+
+
+            if(!preview){
+
+                return;
+
+            }
+
+
+            // Purane theme classes remove
+            DOWNLOAD_BACKGROUNDS.forEach(
+                function(bg){
+
+                    preview.classList.remove(
+                        "bg-" + bg
+                    );
+
+                }
+            );
+
+
+            // Gallery image apply
+            preview.style.backgroundImage =
+                `linear-gradient(
+                    rgba(0,0,0,.42),
+                    rgba(0,0,0,.55)
+                ),
+                url("${event.target.result}")`;
+
+
+            preview.style.backgroundSize =
+                "cover";
+
+            preview.style.backgroundPosition =
+                "center";
+
+            preview.style.backgroundRepeat =
+                "no-repeat";
+
+
+            selectedBackground =
+                "custom";
+
+
+            // Old active buttons remove
+            document
+                .querySelectorAll(
+                    ".background-option"
+                )
+                .forEach(
+                    function(option){
+
+                        option.classList.remove(
+                            "active"
+                        );
+
+                    }
+                );
+
+
+            showToast(
+                "🖼️ Custom Background Applied"
+            );
+
+        };
+
+
+    reader.readAsDataURL(file);
+
+}
