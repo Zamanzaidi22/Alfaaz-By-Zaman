@@ -33,7 +33,7 @@ function getCurrentDownloadShayari() {
     // --------------------------------------
 
     const categoryText =
-        document.getElementById("shayariText");
+        document.getElementById("shayari-text")
 
     if(categoryText){
 
@@ -334,8 +334,8 @@ panel.className =
                 =========================== -->
 
                 <div
-                    id="download-preview"
-                    class="download-preview bg-night">
+                     id="final-download-preview"
+                     class="download-preview bg-night">
 
                     <div class="download-brand">
                         🌙 Alfaaz By Zaman
@@ -343,8 +343,8 @@ panel.className =
 
 
                     <div
-                        class="download-shayari-text"
-                        id="download-shayari-text">
+                         class="download-shayari-text"
+                         id="final-download-shayari-text">
 
                     </div>
 
@@ -411,8 +411,7 @@ function openDownloadPanel(){
 
 
     const text =
-        document.getElementById(
-            "download-shayari-text"
+        document.getElementById("final-download-shayari-text")
         );
 
 
@@ -507,8 +506,7 @@ function selectBackground(background){
 
 
     const preview =
-        document.getElementById(
-            "download-preview"
+        document.getElementById("final-download-preview")
         );
 
 
@@ -572,8 +570,7 @@ function selectBackground(background){
 async function generateShayariImage(){
 
     const preview =
-        document.getElementById(
-            "download-preview"
+        document.getElementById("final-download-preview")
         );
 
 
@@ -608,8 +605,7 @@ async function generateShayariImage(){
 
 
     const shayariText =
-        document.getElementById(
-            "download-shayari-text"
+        document.getElementById("final-download-shayari-text")
         );
 
 
