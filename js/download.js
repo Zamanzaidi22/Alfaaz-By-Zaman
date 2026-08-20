@@ -486,6 +486,50 @@ panel.className =
 
 </div>
 
+<!-- ==========================
+     FONT STYLE CONTROL
+=========================== -->
+
+<div class="download-font-control">
+
+    <span class="text-control-title">
+        ✍️ Font Style
+    </span>
+
+    <div class="font-style-options">
+
+        <button
+            type="button"
+            class="font-style-btn active"
+            onclick="changeDownloadFont('classic', this)">
+            Classic
+        </button>
+
+        <button
+            type="button"
+            class="font-style-btn"
+            onclick="changeDownloadFont('elegant', this)">
+            Elegant
+        </button>
+
+        <button
+            type="button"
+            class="font-style-btn"
+            onclick="changeDownloadFont('bold', this)">
+            Bold
+        </button>
+
+        <button
+            type="button"
+            class="font-style-btn"
+            onclick="changeDownloadFont('handwritten', this)">
+            Handwritten
+        </button>
+
+    </div>
+
+</div>
+
                 <!-- ==========================
                      DOWNLOAD PREVIEW
                 =========================== -->
@@ -1216,6 +1260,78 @@ function changeDownloadTextColor(color, button){
 
     document
         .querySelectorAll(".text-color-btn")
+        .forEach(function(btn){
+
+            btn.classList.remove("active");
+
+        });
+
+
+    if(button){
+
+        button.classList.add("active");
+
+    }
+
+}
+
+// ==========================================
+// Download Shayari Font Style
+// ==========================================
+
+function changeDownloadFont(font, button){
+
+    const text =
+        document.getElementById(
+            "final-download-shayari-text"
+        );
+
+    if(!text) return;
+
+
+    if(font === "elegant"){
+
+        text.style.fontFamily =
+            "Georgia, 'Times New Roman', serif";
+
+        text.style.fontWeight =
+            "500";
+
+    }
+
+    else if(font === "bold"){
+
+        text.style.fontFamily =
+            "'Poppins', sans-serif";
+
+        text.style.fontWeight =
+            "800";
+
+    }
+
+    else if(font === "handwritten"){
+
+        text.style.fontFamily =
+            "'Brush Script MT', 'Segoe Script', cursive";
+
+        text.style.fontWeight =
+            "400";
+
+    }
+
+    else{
+
+        text.style.fontFamily =
+            "'Poppins', sans-serif";
+
+        text.style.fontWeight =
+            "500";
+
+    }
+
+
+    document
+        .querySelectorAll(".font-style-btn")
         .forEach(function(btn){
 
             btn.classList.remove("active");
