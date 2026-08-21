@@ -111,3 +111,39 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
 });
+
+// ==========================================
+// PWA Service Worker Registration
+// ==========================================
+
+if("serviceWorker" in navigator){
+
+    window.addEventListener(
+        "load",
+        function(){
+
+            navigator.serviceWorker
+                .register("./service-worker.js")
+
+                .then(function(registration){
+
+                    console.log(
+                        "✅ Service Worker Registered:",
+                        registration.scope
+                    );
+
+                })
+
+                .catch(function(error){
+
+                    console.log(
+                        "❌ Service Worker Registration Failed:",
+                        error
+                    );
+
+                });
+
+        }
+    );
+
+}
