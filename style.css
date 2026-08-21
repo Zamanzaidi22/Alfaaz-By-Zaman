@@ -6462,3 +6462,382 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   HOMEPAGE V2
+   PREMIUM CATEGORY CARDS - FINAL POLISH
+========================================== */
+
+.categories{
+    max-width:1000px;
+
+    margin:20px auto 50px;
+
+    padding:0 18px;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0,1fr));
+
+    gap:16px;
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.category-card{
+
+    position:relative;
+
+    min-height:170px;
+
+    padding:24px 18px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(255,215,0,.075),
+            transparent 42%
+        ),
+        linear-gradient(
+            145deg,
+            #171717,
+            #0b0b0b
+        ) !important;
+
+    border:
+        1px solid
+        rgba(255,215,0,.24) !important;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 10px 28px rgba(0,0,0,.25),
+        inset 0 0 22px rgba(255,215,0,.02);
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+/* Golden top glow */
+
+.category-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:24%;
+    right:24%;
+
+    height:1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,215,0,.75),
+            transparent
+        );
+
+    opacity:.7;
+
+}
+
+
+/* Soft hover glow */
+
+.category-card:hover{
+
+    transform:
+        translateY(-5px)
+        scale(1.015);
+
+    border-color:
+        rgba(255,215,0,.65) !important;
+
+    box-shadow:
+        0 14px 35px rgba(0,0,0,.38),
+        0 0 24px rgba(255,215,0,.13);
+
+}
+
+
+/* Mobile tap */
+
+.category-card:active{
+
+    transform:scale(.98);
+
+}
+
+
+/* ==========================================
+   ICON
+========================================== */
+
+.category-icon{
+
+    margin-bottom:10px;
+
+    font-size:31px;
+
+    line-height:1;
+
+    filter:
+        drop-shadow(
+            0 0 8px
+            rgba(255,215,0,.18)
+        );
+
+    transition:.3s;
+
+}
+
+
+.category-card:hover
+.category-icon{
+
+    transform:
+        translateY(-3px)
+        scale(1.08);
+
+}
+
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.category-title{
+
+    color:#FFD700;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    letter-spacing:.3px;
+
+}
+
+
+/* ==========================================
+   SUBTITLE
+========================================== */
+
+.category-subtitle{
+
+    margin-top:4px;
+
+    color:#8f8f8f;
+
+    font-size:11px;
+
+    line-height:1.5;
+
+}
+
+
+/* ==========================================
+   COUNT
+========================================== */
+
+.category-count{
+
+    min-width:42px;
+
+    margin-top:13px;
+
+    padding:6px 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #FFD700,
+            #e7b900
+        );
+
+    color:#111;
+
+    border-radius:30px;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    box-shadow:
+        0 4px 14px
+        rgba(255,215,0,.16);
+
+}
+
+
+/* ==========================================
+   ZAMAN WRITES SPECIAL CARD
+========================================== */
+
+.category-card[
+    onclick*="zaman-writes"
+]{
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(255,215,0,.14),
+            transparent 44%
+        ),
+        linear-gradient(
+            145deg,
+            #201a07,
+            #0b0b0b 70%
+        ) !important;
+
+    border-color:
+        rgba(255,215,0,.48) !important;
+
+}
+
+
+.category-card[
+    onclick*="zaman-writes"
+]::after{
+
+    content:"ORIGINAL";
+
+    position:absolute;
+
+    top:13px;
+    right:13px;
+
+    padding:4px 8px;
+
+    border:
+        1px solid
+        rgba(255,215,0,.30);
+
+    border-radius:20px;
+
+    background:
+        rgba(255,215,0,.07);
+
+    color:#d4af37;
+
+    font-size:8px;
+
+    font-weight:700;
+
+    letter-spacing:.8px;
+
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:800px){
+
+    .categories{
+
+        gap:13px;
+
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:600px){
+
+    .categories{
+
+        margin-top:17px;
+
+        padding:0 12px;
+
+        gap:11px;
+
+    }
+
+
+    .category-card{
+
+        min-height:145px;
+
+        padding:20px 10px;
+
+        border-radius:17px;
+
+    }
+
+
+    .category-icon{
+
+        font-size:27px;
+
+    }
+
+
+    .category-title{
+
+        font-size:17px;
+
+    }
+
+
+    .category-subtitle{
+
+        font-size:9px;
+
+    }
+
+
+    .category-count{
+
+        min-width:38px;
+
+        margin-top:10px;
+
+        padding:5px 10px;
+
+        font-size:10px;
+
+    }
+
+
+    .category-card[
+        onclick*="zaman-writes"
+    ]::after{
+
+        top:9px;
+        right:9px;
+
+        font-size:7px;
+
+        padding:3px 6px;
+
+    }
+
+}
