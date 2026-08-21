@@ -7445,3 +7445,349 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   STEP 7E PART 3
+   MOST LOVED + TRENDING PREMIUM SECTIONS
+========================================== */
+
+
+/* ==========================================
+   MOST LOVED
+========================================== */
+
+#most-loved{
+    margin:18px 0 38px;
+
+    padding:22px;
+
+    border-radius:20px;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(255,64,129,.08),
+            transparent 40%
+        ),
+        linear-gradient(
+            145deg,
+            #161616,
+            #0b0b0b
+        );
+
+    border:1px solid rgba(255,64,129,.20);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.28);
+}
+
+
+/* Empty state */
+
+#most-loved > p{
+    margin:0;
+
+    padding:22px 14px;
+
+    text-align:center;
+
+    color:#888;
+
+    border:
+        1px dashed
+        rgba(255,64,129,.18);
+
+    border-radius:14px;
+
+    background:
+        rgba(255,255,255,.02);
+}
+
+
+/* Most Loved cards */
+
+#most-loved .card{
+    position:relative;
+
+    margin:0 0 12px;
+
+    padding:18px 18px 18px 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #151515,
+            #090909
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.06);
+
+    border-left:
+        4px solid #ff4081;
+
+    border-radius:15px;
+
+    box-shadow:
+        0 8px 22px
+        rgba(0,0,0,.22);
+
+    transition:.3s;
+}
+
+
+#most-loved .card:last-child{
+    margin-bottom:0;
+}
+
+
+#most-loved .card:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 11px 28px
+        rgba(255,64,129,.10);
+}
+
+
+#most-loved .card h3{
+    color:#ff6f9f;
+
+    font-size:14px;
+
+    margin-bottom:8px;
+}
+
+
+#most-loved .card p{
+    color:#eeeeee;
+
+    font-size:15px;
+
+    line-height:1.75;
+
+    white-space:pre-line;
+}
+
+
+/* ==========================================
+   TRENDING
+========================================== */
+
+#trending-shayari{
+    margin:18px 0 38px;
+
+    padding:22px;
+
+    border-radius:20px;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255,215,0,.08),
+            transparent 40%
+        ),
+        linear-gradient(
+            145deg,
+            #161616,
+            #0b0b0b
+        );
+
+    border:
+        1px solid
+        rgba(255,215,0,.20);
+
+    box-shadow:
+        0 12px 30px
+        rgba(0,0,0,.28);
+}
+
+
+/* Empty state */
+
+#trending-shayari > p{
+    margin:0;
+
+    padding:22px 14px;
+
+    text-align:center;
+
+    color:#888;
+
+    border:
+        1px dashed
+        rgba(255,215,0,.18);
+
+    border-radius:14px;
+
+    background:
+        rgba(255,255,255,.02);
+}
+
+
+/* Existing trending card upgrade */
+
+#trending-shayari .trending-card{
+    margin:0 0 12px;
+
+    padding:18px 18px 18px 20px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.06);
+
+    border-left:
+        4px solid #FFD700;
+
+    border-radius:15px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #151515,
+            #090909
+        );
+
+    box-shadow:
+        0 8px 22px
+        rgba(0,0,0,.22);
+}
+
+
+#trending-shayari
+.trending-card:last-child{
+    margin-bottom:0;
+}
+
+
+#trending-shayari
+.trending-card:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 11px 28px
+        rgba(255,215,0,.10);
+}
+
+
+/* Rank badge */
+
+#trending-shayari
+.trending-rank{
+    margin-bottom:11px;
+
+    padding:5px 10px;
+
+    border-radius:20px;
+
+    background:
+        rgba(255,215,0,.08);
+
+    border:
+        1px solid
+        rgba(255,215,0,.22);
+
+    color:#FFD700;
+
+    font-size:11px;
+}
+
+
+/* Trending text */
+
+#trending-shayari
+.trending-card p{
+    margin:0 0 10px;
+
+    color:#eeeeee;
+
+    font-size:15px;
+
+    line-height:1.75;
+}
+
+
+/* Likes */
+
+#trending-shayari
+.trending-likes{
+    color:#ff6b8a;
+
+    font-size:11px;
+}
+
+
+/* ==========================================
+   SECTION HEADINGS
+========================================== */
+
+.shayari > h2{
+    position:relative;
+
+    margin-top:38px;
+
+    padding-bottom:10px;
+
+    font-size:22px;
+}
+
+
+.shayari > h2::after{
+    content:"";
+
+    display:block;
+
+    width:65px;
+    height:1px;
+
+    margin-top:8px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #FFD700,
+            transparent
+        );
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:600px){
+
+    #most-loved,
+    #trending-shayari{
+        padding:16px;
+
+        margin-bottom:28px;
+
+        border-radius:17px;
+    }
+
+
+    #most-loved .card,
+    #trending-shayari .trending-card{
+        padding:16px 14px 16px 16px;
+
+        border-radius:13px;
+    }
+
+
+    #most-loved .card p,
+    #trending-shayari .trending-card p{
+        font-size:13px;
+
+        line-height:1.7;
+    }
+
+
+    .shayari > h2{
+        font-size:19px;
+
+        margin-top:30px;
+    }
+
+}
