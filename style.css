@@ -5634,3 +5634,313 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   HOMEPAGE V2
+   DAILY SHAYARI SPOTLIGHT
+========================================== */
+
+.daily-spotlight-section{
+    max-width:1000px;
+    margin:45px auto;
+    padding:0 18px;
+    background:transparent !important;
+    border:none !important;
+}
+
+.daily-spotlight-heading{
+    text-align:center;
+    margin-bottom:22px;
+}
+
+.daily-kicker{
+    display:inline-block;
+    margin-bottom:8px;
+    padding:5px 12px;
+
+    border:1px solid rgba(255,215,0,.28);
+    border-radius:20px;
+
+    background:rgba(255,215,0,.06);
+    color:#d4af37;
+
+    font-size:11px;
+    letter-spacing:.7px;
+}
+
+.daily-spotlight-heading h2{
+    margin:0;
+    color:#FFD700;
+    font-size:30px;
+}
+
+.daily-spotlight-heading p{
+    margin-top:7px;
+    color:#888;
+    font-size:13px;
+}
+
+
+/* ==========================================
+   SPOTLIGHT CARD
+========================================== */
+
+.daily-spotlight-card{
+    position:relative;
+
+    margin:0 auto !important;
+    padding:32px 30px;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255,215,0,.10),
+            transparent 34%
+        ),
+        linear-gradient(
+            145deg,
+            #161616,
+            #090909
+        );
+
+    border:1px solid rgba(255,215,0,.38) !important;
+    border-left:1px solid rgba(255,215,0,.38) !important;
+
+    border-radius:22px;
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,.35),
+        0 0 30px rgba(255,215,0,.07);
+}
+
+.daily-spotlight-card::before{
+    content:"";
+
+    position:absolute;
+    top:0;
+    left:18%;
+    right:18%;
+
+    height:2px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #FFD700,
+        transparent
+    );
+
+    box-shadow:
+        0 0 15px rgba(255,215,0,.55);
+}
+
+
+/* ==========================================
+   HEADER / META
+========================================== */
+
+.daily-spotlight-header{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+
+    margin-bottom:25px;
+}
+
+.daily-spotlight-header .quote-icon{
+    font-size:38px;
+    color:#FFD700;
+}
+
+.daily-shayari-heading{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:8px;
+}
+
+.daily-shayari-heading h3{
+    margin:0;
+    font-size:24px;
+    color:#FFD700;
+}
+
+.daily-meta-row{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:8px;
+}
+
+#daily-pick,
+#daily-date{
+    display:inline-flex;
+    align-items:center;
+
+    margin:0;
+
+    padding:4px 9px;
+
+    border-radius:20px;
+
+    font-size:10px;
+}
+
+#daily-pick{
+    border:1px solid rgba(255,215,0,.28);
+    color:#d4af37;
+    background:rgba(255,215,0,.06);
+}
+
+#daily-date{
+    border:1px solid rgba(255,255,255,.08);
+    color:#888;
+    background:rgba(255,255,255,.025);
+}
+
+
+/* ==========================================
+   SHAYARI CONTENT
+========================================== */
+
+.daily-shayari-content{
+    min-height:190px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:25px 10px;
+}
+
+.daily-shayari-content #shayari-text{
+    margin:0;
+
+    max-width:760px;
+
+    color:#f4f4f4;
+
+    font-size:24px;
+    line-height:1.9;
+
+    text-align:center;
+    white-space:pre-line;
+}
+
+
+/* Divider */
+
+.daily-divider{
+    width:72%;
+    height:1px;
+
+    margin:5px auto 24px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,215,0,.35),
+        transparent
+    );
+}
+
+
+/* ==========================================
+   ACTION BUTTONS
+========================================== */
+
+.daily-actions{
+    display:grid !important;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:10px !important;
+
+    margin:0 !important;
+}
+
+.daily-actions .action-btn{
+    width:100% !important;
+    height:44px;
+
+    margin:0 !important;
+
+    padding:8px 10px;
+
+    font-size:12px;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:800px){
+
+    .daily-actions{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:600px){
+
+    .daily-spotlight-section{
+        margin:32px auto;
+        padding:0 12px;
+    }
+
+    .daily-spotlight-heading h2{
+        font-size:24px;
+    }
+
+    .daily-spotlight-card{
+        padding:24px 16px;
+        border-radius:18px;
+    }
+
+    .daily-spotlight-header{
+        gap:10px;
+        margin-bottom:18px;
+    }
+
+    .daily-spotlight-header .quote-icon{
+        font-size:31px;
+    }
+
+    .daily-shayari-heading h3{
+        font-size:20px;
+    }
+
+    .daily-shayari-content{
+        min-height:170px;
+        padding:20px 5px;
+    }
+
+    .daily-shayari-content #shayari-text{
+        font-size:20px;
+        line-height:1.8;
+    }
+
+    .daily-divider{
+        width:88%;
+    }
+
+    .daily-actions{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .daily-actions .action-btn{
+        height:42px;
+        font-size:11px;
+    }
+
+}
