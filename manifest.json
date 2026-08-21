@@ -1,0 +1,23 @@
+{
+  "name": "Alfaaz By Zaman",
+  "short_name": "Alfaaz",
+  "description": "Har Lamha, Har Ehsaas... Alfaaz By Zaman Ke Saath.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#FFD700",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
