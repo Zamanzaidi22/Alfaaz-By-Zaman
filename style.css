@@ -8756,3 +8756,27 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   STEP 8B PART 3
+   SEARCH KEYWORD HIGHLIGHT
+========================================== */
+
+.search-highlight{
+
+    padding:1px 4px;
+
+    border-radius:5px;
+
+    background:
+        rgba(255,215,0,.16);
+
+    color:#FFD700;
+
+    font-weight:700;
+
+    box-shadow:
+        0 0 8px
+        rgba(255,215,0,.08);
+
+}
