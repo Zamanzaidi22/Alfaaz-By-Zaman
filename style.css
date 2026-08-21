@@ -7172,3 +7172,276 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   STEP 7E PART 2
+   PREMIUM RECENTLY VIEWED
+========================================== */
+
+.recent-section{
+    position:relative;
+
+    margin-top:40px;
+
+    padding:28px 22px;
+
+    border-radius:22px;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255,215,0,.07),
+            transparent 38%
+        ),
+        linear-gradient(
+            145deg,
+            #171717,
+            #0d0d0d
+        );
+
+    border:1px solid rgba(255,215,0,.20);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.28);
+
+    overflow:hidden;
+}
+
+
+/* Golden top line */
+
+.recent-section::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:12%;
+    right:12%;
+
+    height:1px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #FFD700,
+        transparent
+    );
+
+    opacity:.6;
+}
+
+
+/* Header */
+
+.recent-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:12px;
+
+    margin-bottom:20px;
+}
+
+
+.recent-header h2{
+    margin:0;
+
+    color:#FFD700;
+
+    font-size:22px;
+}
+
+
+/* Clear button */
+
+.clear-history-btn{
+    margin:0;
+
+    padding:8px 13px;
+
+    border:1px solid rgba(255,215,0,.28);
+
+    border-radius:25px;
+
+    background:#141414;
+
+    color:#d4af37;
+
+    font-size:11px;
+    font-weight:600;
+
+    transition:.25s;
+}
+
+
+.clear-history-btn:hover{
+    background:#FFD700;
+    color:#111;
+
+    transform:translateY(-2px);
+}
+
+
+/* List */
+
+#recent-history{
+    display:grid;
+    gap:13px;
+}
+
+
+/* Cards */
+
+#recent-history .card{
+    position:relative;
+
+    margin:0;
+
+    padding:18px 18px 18px 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #151515,
+            #090909
+        );
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-left:3px solid #FFD700;
+
+    border-radius:15px;
+
+    box-shadow:
+        0 7px 20px rgba(0,0,0,.22);
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+
+#recent-history .card:hover{
+    transform:translateY(-3px);
+
+    border-color:rgba(255,215,0,.30);
+    border-left-color:#FFD700;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.35);
+}
+
+
+/* Category */
+
+#recent-history .card h3{
+    margin:0 0 9px;
+
+    color:#FFD700;
+
+    font-size:13px;
+}
+
+
+/* Shayari */
+
+#recent-history .card p{
+    margin:0 0 13px;
+
+    color:#e8e8e8;
+
+    font-size:15px;
+
+    line-height:1.75;
+
+    white-space:pre-line;
+}
+
+
+/* Open button */
+
+#recent-history .card button{
+    padding:7px 13px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:rgba(255,215,0,.10);
+
+    color:#FFD700;
+
+    font-size:10px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+
+#recent-history .card button:hover{
+    background:#FFD700;
+    color:#111;
+}
+
+
+/* Empty state */
+
+#recent-history > p{
+    margin:0;
+
+    padding:24px 15px;
+
+    text-align:center;
+
+    border:1px dashed rgba(255,215,0,.18);
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.025);
+}
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    .recent-section{
+        margin-top:32px;
+
+        padding:22px 14px;
+
+        border-radius:18px;
+    }
+
+    .recent-header h2{
+        font-size:19px;
+    }
+
+    .clear-history-btn{
+        padding:7px 10px;
+
+        font-size:9px;
+    }
+
+    #recent-history{
+        gap:10px;
+    }
+
+    #recent-history .card{
+        padding:16px 14px 16px 16px;
+
+        border-radius:13px;
+    }
+
+    #recent-history .card p{
+        font-size:13px;
+
+        line-height:1.7;
+    }
+
+}
