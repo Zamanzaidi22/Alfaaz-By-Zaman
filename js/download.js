@@ -671,7 +671,8 @@ function openDownloadPanel(){
 
 
     createDownloadPanel();
-
+selectedBackground =
+    getCategoryDefaultBackground();
 
     const panel =
         document.getElementById(
@@ -1661,4 +1662,40 @@ function changeDownloadFormat(format, button){
 
     }
 
+}
+
+// ==========================================
+// Category Wise Default Download Theme
+// ==========================================
+
+function getCategoryDefaultBackground(){
+
+    let category = "";
+
+    if(
+        typeof currentCategory !== "undefined" &&
+        currentCategory
+    ){
+        category = currentCategory;
+    }
+
+    if(
+        !category &&
+        typeof shayariCategory !== "undefined" &&
+        shayariCategory
+    ){
+        category = shayariCategory;
+    }
+
+    const defaults = {
+        love: "romantic",
+        sad: "dark",
+        bewafa: "golden",
+        islamic: "islamic",
+        dosti: "minimal",
+        "2line": "night",
+        "zaman-writes": "golden"
+    };
+
+    return defaults[category] || "night";
 }
