@@ -8178,3 +8178,317 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   STEP 7F
+   FINAL PREMIUM FOOTER POLISH
+========================================== */
+
+.premium-footer{
+    position:relative;
+
+    margin-top:70px;
+
+    padding:65px 22px 32px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(255,215,0,.08),
+            transparent 38%
+        ),
+        linear-gradient(
+            180deg,
+            #111,
+            #070707
+        );
+
+    border-top:
+        1px solid rgba(255,215,0,.22);
+}
+
+
+/* Soft top glow */
+
+.premium-footer::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:18%;
+    right:18%;
+
+    height:1px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #FFD700,
+        transparent
+    );
+
+    box-shadow:
+        0 0 15px rgba(255,215,0,.45);
+}
+
+
+/* Brand */
+
+.premium-footer h2{
+    margin:0 0 8px;
+
+    color:#FFD700;
+
+    font-family:'Cinzel',serif;
+
+    font-size:30px;
+
+    letter-spacing:1px;
+
+    text-shadow:
+        0 0 18px rgba(255,215,0,.18);
+}
+
+
+/* Tagline */
+
+.footer-tagline{
+    margin-bottom:27px;
+
+    color:#999;
+
+    font-size:14px;
+
+    font-style:italic;
+}
+
+
+/* ==========================================
+   SOCIAL LINKS
+========================================== */
+
+.footer-social{
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:28px;
+}
+
+
+.footer-social a{
+    padding:9px 15px;
+
+    border:
+        1px solid rgba(255,215,0,.18);
+
+    border-radius:30px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    color:#ddd;
+
+    text-decoration:none;
+
+    font-size:12px;
+
+    transition:.3s;
+}
+
+
+.footer-social a:hover{
+    transform:translateY(-2px);
+
+    color:#FFD700;
+
+    border-color:
+        rgba(255,215,0,.55);
+
+    background:
+        rgba(255,215,0,.05);
+
+    box-shadow:
+        0 0 16px rgba(255,215,0,.12);
+}
+
+
+/* ==========================================
+   FOOTER NAV LINKS
+========================================== */
+
+.footer-links{
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:7px 18px;
+
+    margin-bottom:25px;
+}
+
+
+.footer-links a{
+    position:relative;
+
+    color:#888;
+
+    text-decoration:none;
+
+    font-size:11px;
+
+    transition:.25s;
+}
+
+
+.footer-links a:hover{
+    color:#FFD700;
+}
+
+
+/* ==========================================
+   DIVIDER
+========================================== */
+
+.footer-line{
+    width:min(600px,82%);
+
+    height:1px;
+
+    margin:24px auto;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,215,0,.28),
+            transparent
+        );
+}
+
+
+/* ==========================================
+   CREDIT
+========================================== */
+
+.footer-credit{
+    margin:0 0 6px;
+
+    color:#d9d9d9;
+
+    font-size:13px;
+}
+
+
+.footer-copy{
+    margin:0;
+
+    color:#666;
+
+    font-size:10px;
+
+    letter-spacing:.2px;
+}
+
+
+/* Existing decorative glow */
+
+.footer-glow{
+    position:absolute;
+
+    top:-130px;
+    left:50%;
+
+    width:360px;
+    height:360px;
+
+    transform:translateX(-50%);
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            rgba(255,215,0,.10),
+            transparent 68%
+        );
+
+    pointer-events:none;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:600px){
+
+    .premium-footer{
+        margin-top:50px;
+
+        padding:
+            50px 14px
+            27px;
+    }
+
+
+    .premium-footer h2{
+        font-size:24px;
+    }
+
+
+    .footer-tagline{
+        font-size:12px;
+
+        margin-bottom:22px;
+    }
+
+
+    .footer-social{
+        gap:8px;
+
+        margin-bottom:23px;
+    }
+
+
+    .footer-social a{
+        padding:8px 11px;
+
+        font-size:10px;
+    }
+
+
+    .footer-links{
+        gap:7px 13px;
+    }
+
+
+    .footer-links a{
+        font-size:10px;
+    }
+
+
+    .footer-credit{
+        font-size:12px;
+    }
+
+
+    .footer-copy{
+        font-size:9px;
+    }
+
+}
