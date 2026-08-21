@@ -9190,3 +9190,79 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   STEP 10B PART 1
+   READING MODE NAVIGATION
+========================================== */
+
+.reading-navigation{
+    width:100%;
+
+    max-width:430px;
+
+    margin-top:32px;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:10px;
+}
+
+
+.reading-navigation button{
+    padding:11px 16px;
+
+    border:1px solid rgba(255,215,0,.25);
+
+    border-radius:30px;
+
+    background:
+        rgba(255,215,0,.07);
+
+    color:#FFD700;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+
+.reading-navigation button:hover{
+    background:#FFD700;
+
+    color:#111;
+
+    transform:translateY(-2px);
+}
+
+
+.reading-navigation button:active{
+    transform:scale(.96);
+}
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    .reading-navigation{
+        margin-top:26px;
+
+        gap:8px;
+    }
+
+
+    .reading-navigation button{
+        padding:10px 12px;
+
+        font-size:11px;
+    }
+
+}
