@@ -249,36 +249,84 @@
 
 </header>
 
-    <!-- Quote Of The Day -->
+    <!-- =====================================
+     PREMIUM DISCOVERY SECTION
+====================================== -->
 
-    <section class="quote-day">
+<section class="discovery-section">
+
+    <div class="discovery-heading">
+
+        <span class="discovery-kicker">
+            ✨ Discover Alfaaz
+        </span>
 
         <h2>
-            🌟 Quote of the Day
+            Aaj Kya Mehsoos Kar Rahe Hain?
         </h2>
 
-        <p id="daily-quote">
-
-            Har din ek nayi soch,
-            ek naya ehsaas...
-
+        <p>
+            Ek khoobsurat khayal padhiye
+            ya apne dil ke alfaaz talaash kijiye.
         </p>
 
-    </section>
-    <!-- Search -->
+    </div>
 
-<section class="search">
 
-    <input
-        type="text"
-        id="searchInput"
-        placeholder="🔍 Shayari Search...">
+    <!-- Quote Of The Day -->
 
-    <button onclick="searchShayari()">
-        🔍 Search
-    </button>
+    <div class="quote-day discovery-quote">
+
+        <div class="quote-day-icon">
+            ❝
+        </div>
+
+        <div class="quote-day-content">
+
+            <span class="quote-label">
+                🌟 Quote of the Day
+            </span>
+
+            <p id="daily-quote">
+
+                Har din ek nayi soch,
+                ek naya ehsaas...
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Premium Search -->
+
+    <div class="discovery-search-area">
+
+        <span class="search-label">
+            🔍 Apne Alfaaz Talaash Karein
+        </span>
+
+        <section class="search discovery-search">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Love, dard, mohabbat, dosti...">
+
+            <button onclick="searchShayari()">
+                Search ✨
+            </button>
+
+        </section>
+
+
+        <div id="search-suggestions"></div>
+
+    </div>
 
 </section>
+    
 <!-- =====================================
      PREMIUM CATEGORY INTRO
 ====================================== -->
@@ -300,7 +348,6 @@
 
 </div>
     
-<div id="search-suggestions"></div>
 <!-- Categories -->
 
 <section class="categories" id="categories">
