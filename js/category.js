@@ -649,3 +649,139 @@ function closeReadingMode(){
         "";
 
 }
+
+// ==========================================
+// Reading Mode - Previous Shayari
+// ==========================================
+
+function previousReadingShayari(){
+
+    if(
+        !currentCategory ||
+        !SHAYARI_DB[currentCategory]
+    ){
+        return;
+    }
+
+
+    const total =
+        SHAYARI_DB[currentCategory].length;
+
+
+    currentIndex--;
+
+
+    if(currentIndex < 0){
+
+        currentIndex =
+            total - 1;
+
+    }
+
+
+    updateReadingModeContent();
+
+}
+
+
+// ==========================================
+// Reading Mode - Next Shayari
+// ==========================================
+
+function nextReadingShayari(){
+
+    if(
+        !currentCategory ||
+        !SHAYARI_DB[currentCategory]
+    ){
+        return;
+    }
+
+
+    const total =
+        SHAYARI_DB[currentCategory].length;
+
+
+    currentIndex++;
+
+
+    if(currentIndex >= total){
+
+        currentIndex = 0;
+
+    }
+
+
+    updateReadingModeContent();
+
+}
+
+
+// ==========================================
+// Update Reading Mode Content
+// ==========================================
+
+function updateReadingModeContent(){
+
+    const category =
+        document.getElementById(
+            "reading-category"
+        );
+
+    const text =
+        document.getElementById(
+            "reading-text"
+        );
+
+
+    if(!category || !text){
+        return;
+    }
+
+
+    category.innerText =
+        currentCategory
+            .replace("-", " ")
+            .toUpperCase();
+
+
+    text.innerText =
+        SHAYARI_DB[
+            currentCategory
+        ][
+            currentIndex
+        ];
+
+
+    // Homepage Daily Shayari bhi sync rahe
+    const homeCategory =
+        document.getElementById(
+            "category-title"
+        );
+
+    const homeText =
+        document.getElementById(
+            "shayari-text"
+        );
+
+
+    if(homeCategory){
+
+        homeCategory.innerText =
+            currentCategory.toUpperCase();
+
+    }
+
+
+    if(homeText){
+
+        homeText.innerText =
+            SHAYARI_DB[
+                currentCategory
+            ][
+                currentIndex
+            ];
+
+    }
+
+}
