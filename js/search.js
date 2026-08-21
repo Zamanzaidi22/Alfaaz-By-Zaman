@@ -98,31 +98,64 @@ const SEARCH_KEYWORDS = {
 
 };
 
+// ==========================================
+// Smart Search 2.0
+// Main Search Function
+// ==========================================
+
 function searchShayari(){
 
-    const input = document.getElementById("searchInput");
+    const input =
+        document.getElementById("searchInput");
 
     if(!input) return;
 
-    const keyword = input.value.trim().toLowerCase();
+    const keyword =
+        input.value
+        .trim()
+        .toLowerCase();
+
 
     if(keyword === ""){
-        showToast("🔍 Kuch search likhiye.");
+
+        showToast(
+            "🔍 Kuch search likhiye."
+        );
+
         return;
+
     }
+
+
+    // ======================================
+    // 1. Exact Shayari Text Match
+    // ======================================
 
     for(const category in SHAYARI_DB){
 
-        const list = SHAYARI_DB[category];
+        const list =
+            SHAYARI_DB[category];
 
-        for(let i=0;i<list.length;i++){
+        for(let i = 0; i < list.length; i++){
 
-            if(list[i].toLowerCase().includes(keyword)){
+            const shayari =
+                list[i].toLowerCase();
 
-                currentCategory = category;
-                currentIndex = i;
+            if(
+                shayari.includes(keyword)
+            ){
+
+                currentCategory =
+                    category;
+
+                currentIndex =
+                    i;
 
                 showCurrentShayari();
+
+                showToast(
+                    "✨ Shayari mil gayi"
+                );
 
                 return;
 
@@ -132,6 +165,110 @@ function searchShayari(){
 
     }
 
-    showToast("❌ Shayari nahi mili.");
+
+    // ======================================
+    // 2. Smart Category Keyword Match
+    // ======================================
+
+    let matchedCategory = "";
+
+
+    for(
+        const category in SEARCH_KEYWORDS
+    ){
+
+        const words =
+            SEARCH_KEYWORDS[category];
+
+
+        const matched =
+            words.some(function(word){
+
+                return (
+                    keyword === word ||
+                    keyword.includes(word) ||
+                    word.includes(keyword)
+                );
+
+            });
+
+
+        if(matched){
+
+            matchedCategory =
+                category;
+
+            break;
+
+        }
+
+    }
+
+
+    // ======================================
+    // 3. Open Smart Result
+    // ======================================
+
+    if(
+        matchedCategory &&
+        SHAYARI_DB[matchedCategory]
+    ){
+
+        currentCategory =
+            matchedCategory;
+
+
+        // Random relevant Shayari
+        currentIndex =
+            Math.floor(
+                Math.random() *
+                SHAYARI_DB[
+                    matchedCategory
+                ].length
+            );
+
+
+        showCurrentShayari();
+
+
+        showToast(
+            "✨ " +
+            matchedCategory
+                .replace("-", " ")
+                .toUpperCase() +
+            " Shayari"
+        );
+
+
+        // Scroll to Aaj Ki Shayari
+
+        const today =
+            document.getElementById(
+                "today"
+            );
+
+
+        if(today){
+
+            today.scrollIntoView({
+                behavior:"smooth",
+                block:"start"
+            });
+
+        }
+
+
+        return;
+
+    }
+
+
+    // ======================================
+    // Nothing Found
+    // ======================================
+
+    showToast(
+        "❌ Shayari nahi mili."
+    );
 
 }
