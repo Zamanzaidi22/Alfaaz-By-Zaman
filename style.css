@@ -9137,3 +9137,56 @@ body > header a:hover{
         0 0 18px
         rgba(108,92,231,.45);
 }
+
+/* ==========================================
+   STEP 10A PART 2
+   ACTION BUTTON FINAL LAYOUT FIX
+========================================== */
+
+.shayari-buttons{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:12px;
+
+    width:100%;
+}
+
+
+/* All buttons */
+
+.shayari-buttons .action-btn{
+    width:100%;
+    margin:0;
+
+    min-width:0;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:600px){
+
+    .shayari-buttons{
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap:10px;
+
+    }
+
+
+    .shayari-buttons .download-btn,
+    .shayari-buttons .reading-btn{
+
+        grid-column:
+            span 1;
+
+    }
+
+}
