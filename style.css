@@ -7791,3 +7791,208 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   STEP 7E PART 4
+   FRESH ALFAAZ / LATEST SHAYARI
+========================================== */
+
+.fresh-alfaaz{
+    max-width:1000px;
+
+    margin:55px auto;
+
+    padding:0 18px;
+}
+
+
+.fresh-heading{
+    text-align:center;
+
+    margin-bottom:25px;
+}
+
+
+.fresh-kicker{
+    display:inline-block;
+
+    margin-bottom:8px;
+
+    padding:5px 12px;
+
+    border:1px solid rgba(255,215,0,.25);
+
+    border-radius:20px;
+
+    background:rgba(255,215,0,.05);
+
+    color:#d4af37;
+
+    font-size:10px;
+
+    letter-spacing:.7px;
+}
+
+
+.fresh-heading h2{
+    margin:0;
+
+    color:#FFD700;
+
+    font-size:28px;
+}
+
+
+.fresh-heading p{
+    margin-top:7px;
+
+    color:#888;
+
+    font-size:12px;
+}
+
+
+/* Grid */
+
+.fresh-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:15px;
+}
+
+
+/* Card */
+
+.fresh-card{
+    position:relative;
+
+    min-height:180px;
+
+    margin:0 !important;
+
+    padding:24px 20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255,215,0,.07),
+            transparent 38%
+        ),
+        linear-gradient(
+            145deg,
+            #171717,
+            #0b0b0b
+        ) !important;
+
+    border:
+        1px solid
+        rgba(255,215,0,.18) !important;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 10px 28px rgba(0,0,0,.28);
+
+    transition:.3s;
+}
+
+
+.fresh-card:hover{
+    transform:translateY(-4px);
+
+    border-color:
+        rgba(255,215,0,.45) !important;
+
+    box-shadow:
+        0 14px 32px rgba(0,0,0,.38),
+        0 0 18px rgba(255,215,0,.08);
+}
+
+
+/* Category badge */
+
+.fresh-category{
+    display:inline-block;
+
+    align-self:flex-start;
+
+    margin-bottom:14px;
+
+    padding:5px 10px;
+
+    border-radius:20px;
+
+    background:rgba(255,215,0,.07);
+
+    border:1px solid rgba(255,215,0,.18);
+
+    color:#FFD700;
+
+    font-size:10px;
+
+    font-weight:700;
+}
+
+
+/* Shayari */
+
+.fresh-card p{
+    margin:0;
+
+    color:#eeeeee;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    text-align:left;
+}
+
+
+/* Mobile */
+
+@media(max-width:700px){
+
+    .fresh-grid{
+        grid-template-columns:1fr;
+
+        gap:12px;
+    }
+
+
+    .fresh-alfaaz{
+        margin:42px auto;
+
+        padding:0 12px;
+    }
+
+
+    .fresh-heading h2{
+        font-size:23px;
+    }
+
+
+    .fresh-card{
+        min-height:150px;
+
+        padding:20px 16px;
+
+        border-radius:16px;
+    }
+
+
+    .fresh-card p{
+        font-size:14px;
+        line-height:1.75;
+    }
+
+}
