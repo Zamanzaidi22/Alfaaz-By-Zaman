@@ -8780,3 +8780,169 @@ body > header a:hover{
         rgba(255,215,0,.08);
 
 }
+
+/* ==========================================
+   STEP 9A
+   PREMIUM MOOD SELECTOR
+========================================== */
+
+.mood-selector-section{
+    max-width:1000px;
+    margin:55px auto 65px;
+    padding:0 18px;
+}
+
+.mood-selector-heading{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.mood-kicker{
+    display:inline-block;
+
+    margin-bottom:8px;
+    padding:5px 12px;
+
+    border:1px solid rgba(255,215,0,.25);
+    border-radius:20px;
+
+    background:rgba(255,215,0,.05);
+
+    color:#d4af37;
+
+    font-size:10px;
+    letter-spacing:.7px;
+}
+
+.mood-selector-heading h2{
+    margin:0;
+
+    color:#FFD700;
+
+    font-size:28px;
+}
+
+.mood-selector-heading p{
+    margin-top:7px;
+
+    color:#888;
+
+    font-size:12px;
+}
+
+
+/* Mood Grid */
+
+.mood-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:14px;
+}
+
+
+/* Mood Card */
+
+.mood-card{
+    min-height:125px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    gap:9px;
+
+    border:1px solid rgba(255,215,0,.18);
+    border-radius:18px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(255,215,0,.07),
+            transparent 45%
+        ),
+        linear-gradient(
+            145deg,
+            #171717,
+            #0b0b0b
+        );
+
+    color:#fff;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.mood-card:hover{
+    transform:translateY(-4px);
+
+    border-color:
+        rgba(255,215,0,.48);
+
+    box-shadow:
+        0 12px 28px rgba(0,0,0,.35),
+        0 0 18px rgba(255,215,0,.08);
+}
+
+.mood-card:active{
+    transform:scale(.97);
+}
+
+
+/* Icon */
+
+.mood-icon{
+    font-size:30px;
+}
+
+
+/* Name */
+
+.mood-name{
+    color:#FFD700;
+
+    font-size:13px;
+    font-weight:700;
+}
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    .mood-selector-section{
+        margin:42px auto 52px;
+
+        padding:0 12px;
+    }
+
+    .mood-selector-heading h2{
+        font-size:23px;
+    }
+
+    .mood-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap:10px;
+    }
+
+    .mood-card{
+        min-height:110px;
+
+        border-radius:16px;
+    }
+
+    .mood-icon{
+        font-size:27px;
+    }
+
+    .mood-name{
+        font-size:12px;
+    }
+
+}
