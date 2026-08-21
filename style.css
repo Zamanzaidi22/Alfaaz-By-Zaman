@@ -6935,3 +6935,240 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   STEP 7E PART 1
+   PREMIUM FAVORITES SECTION
+========================================== */
+
+.favorites-section{
+
+    position:relative;
+
+    margin-top:45px;
+
+    padding:28px 22px;
+
+    border-radius:22px;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(255,64,129,.08),
+            transparent 38%
+        ),
+        linear-gradient(
+            145deg,
+            #171717,
+            #0d0d0d
+        );
+
+    border:
+        1px solid rgba(255,215,0,.22);
+
+    overflow:hidden;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.28);
+
+}
+
+
+/* Subtle top golden line */
+
+.favorites-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:12%;
+    right:12%;
+
+    height:1px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #FFD700,
+        transparent
+    );
+
+    opacity:.65;
+
+}
+
+
+/* Section heading */
+
+.favorites-section > h2{
+
+    position:relative;
+
+    margin:0 0 22px;
+
+    color:#FFD700;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:.3px;
+
+}
+
+
+/* Favorite list container */
+
+#favorites{
+
+    display:grid;
+
+    gap:14px;
+
+}
+
+
+/* Individual Favorite Cards */
+
+#favorites .card{
+
+    position:relative;
+
+    margin:0;
+
+    padding:20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #151515,
+            #0a0a0a
+        );
+
+    border:
+        1px solid rgba(255,255,255,.07);
+
+    border-left:
+        3px solid #ff4081;
+
+    border-radius:15px;
+
+    box-shadow:
+        0 7px 20px rgba(0,0,0,.22);
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+#favorites .card:hover{
+
+    transform:translateY(-3px);
+
+    border-color:
+        rgba(255,215,0,.35);
+
+    border-left-color:#ff4081;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.35);
+
+}
+
+
+/* Favorite Shayari text */
+
+#favorites .card p{
+
+    margin:0;
+
+    color:#eeeeee;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    white-space:pre-line;
+
+}
+
+
+/* Empty favorites message */
+
+#favorites > p{
+
+    margin:0;
+
+    padding:24px 15px;
+
+    text-align:center;
+
+    border:
+        1px dashed rgba(255,215,0,.18);
+
+    border-radius:14px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    line-height:1.6;
+
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:600px){
+
+    .favorites-section{
+
+        margin-top:35px;
+
+        padding:22px 14px;
+
+        border-radius:18px;
+
+    }
+
+
+    .favorites-section > h2{
+
+        font-size:19px;
+
+        margin-bottom:17px;
+
+    }
+
+
+    #favorites{
+
+        gap:11px;
+
+    }
+
+
+    #favorites .card{
+
+        padding:17px 15px;
+
+        border-radius:13px;
+
+    }
+
+
+    #favorites .card p{
+
+        font-size:14px;
+
+        line-height:1.75;
+
+    }
+
+}
