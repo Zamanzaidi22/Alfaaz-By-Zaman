@@ -4849,3 +4849,788 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   ALFAAZ BY ZAMAN
+   HOMEPAGE PREMIUM V2
+   FINAL HERO + NAVBAR OVERRIDE
+========================================== */
+
+
+/* ==========================================
+   NAVBAR FINAL
+========================================== */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:99999;
+
+    width:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:14px;
+
+    padding:12px 22px;
+
+    background:rgba(8,8,8,.92);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,215,0,.18);
+}
+
+
+/* Logo */
+
+.navbar .logo{
+    display:flex;
+    align-items:center;
+
+    gap:10px;
+
+    flex-shrink:0;
+}
+
+.navbar .logo img{
+    width:42px;
+    height:42px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+}
+
+.navbar .logo span{
+    font-size:19px;
+
+    color:#FFD700;
+
+    white-space:nowrap;
+}
+
+
+/* Theme + Music */
+
+#theme-toggle,
+#music-toggle{
+    position:static !important;
+
+    width:42px !important;
+    height:42px !important;
+
+    margin:0 !important;
+
+    flex-shrink:0;
+
+    border:1px solid rgba(255,215,0,.18);
+
+    border-radius:50%;
+
+    background:#181818;
+
+    color:#FFD700;
+
+    font-size:18px;
+}
+
+
+/* Menu */
+
+.navbar .menu{
+    display:flex;
+    align-items:center;
+
+    gap:22px;
+
+    margin:0;
+
+    padding:0;
+}
+
+.navbar .menu a{
+    font-size:14px;
+
+    white-space:nowrap;
+}
+
+
+/* ==========================================
+   HERO V2
+========================================== */
+
+.hero.hero-v2{
+    position:relative;
+
+    width:100%;
+
+    min-height:610px;
+
+    margin:0 !important;
+
+    padding:85px 20px 65px !important;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at 50% 5%,
+            rgba(255,215,0,.14),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 15% 55%,
+            rgba(255,215,0,.055),
+            transparent 25%
+        ),
+        linear-gradient(
+            180deg,
+            #0c0c0c 0%,
+            #050505 55%,
+            #090909 100%
+        ) !important;
+
+    border-bottom:1px solid rgba(255,215,0,.35);
+}
+
+
+/* Kill old hero overlay conflict */
+
+.hero.hero-v2::before{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.05),
+            rgba(0,0,0,.35)
+        );
+
+    pointer-events:none;
+}
+
+
+/* Main Hero Content */
+
+.hero-v2-content{
+    position:relative;
+
+    z-index:5;
+
+    width:min(900px,100%);
+
+    margin:0 auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    text-align:center;
+}
+
+
+/* ==========================================
+   PREMIUM BADGE
+========================================== */
+
+.hero-badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:18px;
+
+    padding:7px 15px;
+
+    border:1px solid rgba(255,215,0,.25);
+    border-radius:30px;
+
+    background:rgba(255,215,0,.055);
+
+    color:#c9aa42;
+
+    font-size:12px;
+    font-weight:500;
+
+    letter-spacing:.8px;
+
+    backdrop-filter:blur(8px);
+}
+
+
+/* ==========================================
+   HERO TITLE
+========================================== */
+
+.hero.hero-v2 .hero-title{
+    position:relative;
+
+    z-index:5;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:14px;
+
+    margin:0 !important;
+
+    padding:0 !important;
+
+    color:#FFD700;
+
+    font-family:'Cinzel',serif;
+
+    font-size:clamp(42px,6vw,68px) !important;
+
+    line-height:1.15;
+
+    letter-spacing:2px;
+
+    text-shadow:
+        0 0 15px rgba(255,215,0,.35),
+        0 0 35px rgba(255,215,0,.14);
+}
+
+
+/* Moon */
+
+.hero.hero-v2 .moon{
+    font-size:.9em;
+
+    flex-shrink:0;
+
+    animation:moonFloat 3s ease-in-out infinite;
+
+    filter:
+        drop-shadow(
+            0 0 12px
+            rgba(255,215,0,.55)
+        );
+}
+
+
+/* ==========================================
+   TAGLINE
+========================================== */
+
+.hero-v2-tagline{
+    margin:20px 0 0 !important;
+
+    color:#f0f0f0 !important;
+
+    font-size:18px !important;
+
+    line-height:1.7 !important;
+
+    letter-spacing:.3px;
+}
+
+.hero-v2-tagline span{
+    color:#c9aa42;
+}
+
+
+/* ==========================================
+   TYPING + WELCOME
+========================================== */
+
+.hero-typing-area{
+    min-height:75px;
+
+    margin-top:14px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.hero.hero-v2 #typing-text{
+    min-height:24px;
+
+    margin:0 !important;
+
+    color:#bfa13b;
+
+    font-size:14px !important;
+
+    letter-spacing:.6px;
+}
+
+
+.hero.hero-v2 .welcome-user{
+    margin:10px 0 0 !important;
+
+    color:#f5f5f5;
+
+    font-size:16px !important;
+
+    font-weight:600;
+}
+
+
+/* ==========================================
+   HERO BUTTONS
+========================================== */
+
+.hero-v2-actions{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:18px;
+}
+
+
+.hero.hero-v2 .hero-primary-btn,
+.hero.hero-v2 .hero-secondary-btn{
+    min-width:190px;
+
+    margin:0 !important;
+
+    padding:13px 22px;
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50px;
+
+    font-size:14px;
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+}
+
+
+/* Primary */
+
+.hero.hero-v2 .hero-primary-btn{
+    border:1px solid #FFD700;
+
+    background:
+        linear-gradient(
+            135deg,
+            #FFD700,
+            #e9ba14
+        );
+
+    color:#080808;
+
+    box-shadow:
+        0 7px 24px rgba(255,215,0,.22);
+}
+
+
+/* Secondary */
+
+.hero.hero-v2 .hero-secondary-btn{
+    border:1px solid rgba(255,215,0,.35);
+
+    background:rgba(255,255,255,.035);
+
+    color:#e8ca5c;
+
+    backdrop-filter:blur(8px);
+}
+
+
+.hero.hero-v2 .hero-primary-btn:hover,
+.hero.hero-v2 .hero-secondary-btn:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 8px 25px rgba(255,215,0,.22);
+}
+
+
+/* ==========================================
+   HERO STATS
+========================================== */
+
+.hero.hero-v2 .hero-stats{
+    position:relative;
+
+    z-index:5;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,120px);
+
+    gap:12px;
+
+    margin:38px 0 0 !important;
+}
+
+
+.hero.hero-v2 .stat-box{
+    width:120px !important;
+    min-width:0 !important;
+
+    padding:17px 10px !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.018)
+        );
+
+    border:1px solid rgba(255,215,0,.32);
+
+    border-radius:17px;
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:
+        inset 0 0 20px rgba(255,215,0,.02);
+}
+
+
+.hero.hero-v2 .stat-box h2{
+    margin:0 0 5px !important;
+
+    color:#FFD700;
+
+    font-size:27px !important;
+}
+
+
+.hero.hero-v2 .stat-box span{
+    color:#aaa;
+
+    font-size:11px;
+}
+
+
+/* ==========================================
+   SCROLL HINT
+========================================== */
+
+.hero-scroll-hint{
+    margin-top:25px;
+
+    display:flex;
+    align-items:center;
+
+    gap:7px;
+
+    color:#666;
+
+    font-size:11px;
+
+    letter-spacing:1px;
+}
+
+
+/* ==========================================
+   PARTICLES - HERO ONLY
+========================================== */
+
+.hero.hero-v2 .particles{
+    position:absolute !important;
+
+    inset:0;
+
+    z-index:1;
+
+    pointer-events:none;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:900px){
+
+    .navbar{
+        padding:11px 16px;
+    }
+
+    .navbar .menu{
+        gap:14px;
+    }
+
+    .navbar .menu a{
+        font-size:12px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+    /* Navbar */
+
+    .navbar{
+        display:grid !important;
+
+        grid-template-columns:
+            minmax(0,1fr)
+            40px
+            40px;
+
+        align-items:center;
+
+        gap:8px;
+
+        padding:10px 12px;
+    }
+
+
+    .navbar .logo{
+        min-width:0;
+    }
+
+
+    .navbar .logo img{
+        width:36px;
+        height:36px;
+    }
+
+
+    .navbar .logo span{
+        overflow:hidden;
+
+        text-overflow:ellipsis;
+
+        font-size:15px;
+    }
+
+
+    #theme-toggle,
+    #music-toggle{
+        width:38px !important;
+        height:38px !important;
+
+        font-size:16px;
+    }
+
+
+    .navbar .menu{
+        grid-column:1 / -1;
+
+        width:100%;
+
+        margin:3px 0 0 !important;
+
+        padding:9px 0 0;
+
+        display:grid !important;
+
+        grid-template-columns:
+            repeat(4,1fr);
+
+        gap:4px;
+
+        border-top:
+            1px solid
+            rgba(255,215,0,.08);
+    }
+
+
+    .navbar .menu li{
+        text-align:center;
+    }
+
+
+    .navbar .menu a{
+        display:block;
+
+        padding:5px 2px;
+
+        font-size:11px;
+    }
+
+
+    /* Hero */
+
+    .hero.hero-v2{
+        min-height:560px;
+
+        padding:
+            55px 16px
+            48px !important;
+    }
+
+
+    .hero-badge{
+        margin-bottom:15px;
+
+        padding:6px 12px;
+
+        font-size:10px;
+    }
+
+
+    .hero.hero-v2 .hero-title{
+        gap:9px;
+
+        font-size:
+            clamp(
+                32px,
+                10vw,
+                44px
+            ) !important;
+
+        letter-spacing:1px;
+    }
+
+
+    .hero-v2-tagline{
+        max-width:330px;
+
+        margin-top:15px !important;
+
+        font-size:14px !important;
+    }
+
+
+    .hero-v2-tagline span{
+        display:block;
+    }
+
+
+    .hero-typing-area{
+        min-height:65px;
+
+        margin-top:10px;
+    }
+
+
+    .hero.hero-v2 #typing-text{
+        font-size:12px !important;
+    }
+
+
+    .hero.hero-v2 .welcome-user{
+        font-size:14px !important;
+    }
+
+
+    .hero-v2-actions{
+        width:100%;
+
+        gap:9px;
+
+        margin-top:14px;
+    }
+
+
+    .hero.hero-v2 .hero-primary-btn,
+    .hero.hero-v2 .hero-secondary-btn{
+        min-width:0;
+
+        flex:1;
+
+        padding:12px 10px;
+
+        font-size:12px;
+    }
+
+
+    .hero.hero-v2 .hero-stats{
+        width:100%;
+
+        grid-template-columns:
+            repeat(3,1fr);
+
+        gap:8px;
+
+        margin-top:28px !important;
+    }
+
+
+    .hero.hero-v2 .stat-box{
+        width:auto !important;
+
+        padding:
+            14px 6px !important;
+    }
+
+
+    .hero.hero-v2 .stat-box h2{
+        font-size:22px !important;
+    }
+
+
+    .hero.hero-v2 .stat-box span{
+        font-size:9px;
+    }
+
+
+    .hero-scroll-hint{
+        margin-top:18px;
+
+        font-size:9px;
+    }
+
+}
+
+
+/* ==========================================
+   VERY SMALL MOBILE
+========================================== */
+
+@media(max-width:380px){
+
+    .navbar .logo span{
+        font-size:13px;
+    }
+
+
+    .navbar .menu a{
+        font-size:10px;
+    }
+
+
+    .hero.hero-v2{
+        padding-left:12px !important;
+        padding-right:12px !important;
+    }
+
+
+    .hero.hero-v2 .hero-title{
+        font-size:30px !important;
+    }
+
+
+    .hero.hero-v2 .hero-primary-btn,
+    .hero.hero-v2 .hero-secondary-btn{
+        font-size:11px;
+
+        padding:11px 7px;
+    }
+
+}
