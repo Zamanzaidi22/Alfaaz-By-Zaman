@@ -395,7 +395,7 @@ function openCategoryPage(category){
 }
 
 // ==========================================
-// Mood Selector System
+// Mood Selector System - Final
 // ==========================================
 
 function selectMood(mood){
@@ -403,16 +403,23 @@ function selectMood(mood){
     const moodMap = {
 
         romantic: "love",
-
         sad: "sad",
-
         broken: "bewafa",
-
         peaceful: "islamic",
-
         friendship: "dosti",
-
         spiritual: "islamic"
+
+    };
+
+
+    const moodNames = {
+
+        romantic: "❤️ Romantic",
+        sad: "😔 Sad",
+        broken: "💔 Broken",
+        peaceful: "🕊️ Peaceful",
+        friendship: "🤝 Friendship",
+        spiritual: "🌙 Spiritual"
 
     };
 
@@ -421,26 +428,34 @@ function selectMood(mood){
         moodMap[mood];
 
 
+    // Category check
+
     if(
         !category ||
-        !SHAYARI_DB[category]
+        !SHAYARI_DB[category] ||
+        SHAYARI_DB[category].length === 0
     ){
 
-        showToast(
-            "❌ Mood Shayari available nahi hai."
-        );
+        if(typeof showToast === "function"){
+
+            showToast(
+                "❌ Mood Shayari available nahi hai."
+            );
+
+        }
 
         return;
 
     }
 
 
-    // Current category set
+    // ======================================
+    // Select Random Shayari
+    // ======================================
+
     currentCategory =
         category;
 
-
-    // Random Shayari
     currentIndex =
         Math.floor(
             Math.random() *
@@ -448,42 +463,87 @@ function selectMood(mood){
         );
 
 
-    // Show Shayari
-    showCurrentShayari();
+    const shayari =
+        SHAYARI_DB[category][currentIndex];
 
 
-    // Mood label
-    const moodNames = {
+    // ======================================
+    // Directly Update Daily Shayari Card
+    // ======================================
 
-        romantic:
-            "❤️ Romantic",
+    const categoryTitle =
+        document.getElementById(
+            "category-title"
+        );
 
-        sad:
-            "😔 Sad",
-
-        broken:
-            "💔 Broken",
-
-        peaceful:
-            "🕊️ Peaceful",
-
-        friendship:
-            "🤝 Friendship",
-
-        spiritual:
-            "🌙 Spiritual"
-
-    };
+    const shayariText =
+        document.getElementById(
+            "shayari-text"
+        );
 
 
-    showToast(
-        "🎭 " +
-        moodNames[mood] +
-        " Mood Selected"
-    );
+    if(categoryTitle){
+
+        categoryTitle.innerText =
+            category.toUpperCase();
+
+    }
 
 
-    // Scroll to Daily Shayari
+    if(shayariText){
+
+        shayariText.innerText =
+            shayari;
+
+    }
+
+
+    // ======================================
+    // Existing Systems
+    // ======================================
+
+    if(
+        typeof updateStatsUI ===
+        "function"
+    ){
+
+        updateStatsUI();
+
+    }
+
+
+    if(
+        typeof saveRecentlyViewed ===
+        "function"
+    ){
+
+        saveRecentlyViewed();
+
+    }
+
+
+    // ======================================
+    // Toast
+    // ======================================
+
+    if(
+        typeof showToast ===
+        "function"
+    ){
+
+        showToast(
+            "🎭 " +
+            moodNames[mood] +
+            " Mood Selected"
+        );
+
+    }
+
+
+    // ======================================
+    // Scroll To Daily Shayari
+    // ======================================
+
     const today =
         document.getElementById(
             "today"
@@ -493,8 +553,10 @@ function selectMood(mood){
     if(today){
 
         today.scrollIntoView({
+
             behavior: "smooth",
             block: "start"
+
         });
 
     }
