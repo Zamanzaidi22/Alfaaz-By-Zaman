@@ -562,3 +562,90 @@ function selectMood(mood){
     }
 
 }
+
+// ==========================================
+// Reading Mode System
+// ==========================================
+
+function openReadingMode(){
+
+    if(
+        !currentCategory ||
+        !SHAYARI_DB[currentCategory] ||
+        !SHAYARI_DB[currentCategory][currentIndex]
+    ){
+
+        showToast(
+            "📖 Pehle koi Shayari select karein."
+        );
+
+        return;
+
+    }
+
+
+    const panel =
+        document.getElementById(
+            "reading-mode"
+        );
+
+    const category =
+        document.getElementById(
+            "reading-category"
+        );
+
+    const text =
+        document.getElementById(
+            "reading-text"
+        );
+
+
+    if(!panel || !category || !text){
+        return;
+    }
+
+
+    category.innerText =
+        currentCategory
+            .replace("-", " ")
+            .toUpperCase();
+
+
+    text.innerText =
+        SHAYARI_DB[currentCategory][currentIndex];
+
+
+    panel.style.display =
+        "flex";
+
+
+    document.body.style.overflow =
+        "hidden";
+
+}
+
+
+// ==========================================
+// Close Reading Mode
+// ==========================================
+
+function closeReadingMode(){
+
+    const panel =
+        document.getElementById(
+            "reading-mode"
+        );
+
+
+    if(panel){
+
+        panel.style.display =
+            "none";
+
+    }
+
+
+    document.body.style.overflow =
+        "";
+
+}
