@@ -332,6 +332,36 @@ function searchShayari(){
 }
 
 // ==========================================
+// Highlight Search Keyword
+// ==========================================
+
+function highlightSearchKeyword(text, keyword){
+
+    if(!keyword){
+        return text;
+    }
+
+    // Regex special characters safe karo
+    const safeKeyword =
+        keyword.replace(
+            /[.*+?^${}()|[\]\\]/g,
+            "\\$&"
+        );
+
+    const regex =
+        new RegExp(
+            "(" + safeKeyword + ")",
+            "gi"
+        );
+
+    return text.replace(
+        regex,
+        '<mark class="search-highlight">$1</mark>'
+    );
+
+}
+
+// ==========================================
 // Display Smart Search Results
 // ==========================================
 
@@ -391,7 +421,11 @@ function displaySmartSearchResults(
             .replace(/&/g,"&amp;")
             .replace(/</g,"&lt;")
             .replace(/>/g,"&gt;");
-
+        const highlightedText =
+    highlightSearchKeyword(
+        safeText,
+        keyword
+    );
 
         list.innerHTML += `
 
@@ -408,7 +442,7 @@ function displaySmartSearchResults(
 
                 <p class="search-result-text">
 
-                    ${safeText}
+                    ${highlightedText}
 
                 </p>
 
