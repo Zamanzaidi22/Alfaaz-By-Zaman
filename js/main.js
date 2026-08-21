@@ -147,3 +147,85 @@ if("serviceWorker" in navigator){
     );
 
 }
+
+// ==========================================
+// PWA Diagnostic
+// ==========================================
+
+window.addEventListener("load", async function(){
+
+    const result =
+        document.createElement("div");
+
+    result.id = "pwa-debug";
+
+    result.style.cssText = `
+        position:fixed;
+        left:10px;
+        right:10px;
+        bottom:10px;
+        z-index:99999999;
+        background:#111;
+        color:#FFD700;
+        border:1px solid #FFD700;
+        padding:10px;
+        border-radius:10px;
+        font-size:12px;
+        text-align:center;
+    `;
+
+
+    if(!("serviceWorker" in navigator)){
+
+        result.innerText =
+            "❌ Service Worker NOT supported";
+
+    }
+
+    else{
+
+        const registration =
+            await navigator.serviceWorker
+                .getRegistration();
+
+        if(!registration){
+
+            result.innerText =
+                "❌ Service Worker NOT registered";
+
+        }
+
+        else if(registration.active){
+
+            result.innerText =
+                "✅ Service Worker ACTIVE";
+
+        }
+
+        else if(registration.installing){
+
+            result.innerText =
+                "⏳ Service Worker INSTALLING";
+
+        }
+
+        else if(registration.waiting){
+
+            result.innerText =
+                "⚠️ Service Worker WAITING";
+
+        }
+
+        else{
+
+            result.innerText =
+                "⚠️ Service Worker registered but inactive";
+
+        }
+
+    }
+
+
+    document.body.appendChild(result);
+
+});
