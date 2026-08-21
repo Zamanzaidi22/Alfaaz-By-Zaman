@@ -7996,3 +7996,185 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   STEP 7E PART 5
+   SIGNATURE QUOTE SECTION
+========================================== */
+
+.signature-quote-section{
+    max-width:900px;
+
+    margin:65px auto 55px;
+
+    padding:0 18px;
+}
+
+
+.signature-quote-card{
+    position:relative;
+
+    padding:45px 35px 34px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    background:
+        radial-gradient(
+            circle at center top,
+            rgba(255,215,0,.08),
+            transparent 42%
+        ),
+        linear-gradient(
+            145deg,
+            #151515,
+            #090909
+        );
+
+    border:1px solid rgba(255,215,0,.22);
+
+    border-radius:24px;
+
+    box-shadow:
+        0 16px 40px rgba(0,0,0,.32),
+        inset 0 0 28px rgba(255,215,0,.02);
+}
+
+
+/* Golden top line */
+
+.signature-quote-card::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:22%;
+    right:22%;
+
+    height:1px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #FFD700,
+        transparent
+    );
+
+    box-shadow:
+        0 0 12px rgba(255,215,0,.35);
+}
+
+
+/* Quote mark */
+
+.signature-mark{
+    display:block;
+
+    margin-bottom:16px;
+
+    color:#FFD700;
+
+    font-family:Georgia,serif;
+
+    font-size:48px;
+
+    line-height:.8;
+
+    opacity:.85;
+}
+
+
+/* Quote text */
+
+.signature-quote-text{
+    max-width:680px;
+
+    margin:0 auto;
+
+    color:#e9e9e9;
+
+    font-family:Georgia,'Times New Roman',serif;
+
+    font-size:19px;
+
+    line-height:1.9;
+
+    font-style:italic;
+
+    letter-spacing:.15px;
+}
+
+
+/* Author */
+
+.signature-author{
+    margin-top:25px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:7px 14px;
+
+    border:1px solid rgba(255,215,0,.20);
+
+    border-radius:25px;
+
+    background:rgba(255,215,0,.05);
+
+    color:#d4af37;
+
+    font-size:12px;
+}
+
+
+.signature-author strong{
+    font-weight:600;
+
+    letter-spacing:.8px;
+}
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    .signature-quote-section{
+        margin:48px auto 40px;
+
+        padding:0 12px;
+    }
+
+
+    .signature-quote-card{
+        padding:36px 18px 28px;
+
+        border-radius:19px;
+    }
+
+
+    .signature-mark{
+        font-size:40px;
+
+        margin-bottom:13px;
+    }
+
+
+    .signature-quote-text{
+        font-size:16px;
+
+        line-height:1.8;
+    }
+
+
+    .signature-author{
+        margin-top:21px;
+
+        font-size:11px;
+    }
+
+}
