@@ -393,3 +393,110 @@ function openCategoryPage(category){
         "category.html?category=" + category;
 
 }
+
+// ==========================================
+// Mood Selector System
+// ==========================================
+
+function selectMood(mood){
+
+    const moodMap = {
+
+        romantic: "love",
+
+        sad: "sad",
+
+        broken: "bewafa",
+
+        peaceful: "islamic",
+
+        friendship: "dosti",
+
+        spiritual: "islamic"
+
+    };
+
+
+    const category =
+        moodMap[mood];
+
+
+    if(
+        !category ||
+        !SHAYARI_DB[category]
+    ){
+
+        showToast(
+            "❌ Mood Shayari available nahi hai."
+        );
+
+        return;
+
+    }
+
+
+    // Current category set
+    currentCategory =
+        category;
+
+
+    // Random Shayari
+    currentIndex =
+        Math.floor(
+            Math.random() *
+            SHAYARI_DB[category].length
+        );
+
+
+    // Show Shayari
+    showCurrentShayari();
+
+
+    // Mood label
+    const moodNames = {
+
+        romantic:
+            "❤️ Romantic",
+
+        sad:
+            "😔 Sad",
+
+        broken:
+            "💔 Broken",
+
+        peaceful:
+            "🕊️ Peaceful",
+
+        friendship:
+            "🤝 Friendship",
+
+        spiritual:
+            "🌙 Spiritual"
+
+    };
+
+
+    showToast(
+        "🎭 " +
+        moodNames[mood] +
+        " Mood Selected"
+    );
+
+
+    // Scroll to Daily Shayari
+    const today =
+        document.getElementById(
+            "today"
+        );
+
+
+    if(today){
+
+        today.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    }
+
+}
