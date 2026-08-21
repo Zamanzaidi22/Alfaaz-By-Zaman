@@ -9116,3 +9116,24 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   READING MODE BUTTON
+========================================== */
+
+.reading-btn{
+    background:
+        linear-gradient(
+            135deg,
+            #6c5ce7,
+            #4834d4
+        );
+
+    color:#fff;
+}
+
+.reading-btn:hover{
+    box-shadow:
+        0 0 18px
+        rgba(108,92,231,.45);
+}
