@@ -6841,3 +6841,97 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   HOMEPAGE V2
+   CATEGORIES → DAILY SHAYARI TRANSITION
+========================================== */
+
+.categories{
+    position:relative;
+    margin-bottom:60px;
+}
+
+/* Soft divider after categories */
+
+.categories::after{
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    bottom:-32px;
+
+    transform:translateX(-50%);
+
+    width:min(520px,70%);
+
+    height:1px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,215,0,.45),
+        transparent
+    );
+
+    box-shadow:
+        0 0 12px rgba(255,215,0,.15);
+}
+
+
+/* Daily section breathing space */
+
+#today{
+    scroll-margin-top:120px;
+}
+
+.daily-spotlight-section{
+    margin-top:70px !important;
+}
+
+
+/* Subtle entrance feel */
+
+.daily-spotlight-card{
+    animation:
+        dailySpotlightFade .65s ease both;
+}
+
+@keyframes dailySpotlightFade{
+
+    from{
+        opacity:0;
+        transform:translateY(18px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    .categories{
+        margin-bottom:48px;
+    }
+
+    .categories::after{
+        bottom:-24px;
+        width:75%;
+    }
+
+    .daily-spotlight-section{
+        margin-top:52px !important;
+    }
+
+    #today{
+        scroll-margin-top:105px;
+    }
+
+}
