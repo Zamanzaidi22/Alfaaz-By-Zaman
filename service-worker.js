@@ -5,7 +5,7 @@
 // ==========================================
 
 const CACHE_NAME =
-    "alfaaz-by-zaman-v1";
+    "alfaaz-by-zaman-v2";
 
 
 const FILES_TO_CACHE = [
@@ -13,27 +13,16 @@ const FILES_TO_CACHE = [
     "./",
     "./index.html",
     "./style.css",
-
     "./manifest.json",
 
-    "./assets/logo.png",
-    "./assets/favicon.png",
     "./assets/icon-192.png",
     "./assets/icon-512.png",
 
     "./js/database.js",
     "./js/category.js",
-    "./js/search.js",
-    "./js/favorite.js",
-    "./js/download.js",
-    "./js/theme.js",
-    "./js/music.js",
-    "./js/main.js",
-    "./js/counter.js",
-    "./js/loader.js"
+    "./js/main.js"
 
 ];
-
 
 // ==========================================
 // Install
