@@ -8946,3 +8946,173 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   STEP 10A
+   PREMIUM READING MODE
+========================================== */
+
+.reading-mode{
+    display:none;
+
+    position:fixed;
+    inset:0;
+
+    z-index:9999999;
+
+    padding:24px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(255,215,0,.08),
+            transparent 35%
+        ),
+        rgba(3,3,3,.97);
+
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+
+    overflow-y:auto;
+}
+
+
+.reading-mode-box{
+    position:relative;
+
+    width:min(760px,100%);
+    min-height:calc(100vh - 48px);
+
+    margin:auto;
+
+    padding:60px 40px 40px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    border:1px solid rgba(255,215,0,.20);
+    border-radius:25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #111,
+            #070707
+        );
+
+    box-shadow:
+        0 0 40px rgba(255,215,0,.08);
+}
+
+
+.reading-close{
+    position:absolute;
+
+    top:18px;
+    right:18px;
+
+    width:38px;
+    height:38px;
+
+    border:1px solid rgba(255,215,0,.20);
+    border-radius:50%;
+
+    background:#181818;
+    color:#FFD700;
+
+    font-size:18px;
+
+    cursor:pointer;
+}
+
+
+.reading-brand{
+    margin-bottom:18px;
+
+    color:#FFD700;
+
+    font-family:'Cinzel',serif;
+    font-size:18px;
+
+    letter-spacing:.8px;
+}
+
+
+.reading-category{
+    margin-bottom:25px;
+
+    padding:5px 12px;
+
+    border:1px solid rgba(255,215,0,.20);
+    border-radius:20px;
+
+    color:#d4af37;
+
+    font-size:10px;
+    font-weight:700;
+
+    letter-spacing:1px;
+}
+
+
+.reading-text{
+    max-width:650px;
+
+    color:#f2f2f2;
+
+    font-family:Georgia,'Times New Roman',serif;
+
+    font-size:27px;
+    line-height:1.9;
+
+    white-space:pre-line;
+
+    text-align:center;
+}
+
+
+.reading-footer{
+    margin-top:35px;
+
+    color:#777;
+
+    font-size:11px;
+
+    letter-spacing:.5px;
+}
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    .reading-mode{
+        padding:10px;
+    }
+
+    .reading-mode-box{
+        min-height:calc(100vh - 20px);
+
+        padding:55px 20px 30px;
+
+        border-radius:20px;
+    }
+
+    .reading-brand{
+        font-size:15px;
+    }
+
+    .reading-text{
+        font-size:21px;
+        line-height:1.8;
+    }
+
+    .reading-footer{
+        margin-top:28px;
+    }
+
+}
