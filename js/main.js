@@ -149,3 +149,36 @@ if("serviceWorker" in navigator){
 }
 
 
+// ==========================================
+// Scroll Progress Bar
+// ==========================================
+
+window.addEventListener("scroll", function(){
+
+    const progressBar =
+        document.getElementById("progress-bar");
+
+    if(!progressBar) return;
+
+    const scrollTop =
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+
+    const scrollHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+    if(scrollHeight <= 0){
+
+        progressBar.style.width = "0%";
+        return;
+
+    }
+
+    const progress =
+        (scrollTop / scrollHeight) * 100;
+
+    progressBar.style.width =
+        progress + "%";
+
+});
