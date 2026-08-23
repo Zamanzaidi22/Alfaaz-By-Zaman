@@ -45,15 +45,35 @@ function playCategoryMusic(category) {
         return;
     }
 
-    console.log("🎵 Loading:", musicPath);
+    // Same track already playing?
+    // To usko restart mat karo.
+    const currentPath =
+        bgMusic.getAttribute("src");
 
-    bgMusic.pause();
+    if (
+        currentPath === musicPath &&
+        !bgMusic.paused
+    ) {
 
-    bgMusic.currentTime = 0;
+        console.log(
+            "🎵 Music already playing:",
+            category
+        );
 
-    bgMusic.src = musicPath;
+        return;
+    }
 
-    bgMusic.load();
+    // Category change hui ho tabhi
+    // naya track load karo.
+    if (currentPath !== musicPath) {
+
+        bgMusic.pause();
+
+        bgMusic.src = musicPath;
+
+        bgMusic.load();
+
+    }
 
     bgMusic.play()
         .then(function () {
@@ -67,13 +87,13 @@ function playCategoryMusic(category) {
         .catch(function (error) {
 
             console.log(
-                "❌ Music play failed:",
+                "⚠️ Music waiting for user interaction:",
                 error
             );
 
         });
-}
 
+}
 
 // ==========================================
 // Music ON / OFF
