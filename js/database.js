@@ -1035,7 +1035,7 @@ Aisa Lagta Hai Jaise Gustakhi-e-Mohabbat Na Ho Jaaye Mujhse.`,
 Haq Ye Bhi Hai Ke Tu Hi Tu Rehta Hai Mere Zehan Mein.`,
 
   `Subah Uthte Hi Kyun Yaad Aa Jaata Hai Wo Shakhs.
-Jisko Meri Hasrat Bhari Nigaahon se Kabhi Dekha Bhi Nahi.`,
+Jisko Mene Hasrat Bhari Nigaahon se Kabhi Dekha Bhi Nahi.`,
 
   `Ye Izhaar Nahi To Izhaar-e-Mohabbat Kya Hoga.
 Humse Poochte Ho Bhala Humara Haal Kya Hoga.
@@ -1113,7 +1113,7 @@ Humare Iss Khwaab Ko Sach Bana Paogi Kya.
 Mushkilein Jo Bhi Aaye Raaste Mein Manzil Tak Pahunch Jayenge.
 Bas Aap Waada Karein, Humare Saath Chal Paogi Kya.
 
-Zaigam Ka ZA Aur Aiman Ka Man Milaa Kar.
+Zaxxxx Ka ZA Aur xxman Ka Man Milaa Kar.
 Kya Humesha Ke Liye "Zaman" Ko Dil Mein Sajaa Paogi Kya.
 
 Kuch Maangoon Agar Tumse De Paogi Kya.
@@ -1208,17 +1208,15 @@ Tumko Sochna Bhi Ab To Ibadat Sa Lagta Hai.`,
   `Badi Shiddat se Pyaar Jataa Raha Hoon.
 Shayad Iss Liye Tumhe Yaad Aa Raha Hoon.
 Tum Meri Wo Guftugu Ho "ZAMAN".
-Jisko Main Har Lamha Gungunaa Raha Hoon.....
-ZAIGAM ❤️ AIMAN`,
+Jisko Main Har Lamha Gungunaa Raha Hoon.....`,
 
   `Aadatein Badalti Jaa Rahi Hai Ladki Meri Khatir.
 Mohabbat Badhti Jaa Rahi Hai Sanam Teri Khatir.
 Jhalak Uthi Hai Pyaar Tumhari Inn Nasheeli Aankhon Se.
 Iss Nashe Ki Talab Badhti Jaa Rahi Sanam Teri Khatir.
 
-Kaise Pagal Na Ho "Zaigam" Tere Ishq Mein "Aiman".
-"Zaman" Ki Saansein Tak Ruk Jaati Hain Jaana Teri Khatir.....
-LABABA ❤️`,
+Kaise Pagal Na Ho "Zaxxxx" Tere Ishq Mein "xxman".
+"Zaman" Ki Saansein Tak Ruk Jaati Hain Jaana Teri Khatir.....`,
 
   `Duniya Mein Hoon. Duniya Ka Talabgaar Nahi Hoon.
 Bazaar se Guzra Hoon, Kharidaar Nahi Hoon.
@@ -1245,11 +1243,11 @@ Taqdeer Bana Loon Ya Tujhe Apni Zindagi Bana Loon.
 Tujhe Apni Zindagi Banaane Ka Bahut Mann Karta Hai..
 Mann Karta Hai Aur Bahut Mann Karta Hai...
 
-YA HAYATI ❤️ AIMAN
+I ♥️ HAYATI
 
 Khayaal Aata Hai Tujhe Lababa Keh Kar Pukaarun.
-Lababa Keh Kar Pukaarun Ya Aiman se Pukaarun.
-Aiman se Pukaarun Ya Zaman Keh Doon Tujhe.
+Lababa Keh Kar Pukaarun Ya xxman se Pukaarun.
+Xxman se Pukaarun Ya Zaman Keh Doon Tujhe.
 Tujhe "Zaman" Kehne Ka Bahut Mann Karta Hai.
 Mann Karta Hai Aur Bahut Mann Karta Hai..
 Ya Qalbi ❤️ Lababa`,
@@ -1324,7 +1322,7 @@ Uska andaaz-e-kalaam kisi koyal jesa.
 Jab wo bole Mere Dil ke Bagiche ko Mehkati hai.
 Ek ladki hai jo...
 
-Zaigam faqr kar apni Qismat par jo tujhko 'Aiman' mili.
+Zaxxxx faqr kar apni Qismat par jo tujhko 'Xxman' mili.
 Warna kahan aise kisi ki Qismat Jagmagati hai...
 Ek ladki hai jo...`,
 
@@ -1399,7 +1397,7 @@ Humara Naam Bhi Unke Ghulaamo me Shumaar kraya Jaaye...
 Mangi thi Jitni Maangli Mene Duaye Arafa ke Roz.
 Khuda Inn Duao ko "14 Masomeen" ke Sadqe Qabool karaya Jaaye....
 
-Achcha nahi Lagta Zaigam or Aiman Alag Alag Likhna,
+Achcha nahi Lagta Zaxxxx or Xxman Alag Alag Likhna,
 Moula inko ek Naam me "Zaman" Likhwaya Jaaye...`,
 
 `Aao Mai Tumhe Apne Sapno ki Duniya Dikhata hun,
