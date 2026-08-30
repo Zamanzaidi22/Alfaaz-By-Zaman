@@ -5,7 +5,7 @@
 // ==========================================
 
 const CACHE_NAME =
-    "alfaaz-by-zaman-v6";
+    "alfaaz-by-zaman-v7";
 
 
 const FILES_TO_CACHE = [
