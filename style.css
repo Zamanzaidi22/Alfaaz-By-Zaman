@@ -9551,3 +9551,135 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   TERMS & DISCLAIMER PAGE
+========================================== */
+
+.terms-page {
+    min-height: 100vh;
+    padding: 60px 18px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(212, 175, 55, 0.10),
+            transparent 35%
+        ),
+        #0d0d0d;
+
+    color: #eeeeee;
+}
+
+.terms-card {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+    padding: 45px 35px;
+
+    background: rgba(18, 18, 18, 0.96);
+
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 22px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(212, 175, 55, 0.05);
+}
+
+.terms-card h1 {
+    margin: 0 0 10px;
+
+    text-align: center;
+
+    color: #d4af37;
+
+    font-size: clamp(28px, 6vw, 42px);
+    line-height: 1.2;
+}
+
+.terms-updated {
+    margin-bottom: 35px !important;
+
+    text-align: center;
+
+    color: #888888 !important;
+
+    font-size: 13px !important;
+}
+
+.terms-card h2 {
+    margin-top: 32px;
+    margin-bottom: 10px;
+
+    color: #d4af37;
+
+    font-size: 20px;
+}
+
+.terms-card p {
+    margin: 0 0 17px;
+
+    color: #cccccc;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.terms-card a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.terms-home {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 12px 20px;
+
+    border: 1px solid #d4af37;
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+.terms-home:hover {
+    background: #d4af37;
+    color: #0d0d0d;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   TERMS PAGE - MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .terms-page {
+        padding: 25px 14px;
+    }
+
+    .terms-card {
+        padding: 32px 20px;
+        border-radius: 18px;
+    }
+
+    .terms-card h1 {
+        font-size: 28px;
+    }
+
+    .terms-card h2 {
+        font-size: 18px;
+    }
+
+    .terms-card p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+}
