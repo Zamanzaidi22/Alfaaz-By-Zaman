@@ -9392,3 +9392,162 @@ body > header a:hover{
     }
 
 }
+
+/* ==========================================
+   ABOUT PAGE
+========================================== */
+
+.about-page {
+    min-height: 100vh;
+    padding: 60px 18px;
+    background:
+        radial-gradient(circle at top, rgba(212, 175, 55, 0.10), transparent 35%),
+        #0d0d0d;
+    color: #eeeeee;
+}
+
+.about-card {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 45px 35px;
+
+    background: rgba(18, 18, 18, 0.96);
+
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 22px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(212, 175, 55, 0.05);
+}
+
+.about-card h1 {
+    margin: 0 0 12px;
+
+    text-align: center;
+
+    color: #d4af37;
+
+    font-size: clamp(28px, 6vw, 42px);
+    line-height: 1.2;
+}
+
+.about-intro {
+    margin-bottom: 35px !important;
+
+    text-align: center;
+
+    color: #d4af37 !important;
+
+    font-style: italic;
+}
+
+.about-card h2 {
+    margin-top: 35px;
+    margin-bottom: 12px;
+
+    color: #d4af37;
+
+    font-size: 21px;
+}
+
+.about-card p {
+    margin: 0 0 18px;
+
+    color: #cccccc;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.about-card strong {
+    color: #ffffff;
+}
+
+.about-card a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.about-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin: 22px 0 35px;
+}
+
+.about-social a {
+    padding: 11px 17px;
+
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: 30px;
+
+    background: rgba(212, 175, 55, 0.06);
+
+    transition: 0.25s ease;
+}
+
+.about-social a:hover {
+    background: #d4af37;
+    color: #0d0d0d;
+
+    transform: translateY(-2px);
+}
+
+.about-home {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 12px 20px;
+
+    border: 1px solid #d4af37;
+    border-radius: 30px;
+
+    font-weight: 600;
+}
+
+.about-home:hover {
+    background: #d4af37;
+    color: #0d0d0d;
+}
+
+
+/* ==========================================
+   ABOUT PAGE - MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .about-page {
+        padding: 25px 14px;
+    }
+
+    .about-card {
+        padding: 32px 20px;
+        border-radius: 18px;
+    }
+
+    .about-card h1 {
+        font-size: 29px;
+    }
+
+    .about-card h2 {
+        font-size: 19px;
+    }
+
+    .about-card p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .about-social {
+        flex-direction: column;
+    }
+
+    .about-social a {
+        text-align: center;
+    }
+
+}
