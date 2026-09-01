@@ -11,6 +11,236 @@ let shayariIndex = 0;
 let currentCategory = "";
 let currentIndex = 0;
 
+// ==========================================
+// Individual Shayari SEO
+// ==========================================
+
+function getSEOCategoryName(category){
+
+    const names = {
+        love: "Love",
+        sad: "Sad",
+        bewafa: "Bewafa",
+        islamic: "Islamic",
+        dosti: "Dosti",
+        "2line": "2 Line",
+        "zaman-writes": "Zaman Writes"
+    };
+
+    return names[category] || "Shayari";
+
+}
+
+
+function setShayariMeta(selector, attribute, value){
+
+    let tag =
+        document.querySelector(selector);
+
+    if(!tag){
+
+        tag =
+            document.createElement("meta");
+
+        const match =
+            selector.match(
+                /\[(name|property)="(.+?)"\]/
+            );
+
+        if(match){
+
+            tag.setAttribute(
+                match[1],
+                match[2]
+            );
+
+        }
+
+        document.head.appendChild(tag);
+
+    }
+
+    tag.setAttribute(
+        attribute,
+        value
+    );
+
+}
+
+
+function setShayariCanonical(url){
+
+    let canonical =
+        document.querySelector(
+            'link[rel="canonical"]'
+        );
+
+    if(!canonical){
+
+        canonical =
+            document.createElement("link");
+
+        canonical.rel = "canonical";
+
+        document.head.appendChild(
+            canonical
+        );
+
+    }
+
+    canonical.href = url;
+
+}
+
+
+function applyShayariSEO(shayari){
+
+    const categoryName =
+        getSEOCategoryName(
+            shayariCategory
+        );
+
+
+    // Remove line breaks / extra spaces
+
+    const cleanText =
+        shayari
+            .replace(/\s+/g, " ")
+            .trim();
+
+
+    // Short text for page title
+
+    const titleText =
+        cleanText.length > 55
+            ? cleanText.substring(0, 55) + "..."
+            : cleanText;
+
+
+    // Description around 155 characters
+
+    const descriptionText =
+        cleanText.length > 150
+            ? cleanText.substring(0, 150) + "..."
+            : cleanText;
+
+
+    const pageTitle =
+        titleText +
+        " | " +
+        categoryName +
+        " Shayari | Alfaaz By Zaman";
+
+
+    const description =
+        descriptionText +
+        " — Alfaaz By Zaman";
+
+
+    const canonicalURL =
+        "https://alfaazbyzaman.com/shayari.html?category=" +
+        encodeURIComponent(
+            shayariCategory
+        ) +
+        "&index=" +
+        shayariIndex;
+
+
+    // Page Title
+
+    document.title =
+        pageTitle;
+
+
+    // Basic SEO
+
+    setShayariMeta(
+        'meta[name="description"]',
+        "content",
+        description
+    );
+
+    setShayariMeta(
+        'meta[name="robots"]',
+        "content",
+        "index, follow"
+    );
+
+
+    // Canonical
+
+    setShayariCanonical(
+        canonicalURL
+    );
+
+
+    // Open Graph
+
+    setShayariMeta(
+        'meta[property="og:title"]',
+        "content",
+        pageTitle
+    );
+
+    setShayariMeta(
+        'meta[property="og:description"]',
+        "content",
+        description
+    );
+
+    setShayariMeta(
+        'meta[property="og:url"]',
+        "content",
+        canonicalURL
+    );
+
+    setShayariMeta(
+        'meta[property="og:type"]',
+        "content",
+        "article"
+    );
+
+    setShayariMeta(
+        'meta[property="og:image"]',
+        "content",
+        "https://alfaazbyzaman.com/assets/social-preview.png?v=2"
+    );
+
+
+    // Twitter / X
+
+    setShayariMeta(
+        'meta[name="twitter:card"]',
+        "content",
+        "summary_large_image"
+    );
+
+    setShayariMeta(
+        'meta[name="twitter:title"]',
+        "content",
+        pageTitle
+    );
+
+    setShayariMeta(
+        'meta[name="twitter:description"]',
+        "content",
+        description
+    );
+
+    setShayariMeta(
+        'meta[name="twitter:image"]',
+        "content",
+        "https://alfaazbyzaman.com/assets/social-preview.png?v=2"
+    );
+
+
+    console.log(
+        "🔎 Shayari SEO Applied:",
+        shayariCategory,
+        shayariIndex
+    );
+
+}
 
 // ==========================================
 // Load Shayari From URL
@@ -146,6 +376,11 @@ function displayCurrentShayari(){
 
     }
 
+// ======================================
+// Dynamic SEO
+// ======================================
+
+applyShayariSEO(shayari);
 
     // ======================================
     // Like Count
