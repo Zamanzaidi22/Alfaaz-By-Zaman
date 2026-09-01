@@ -67,12 +67,17 @@ function loadCategoryPage(){
     // Saari Shayari load karo
     SHAYARI_DB[category].forEach(function(shayari, index){
 
-        box.innerHTML += `
+    const shayariURL =
+        "shayari.html?category=" +
+        encodeURIComponent(category) +
+        "&index=" +
+        index;
 
-    <div
-        class="shayari-card"
-        onclick="openShayari(${index})"
-        style="cursor:pointer;"
+    box.innerHTML += `
+
+    <a
+        class="shayari-card shayari-card-link"
+        href="${shayariURL}"
     >
 
         <div class="category-shayari-number">
@@ -87,12 +92,11 @@ function loadCategoryPage(){
             📖 Open Shayari
         </div>
 
-    </div>
+    </a>
 
 `;
 
-    });
-
+});
 }
 
 // ==========================================
