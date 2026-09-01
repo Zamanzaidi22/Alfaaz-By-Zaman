@@ -9696,3 +9696,9 @@ body > header a:hover{
     line-height: 1.7;
     opacity: 0.85;
 }
+
+.shayari-card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
