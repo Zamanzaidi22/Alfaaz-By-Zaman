@@ -5,7 +5,7 @@
 // ==========================================
 
 const CACHE_NAME =
-    "alfaaz-by-zaman-v11";
+    "alfaaz-by-zaman-v12";
 
 
 const FILES_TO_CACHE = [
@@ -21,7 +21,8 @@ const FILES_TO_CACHE = [
     "./js/database.js",
     "./js/category.js",
     "./js/main.js",
-    "./js/seo.js"
+    "./js/seo.js",
+    "./js/shayari-page.js"
 ];
 
 // ==========================================
