@@ -243,6 +243,116 @@ function applyShayariSEO(shayari){
 }
 
 // ==========================================
+// Individual Shayari Structured Data
+// ==========================================
+
+function applyShayariStructuredData(shayari){
+
+    const categoryName =
+        getSEOCategoryName(
+            shayariCategory
+        );
+
+    const cleanText =
+        shayari
+            .replace(/\s+/g, " ")
+            .trim();
+
+    const canonicalURL =
+        "https://alfaazbyzaman.com/shayari.html?category=" +
+        encodeURIComponent(shayariCategory) +
+        "&index=" +
+        shayariIndex;
+
+
+    // Purana dynamic schema remove
+    let oldSchema =
+        document.getElementById(
+            "shayariStructuredData"
+        );
+
+    if(oldSchema){
+        oldSchema.remove();
+    }
+
+
+    const schema =
+        document.createElement("script");
+
+    schema.type =
+        "application/ld+json";
+
+    schema.id =
+        "shayariStructuredData";
+
+
+    schema.textContent =
+        JSON.stringify({
+
+            "@context":
+                "https://schema.org",
+
+            "@type":
+                "CreativeWork",
+
+            "name":
+                categoryName +
+                " Shayari #" +
+                (shayariIndex + 1),
+
+            "text":
+                cleanText,
+
+            "description":
+                cleanText,
+
+            "genre":
+                categoryName +
+                " Shayari",
+
+            "inLanguage":
+                "hi-Latn",
+
+            "url":
+                canonicalURL,
+
+            "author": {
+                "@type": "Person",
+                "name": "Zaman"
+            },
+
+            "publisher": {
+                "@type": "Organization",
+                "name": "Alfaaz By Zaman",
+                "url":
+                    "https://alfaazbyzaman.com/"
+            },
+
+            "isPartOf": {
+                "@type": "WebSite",
+                "name":
+                    "Alfaaz By Zaman",
+                "url":
+                    "https://alfaazbyzaman.com/"
+            }
+
+        });
+
+
+    document.head.appendChild(
+        schema
+    );
+
+
+    console.log(
+        "📚 Structured Data Applied:",
+        shayariCategory,
+        shayariIndex
+    );
+
+}
+
+// ==========================================
 // Load Shayari From URL
 // ==========================================
 
@@ -381,6 +491,7 @@ function displayCurrentShayari(){
 // ======================================
 
 applyShayariSEO(shayari);
+applyShayariStructuredData(shayari);
 
     // ======================================
     // Like Count
