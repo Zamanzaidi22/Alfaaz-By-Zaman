@@ -165,7 +165,37 @@ aur tera pyaar meri duniya.`,
 to main tera naam likhunga.`,
 
 `Meri har kahani ka aakhri alfaaz,
-sirf tum ho.`
+sirf tum ho.`,
+
+`Tumse baat ho to waqt ka pata nahi chalta,
+aur baat na ho to waqt guzarta nahi.`,
+
+`Tum meri zindagi me aaye to samajh aaya,
+kuch log sirf milte nahi, dil me utar jaate hain.`,
+
+`Tujhse mohabbat ki wajah poochhe koi,
+to bas itna kahunga — tum ho, isi liye hai.`,
+
+`Tumhare saath ki ek chhoti si mulaqaat,
+mere kai udaas dinon par bhaari pad jaati hai.`,
+
+`Mujhe tumhari aadat nahi lagi,
+tum to dheere dheere meri zarurat ban gaye.`,
+
+`Tumhe dekh kar dil ko jo sukoon milta hai,
+shayad isi ehsaas ko mohabbat kehte hain.`,
+
+`Faasle chahe kitne bhi hon darmiyaan,
+mera dil har roz tum tak pahunch hi jaata hai.`,
+
+`Tum meri zindagi ka wo khayal ho,
+jise soch kar chehre par muskurahat aa jaati hai.`,
+
+`Mohabbat tumse kuch aise hui,
+ab khud se pehle tumhari fikr hoti hai.`,
+
+`Duniya me chehre hazaar dekhe,
+magar dil ne apna sirf tumhe maana.`
   
 ],
 
@@ -328,7 +358,37 @@ uski yaadein zindagi bhar saath rehti hain.`,
 aksar wahi sabse zyada yaad aaya.`,
 
 `Kuch kahaniyan kabhi mukammal nahi hoti,
-phir bhi zindagi bhar yaad rehti hain.`
+phir bhi zindagi bhar yaad rehti hain.`,
+
+`Humne to sirf saath maanga tha,
+shayad unke liye wahi sabse mushkil baat thi.`,
+
+`Kuch alvida zubaan se nahi hote,
+bas log dheere dheere door ho jaate hain.`,
+
+`Jo baat kabhi keh na sake,
+aaj wahi dil me sabse zyada chubhti hai.`,
+
+`Teri yaad ka bhi ajeeb haal hai,
+aati roz hai, jaati kabhi nahi.`,
+
+`Hum theek hone ka dikhawa karte rahe,
+aur andar se roz thoda thoda toot-te rahe.`,
+
+`Kuch chehre bhool jaate hain,
+magar unse jude ehsaas kabhi nahi bhoolte.`,
+
+`Jise apna samajh kar sab kuch keh diya,
+aaj usi se baat karne ko lafz nahi milte.`,
+
+`Raat bhar neend se zyada,
+teri yaadon ne mera saath diya.`,
+
+`Kabhi hum bhi kisi ki zarurat the,
+phir waqt badla aur hum yaad ban gaye.`,
+
+`Dil maanta hi nahi ke sab khatam ho gaya,
+warna haqeeqat to kab ki saamne aa chuki hai.`
 
 ],
 
@@ -493,7 +553,37 @@ jise kabhi bewafai mili ho.`,
 
 `Aaj uska zikr bhi karta hoon,
 to sirf ek sabaq yaad aata hai —
-har muskurahat ke peeche mohabbat nahi hoti.`
+har muskurahat ke peeche mohabbat nahi hoti.`,
+
+`Humne jise apna samjha,
+usi ne sabse pehle paraya kar diya.`,
+
+`Wafa ka zikr wo bhi karte rahe,
+jinhe nibhana kabhi aaya hi nahi.`,
+
+`Tum badle to humein dard hua,
+magar tumhara sach saamne aaya to sukoon bhi mila.`,
+
+`Humne rishta dil se nibhaya,
+unhone waqt ke hisaab se.`,
+
+`Jis shakhs par sabse zyada bharosa tha,
+usi ne bharose ka matlab badal diya.`,
+
+`Unke vaade bahut khoobsurat the,
+bas unmein sachchai thodi kam thi.`,
+
+`Mohabbat humne ki thi,
+magar kahani kisi aur ke saath likhi gayi.`,
+
+`Wafa ki umeed usse rakh baithe,
+jo har mod par chehra badalta raha.`,
+
+`Usne humein khona aasaan samjha,
+shayad kabhi apna maana hi nahi tha.`,
+
+`Bewafai ka dard tab samajh aaya,
+jab sach saamne tha aur dil yakeen nahi kar raha tha.`
 
 ],
 
@@ -655,7 +745,37 @@ wahi asli daulatmand hai.`,
 Allah ke nazdeek bahut qeemti hota hai.`,
 
 `Allah par bharosa rakho,
-kyunki wahi behtareen kaarsaaz hai.`
+kyunki wahi behtareen kaarsaaz hai.`,
+
+`Jab dil duniya se thak jaaye,
+Rabb ka zikr use phir se sukoon de deta hai.`,
+
+`Dua me der ho sakti hai,
+magar Rabb ki rehmat kabhi der se nahi aati.`,
+
+`Sajde me jo aansu girte hain,
+aksar wahi dil ka sabse sachcha haal kehte hain.`,
+
+`Jab raaste samajh na aayein,
+Rabb par bharosa raasta bana deta hai.`,
+
+`Sabr sirf intezaar ka naam nahi,
+Rabb ke faisle par yaqeen ka naam bhi hai.`,
+
+`Namaz dil ko woh sukoon deti hai,
+jo duniya ki bheed me kahin nahi milta.`,
+
+`Jis dil me shukr zinda ho,
+uski zindagi me umeed kabhi nahi marti.`,
+
+`Rabb se rishta mazboot ho jaaye,
+to tanhaai bhi ibadat si lagne lagti hai.`,
+
+`Har mushkil me ek hikmat chhupi hoti hai,
+bas banda yaqeen ka daaman na chhode.`,
+
+`Duniya se umeed kam rakho,
+Rabb se umeed kabhi kam mat hone do.`
   
 ],
 
@@ -758,7 +878,6 @@ us dost ki hamesha kadar karna.`,
 `Dosti ek aisi daulat hai,
 jo jitni baanto utni hi badhti hai.`,
 
-
 `Dost wo hota hai,
 jo tumhari khushi ko apni khushi samjhe.`,
 
@@ -820,7 +939,37 @@ wahi asli dost hai.`,
 jo bina kisi matlab ke dil se nibhaya jaata hai.`,
 
 `Rab har kisi ko ek aisa dost de,
-jo har haal me uska sahara ban sake.`
+jo har haal me uska sahara ban sake.`,
+
+`Dost wahi jo haal na pooche,
+chehra dekh kar sab samajh jaaye.`,
+
+`Sacchi dosti me roz baat zaroori nahi,
+dil me jagah honi zaroori hoti hai.`,
+
+`Har safar khoobsurat lagta hai,
+jab saath chalne wala dost sachcha ho.`,
+
+`Dosti ka asli sukoon tab milta hai,
+jab bina kahe bhi dost saath khada ho.`,
+
+`Kuch dost rishton se nahi,
+rooh se jude hote hain.`,
+
+`Dost kam ho to koi gham nahi,
+bas jo ho woh dil se apne hon.`,
+
+`Saccha dost tumhari jeet par khush hota hai,
+aur haar me tumhara hausla ban jaata hai.`,
+
+`Dosti me faasle sirf raaston ke hote hain,
+dilon ke nahi.`,
+
+`Jo dost tumhari khamoshi bhi samajh le,
+use kabhi aam insaan mat samajhna.`,
+
+`Zindagi me sab kuch mil jaaye to bhi kya,
+agar ek sachcha dost saath na ho.`
 
 ],
 
@@ -980,7 +1129,37 @@ raaste khud bante chale jaayenge.`,
 sabse badi kamyaabi hai.`,
 
 `Har lamha ek nayi kahani hai,
-bas usse muskura kar jeena seekho.`
+bas usse muskura kar jeena seekho.`,
+
+`Kuch log yaadon me itne gehre utar jaate hain,
+waqt badal jaata hai, ehsaas nahi.`,
+
+`Dil ki baat har kisi se kehna zaroori nahi,
+kuch ehsaas khamoshi me zyada khoobsurat lagte hain.`,
+
+`Mohabbat me sabse mushkil kaam bhoolna nahi,
+khud ko samjhana hota hai.`,
+
+`Har rishta naam ka mohtaaj nahi hota,
+kuch log bas dil ke bahut kareeb hote hain.`,
+
+`Jis din khud ki qadar samajh aa jaaye,
+usi din zindagi thodi aasaan lagne lagti hai.`,
+
+`Waqt sirf chehre nahi badalta,
+rishton ki haqeeqat bhi dikha deta hai.`,
+
+`Kuch baatein der se samajh aati hain,
+magar phir zindagi bhar yaad rehti hain.`,
+
+`Sukoon wahi hai jahan dil be-fikr ho,
+chahe jagah chhoti hi kyon na ho.`,
+
+`Jo dil se nikal jaaye use rokna mushkil hai,
+aur jo dil me utar jaaye use bhoolna.`,
+
+`Zindagi har roz kuch naya sikhaati hai,
+bas hum aksar dard ke baad samajhte hain.`
 
 ],
 
