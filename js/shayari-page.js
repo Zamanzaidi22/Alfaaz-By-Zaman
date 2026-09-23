@@ -690,3 +690,82 @@ document.addEventListener(
 
     }
 );
+
+// ==========================================
+// Share Current Shayari
+// ==========================================
+
+function shareCurrentShayari(){
+
+    if(
+        !shayariCategory ||
+        !SHAYARI_DB[shayariCategory]
+    ){
+        return;
+    }
+
+    const shayari =
+        SHAYARI_DB[shayariCategory][shayariIndex];
+
+    const shareURL =
+        window.location.href;
+
+    const shareText =
+        shayari +
+        "\n\n— Alfaaz By Zaman\n" +
+        shareURL;
+
+
+    // Native mobile share
+    if(navigator.share){
+
+        navigator.share({
+            title: "Alfaaz By Zaman",
+            text: shareText,
+            url: shareURL
+        })
+        .catch(function(error){
+
+            console.log(
+                "Share cancelled/error:",
+                error
+            );
+
+        });
+
+        return;
+    }
+
+
+    // Fallback: copy to clipboard
+    navigator.clipboard
+        .writeText(shareText)
+        .then(function(){
+
+            if(
+                typeof showToast ===
+                "function"
+            ){
+
+                showToast(
+                    "Shayari copied for sharing ✅"
+                );
+
+            } else {
+
+                alert(
+                    "Shayari copied ✅"
+                );
+
+            }
+
+        })
+        .catch(function(){
+
+            alert(
+                "Share option not supported on this browser."
+            );
+
+        });
+
+}
