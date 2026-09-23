@@ -710,19 +710,29 @@ function shareCurrentShayari(){
     const shareURL =
         window.location.href;
 
-    const shareText =
+    // Native share ke text me URL nahi rakhenge
+    const nativeShareText =
         shayari +
-        "\n\n— Alfaaz By Zaman\n" +
-        shareURL;
+        "\n\n— ✍️ Alfaaz By Zaman";
 
 
-    // Native mobile share
+    // ======================================
+    // Native Mobile Share
+    // ======================================
+
     if(navigator.share){
 
         navigator.share({
-            title: "Alfaaz By Zaman",
-            text: shareText,
-            url: shareURL
+
+            title:
+                "Alfaaz By Zaman",
+
+            text:
+                nativeShareText,
+
+            url:
+                shareURL
+
         })
         .catch(function(error){
 
@@ -737,9 +747,19 @@ function shareCurrentShayari(){
     }
 
 
-    // Fallback: copy to clipboard
+    // ======================================
+    // Fallback Copy
+    // ======================================
+
+    const copyText =
+        shayari +
+        "\n\n— ✍️ Alfaaz By Zaman\n" +
+        shareURL;
+
+
     navigator.clipboard
-        .writeText(shareText)
+        .writeText(copyText)
+
         .then(function(){
 
             if(
@@ -760,6 +780,7 @@ function shareCurrentShayari(){
             }
 
         })
+
         .catch(function(){
 
             alert(
