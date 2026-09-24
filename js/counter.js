@@ -159,3 +159,91 @@ function updateStatsUI(){
     }
 
 }
+
+// ==========================================
+// Dynamic Shayari Counts
+// ==========================================
+
+function updateShayariCounts(){
+
+    if(typeof SHAYARI_DB === "undefined"){
+        console.log("SHAYARI_DB not loaded");
+        return;
+    }
+
+
+    // Category counts
+    const categoryCounters =
+        document.querySelectorAll(
+            "[data-category-count]"
+        );
+
+
+    categoryCounters.forEach(function(counter){
+
+        const category =
+            counter.getAttribute(
+                "data-category-count"
+            );
+
+
+        if(SHAYARI_DB[category]){
+
+            counter.textContent =
+                SHAYARI_DB[category].length;
+
+        }
+
+    });
+
+
+    // Total Shayari
+    const totalShayari =
+        Object.values(SHAYARI_DB)
+            .reduce(function(total, category){
+
+                return total + category.length;
+
+            }, 0);
+
+
+    // Statistics section
+    const totalCounter =
+        document.getElementById(
+            "shayari-count"
+        );
+
+    if(totalCounter){
+
+        totalCounter.textContent =
+            totalShayari;
+
+    }
+
+
+    // Homepage hero counter
+    const heroCounter =
+        document.getElementById(
+            "hero-shayari-count"
+        );
+
+    if(heroCounter){
+
+        heroCounter.textContent =
+            totalShayari + "+";
+
+    }
+
+
+    console.log(
+        "📚 Total Shayari:",
+        totalShayari
+    );
+
+}
+
+
+document.addEventListener(
+    "DOMContentLoaded",
+    updateShayariCounts
+);
