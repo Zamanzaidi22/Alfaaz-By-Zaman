@@ -35,11 +35,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(function () {
 
-        animateCounter("count-shayari", 300, "+");
+        if(typeof SHAYARI_DB === "undefined"){
+            return;
+        }
 
-        animateCounter("count-category", 6);
+        const totalShayari =
+            Object.values(SHAYARI_DB)
+                .reduce(function(total, category){
 
-        animateCounter("count-original", 100, "%");
+                    return total + category.length;
+
+                }, 0);
+
+
+        const totalCategories =
+            Object.keys(SHAYARI_DB).length;
+
+
+        animateCounter(
+            "count-shayari",
+            totalShayari,
+            "+"
+        );
+
+        animateCounter(
+            "count-category",
+            totalCategories
+        );
+
+        animateCounter(
+            "count-original",
+            100,
+            "%"
+        );
 
     }, 700);
 
